@@ -1,0 +1,79 @@
+.contactUs {
+  height: 986px;
+  background-color: var(--darkBackground);
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-left {
+      padding: 123px 0 0 150px;
+      width: 1200px;
+      height: 840px;
+      &-title {
+        font-size: 37px;
+        color: var(--textColor);
+        h2 {
+          height: 173px;
+          display: inline-block;
+          span {
+            color: var(--mainColor);
+          }
+        }
+        p {
+          margin-top: 2px;
+          font-size: 18px;
+          width: 644px;
+        }
+      }
+      &-form {
+        margin-top: 50px;
+        input[type="text"] {
+          width: 590px;
+          height: 60px;
+          margin-bottom: 24px;
+          border-radius: 8px;
+          color: var(--textColor);
+          border: 2px solid #6c8da9ba;
+          background-color: transparent;
+          padding: 18px 25px;
+        }
+        input[type="email"] {
+          width: 280px;
+          height: 60px;
+          margin-right: 30px;
+          border-radius: 8px;
+          color: var(--textColor);
+          border: 2px solid #6c8da9ba;
+          background-color: transparent;
+          padding: 18px 25px;
+        }
+        input[type="tel"] {
+          width: 280px;
+          height: 60px;
+          margin-bottom: 24px;
+          border-radius: 8px;
+          color: var(--textColor);
+          border: 2px solid #6c8da9ba;
+          background-color: transparent;
+          padding: 18px 25px;
+        }
+        select {
+          width: 590px;
+          height: 60px;
+          margin-bottom: 24px;
+          border-radius: 8px;
+          color: var(--textColor);
+          border: 2px solid #6c8da9ba;
+          background-color: transparent;
+          padding: 18px 25px;
+        }
+        button {
+          width: 179px;
+        }
+      }
+    }
+    &-right {
+      overflow-x: hidden;
+    }
+  }
+}
