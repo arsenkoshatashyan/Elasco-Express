@@ -1,0 +1,24 @@
+.Result{
+    width: 100%;
+    &__content{
+        width: 1170px;
+        margin: -50px auto;
+        background-color: var(--iconBackground);
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            
+            
+            
+           
+            
+
+            li{
+                font-size: 70px;
+                color: var(--mainColor);
+                list-style: none;
+
+            }
+        }
+    }
+}

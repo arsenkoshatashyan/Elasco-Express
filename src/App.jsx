@@ -39,8 +39,10 @@ import About from "./components/About/About";
 import Card from "./components/Card/Card";
 import Service from "./components/Service/Service";
 import ContactUs from "./components/ContactUs/ContactUs";
+import Result from "./components/Result/Result";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+
 
 export default function App() {
   const location = useLocation();
@@ -49,8 +51,6 @@ export default function App() {
 
   return (
     <div>
-      <PreNav />
-      <Nav />
       {isHomePage && (
         <>
           <Logistic />
@@ -58,6 +58,7 @@ export default function App() {
           <Card />
           <Service />
           <ContactUs />
+          <Result />
           <Contact />
         </>
       )}
