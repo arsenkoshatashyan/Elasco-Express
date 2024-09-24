@@ -15,9 +15,10 @@
         display: flex;
         gap: 100px;
         text-transform: uppercase;
-        li {
-          list-style: none;
+        color: var(--darkBackground);
+        a {
           cursor: pointer;
+          color: var(--darkBackground);
         }
       }
     }

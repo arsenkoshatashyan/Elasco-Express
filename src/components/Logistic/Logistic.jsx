@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import "./Logistic.scss";
 
 export default function Logistic() {
@@ -13,7 +13,10 @@ export default function Logistic() {
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s.
           </p>
-          <button>SERVICES</button>
+
+          <Link to="/services">
+            <button>SERVICES</button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+.footer {
+  background-color: var(--darkBackground);
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    &-left {
+      &-truck {
+        img {
+          margin-top: 59px;
+          max-width: 404px;
+          height: 154px;
+        }
+        p {
+          max-width: 340px;
+          color: var(--textColor);
+          font-size: 17px;
+        }
+      }
+
+      &-socials {
+        margin-top: 22px;
+        display: flex;
+        gap: 40px;
+        img {
+          width: 28px;
+          height: 28px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    &-center {
+      color: var(--textColor);
+      h2 {
+        font-size: 21px;
+      }
+      ul {
+        margin-top: 31px;
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        a {
+          font-family: "Nunito";
+          font-size: 15px;
+          font-weight: 500;
+          color: var(--textColor);
+        }
+      }
+    }
+    &-right {
+      color: var(--textColor);
+      &-title {
+        h2 {
+          width: 335px;
+          font-size: 20px;
+          margin-bottom: 18px;
+        }
+        p {
+          width: 360px;
+          font-size: 11px;
+          margin-bottom: 22px;
+          padding-top: 0 !important;
+          height: 20px;
+          text-align: left !important;
+        }
+      }
+
+      input {
+        width: 300px;
+        height: 59px;
+        margin-bottom: 24px;
+        border-radius: 4px;
+        color: var(--textColor);
+        border: 2px solid #6c8da9ba;
+        background-color: transparent;
+        padding: 18px 25px;
+      }
+      button {
+        width: 300px;
+      }
+    }
+  }
+  hr {
+    width: 90%;
+    margin: 0 auto;
+  }
+  p {
+    color: var(--textColor);
+    text-align: center;
+    padding: 33px 0 44px 0;
+    font-size: 15px;
+  }
+}

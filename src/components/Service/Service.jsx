@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import "./Service.scss";
 
 const card = [
@@ -10,35 +10,35 @@ const card = [
     desc: "Our team can also build a logistics software solution with reporting and analytics features that focus on your company’s most important metrics. ",
   },
   {
-    id: 1,
+    id: 2,
     image: "./images/service2.svg",
     url: "./images/icon2.svg",
     title: "Land Transportation",
     desc: "Our team can also build a logistics software solution with reporting and analytics features that focus on your company’s most important metrics. ",
   },
   {
-    id: 1,
+    id: 3,
     image: "./images/service3.svg",
     url: "./images/icon3.svg",
     title: "Air Transportation",
     desc: "Our team can also build a logistics software solution with reporting and analytics features that focus on your company’s most important metrics. ",
   },
   {
-    id: 1,
+    id: 4,
     image: "./images/service4.svg",
     url: "./images/icon4.svg",
     title: "Transportation of Dangerous Goods ",
     desc: "Our team can also build a logistics software solution with reporting and analytics features that focus on your company’s most important metrics. ",
   },
   {
-    id: 1,
+    id: 5,
     image: "./images/service5.svg",
     url: "./images/icon5.svg",
     title: "Preparation of Export & Import Documents",
     desc: "Our team can also build a logistics software solution with reporting and analytics features that focus on your company’s most important metrics. ",
   },
   {
-    id: 1,
+    id: 6,
     image: "./images/service6.svg",
     url: "./images/icon6.svg",
     title: "Brokerage services",
@@ -52,7 +52,9 @@ export default function Service() {
       <div className="Service__content">
         <div className="Service__content-title">
           <h2>Our Services</h2>
-          <button>More About Services</button>
+          <Link to="/services">
+            <button>More About Services</button>
+          </Link>
         </div>
         <div className="Service__content-cards">
           {card.map((elem) => (
