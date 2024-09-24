@@ -1,0 +1,42 @@
+.nav {
+  width: 100%;
+  &__content {
+    padding: 0 166px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+      width: 176px;
+      height: 56px;
+    }
+    &-links {
+      ul {
+        display: flex;
+        gap: 100px;
+        text-transform: uppercase;
+        li {
+          list-style: none;
+          cursor: pointer;
+        }
+      }
+    }
+    &-settings {
+      display: flex;
+      gap: 78px;
+      button {
+        width: 194px;
+        background-color: var(--darkBackground);
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      select {
+        border: 0;
+        background-color: transparent;
+        color: var(--darkBackground);
+        cursor: pointer;
+        font-size: 16px;
+      }
+    }
+  }
+}
