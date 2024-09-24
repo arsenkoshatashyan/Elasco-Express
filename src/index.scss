@@ -6,6 +6,8 @@
   --darkTextColor: #152430;
   --lightTextColor: #696666;
   --textColor: #ffffff;
+  --cardsBackground: #cdd8db;
+  --iconBackground: #eee9e9;
 }
 
 * {
@@ -17,12 +19,19 @@ body {
   width: 1730px;
   font-family: "Aoboshi One";
 }
+h1,
+h2,
+h3,
+p {
+  font-weight: 400;
+}
+
 button {
   height: 52px;
   font-size: 18px;
   font-weight: 400;
   border-radius: 50px;
-  background-color: var(--mainColor);
+  border: 0px;
   color: var(--textColor);
-  border: 0;
+  background-color: var(--mainColor);
 }

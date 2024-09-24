@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Card from "./components/Card/Card";
 import Service from "./components/Service/Service";
 import ContactUs from "./components/ContactUs/ContactUs";
+import Result from "./components/Result/Result";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Card />
       <Service />
       <ContactUs />
+      <Result />
     </div>
   );
 }
