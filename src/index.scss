@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap');
+
+:root {
+  --mainColor: #ED1C25;
+  --darkBackground: #0F1B24;
+  --lightBackground: #D9D9D98C;
+  --darkTextColor: #152430;
+  --lightTextColor: #696666;
+  --textColor:#FFFFFF;
+  --cardsBackground:#CDD8DB;
+  --iconBackground:#EEE9E9
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 1730px;
+  font-family: "Aoboshi One";
+  
+}
+h1,h2,h3,p{
+  font-weight: 400;
+}
+
+button{
+  height: 52px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 50px;
+  border: 0px;
+  color: var(--textColor);
+  background-color: var(--mainColor);
+  
+  
+}

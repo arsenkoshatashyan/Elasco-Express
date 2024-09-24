@@ -1,0 +1,66 @@
+.Service {
+  width: auto;
+  background: url("./images/vector.svg") no-repeat;
+
+  &__content {
+    height: 1266px;
+    margin: 0 108px auto;
+
+    &-title {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+
+      margin-bottom: 74px;
+      h2 {
+        font-size: 54px;
+        color: var(--mainColor);
+      }
+      button {
+        width: 298px;
+      }
+    }
+    &-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 78px;
+
+      &-card {
+        width: 442px;
+        height: 410px;
+        background-color: var(--cardsBackground);
+        border-radius: 18px;
+
+        p {
+          width: 366px;
+          font-size: 12px;
+          color: var(--lightTextColor);
+          margin: 0 46px;
+        }
+
+        > div {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          margin: 0 46px;
+          span {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: var(--iconBackground);
+            margin-top: 12px;
+            margin-bottom: 12px;
+
+            > img {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
