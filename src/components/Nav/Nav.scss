@@ -1,6 +1,17 @@
 .nav {
   width: 100%;
   &__content {
+
+    // select{
+    //   border-radius: 8px;
+    //   option{
+    //     color: var(--darkBackground);
+    //     border-radius: 8px;
+        
+    //   }
+      
+
+    // }
     padding: 0 166px;
     height: 90px;
     display: flex;
@@ -19,6 +30,7 @@
         a {
           cursor: pointer;
           color: var(--darkBackground);
+          text-decoration: none;
         }
       }
     }
@@ -39,5 +51,7 @@
         font-size: 16px;
       }
     }
+    
   }
+  
 }

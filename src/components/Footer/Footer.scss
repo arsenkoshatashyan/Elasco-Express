@@ -16,7 +16,7 @@
         }
         p {
           max-width: 340px;
-          color: var(--textColor);
+          color: #FFFFFFCC;
           font-size: 17px;
         }
       }
@@ -33,38 +33,44 @@
       }
     }
     &-center {
-      color: var(--textColor);
+      color: #FEF3F4;
+      text-transform:uppercase;
       h2 {
-        font-size: 21px;
+        font-size: 22px;
+        
       }
       ul {
         margin-top: 31px;
         display: flex;
         flex-direction: column;
         gap: 21px;
+        
         a {
           font-family: "Nunito";
           font-size: 15px;
           font-weight: 500;
           color: var(--textColor);
+          text-decoration: none;
         }
       }
     }
     &-right {
       color: var(--textColor);
       &-title {
+        
         h2 {
           width: 335px;
           font-size: 20px;
           margin-bottom: 18px;
         }
         p {
-          width: 360px;
+          width: 390px;
           font-size: 11px;
           margin-bottom: 22px;
           padding-top: 0 !important;
           height: 20px;
           text-align: left !important;
+          color: #D2D2D2 !important;
         }
       }
 

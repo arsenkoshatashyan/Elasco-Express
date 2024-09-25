@@ -1,0 +1,365 @@
+.ServicesHome {
+  width: 100%;
+  background-color: var(--iconBackground);
+  &__content {
+    width: 1418px;
+    margin: 98px auto;
+
+    &-block {
+      display: flex;
+      margin-top: 126px ;
+      
+      
+    }
+    &-blockLeft {
+      width: 770px;
+      height: 376px;
+      background: url("./images/transportDark.svg") no-repeat;
+      padding: 160px 0 0 100px;
+      line-height: 22px;
+      
+      
+
+      p {
+        font-size: 34px;
+        color: var(--textColor);
+        font-size: 34px;
+        line-height: 22px;
+      }
+    }
+    &-blockRight {
+      width: 770px;
+      margin-left: -120px;
+      background: url("./images/transportLight.svg") no-repeat;
+      padding: 110px 0 0 160px;
+
+      p {
+        width: 468px;
+        font-size: 22px;
+        color: var(--darkTextColor);
+        text-align: center;
+      }
+    }
+    &-blockBottom {
+      margin: 0 auto;
+      width: 1234px;
+      height: 466px;
+      background-color: var(--textColor);
+      border-bottom-left-radius: 28px;
+      border-bottom-right-radius: 134px;
+      line-height: 32px;
+      padding: 46px;
+      p {
+        font-size: 22px;
+        max-width: 1150px;
+      
+        color: var(--darkTextColor);
+        text-transform: capitalize;
+        
+      }
+    }
+    &-blockLeftTwo {
+        width: 770px;
+        height: 376px;
+        background: url("./images/transport2Light.svg") no-repeat;
+        padding: 140px 0 0 170px;
+        position: relative;
+        
+       
+  
+        p {
+            width: 454px;
+          font-size: 22px;
+          color: var(--darkTextColor);
+          font-size: 22px;
+          text-align: center;
+          line-height: 22px;
+        }
+      }
+      &-blockRightTwo {
+        width: 770px;
+        margin-left: -120px;
+        background: url("./images/transport2Dark.svg") no-repeat;
+        padding: 160px 0 0 370px;
+      
+  
+        p {
+          width: 468px;
+          font-size: 38px;
+          color: var(--textColor);
+        }
+      }
+      &-blockBottomTwo {
+        margin: 0 auto;
+        width: 1226px;
+        height: 1032px;
+        background-color: var(--textColor);
+        border-bottom-left-radius: 28px;
+        border-bottom-right-radius: 134px;
+        padding: 36px 82px 14px 60px;
+        p {
+          font-size: 22px;
+          max-width: 1040px;
+         
+          color: var(--darkTextColor);
+          text-transform: capitalize;
+          line-height: 32px;
+          span{
+            text-decoration: underline;
+          }
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+      &-blockLeftThree {
+        width: 770px;
+        height: 376px;
+        background: url("./images/transport3Dark.svg") no-repeat;
+        padding: 200px 0 0 90px;
+       
+        
+  
+        p {
+          font-size: 34px;
+          color: var(--textColor);
+          font-size: 34px;
+          line-height: 20px;
+        }
+      }
+      &-blockRightThree {
+        width: 770px;
+        margin-left: -120px;
+        background: url("./images/transport3Light.svg") no-repeat;
+        padding: 110px 0 0 160px;
+  
+        p {
+          width: 468px;
+          font-size: 22px;
+          color: var(--darkTextColor);
+          text-align: center;
+          line-height: 22px;
+        }
+      }
+      &-blockBottomThree {
+        margin: 0 auto;
+        width: 1146px;
+        height: 760px;
+        background-color: var(--textColor);
+        border-bottom-left-radius: 28px;
+        border-bottom-right-radius: 134px;
+        line-height: 32px;
+        padding: 46px;
+        padding: 32px 44px 52px 56px;
+        p {
+          font-size: 22px;
+          max-width: 1126px;
+          line-height: 32px;
+        
+          color: var(--darkTextColor);
+          text-transform: capitalize;
+          
+          
+        }
+      }
+
+
+
+
+      &-blockLeftFour {
+        width: 770px;
+        height: 376px;
+        background: url("./images/transport4Light.svg") no-repeat;
+        padding: 110px 0 0 170px;
+        position: relative;
+        
+       
+  
+        p {
+            width: 454px;
+          font-size: 22px;
+          color: var(--darkTextColor);
+          font-size: 22px;
+          text-align: center;
+          line-height: 22px;
+        }
+      }
+      &-blockRightFour {
+        width: 770px;
+        margin-left: -120px;
+        background: url("./images/transport4Dark.png") no-repeat;
+        padding: 140px 0 0 286px;
+      
+  
+        p {
+          width: 425px;
+          font-size: 40px;
+          line-height: 44px;
+          color: var(--textColor);
+        }
+      }
+      &-blockBottomFour {
+        margin: 0 auto;
+        width: 1226px;
+        height: 480px;
+        background-color: var(--textColor);
+        border-bottom-left-radius: 28px;
+        border-bottom-right-radius: 134px;
+        padding: 42px 40px 22px 52px;
+        p {
+          font-size: 22px;
+          max-width: 1050px;
+          color: var(--darkTextColor);
+          text-transform: capitalize;
+          line-height: 32px;
+          text-transform: capitalize ;
+         
+        }
+      }
+
+
+      
+      
+  }
+  &__container{
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    align-items: center;
+ 
+    margin: 0 auto;
+    
+    background: url("./images/Background(1).svg") no-repeat;
+    height: 500px;
+    color: var(--textColor);
+    h2{
+        font-size: 100px;
+        line-height: 26px;
+
+    }
+    p{
+        width: 890px;
+        text-align: center;
+        font-size: 34px;
+        line-height: 50px;
+        
+
+    }
+
+
+    
+  }
+  &__result{
+    width: 1150px;
+    height: 208px;
+    background-color: var(--iconBackground);
+    margin: 0 auto;
+    
+    
+    &-one{
+      display: flex;
+    justify-content: center;
+      align-items: center;
+      gap: 74px;
+      color: var(--mainColor);
+      padding-top: 40px;
+     h2{
+      font-size: 68px;
+     }
+
+    }
+    &-two{
+     
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      font-size: 16px;
+      color: var(--darkTextColor);
+      line-height: 26px;
+    }
+    hr{
+      width: 100%;
+      height: 20px;
+      background: linear-gradient(90deg, #ED1C25 0%, #DF9E9F 100%);
+
+      // border-radius: 8px;
+      margin-top: 34px;
+     border-radius: 50%;
+     border: 0;
+    }
+
+
+    
+    
+  }
+
+  &__address{
+    width: 100%;
+    height: 698px;
+    margin: 0 auto;
+    text-align: center;
+    background: url("./images/vector.svg");
+    padding: 76px;
+
+    h2{
+      font-size: 36px;
+      color: var(--mainColor);
+      margin-bottom: 10px;
+
+    }
+    p {
+    
+      font-size: 24px;
+      color: var(--darkTextColor);
+      
+
+    }
+
+    &-block{
+      display: flex;
+      justify-content: space-evenly;
+      padding: 80px;
+     
+    }
+    &-blockOne, &-blockTwo, &-blockThree{
+      width: 294px;
+      height: 306px;
+      background-color: var(--darkTextColor);
+      border-radius: 42px;
+      font-size: 18px;
+     
+      img{
+        margin-top: 38px;
+      }
+      h3{
+        color: var(--mainColor);
+        font-size: 26px;
+        margin-top: 26px;
+        margin-bottom: 24px;
+      }
+      a{
+        text-decoration: none;
+        color: #D7D7D7;
+        
+        
+        
+      }
+      p{
+        color: #D7D7D7;
+        font-size: 20px;
+        
+        
+
+      }
+    }
+    
+
+  }
+}
