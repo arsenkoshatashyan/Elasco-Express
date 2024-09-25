@@ -1,79 +1,302 @@
+// .contactUs {
+//   height: 986px;
+//   background-color: var(--darkBackground);
+//   &__content {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     &-left {
+//       padding: 123px 0 0 150px;
+//       width: 1200px;
+//       height: 840px;
+//       &-title {
+//         font-size: 37px;
+//         color: var(--textColor);
+//         h2 {
+//           height: 173px;
+//           display: inline-block;
+//           span {
+//             color: var(--mainColor);
+//           }
+//         }
+//         p {
+//           margin-top: 2px;
+//           font-size: 18px;
+//           width: 644px;
+//         }
+//       }
+//       &-form {
+//         margin-top: 50px;
+//         input[type="text"] {
+//           width: 590px;
+//           height: 60px;
+//           margin-bottom: 24px;
+//           border-radius: 8px;
+//           color: var(--textColor);
+//           border: 2px solid #6c8da9ba;
+//           background-color: transparent;
+//           padding: 18px 25px;
+//         }
+//         input[type="email"] {
+//           width: 280px;
+//           height: 60px;
+//           margin-right: 30px;
+//           border-radius: 8px;
+//           color: var(--textColor);
+//           border: 2px solid #6c8da9ba;
+//           background-color: transparent;
+//           padding: 18px 25px;
+//         }
+//         input[type="tel"] {
+//           width: 280px;
+//           height: 60px;
+//           margin-bottom: 24px;
+//           border-radius: 8px;
+//           color: var(--textColor);
+//           border: 2px solid #6c8da9ba;
+//           background-color: transparent;
+//           padding: 18px 25px;
+//         }
+//         select {
+//           width: 590px;
+//           height: 60px;
+//           margin-bottom: 24px;
+//           border-radius: 8px;
+//           color: var(--textColor);
+//           border: 2px solid #6c8da9ba;
+//           background-color: transparent;
+//           padding: 18px 25px;
+//         }
+//         button {
+//           width: 179px;
+//         }
+//       }
+//     }
+//     &-right {
+//       overflow-x: hidden;
+//     }
+//   }
+// }
+// //-----------------------------------------------
+// .contactUs {
+//   min-height: 100vh;
+//   background-color: var(--darkBackground);
+//   &__content {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     &-left {
+//       padding: 7.688rem 0 0 9.375rem;
+//       max-width: 600px;
+//       width: 100%;
+//       height: 840px;
+//       &-title {
+//         font-size: 37px;
+//         color: var(--textColor);
+//         h2 {
+//           height: 173px;
+//           display: inline-block;
+//           span {
+//             color: var(--mainColor);
+//           }
+//         }
+//         p {
+//           margin-top: 2px;
+//           font-size: 18px;
+//           width: 644px;
+//         }
+//       }
+//       &-form {
+//         margin-top: 50px;
+//         input[type="text"] {
+//           width: 590px;
+//           height: 60px;
+//           margin-bottom: 24px;
+//           border-radius: 8px;
+//           color: var(--textColor);
+//           border: 2px solid #6c8da9ba;
+//           background-color: transparent;
+//           padding: 18px 25px;
+//         }
+//         input[type="email"] {
+//           width: 280px;
+//           height: 60px;
+//           margin-right: 30px;
+//           border-radius: 8px;
+//           color: var(--textColor);
+//           border: 2px solid #6c8da9ba;
+//           background-color: transparent;
+//           padding: 18px 25px;
+//         }
+//         input[type="tel"] {
+//           width: 280px;
+//           height: 60px;
+//           margin-bottom: 24px;
+//           border-radius: 8px;
+//           color: var(--textColor);
+//           border: 2px solid #6c8da9ba;
+//           background-color: transparent;
+//           padding: 18px 25px;
+//         }
+//         select {
+//           width: 590px;
+//           height: 60px;
+//           margin-bottom: 24px;
+//           border-radius: 8px;
+//           color: var(--textColor);
+//           border: 2px solid #6c8da9ba;
+//           background-color: transparent;
+//           padding: 18px 25px;
+//         }
+//         button {
+//           width: 179px;
+//         }
+//       }
+//     }
+//     &-right {
+//       overflow-x: hidden;
+//     }
+//   }
+// }
 .contactUs {
-  height: 986px;
-  background-color: var(--darkBackground);
+  min-height: 100vh; // Используйте min-height вместо фиксированной высоты
+  // background-color: var(--darkBackground);
+
   &__content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
+    background: url("../../../public/images/earth2.png") no-repeat;
+
     &-left {
-      padding: 123px 0 0 150px;
-      width: 1200px;
-      height: 840px;
+      padding: 5%; // Отступы в процентах для адаптивности
+      max-width: 600px; // Ограничьте максимальную ширину
+      width: 100%; // Дайте возможность адаптироваться
+      border: 1px solid green;
       &-title {
-        font-size: 37px;
+        font-size: 2.5rem; // Используйте rem для адаптивности
         color: var(--textColor);
         h2 {
-          height: 173px;
           display: inline-block;
           span {
             color: var(--mainColor);
           }
         }
         p {
-          margin-top: 2px;
-          font-size: 18px;
-          width: 644px;
+          margin-top: 0.5rem; // Используйте rem
+          font-size: 1rem; // Используйте rem
         }
       }
+
       &-form {
-        margin-top: 50px;
-        input[type="text"] {
-          width: 590px;
-          height: 60px;
-          margin-bottom: 24px;
-          border-radius: 8px;
-          color: var(--textColor);
-          border: 2px solid #6c8da9ba;
-          background-color: transparent;
-          padding: 18px 25px;
-        }
-        input[type="email"] {
-          width: 280px;
-          height: 60px;
-          margin-right: 30px;
-          border-radius: 8px;
-          color: var(--textColor);
-          border: 2px solid #6c8da9ba;
-          background-color: transparent;
-          padding: 18px 25px;
-        }
-        input[type="tel"] {
-          width: 280px;
-          height: 60px;
-          margin-bottom: 24px;
-          border-radius: 8px;
-          color: var(--textColor);
-          border: 2px solid #6c8da9ba;
-          background-color: transparent;
-          padding: 18px 25px;
-        }
+        margin-top: 3rem;
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
         select {
-          width: 590px;
+          width: calc(100% - 20px); // Полная ширина с отступами
           height: 60px;
-          margin-bottom: 24px;
+          margin-bottom: 1.5rem;
           border-radius: 8px;
           color: var(--textColor);
           border: 2px solid #6c8da9ba;
           background-color: transparent;
-          padding: 18px 25px;
+          padding: 18px 10px; // Уменьшите отступы
         }
+
         button {
-          width: 179px;
+          width: 100%; // Сделайте кнопку на всю ширину
+          height: 60px; // Сделайте высоту одинаковой
+          cursor: pointer;
         }
       }
     }
+
     &-right {
+      // Позволяет правой части занимать оставшееся пространство
       overflow-x: hidden;
+      display: flex; // Центрируйте изображение
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  // Медиа-запросы для адаптации
+  @media (max-width: 390px) {
+    &__content {
+      flex-direction: column; // Измените направление на мобильных устройствах
+      align-items: center;
+
+      &-left {
+        padding: 1rem; // Уменьшите отступы
+        max-width: 100%; // Сделайте ширину адаптивной
+      }
+
+      &-title {
+        font-size: 1.5rem; // Уменьшите размер шрифта
+      }
+
+      &-form {
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+          width: calc(100% - 10px); // Полная ширина на мобильных
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__content {
+      flex-direction: column; // Измените направление на мобильных устройствах
+      align-items: center;
+
+      &-left {
+        padding: 2rem; // Уменьшите отступы
+        max-width: 100%; // Сделайте ширину адаптивной
+      }
+
+      &-title {
+        font-size: 2rem; // Уменьшите размер шрифта
+      }
+
+      &-form {
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+          width: calc(100% - 20px); // Полная ширина на мобильных
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1240px) {
+    &__content {
+      &-left {
+        padding: 3%; // Уменьшите отступы
+      }
+      &-right {
+        img {
+          display: none;
+        }
+      }
+
+      &-title {
+        font-size: 2.25rem; // Уменьшите размер шрифта
+      }
+
+      &-form {
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+          width: calc(100% - 15px); // Полная ширина на экранах 1240px
+        }
+      }
     }
   }
 }

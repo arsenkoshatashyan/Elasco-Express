@@ -1,42 +1,148 @@
+// .nav {
+//   width: 100%;
+//   &__content {
+//     padding: 0 10.375rem;
+//     height: 90px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     &-logo {
+//       width: 11rem;
+//       height: 3.5rem;
+//     }
+//     &-links {
+//       ul {
+//         display: flex;
+//         gap: 6.25rem;
+//         text-transform: uppercase;
+//         color: var(--darkBackground);
+//         a {
+//           cursor: pointer;
+//           color: var(--darkBackground);
+//         }
+//       }
+//     }
+//     &-settings {
+//       display: flex;
+//       gap: 4.875rem;
+//       button {
+//         width: 12.125rem;
+//         background-color: var(--darkBackground);
+//         cursor: pointer;
+//         text-transform: uppercase;
+//       }
+//       select {
+//         border: 0;
+//         background-color: transparent;
+//         color: var(--darkBackground);
+//         cursor: pointer;
+//         font-size: 16px;
+//       }
+//     }
+//   }
+// }
 .nav {
   width: 100%;
   &__content {
-    padding: 0 166px;
+    padding: 0 10.375rem;
     height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     &-logo {
-      width: 176px;
-      height: 56px;
+      width: 11rem;
+      height: 3.5rem;
     }
+
     &-links {
       ul {
         display: flex;
-        gap: 100px;
+        gap: 6.25rem; // Начальное расстояние между ссылками
         text-transform: uppercase;
         color: var(--darkBackground);
-        a {
-          cursor: pointer;
-          color: var(--darkBackground);
+        li {
+          list-style: none;
+          a {
+            cursor: pointer;
+            color: var(--darkBackground);
+          }
         }
       }
     }
+
     &-settings {
       display: flex;
-      gap: 78px;
+      gap: 4.875rem; // Начальное расстояние между кнопками
+
       button {
-        width: 194px;
+        width: 12.125rem;
         background-color: var(--darkBackground);
         cursor: pointer;
         text-transform: uppercase;
       }
+
       select {
         border: 0;
         background-color: transparent;
         color: var(--darkBackground);
         cursor: pointer;
         font-size: 16px;
+      }
+    }
+  }
+
+  // Для малых экранов (390px)
+  @media (max-width: 390px) {
+    &__content {
+      padding: 0 1rem;
+      flex-direction: column;
+      height: auto;
+
+      &-links {
+        ul {
+          flex-direction: column;
+          gap: 1rem; // Уменьшенное расстояние между ссылками
+        }
+      }
+
+      &-settings {
+        flex-direction: column;
+        gap: 1rem; // Уменьшенное расстояние между кнопками
+      }
+    }
+  }
+
+  // Для экранов до 768px
+  @media (max-width: 768px) {
+    &__content {
+      padding: 0 2rem;
+
+      &-links {
+        ul {
+          gap: 3rem; // Уменьшенное расстояние между ссылками
+        }
+      }
+
+      &-settings {
+        gap: 2rem; // Уменьшенное расстояние между кнопками
+      }
+    }
+  }
+
+  // Для экранов до 1240px
+  @media (max-width: 1240px) {
+    &__content {
+      padding: 0 3rem;
+
+      &-links {
+        ul {
+          gap: 4rem; // Уменьшенное расстояние между ссылками
+        }
+      }
+
+      &-settings {
+        gap: 3rem; // Уменьшенное расстояние между кнопками
       }
     }
   }

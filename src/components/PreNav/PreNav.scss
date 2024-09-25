@@ -5,18 +5,18 @@
     height: 48px;
     background-color: var(--mainColor);
     display: flex;
-    gap: 42px;
+    gap: 2.625rem;
     color: #e7dada;
-    font-size: 15px;
+    font-size: 1rem;
     &-phone {
       display: flex;
-      gap: 4px;
+      gap: 0.25rem;
       align-items: center;
       justify-content: center;
     }
     &-email {
       display: flex;
-      gap: 4px;
+      gap: 0.25rem;
       align-items: center;
       justify-content: center;
     }

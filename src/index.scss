@@ -9,7 +9,6 @@
   --cardsBackground: #cdd8db;
   --iconBackground: #eee9e9;
   --cardsBackground: #cdd8db;
-  --iconBackground: #eee9e9;
 }
 
 * {
@@ -18,8 +17,9 @@
   box-sizing: border-box;
 }
 body {
-  width: 1730px;
+  width: 100%;
   font-family: "Aoboshi One";
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -27,17 +27,13 @@ h3,
 p {
   font-weight: 400;
 }
-
-h1,
-h2,
-h3,
-p {
-  font-weight: 400;
+a {
+  text-decoration: none;
 }
 
 button {
-  height: 52px;
-  font-size: 18px;
+  height: 3rem;
+  font-size: 1.125rem;
   font-weight: 400;
   border-radius: 50px;
   border: 0px;

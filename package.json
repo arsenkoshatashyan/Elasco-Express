@@ -16,7 +16,7 @@
     "react-slick": "^0.30.2",
     "sass": "^1.79.3",
     "slick-carousel": "^1.8.1",
-    "slick-slider": "^1.8.2"
+    "slick-slider": "^1.8.2",
     "react-router-dom": "^6.26.2",
     "sass": "^1.79.3"
   },

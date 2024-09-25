@@ -38,7 +38,7 @@ export default function ContactUs() {
           </div>
         </div>
         <div className="contactUs__content-right">
-          <img src="./images/earth.svg" alt="Earth illustration" />
+          {/* <img src="./images/earth.svg" alt="Earth illustration" /> */}
         </div>
       </div>
     </div>

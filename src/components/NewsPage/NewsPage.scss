@@ -1,0 +1,77 @@
+.newsPage {
+  &__content {
+    &-title {
+      background: url("../../../public/images/transport-newBackground.svg");
+      height: 390px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &-box {
+        height: 265px;
+        width: 100%;
+        backdrop-filter: blur(16.039920806884766px);
+        h2 {
+          margin: 43px 0 10px 158px;
+          font-size: 40px;
+          color: var(--mainColor);
+          text-decoration: underline;
+        }
+        p {
+          margin: 10px 0 0 158px;
+          font-size: 40px;
+          width: 938px;
+          color: var(--textColor);
+        }
+      }
+    }
+    &-item {
+      margin: 82px auto 120px auto;
+      width: 1412px;
+      height: 910px;
+      p {
+        font-size: 27px;
+        width: 1276px;
+        margin: 36px auto 77px auto;
+      }
+      &-title {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        img {
+          width: 125px;
+          height: 125px;
+        }
+        h2 {
+          font-size: 40px;
+          color: var(--darkBackground);
+        }
+      }
+      &-img {
+        display: flex;
+        gap: 29px;
+        img:nth-child(1) {
+          width: 720px;
+          height: 512px;
+        }
+        img:nth-child(2) {
+          width: 720px;
+          height: 512px;
+        }
+      }
+      &-buttons {
+        width: 492px;
+        height: 40px;
+        margin: 60px auto 92px auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        p > span {
+          color: var(--mainColor);
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
