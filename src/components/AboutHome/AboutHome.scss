@@ -1,0 +1,230 @@
+.aboutHome {
+  &__content {
+    &-title {
+      background: url(./images/truckBackground.svg) no-repeat center;
+      height: 332px;
+      h2 {
+        color: var(--textColor);
+        padding: 134px 0 0 200px;
+        font-size: 70px;
+        text-transform: uppercase;
+      }
+    }
+    &-whoWeAre {
+      h2 {
+        margin-top: 38px;
+        text-align: center;
+        color: var(--mainColor);
+        font-size: 40px;
+      }
+      p {
+        margin-top: 10px;
+        text-align: center;
+        margin: 0 auto;
+        width: 1292px;
+        font-size: 30px;
+      }
+      &-box {
+        display: flex;
+        align-items: center;
+        gap: 43px;
+        p {
+          width: 932px;
+          text-align: center;
+          font-size: 30px;
+          margin-left: 64px;
+        }
+        img {
+          height: 425px;
+        }
+      }
+    }
+    &-activity {
+      display: flex;
+      gap: 66px;
+      width: 1570px;
+      height: 731px;
+      background-color: #ccd7df66;
+      margin: 0 auto;
+      padding-left: 146px;
+      border-radius: 46px;
+      transform: skew(-15deg);
+      margin-bottom: 156px;
+
+      //   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30%), 70% 100%, 0 100%);
+      img {
+        margin-top: 66px;
+        transform: skew(15deg);
+        width: 892px;
+        height: 696px;
+      }
+      &-text {
+        transform: skew(15deg);
+        text-align: center;
+        h2 {
+          margin-top: 57px;
+          color: var(--mainColor);
+          font-size: 45px;
+        }
+        p {
+          margin-top: 32px;
+          font-size: 28px;
+          color: var(--darkBackground);
+          width: 673px;
+        }
+      }
+    }
+    &-achievements {
+      background: url("./images/truck-logistics-operations-dusk.svg") no-repeat;
+      width: 100%;
+      height: 639px;
+      border-radius: 151px 38px 149px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+      &-box {
+        display: flex;
+        justify-content: space-between;
+        width: 1447px;
+        &-left {
+          &-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2 {
+              font-size: 40px;
+              color: var(--mainColor);
+            }
+            img {
+              margin-bottom: 16px;
+              width: 125px;
+              height: 125px;
+            }
+          }
+          p {
+            width: 620px;
+            font-size: 27px;
+            text-align: center;
+            color: var(--darkBackground);
+          }
+        }
+        &-right {
+          img {
+            width: 723px;
+            height: 512px;
+          }
+        }
+      }
+    }
+    &-service {
+      background: url(./images/vector.svg) no-repeat;
+      &-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1435px;
+        margin: 133px auto 0 auto;
+        h2 {
+          font-size: 55px;
+          color: var(--mainColor);
+        }
+        button {
+          width: 298px;
+        }
+      }
+      &-items {
+        width: 1629px;
+        margin: 58px auto 0 auto;
+        padding-bottom: 116px;
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+        &-top {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 58px;
+          &-item {
+            width: 614px;
+            height: 368px;
+            background-color: #c4d2dc;
+            border-radius: 16px;
+            &-title {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 40px;
+              background-color: #7f929d;
+              border-radius: 16px;
+              height: 147px;
+              &-img {
+                width: 92px;
+                height: 92px;
+                background-color: var(--textColor);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 28px;
+              }
+              h2 {
+                color: var(--textColor);
+              }
+            }
+            p {
+              width: 522px;
+              text-align: center;
+              text-transform: capitalize;
+              margin: 54px auto;
+            }
+          }
+        }
+        &-bottom {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 58px;
+          &-item {
+            width: 614px;
+            height: 368px;
+            background-color: #c4d2dc;
+            border-radius: 16px;
+            &-center {
+              img {
+                width: 382px;
+                height: 221px;
+              }
+            }
+            &-title {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 40px;
+              background-color: #7f929d;
+              border-radius: 16px;
+              height: 147px;
+              &-img {
+                width: 92px;
+                height: 92px;
+                background-color: var(--textColor);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 28px;
+              }
+              h2 {
+                color: var(--textColor);
+              }
+            }
+            p {
+              width: 522px;
+              text-align: center;
+              text-transform: capitalize;
+              margin: 54px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

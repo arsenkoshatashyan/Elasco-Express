@@ -1,5 +1,6 @@
 import "./Nav.scss";
 import { Link, Outlet } from "react-router-dom";
+
 export default function Nav() {
   return (
     <>
@@ -12,18 +13,28 @@ export default function Nav() {
           </div>
           <div className="nav__content-links">
             <ul>
-              <Link to="/">Home</Link>
-              <Link to="/about">About Us</Link>
-              <Link to="/services">Services</Link>
-              <Link to="/news">News</Link>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About Us</Link>
+              </li>
+              <li>
+                <Link to="/services">Services</Link>
+              </li>
+              <li>
+                <Link to="/news">News</Link>
+              </li>
             </ul>
           </div>
           <div className="nav__content-settings">
-            <button>Contact Us</button>
+            <Link to="/contact-us">
+              <button>Contact Us</button>
+            </Link>
             <select name="languages">
               <option value="en">EN</option>
-              <option value="ru">RU</option>
-              <option value="am">AM</option>
+              <option value="ru">Рус</option>
+              <option value="am">Հայ</option>
             </select>
           </div>
         </div>
