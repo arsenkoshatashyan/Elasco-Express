@@ -1,36 +1,39 @@
 .Service {
-  width: auto;
+  width: 100%;
   background: url("./images/vector.svg") no-repeat;
-  margin-top: 100px;
+  margin: 0px auto;
   &__content {
-    height: 1266px;
+    min-height: 80rem;
     margin: 0 108px auto;
+    padding-top: 100px;
 
     &-title {
       width: 100%;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       padding: 0 20px;
-
       margin-bottom: 74px;
       h2 {
-        font-size: 54px;
+        font-size: 3.375rem;
         color: var(--mainColor);
       }
       button {
         width: 298px;
-        cursor: pointer;
+       
       }
     }
     &-cards {
       display: flex;
       flex-wrap: wrap;
-      gap: 78px;
+      justify-content: center;
+      gap: 4.875rem;
+   
 
       &-card {
-        width: 442px;
-        height: 410px;
+        width: 27.625rem;
+        height: 26.625rem;
         background-color: var(--cardsBackground);
         border-radius: 18px;
 
@@ -66,3 +69,4 @@
     }
   }
 }
+

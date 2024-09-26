@@ -14,6 +14,8 @@ import ServicesHome from "./components/ServicesHome/ServicesHome";
 import ContactHome from "./components/ContactHome/ContactHome";
 import NewsHome from "./components/NewsHome/NewsHome";
 import NewsPage from "./components/NewsPage/NewsPage";
+import Sliders from "./components/Sliders/Sliders";
+
 
 export default function App() {
   const location = useLocation();
@@ -26,13 +28,15 @@ export default function App() {
       <Nav />
       {isHomePage && (
         <>
-          <Logistic />
+          {/* <Logistic /> */}
           <About />
-          <Card />
-          <Service />
+          {/* <Card /> */}
+          {/* <Service />
           <ContactUs />
           <Result />
-          <Contact />
+          <Sliders/>
+          <Contact /> */}
+          {/* <Sliders/> */}
         </>
       )}
       <Routes>

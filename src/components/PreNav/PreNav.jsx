@@ -6,7 +6,6 @@ export default function PreNav() {
         <div className="preNav__content-phone">
           <img src="./images/phone.svg" alt="phone" />
           <a href="tel:+374 98 555 378">+374 98 555 378</a>
-          {/* <p>+374 98 555 378</p> */}
         </div>
         <div className="preNav__content-email">
           <img src="./images/letter.svg" alt="mail" />

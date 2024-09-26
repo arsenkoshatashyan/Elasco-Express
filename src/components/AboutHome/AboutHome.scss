@@ -1,5 +1,6 @@
 .aboutHome {
   &__content {
+    width: 100%;
     &-title {
       background: url(./images/truckBackground.svg) no-repeat center;
       height: 332px;
@@ -41,36 +42,38 @@
     }
     &-activity {
       display: flex;
-      gap: 66px;
-      width: 1570px;
-      height: 731px;
-      background-color: #ccd7df66;
-      margin: 0 auto;
-      padding-left: 146px;
-      border-radius: 46px;
-      transform: skew(-15deg);
-      margin-bottom: 156px;
+      justify-content: center;
 
-      //   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30%), 70% 100%, 0 100%);
+      gap: 4rem;
+      max-width: 85rem;
+      height: 45rem;
+      background-color: #ccd7df66;
+      margin: 115px auto 156px;
+      padding: 58px 142px;
+      border-radius: 46px;
+      transform: skew(-10deg);
+
       img {
-        margin-top: 66px;
-        transform: skew(15deg);
-        width: 892px;
-        height: 696px;
+        width: 54rem;
+        height: 44rem;
+        transform: skew(10deg);
       }
       &-text {
-        transform: skew(15deg);
+        transform: skew(10deg);
         text-align: center;
+        margin-left: 132px;
+        padding-left: 156px;
+
         h2 {
-          margin-top: 57px;
           color: var(--mainColor);
-          font-size: 45px;
+          font-size: 44px;
         }
         p {
+          width: 41rem;
           margin-top: 32px;
           font-size: 28px;
           color: var(--darkBackground);
-          width: 673px;
+          line-height: 40px;
         }
       }
     }
@@ -228,3 +231,4 @@
     }
   }
 }
+

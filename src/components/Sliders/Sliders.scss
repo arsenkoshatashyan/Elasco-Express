@@ -1,0 +1,82 @@
+.Sliders {
+  background-color: #d9d9d98c;
+  background: url("./images/vector.svg") no-repeat;
+  width: 100%;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 5.25rem;
+    margin: 46px auto;
+
+    h2 {
+      font-size: 54px;
+      line-height: 26px;
+      color: var(--dartTextColor);
+    }
+    button {
+      width: 11.875em;
+      font-size: 14px;
+      color: #fafafa;
+      background-color: var(--darkBackground);
+    }
+  }
+
+  div > img {
+    width: 28rem;
+  }
+
+  .slick-slide > div {
+    max-width: 31.125rem;
+    height: 32.875rem;
+    font-size: 30px;
+    color: var(--dartTextColor);
+    background-color: rgb(209, 221, 235);
+    margin: 0 auto;
+    padding: 26px;
+    border-radius: 16px;
+    text-align: center;
+
+    h2 {
+      width: 440px;
+      font-size: 30px;
+      line-height: 36px;
+    }
+    p {
+      font-size: 14px;
+      color: var(--dartTextColor);
+    }
+  }
+  .slick-track {
+    display: flex;
+
+    gap: 3.625rem;
+  }
+  .slick-next {
+    right: 840px;
+  }
+  .slick-prev {
+    left: 800px;
+  }
+  .slick-next,
+  .slick-prev {
+    top: 560px;
+    z-index: 10;
+  }
+
+  .slick-next::before,
+  .slick-prev::before {
+    font-size: 50px;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #a4bace;
+    font-size: 42px;
+  }
+}
+
+
+

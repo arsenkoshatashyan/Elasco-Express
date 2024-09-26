@@ -9,6 +9,7 @@
   --cardsBackground: #cdd8db;
   --iconBackground: #eee9e9;
   --cardsBackground: #cdd8db;
+  --preNavTextColor: #E7DADA
 }
 
 * {
@@ -18,6 +19,7 @@
 }
 body {
   width: 100%;
+  max-width: 1730px;
   font-family: "Aoboshi One";
   overflow-x: hidden;
 }
@@ -41,4 +43,5 @@ button {
   border: 0px;
   color: var(--textColor);
   background-color: var(--mainColor);
+  cursor: pointer;
 }
