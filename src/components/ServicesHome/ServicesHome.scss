@@ -205,7 +205,7 @@
     align-items: center;
     gap: 6rem;
     color: var(--textColor);
-    background: url("./images/Background(1).svg") no-repeat;
+    background: url("./images/Background(1).svg") no-repeat center;
 
     h2 {
       font-size: 6.25rem;
@@ -216,48 +216,79 @@
       text-align: center;
       font-size: 2.125rem;
       line-height: 50px;
-      
     }
   }
-  &__choose{
-    width: 100%;
-    background: url(./images/backgroundChoose.svg);
+  &__choose {
+    
+    background: url(./images/backgroundChoose.svg) no-repeat center;
     display: flex;
 
-
-    &-left{
-      h2{
+    &-left {
+      margin: 120px 160px;
+      h2 {
         font-size: 50px;
         color: var(--mainColor);
-  
+        margin-bottom: 46px;
       }
-      p{
-        width: 61rem;
+      p {
+        width: 54rem;
         font-size: 24px;
-  
+        color: var(--textColor);
+        text-transform: capitalize;
       }
-  
     }
-    &-right{
-      
+    &-right {
+      position: absolute;
 
-     
+      .one {
+        left: 1020px;
+        top: 34px;
+        z-index: 6;
+      }
+      .two {
+        left: 1180px;
+        bottom: 50px;
+        z-index: 5;
+      }
+      .three {
+        left: 1460px;
+        bottom: 310px;
+        z-index: 4;
+      }
+      .four {
+        left: 1350px;
+        bottom: 340px;
+        z-index: 3;
+      }
+      .five {
+        left: 1166px;
+        bottom: 430px;
+        z-index: 1;
+      }
 
-      .one, .two, .three{
+      .one,
+      .two,
+      .three,
+      .four,
+      .five {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 18px;
-        flex-direction: column;
+        position: relative;
         width: 224px;
         height: 224px;
-      background: #5A5A5A73;
-        img{
+        border-radius: 46px;
+        background: #5a5a5a73;
+        backdrop-filter: blur(16.039920806884766px);
+
+        img {
           width: 94px;
-
         }
-        p{
-
+        p {
+          font-size: 20px;
+          color: var(--mainColor);
         }
       }
     }
@@ -352,9 +383,6 @@
     }
   }
 }
-
-
-
 
 // @media (max-width: 1730px){
 //   .container{
@@ -465,20 +493,17 @@
       display: flex;
       flex-wrap: wrap;
       gap: 3rem;
-     
+
       h2 {
         font-size: 4rem;
         line-height: 26px;
       }
 
-      
       p {
-       
         padding-bottom: 3rem;
       }
     }
   }
-
 }
 @media (max-width: 1400px) {
   .ServicesHome {
@@ -526,7 +551,6 @@
   .ServicesHome {
     &__container {
       padding: 6rem 2rem;
-      
 
       h2 {
         font-size: 2rem;
@@ -543,8 +567,8 @@
 @media (max-width: 390px) {
   .ServicesHome {
     &__container {
-      padding: 5rem;
-      gap: 1px;
+      padding: 7rem;
+      gap: 2px;
       background-image: none;
       background-color: var(--darkBackground);
 
@@ -556,6 +580,47 @@
         font-size: 0.8rem;
         line-height: 30px;
         padding-bottom: 2rem;
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  .ServicesHome{
+    &__choose {
+      &-left {
+        margin: 120px 160px;
+        h2 {
+          font-size: 50px;
+        }
+        p {
+          font-size: 24px;
+        }
+      }
+  
+      &-right {
+        position: absolute;
+  
+        .one { left: 1020px; top: 34px; }
+        .two { left: 1180px; bottom: 50px; }
+        .three { left: 1460px; bottom: 310px; }
+        .four { left: 1350px; bottom: 340px; }
+        .five { left: 1166px; bottom: 430px; }
+  
+        .one, .two, .three, .four, .five {
+          width: 224px;
+          height: 224px;
+          border-radius: 46px;
+  
+          img {
+            width: 94px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
       }
     }
   }

@@ -15,7 +15,7 @@ export default function ServicesHome() {
           and timely delivery of your cargo.
         </p>
       </div>
-      {/* <div className="ServicesHome__content">
+      <div className="ServicesHome__content">
         <div className="ServicesHome__content-block">
           <div className="ServicesHome__content-blockLeft">
             <p>Sea Transportation</p>
@@ -176,7 +176,44 @@ export default function ServicesHome() {
           </p>
         </div>
       </div>
-      <div className="ServicesHome__choose"></div>
+      <div className="ServicesHome__choose">
+        <div className="ServicesHome__choose-left">
+          <h2>Why Choose Us?</h2>
+          <p>
+            More than 10 years of experience in logistics and customs services
+            Direct cooperation with customs authorities and verified partners
+            Individual approach to each client <br /> Fast and transparent service at
+            all stages <br /> Effective customs clearance <br /> <br /> "Elasco Express" LLC helps to
+            reduce expenses and avoid loss of time when crossing borders. Trust
+            us with your cargo, and we will provide a fast and reliable process. <br />
+            Contact us for professional assistance in customs clearance of your
+            business.
+          </p>
+        </div>
+        <div className="ServicesHome__choose-right">
+          <div className="one">
+            <img src="./images/choose1.svg" alt="" />
+            <p>Optimized Cost</p>
+
+          </div>
+          <div className="two">
+          <img src="./images/choose2.svg" alt="" />
+          <p>Shipping Worldwide</p>
+          </div>
+          <div className="three">
+          <img src="./images/choose3.svg" alt="" />
+          <p>Personal Approach </p>
+          </div>
+          <div className="four">
+          <img src="./images/choose4.svg" alt="" />
+          <p>Delivery on Time</p>
+          </div>
+          <div className="five">
+          <img src="./images/choose5.svg" alt="" />
+          <p>Safety & Rollability</p>
+          </div>
+        </div>
+      </div>
       <div className="ServicesHome__result">
         <div className="ServicesHome__result-one">
           <h2>40K+</h2>
@@ -222,46 +259,10 @@ export default function ServicesHome() {
       </div>
 
     
-      <Footer/> */}
+      
 
-      <div className="ServicesHome__choose">
-        <div className="ServicesHome__choose-left">
-          <h2>Why Choose Us?</h2>
-          <p>
-            More than 10 years of experience in logistics and customs services
-            Direct cooperation with customs authorities and verified partners
-            Individual approach to each client Fast and transparent service at
-            all stages Effective customs clearance "Elasco Express" LLC helps to
-            reduce expenses and avoid loss of time when crossing borders. Trust
-            us with your cargo, and we will provide a fast and reliable process.
-            Contact us for professional assistance in customs clearance of your
-            business.
-          </p>
-        </div>
-        <div className="ServicesHome__choose-right">
-          <div className="one">
-            <img src="./images/choose1.svg" alt="" />
-            <p>Optimized Cost</p>
-
-          </div>
-          <div className="two">
-          <img src="./images/choose2.svg" alt="" />
-          <p>Shipping Worldwide</p>
-          </div>
-          <div className="three">
-          <img src="./images/choose3.svg" alt="" />
-          <p>Personal Approach </p>
-          </div>
-          <div className="four">
-          <img src="./images/choose4.svg" alt="" />
-          <p>Delivery on Time</p>
-          </div>
-          <div className="five">
-          <img src="./images/choose5.svg" alt="" />
-          <p>Safety & Rollability</p>
-          </div>
-        </div>
-      </div>
+      
+      <Footer/>
     </div>
   );
 }
