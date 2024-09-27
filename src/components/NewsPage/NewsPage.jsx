@@ -118,12 +118,8 @@ const NewsPage = () => {
             <img src={newsItem.url} alt="photo" />
           </div>
           <div className="newsPage__content-item-buttons">
-            <p>
-              &lt; <span>Previous News</span>
-            </p>
-            <p>
-              <span>Next News</span> &gt;{" "}
-            </p>
+            <span>&lt; Previous News </span>
+            <span>Next News &gt; </span>
           </div>
         </div>
       </div>

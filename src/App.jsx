@@ -43,8 +43,7 @@ export default function App() {
         <Route path="/news" element={<NewsHome />} />
         <Route path="/news/:id" element={<NewsPage />} />
       </Routes>
-
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

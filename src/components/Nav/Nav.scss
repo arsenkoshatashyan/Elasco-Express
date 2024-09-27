@@ -1,77 +1,34 @@
-// .nav {
-//   width: 100%;
-//   &__content {
-//     padding: 0 10.375rem;
-//     height: 90px;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     &-logo {
-//       width: 11rem;
-//       height: 3.5rem;
-//     }
-//     &-links {
-//       ul {
-//         display: flex;
-//         gap: 6.25rem;
-//         text-transform: uppercase;
-//         color: var(--darkBackground);
-//         a {
-//           cursor: pointer;
-//           color: var(--darkBackground);
-//         }
-//       }
-//     }
-//     &-settings {
-//       display: flex;
-//       gap: 4.875rem;
-//       button {
-//         width: 12.125rem;
-//         background-color: var(--darkBackground);
-//         cursor: pointer;
-//         text-transform: uppercase;
-//       }
-//       select {
-//         border: 0;
-//         background-color: transparent;
-//         color: var(--darkBackground);
-//         cursor: pointer;
-//         font-size: 16px;
-//       }
-//     }
-//   }
-// }
 .nav {
   width: 100%;
   &__content {
-    padding: 0 10.375rem;
+    padding: 0 10rem;
     height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     &-logo {
       width: 11rem;
       height: 3.5rem;
     }
-
     &-links {
       ul {
         display: flex;
-        gap: 6.25rem; // Начальное расстояние между ссылками
+        gap: 6.25rem;
         text-transform: uppercase;
         color: var(--darkBackground);
-        a {
-          cursor: pointer;
-          color: var(--darkBackground);
-          text-decoration: none;
+        li {
+          list-style: none;
+          a {
+            cursor: pointer;
+            color: var(--darkBackground);
+            text-decoration: none;
+          }
         }
       }
     }
     &-settings {
       display: flex;
-      gap: 4.875rem; // Начальное расстояние между кнопками
-
+      gap: 4.875rem;
       button {
         width: 12.125rem;
         background-color: var(--darkBackground);
@@ -87,60 +44,65 @@
         font-size: 16px;
       }
     }
-    
   }
 
-  // Для малых экранов (390px)
   @media (max-width: 390px) {
     &__content {
       padding: 0 1rem;
-      flex-direction: column;
+      margin-bottom: 10px;
+      align-items: center;
       height: auto;
-
+      gap: 0;
       &-links {
         ul {
           flex-direction: column;
-          gap: 1rem; // Уменьшенное расстояние между ссылками
+          gap: 1rem;
         }
       }
-
       &-settings {
-        flex-direction: column;
-        gap: 1rem; // Уменьшенное расстояние между кнопками
+        height: fit-content;
       }
     }
   }
 
-  // Для экранов до 768px
   @media (max-width: 768px) {
     &__content {
       padding: 0 2rem;
-
       &-links {
         ul {
-          gap: 3rem; // Уменьшенное расстояние между ссылками
+          gap: 3rem;
         }
       }
-
       &-settings {
-        gap: 2rem; // Уменьшенное расстояние между кнопками
+        gap: 2rem;
+        button {
+          display: none;
+        }
       }
     }
   }
 
-  // Для экранов до 1240px
   @media (max-width: 1240px) {
     &__content {
       padding: 0 3rem;
-
       &-links {
         ul {
-          gap: 4rem; // Уменьшенное расстояние между ссылками
+          gap: 4rem;
         }
       }
-
       &-settings {
-        gap: 3rem; // Уменьшенное расстояние между кнопками
+        gap: 3rem;
+      }
+    }
+  }
+}
+@media (max-width: 1450px) {
+  .nav {
+    &__content {
+      &-links {
+        ul {
+          display: none;
+        }
       }
     }
   }

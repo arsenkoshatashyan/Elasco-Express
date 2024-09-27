@@ -22,8 +22,8 @@
       gap: 74px;
       padding-bottom: 155px;
       &-item {
-        width: 224px;
-        height: 224px;
+        width: 14rem;
+        height: 14rem;
         background-color: #5a5a5a73;
         display: flex;
         flex-direction: column;
@@ -39,6 +39,48 @@
           height: 51px;
           font-size: 20px;
         }
+      }
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .card {
+    padding-bottom: 50px;
+    &__content {
+      &-items {
+        gap: 1.8rem;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+@media (max-width: 1240px) {
+  .card {
+    &__content {
+      &-title {
+        padding: 22px 0;
+      }
+      &-items {
+        gap: 1.5rem;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    background-image: none;
+    background-color: var(--darkBackground);
+    &__content {
+      &-title {
+        h2 {
+          font-size: 2.5rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+      &-items {
+        gap: 1rem;
       }
     }
   }

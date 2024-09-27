@@ -1,4 +1,3 @@
-import React from "react";
 import "./ServicesHome.scss";
 import ContactUs from "../ContactUs/ContactUs";
 import Footer from "../Footer/Footer";
@@ -196,31 +195,28 @@ export default function ServicesHome() {
       <ContactUs />
       <div className="ServicesHome__address">
         <h2>GET IN TOUCH</h2>
-        <p>Need Reliable Logistics Solutions? Contact Us Today!
+        <p>
+          Need Reliable Logistics Solutions? Contact Us Today!
           <div className="ServicesHome__address-block">
             <div className="ServicesHome__address-blockOne">
               <img src="./images/address1.svg" alt="" />
               <h3>Contact</h3>
               <a href="tell:+374 98 555 378">+374 98 555 378</a>
-
             </div>
             <div className="ServicesHome__address-blockTwo">
               <img src="./images/address2.svg" alt="" />
               <h3>Address</h3>
-              <p>0064, Yerevan, Arno 
-              Babajanyan 26/5 str., apt.1 </p>
-              
+              <p>0064, Yerevan, Arno Babajanyan 26/5 str., apt.1 </p>
             </div>
             <div className="ServicesHome__address-blockThree">
               <img src="./images/address3.svg" alt="" />
               <h3>Mail</h3>
               <a href="email">elasco.exspress@mail.ru</a>
-              
             </div>
           </div>
         </p>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
