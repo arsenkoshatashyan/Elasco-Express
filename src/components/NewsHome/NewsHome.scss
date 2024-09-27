@@ -1,7 +1,7 @@
 .NewsHome {
   &__content {
     &-title {
-      background: url("./images/transport-newBackground.svg");
+      background: url("./images/transport-newBackground.svg") no-repeat;
       height: 390px;
       padding: 180px 0 0 377px;
       h2 {
@@ -11,9 +11,10 @@
       }
     }
     &-items {
-      width: 1419px;
+      width: 100%;
       margin: 100px auto 100px auto;
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
       gap: 78px;
       color: var(--darkBackground);
@@ -74,6 +75,29 @@
         font-size: 36px;
         &:hover {
           color: var(--mainColor);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .NewsHome {
+    &__content {
+      &-title {
+        padding: 20% 0 0 20%;
+      }
+      &-items {
+        &-item {
+          width: 80%;
+          h2 {
+            font-size: 30px;
+            width: 80%;
+            margin: 54px auto 20px auto;
+          }
+          img {
+            width: 80%;
+            height: 80%;
+          }
         }
       }
     }

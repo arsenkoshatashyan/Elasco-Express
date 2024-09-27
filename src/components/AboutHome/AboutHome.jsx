@@ -44,27 +44,27 @@ export default function AboutHome() {
 
 
         <div className="aboutHome__content-activity">
-          <div className="aboutHome__content-activity-text">
-            <h2>Activity</h2>
-            <p>
-              Today, we provide our clients with a full range of transport and
-              logistics services, including transportation by road and sea, as
-              well as air freight. The main activities of the company are the
-              transportation of consolidated cargo, transportation by full
-              trucks, warehouse storage, specialization in the transportation of
-              dangerous goods and high-risk goods. Our company's clients are
-              numerous enterprises representing the chemical, food, energy,
-              electrotechnical, machine-building, metallurgical, construction
-              and mining industries.
-            </p>
+          <div className="aboutHome__content-activity-box">
+            <div className="aboutHome__content-activity-box-text">
+              <h2>Activity</h2>
+              <p>
+                Today, we provide our clients with a full range of transport and
+                logistics services, including transportation by road and sea, as
+                well as air freight. The main activities of the company are the
+                transportation of consolidated cargo, transportation by full
+                trucks, warehouse storage, specialization in the transportation
+                of dangerous goods and high-risk goods. Our company's clients
+                are numerous enterprises representing the chemical, food,
+                energy, electrotechnical, machine-building, metallurgical,
+                construction and mining industries.
+              </p>
+            </div>
+            <img
+              className="aboutHome__content-activity-box-img"
+              src="./images/trucksActivity.svg"
+              alt="trucks"
+            />
           </div>
-          <img
-            className="aboutHome__content-activity-img"
-            src="./images/trucksActivity.svg"
-            alt="trucks"
-          />
-
-          
         </div>
         <div className="aboutHome__content-achievements">
           <div className="aboutHome__content-achievements-box">

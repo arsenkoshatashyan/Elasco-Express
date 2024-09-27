@@ -28,15 +28,15 @@ export default function App() {
       <Nav />
       {isHomePage && (
         <>
-          {/* <Logistic /> */}
+          <Logistic />
           <About />
-          {/* <Card /> */}
-          {/* <Service />
+          <Card />
+          <Service />
           <ContactUs />
           <Result />
           <Sliders/>
-          <Contact /> */}
-          {/* <Sliders/> */}
+          <Contact />
+          
         </>
       )}
       <Routes>
@@ -47,8 +47,7 @@ export default function App() {
         <Route path="/news" element={<NewsHome />} />
         <Route path="/news/:id" element={<NewsPage />} />
       </Routes>
-
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

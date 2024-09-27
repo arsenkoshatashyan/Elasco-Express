@@ -7,9 +7,10 @@
       align-items: center;
       justify-content: center;
       &-box {
-        height: 265px;
+        height: 74%;
         width: 100%;
         backdrop-filter: blur(16.039920806884766px);
+
         h2 {
           margin: 43px 0 10px 158px;
           font-size: 40px;
@@ -19,24 +20,26 @@
         p {
           margin: 10px 0 0 158px;
           font-size: 40px;
-          width: 938px;
+          width: 52%;
           color: var(--textColor);
         }
       }
     }
     &-item {
       margin: 82px auto 120px auto;
-      width: 1412px;
-      height: 910px;
+      width: 90%;
+      height: auto;
       p {
         font-size: 27px;
-        width: 1276px;
+        width: 90%;
         margin: 36px auto 77px auto;
       }
       &-title {
         display: flex;
         gap: 24px;
         align-items: center;
+        width: 90%;
+        margin: 0 auto;
         img {
           width: 125px;
           height: 125px;
@@ -48,28 +51,95 @@
       }
       &-img {
         display: flex;
+        justify-content: center;
         gap: 29px;
         img:nth-child(1) {
-          width: 720px;
-          height: 512px;
+          width: 45%;
+          height: auto;
         }
         img:nth-child(2) {
-          width: 720px;
-          height: 512px;
+          width: 45%;
+          height: auto;
         }
       }
       &-buttons {
         width: 492px;
         height: 40px;
         margin: 60px auto 92px auto;
-
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 30px;
+        font-size: 22px;
         cursor: pointer;
-        p > span {
-          color: var(--mainColor);
+        span {
+          color: var(--darkBackground);
           font-size: 18px;
+          &:hover {
+            color: var(--mainColor);
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1240px) {
+  .newsPage {
+    &__content {
+      &-title {
+        &-box {
+          h2 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .newsPage {
+    &__content {
+      &-title {
+        &-box {
+          h2 {
+            font-size: 30px;
+            margin: 23px 0 10px 100px;
+          }
+          p {
+            font-size: 24px;
+            margin: 10px 0 0 100px;
+          }
+        }
+      }
+      &-item {
+        p {
+          font-size: 20px;
+        }
+        &-title {
+          h2 {
+            font-size: 20px;
+            color: var(--darkBackground);
+          }
+        }
+        &-img {
+          flex-wrap: wrap;
+          img:nth-child(1) {
+            width: 60%;
+            height: auto;
+          }
+          img:nth-child(2) {
+            width: 60%;
+            height: auto;
+          }
+        }
+        &-buttons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
         }
       }
     }

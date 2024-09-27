@@ -15,8 +15,24 @@
     &-email {
       display: flex;
       gap: 0.25rem;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .preNav {
+    &__content {
+      padding: 0 30px;
+      gap: 1rem;
+    }
+  }
+}
+@media (max-width: 390px) {
+  .preNav {
+    &__content {
+      padding: 0 10px;
+      gap: 5px;
     }
   }
 }

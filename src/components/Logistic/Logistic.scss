@@ -1,28 +1,32 @@
 .Logistic {
   width: 100%;
+
   &__content {
-    background: url("./images/imgOne.png");
-    height: 770px;
-    padding-top: 192px;
-    padding-left: 158px;
-    width: 1730px;
-    height: 766px;
+    background: url("./images/imgOne.png") no-repeat center center;
+    background-size: cover;
+    height: auto;
+    padding-top: 12rem;
+    padding-left: 9.875rem;
+    padding-right: 9.875rem;
 
     &-about {
-      width: 624px;
+      width: 39rem;
+      padding-bottom: 246px;
 
       h3 {
-        font-size: 26px;
+        font-size: 1.625rem;
         font-weight: 400;
         color: var(--textColor);
         margin-bottom: 50px;
       }
+
       h1 {
         font-size: 52px;
         font-weight: 400;
         color: var(--mainColor);
         margin-bottom: 58px;
       }
+
       p {
         height: 100px;
         font-size: 18px;
@@ -30,12 +34,85 @@
         margin-bottom: 20px;
         font-weight: 400;
       }
+
       button {
         width: 172px;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+      }
+    }
+  }
+
+  @media (max-width: 1240px) {
+    &__content {
+      padding: 10rem 3rem;
+      &-about {
+        width: 100%;
+        padding: 100px;
+        h1 {
+          font-size: 40px;
+        }
+        h3 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          height: auto;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__content {
+      width: 100%;
+      padding: 1rem 1rem;
+      &-about {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        h1 {
+          width: 100%;
+          text-align: center;
+          font-size: 36px;
+        }
+
+        h3 {
+          text-align: center;
+          font-size: 1.5rem;
+        }
+
+        p {
+          height: auto;
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 390px) {
+    &__content {
+      padding: 6rem 1rem;
+      &-about {
+        h1 {
+          font-size: 28px;
+        }
+
+        h3 {
+          font-size: 1.25rem;
+        }
+        p {
+          font-size: 14px;
+        }
+        button {
+          padding: 1rem;
+        }
       }
     }
   }

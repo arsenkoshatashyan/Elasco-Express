@@ -38,6 +38,7 @@
     padding: 26px;
     border-radius: 16px;
     text-align: center;
+    margin-bottom: 118px;
 
     h2 {
       width: 440px;
@@ -51,14 +52,17 @@
   }
   .slick-track {
     display: flex;
+   
 
     gap: 3.625rem;
   }
   .slick-next {
     right: 840px;
+    
   }
   .slick-prev {
     left: 800px;
+    
   }
   .slick-next,
   .slick-prev {
