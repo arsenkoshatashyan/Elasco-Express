@@ -13,7 +13,6 @@ export default function Logistic() {
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s.
           </p>
-
           <Link to="/services">
             <button>SERVICES</button>
           </Link>

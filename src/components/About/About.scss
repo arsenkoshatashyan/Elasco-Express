@@ -1,47 +1,6 @@
-// .About {
-//   width: 100%;
-//   background: url("./images/vector.svg") no-repeat;
-//   &__content {
-//     height: auto;
-//     display: flex;
-//     gap: 140px;
-//     margin: 88px 0 0 130px;
-//     &-image {
-//       width: 602px;
-//       height: 682px;
-//     }
-//     &-text {
-//       width: 820px;
-//       height: 712px;
-//       margin-top: 80px;
-//       h1 {
-//         font-size: 56px;
-//         font-weight: 400;
-//         color: var(--mainColor);
-//         margin-bottom: 90px;
-//       }
-//       h3 {
-//         width: 710px;
-//         font-size: 26px;
-//         color: var(--darkTextColor);
-//         margin-bottom: 14px;
-//       }
-//       p {
-//         width: 690px;
-//         font-size: 22px;
-//         color: var(--lightTextColor);
-//         margin-bottom: 74px;
-//       }
-//       button {
-//         width: 224px;
-//         cursor: pointer;
-//       }
-//     }
-//   }
-// }
 .About {
   width: 100%;
-  background: url("./images/vector.svg") no-repeat center center;
+  background: url("./images/vector.svg") no-repeat center;
   background-size: cover;
   &__content {
     height: auto;
@@ -86,10 +45,11 @@
       }
     }
   }
+
   @media (max-width: 1590px) {
     .About {
       &__content {
-        gap: 1rem;
+        gap: 5rem;
         &-text {
           h1 {
             margin-bottom: 20px;
@@ -101,7 +61,7 @@
 
           p {
             width: 80%;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
           }
         }
       }
@@ -110,7 +70,7 @@
   @media (max-width: 1240px) {
     &__content {
       margin: 0;
-      gap: 0;
+      gap: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -199,16 +159,16 @@
       margin: 1.25rem 0.625rem;
       &-text {
         h1 {
-          font-size: 1.75rem;
+          font-size: 1.5rem;
         }
         h3 {
-          font-size: 1.125rem;
+          font-size: 1rem;
         }
         p {
           font-size: 1rem;
         }
         button {
-          padding: 1rem;
+          font-size: 12px;
         }
       }
     }

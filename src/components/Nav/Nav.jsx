@@ -1,17 +1,17 @@
-import "./Nav.scss";
 import { Link, Outlet } from "react-router-dom";
+import "./Nav.scss";
 
 export default function Nav() {
   return (
     <>
-      <nav className="nav">
-        <div className="nav__content">
-          <div className="nav__content-logo">
+      <nav className="Nav">
+        <div className="Nav__content">
+          <div className="Nav__content-logo">
             <Link to="/">
               <img src="./images/logo.svg" alt="logo" />
             </Link>
           </div>
-          <div className="nav__content-links">
+          <div className="Nav__content-links">
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -27,15 +27,18 @@ export default function Nav() {
               </li>
             </ul>
           </div>
-          <div className="nav__content-settings">
+          <div className="Nav__content-settings">
             <Link to="/contact-us">
               <button>Contact Us</button>
             </Link>
             <select name="languages">
               <option value="en">EN</option>
-              <option value="ru">Рус</option>
-              <option value="am">Հայ</option>
+              <option value="ru">RU</option>
+              <option value="am">ARM</option>
             </select>
+          </div>
+          <div className="burger">
+            <i className="bi bi-list"></i>
           </div>
         </div>
       </nav>
