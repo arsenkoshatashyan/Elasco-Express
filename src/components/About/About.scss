@@ -1,11 +1,11 @@
 .About {
   width: 100%;
-  background: url("./images/vector.svg") no-repeat center;
+  background: url("../../../public/images/vector.svg") no-repeat center;
   background-size: cover;
   &__content {
     height: auto;
     display: flex;
-    gap: 8.75rem;
+    gap: 8rem;
     margin: 5.5rem 0 0 8.125rem;
 
     &-image {
@@ -118,6 +118,7 @@
     &__content {
       justify-content: center;
       align-items: center;
+      margin-top: -80px;
       &-image {
         img {
           display: none;
@@ -157,7 +158,7 @@
 
   @media (max-width: 390px) {
     &__content {
-      
+      margin-top: -80px;
       &-text {
         h1 {
           font-size: 1.5rem;

@@ -125,14 +125,14 @@ export default function Sliders() {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1200, // if screen width is <= 1200px, show 2 slides
+        breakpoint: 1200, 
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768, // if screen width is <= 768px, show 1 slide
+        breakpoint: 768, 
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

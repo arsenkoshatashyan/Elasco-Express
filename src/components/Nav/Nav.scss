@@ -1,5 +1,6 @@
 .Nav {
-  // position: fixed;
+  position: fixed;
+  z-index: 999;
   width: 100%;
   background-color: var(--textColor);
   &__content {
@@ -151,7 +152,6 @@
   .Nav {
     &__content {
       padding: 0 1rem;
-      margin-bottom: 10px;
       align-items: center;
       height: auto;
 

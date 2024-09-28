@@ -1,5 +1,6 @@
 .Info {
   width: 100%;
+  
 
   &__content {
     min-height: 48px;
@@ -8,6 +9,7 @@
     padding: 0 176px;
     background-color: var(--mainColor);
     font-size: 0.8rem;
+  
     a {
       color: var(--preNavTextColor);
     }
@@ -36,19 +38,20 @@
       gap: 2rem;
       padding: 0 50px;
       a {
-        font-size: 12px;
+        font-size: 10px;
       }
     }
   }
 }
 @media (max-width: 390px) {
   .Info {
-    min-width: 375px;
+    min-width: 390px;
     &__content {
       justify-content: center;
-      gap: 1rem;
+      gap: 10px;
       a {
         font-size: 10px;
+        
       }
     }
   }
