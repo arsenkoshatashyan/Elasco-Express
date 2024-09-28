@@ -1,11 +1,12 @@
 import "./Footer.scss";
 import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer__content">
-        <div className="footer__content-left">
-          <div className="footer__content-left-truck">
+    <footer className="Footer">
+      <div className="Footer__content">
+        <div className="Footer__content-left">
+          <div className="Footer__content-left-truck">
             <img src="./images/truck.svg" alt="truck" />
             <p>
               Our comprehensive logistics services ensure timely and secure
@@ -13,7 +14,7 @@ export default function Footer() {
               all your shipping needs.
             </p>
           </div>
-          <div className="footer__content-left-socials">
+          <div className="Footer__content-left-socials">
             <a href="">
               <img src="./images/x.svg" alt="x" />
             </a>
@@ -28,7 +29,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="footer__content-center">
+        <div className="Footer__content-center">
           <h2>Explore</h2>
           <ul>
             <Link to="/">Home</Link>
@@ -37,8 +38,8 @@ export default function Footer() {
             <Link to="/news">News</Link>
           </ul>
         </div>
-        <div className="footer__content-right">
-          <div className="footer__content-right-title">
+        <div className="Footer__content-right">
+          <div className="Footer__content-right-title">
             <h2>DO YOU NEED ADVICE FROM OUR SPECIALIST?</h2>
             <p>
               Leave your phone number in the form and we will call you back to
@@ -46,7 +47,7 @@ export default function Footer() {
             </p>
           </div>
           <form>
-            <input type="tel" placeholder="Phone number" />
+            <input type="tel" placeholder="Phone number" required/>
             <br />
             <button>Call me back</button>
           </form>

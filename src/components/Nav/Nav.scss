@@ -9,8 +9,10 @@
     padding: 0 10rem;
     height: 90px;
     &-logo {
-      width: 11rem;
-      height: 3.5rem;
+      // width: 11rem;
+      // height: 3.5rem;
+      overflow-y: hidden;
+      
     }
 
     &-links {
@@ -39,7 +41,7 @@
       }
 
       select {
-        // border: 0;
+        
         background-color: transparent;
         color: var(--darkBackground);
         cursor: pointer;
@@ -154,12 +156,14 @@
       margin-bottom: 10px;
       align-items: center;
       height: auto;
-      gap: 0;
-
+      
+      
       &-logo {
+       
         img {
-          width: 5rem;
+          width: 3rem;
           margin: 1em 0;
+          
         }
       }
       &-links {
@@ -169,7 +173,7 @@
         }
       }
       &-settings {
-        width: 10rem;
+        width: 7rem;
       }
     }
     .burger {
