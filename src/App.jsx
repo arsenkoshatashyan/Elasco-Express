@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
+import Info from "./components/Info/Info";
 import Nav from "./components/Nav/Nav";
-import PreNav from "./components/PreNav/PreNav";
 import Logistic from "./components/Logistic/Logistic";
 import About from "./components/About/About";
 import Card from "./components/Card/Card";
@@ -23,7 +23,7 @@ export default function App() {
 
   return (
     <div>
-      <PreNav />
+      <Info />
       <Nav />
       {isHomePage && (
         <>

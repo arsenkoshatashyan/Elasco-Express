@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-.footer {
+
+.Footer {
   background-color: var(--darkBackground);
   &__content {
     display: flex;
@@ -7,6 +8,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 150px;
+    overflow-y: hidden;
+
     &-left {
       &-truck {
         img {
@@ -16,15 +19,14 @@
         }
         p {
           max-width: 340px;
-          color: #ffffffcc;
-          font-size: 17px;
+          font-size: 18px;
         }
       }
 
       &-socials {
-        margin-top: 22px;
         display: flex;
         gap: 40px;
+        margin-top: 22px;
         img {
           width: 28px;
           height: 28px;
@@ -33,7 +35,7 @@
       }
     }
     &-center {
-      color: #fef3f4;
+      color: var(--textColor);
       text-transform: uppercase;
       h2 {
         font-size: 22px;
@@ -63,12 +65,11 @@
         }
         p {
           width: 390px;
-          font-size: 11px;
+          font-size: 12px;
           margin-bottom: 22px;
           padding-top: 0 !important;
           height: 20px;
           text-align: left !important;
-          color: #d2d2d2 !important;
         }
       }
 
@@ -99,7 +100,7 @@
   }
 }
 @media (max-width: 1240px) {
-  .footer {
+  .Footer {
     &__content {
       gap: 40px;
       justify-content: center;
@@ -139,7 +140,6 @@
         }
       }
       &-right {
-        color: var(--textColor);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -173,15 +173,17 @@
   }
 }
 @media (max-width: 390px) {
-  .footer {
+  .Footer {
     &__content {
       &-left {
         &-truck {
           img {
-            width: 70%;
+            // width: 70%;
           }
           p {
             width: 90%;
+
+            margin-bottom: 10px;
           }
         }
         &-socials {
@@ -190,20 +192,36 @@
       }
       &-center {
         ul > a {
-          font-size: 25px;
+          font-size: 20px;
         }
       }
       &-right {
-        &-title {
-          h2 {
-            width: 300px;
-          }
+        h2 {
+          font-size: 16px;
         }
         p {
           margin-bottom: 20px;
-          width: 300px;
+          font-size: 18px;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+
+          button {
+            width: 160px;
+            margin-top: -20px;
+          }
         }
       }
+    }
+    p {
+      font-size: 12px;
+    }
+    p {
+      font-size: 12px;
     }
   }
 }

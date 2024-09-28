@@ -17,9 +17,8 @@ export default function About() {
           <p>
             Today the company provides its clients with a full range of
             transport, forwarding and logistics services, including cargo
-            transportation by road and sea, and also air transportation.{" "}
+            transportation by road and sea, and also air transportation.
           </p>
-
           <Link to="/about">
             <button>More About Us</button>
           </Link>

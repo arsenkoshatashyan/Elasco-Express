@@ -1,38 +1,55 @@
-.preNav {
+.Info {
   width: 100%;
 
   &__content {
+    min-height: 48px;
     display: flex;
     gap: 2.5rem;
     padding: 0 176px;
-    min-height: 48px;
     background-color: var(--mainColor);
     font-size: 0.8rem;
     a {
       color: var(--preNavTextColor);
     }
+
     &-phone,
     &-email {
       display: flex;
-      gap: 0.25rem;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      gap: 0.25rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .Info {
+    &__content {
+      gap: 2rem;
+      padding: 0 60px;
     }
   }
 }
 @media (max-width: 768px) {
-  .preNav {
+  .Info {
     &__content {
-      padding: 0 30px;
-      gap: 1rem;
+      gap: 2rem;
+      padding: 0 50px;
+      a {
+        font-size: 12px;
+      }
     }
   }
 }
 @media (max-width: 390px) {
-  .preNav {
+  .Info {
+    min-width: 375px;
     &__content {
-      padding: 0 10px;
-      gap: 5px;
+      justify-content: center;
+      gap: 1rem;
+      a {
+        font-size: 10px;
+      }
     }
   }
 }

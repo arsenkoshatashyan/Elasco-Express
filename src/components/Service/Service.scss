@@ -5,6 +5,7 @@
   &__content {
     height: auto;
     margin: 0 6.75rem;
+    padding: 118px 0 0 0;
     &-title {
       width: 100%;
       display: flex;
@@ -90,6 +91,9 @@
         h2 {
           font-size: 40px;
         }
+        button{
+          width: 220px;
+        }
       }
       &-cards {
         &-card {
@@ -99,6 +103,35 @@
           }
           p {
             width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .Service {
+    &__content {
+      &-title {
+        h2 {
+          font-size: 32px;
+        }
+        button{
+          width: 160px;
+          font-size: 14px;
+        }
+      }
+      &-cards {
+        gap: 30px;
+        &-card {
+          width: 20rem;
+          height: 22rem;
+          img {
+            width: inherit;
+          }
+          p {
+            width: 240px;
           }
         }
       }

@@ -1,10 +1,10 @@
 import "./ContactUs.scss";
 export default function ContactUs() {
   return (
-    <div className="contactUs">
-      <div className="contactUs__content">
-        <div className="contactUs__content-left">
-          <div className="contactUs__content-left-title">
+    <div className="ContactUs">
+      <div className="ContactUs__content">
+        <div className="ContactUs__content-left">
+          <div className="ContactUs__content-left-title">
             <h2>
               LET’S CONNECT WITH US FOR ANY <br />
               <span>TRUCK SERVICE</span>
@@ -14,7 +14,7 @@ export default function ContactUs() {
               trusted insurance provider.
             </p>
           </div>
-          <div className="contactUs__content-left-form">
+          <div className="ContactUs__content-left-form">
             <form>
               <input required type="text" name="name" placeholder="Full name" />
               <br />
@@ -30,14 +30,14 @@ export default function ContactUs() {
                 required
                 type="text"
                 name="interested"
-                placeholder="Interested"
+                placeholder="Interested in..."
               />
               <br />
               <button type="submit">Send</button>
             </form>
           </div>
         </div>
-        <div className="contactUs__content-right">
+        <div className="ContactUs__content-right">
           <img src="./images/earth.svg" alt="Earth illustration" />
         </div>
       </div>

@@ -29,12 +29,13 @@
 
     &-block {
       display: flex;
+
       margin-top: 126px;
     }
     &-blockLeft {
-      width: 770px;
+      width: 48rem;
       height: 376px;
-      background: url("./images/transportDark.svg") no-repeat;
+      background: url("./images/transportDark.svg") no-repeat center;
       padding: 160px 0 0 100px;
       line-height: 22px;
 
@@ -79,7 +80,7 @@
     &-blockLeftTwo {
       width: 770px;
       height: 376px;
-      background: url("./images/transport2Light.svg") no-repeat;
+      background: url("./images/transport2Light.svg") no-repeat center;
       padding: 140px 0 0 170px;
       position: relative;
 
