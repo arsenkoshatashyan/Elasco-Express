@@ -1,7 +1,8 @@
 .NewsHome {
   &__content {
     &-title {
-      background: url("./images/transport-newBackground.svg") no-repeat;
+      background: url("../../../public/images/transport-newBackground.svg")
+        no-repeat;
       height: 390px;
       padding: 180px 0 0 377px;
       h2 {
@@ -19,6 +20,8 @@
       flex-wrap: wrap;
       gap: 78px;
       color: var(--darkBackground);
+      padding-top: 30px;
+      padding-bottom: 30px;
       &-item {
         width: 669px;
         border-radius: 22px;
