@@ -184,6 +184,9 @@
             width: 90%;
           }
         }
+        &-socials {
+          width: 300px;
+        }
       }
       &-center {
         ul > a {
@@ -191,8 +194,14 @@
         }
       }
       &-right {
+        &-title {
+          h2 {
+            width: 300px;
+          }
+        }
         p {
           margin-bottom: 20px;
+          width: 300px;
         }
       }
     }

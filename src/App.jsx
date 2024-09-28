@@ -16,7 +16,6 @@ import NewsHome from "./components/NewsHome/NewsHome";
 import NewsPage from "./components/NewsPage/NewsPage";
 import Sliders from "./components/Sliders/Sliders";
 
-
 export default function App() {
   const location = useLocation();
 
@@ -34,9 +33,8 @@ export default function App() {
           <Service />
           <ContactUs />
           <Result />
-          <Sliders/>
+          <Sliders />
           <Contact />
-          
         </>
       )}
       <Routes>
