@@ -3,19 +3,20 @@
   background: url("../../../public//images/vector.svg") no-repeat;
   width: 100%;
   
+  overflow-y: hidden;
   &__content {
     overflow-y: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    height: 5.25rem;
+    height: 7.25rem;
     margin: 46px auto;
-
     h2 {
-      font-size: 54px;
-      line-height: 26px;
+      font-size: 52px;
       color: var(--dartTextColor);
+   
+  
     }
     button {
       width: 11.875em;
@@ -27,6 +28,8 @@
 
   div > img {
     width: 28rem;
+
+    
   }
 
   .slick-slide > div {
@@ -40,11 +43,13 @@
     border-radius: 16px;
     text-align: center;
     margin-bottom: 118px;
+    overflow-y: hidden;
 
     h2 {
-      width: 440px;
-      font-size: 30px;
+      width: 420px;
+      font-size: 26px;
       line-height: 36px;
+      overflow-y: hidden;
     }
     p {
       font-size: 14px;
@@ -80,8 +85,9 @@
 }
 @media (max-width: 1500px) {
   .Sliders {
+    gap: 20px;
     h2{
-      font-size: 22px;
+      font-size: 26px;
       overflow-y: hidden;
     }
     button{
@@ -91,22 +97,29 @@
     .slick-slide > div {
       max-width: 25rem;
       height: 32.875rem;
+      
 
       h2 {
         width: 90%;
-        font-size: 25px;
+        font-size: 24px;
         margin: 0 auto;
       }
       img {
         margin: 20px auto;
         width: 22rem;
+       
       }
     }
   }
 }
 
+
+
+
 @media (max-width: 430px) {
   .Sliders {
+    overflow-y: hidden;
+    gap: 20px;
 
     
     h2{
@@ -123,6 +136,8 @@
       max-width: 20rem;
       height: 27.875rem;
       margin: 50px auto;
+
+     
     
       h2 {
         width: 90%;
@@ -132,6 +147,7 @@
       img {
         margin: 20px auto;
         width: 17rem;
+        
        
       }
     }

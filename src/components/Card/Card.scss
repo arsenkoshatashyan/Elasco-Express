@@ -1,5 +1,5 @@
 .Card {
-  background: url("./images/CardBackground.svg") no-repeat center;
+  background: url("../../../public/images/CardBackground.svg") no-repeat center;
   height: auto;
   &__content {
     text-align: center;
@@ -68,23 +68,67 @@
 }
 @media (max-width: 768px) {
   .Card {
-    background-image: none;
-    background-color: var(--darkBackground);
+    // background-image: none;
+    // background-color: var(--darkBackground);
+   
     padding: 20px;
     &__content {
+
+    
       &-title {
         h2 {
-          font-size: 2.5rem;
+          font-size: 2rem;
         }
         p {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
         }
       }
       &-items {
         gap: 1rem;
         &-item{
-          width: 220px;
-          height: 220px;
+          width: 180px;
+          height: 180px;
+          img{
+            width: 60px;
+          }
+          p{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 624px) {
+  .Card {
+    background-image: none;
+    background-color: var(--darkBackground);
+   
+    padding: 20px;
+    &__content {
+
+    
+      &-title {
+        h2 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      &-items {
+        gap: 1rem;
+        &-item{
+          width: 180px;
+          height: 180px;
+          img{
+            width: 50px;
+          }
+          p{
+            font-size: 12px !important;
+            
+          }
         }
       }
     }
@@ -108,8 +152,8 @@
         gap: 2rem;
         padding: 20px;
        &-item{
-        width: 240px;
-        height: 240px;
+        width: 160px;
+        height: 160px;
   
        
         p{

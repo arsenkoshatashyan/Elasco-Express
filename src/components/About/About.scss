@@ -10,7 +10,7 @@
 
     &-image {
       width: 37.625rem;
-      height: 42.625rem;
+      height: 42rem;
       overflow-y: hidden;
     }
 
@@ -80,14 +80,14 @@
         height: fit-content;
         width: fit-content;
         img {
-          width: 30rem; // 500px
-          height: auto; // Динамическая высота
-          margin-top: 50px;
+          width: 30rem;
+          height: auto; 
+          // margin-top: 50px;
         }
       }
 
       &-text {
-        width: 50%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -118,7 +118,7 @@
     &__content {
       justify-content: center;
       align-items: center;
-      margin-top: -80px;
+      margin-top: -120px;
       &-image {
         img {
           display: none;

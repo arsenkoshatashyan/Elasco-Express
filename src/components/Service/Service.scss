@@ -1,12 +1,13 @@
 .Service {
   width: 100%;
   background: url("../../../public/images/vector.svg") no-repeat;
-  margin: 0px auto;
+  margin: 100px auto;
   overflow-y: hidden;
   &__content {
     height: auto;
     margin: 0 6.75rem;
     padding: 118px 0 0 0;
+    
     &-title {
       width: 100%;
       display: flex;
@@ -43,23 +44,34 @@
           color: var(--lightTextColor);
           margin: 0 46px;
         }
+        h3{
+          width: 250px;
+       
+        }
 
         > div {
           display: flex;
           align-items: center;
-          gap: 1.5rem;
-          margin: 0 46px;
+          gap: 2rem;
+          margin: 0 40px;
+          width: 400px;
+          height: 100px;
+
           span {
-            width: 4.3rem;
-            height: 4.3rem;
+            width: 4rem;
+            height: 4rem;
             border-radius: 50%;
             background-color: var(--iconBackground);
+           
             margin-top: 12px;
             margin-bottom: 12px;
+            
 
             > img {
-              margin: 12px 0 0 12px;
-              width:38px;
+              margin: 14px 0 0 14px;
+              width:32px;
+
+             
               
             }
           }
@@ -114,7 +126,7 @@
 @media (max-width: 390px) {
   .Service {
     &__content {
-      margin-top: -60px;
+      margin-top: -80px;
       &-title {
         h2 {
           font-size: 32px;
@@ -126,34 +138,36 @@
         }
       }
       &-cards {
-        gap: 28px;
+        gap: 20px;
+        
        
         &-card {
-          width: 20rem;
-          height: 22rem;
+          width: 18rem;
+          height: 25rem;
          
           > div{
-            width: 230px;
-           
+            width: 220px;
             gap: 10px;
+            margin-left: 20px;
           }
            img {
             width: inherit;
-         
           }
           span{
-           
+         
             img{
        padding-left: 2px;
             }
           }
           h3{
-            width: 160px;
+            width: 80px;
             font-size: 14px;
+       
           }
           
           p {
-            width: 240px;
+            width: 150px;
+         
           }
   
         }

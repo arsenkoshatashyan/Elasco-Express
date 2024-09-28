@@ -22,7 +22,7 @@ export default function Result() {
             <p>Satisfaction Rating</p>
           </li>
         </ul>
-        <hr />
+        {/* <hr /> */}
       </div>
     </div>
   );

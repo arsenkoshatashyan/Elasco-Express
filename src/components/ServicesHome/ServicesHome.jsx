@@ -230,7 +230,7 @@ export default function ServicesHome() {
       <ContactUs />
       <div className="ServicesHome__address">
         <h2>GET IN TOUCH</h2>
-        <p>
+     
           Need Reliable Logistics Solutions? Contact Us Today!
           <div className="ServicesHome__address-block">
             <div className="ServicesHome__address-blockOne">
@@ -249,7 +249,7 @@ export default function ServicesHome() {
               <a href="email">elasco.exspress@mail.ru</a>
             </div>
           </div>
-        </p>
+   
       </div>
     </div>
   );

@@ -1,15 +1,19 @@
 .Result {
   width: 100%;
+  overflow-y: hidden;
+  text-align: center;
   &__content {
     width: 1170px;
-    height: 231px;
-    margin: -50px auto;
+    height: 242px;
+    margin: 0 auto;
     background-color: var(--iconBackground);
-    margin-bottom: 115px;
+    padding-bottom: 70px;
+
     ul {
       display: flex;
       justify-content: space-evenly;
       padding-top: 44px;
+
       li {
         font-size: 70px;
         color: var(--mainColor);
@@ -20,28 +24,30 @@
         }
       }
     }
-    hr {
-      background: linear-gradient(90deg, #ed1c25 0%, #df9e9f 100%);
-      height: 24px;
-      margin-top: 45px;
-      clip-path: polygon(50% 30%, 100% 50%, 70% 68%, 0% 50%);
-    
+    // hr {
+    //   background: linear-gradient(90deg, #ed1c25 0%, #df9e9f 100%);
+    //   height: 24px;
+    //   margin-top: 45px;
+    //   clip-path: polygon(50% 30%, 100% 50%, 70% 68%, 0% 50%);
 
-
-      
-    }
+    // }
   }
 }
 @media (max-width: 1240px) {
   .Result {
-    margin: 0 auto; 
+    overflow-y: hidden;
     &__content {
-      width: 45rem; 
+      width: 45rem;
       height: auto;
-      margin: -10px auto; 
+      margin: -10px auto;
+
       ul {
+        display: flex;
+        padding: 44px 10px 0;
+        justify-content: center;
+        gap: 20px;
         li {
-          font-size: 50px; 
+          font-size: 50px;
         }
       }
     }
@@ -49,15 +55,17 @@
 }
 @media (max-width: 768px) {
   .Result {
-    margin: 0 auto;
     &__content {
       width: 90%;
       height: auto;
       margin: 10px auto;
+
       ul {
+        display: flex;
         padding: 44px 10px 0;
         justify-content: center;
         gap: 20px;
+
         li {
           font-size: 20px;
           P {
@@ -70,15 +78,22 @@
 }
 @media (max-width: 390px) {
   .Result {
-    margin: 0 auto;
     text-align: center;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     &__content {
       width: 100%;
-      height: 140px;
+      height: 180px;
       margin: 0 auto;
+
       ul {
+        display: flex;
+        padding: 44px 10px 0;
+        justify-content: center;
         gap: 20px;
+
         li {
           font-size: 18px;
           P {
@@ -87,8 +102,8 @@
         }
       }
     }
-    hr{
-      display: none;
-    }
+    // hr{
+    //   display: none;
+    // }
   }
 }

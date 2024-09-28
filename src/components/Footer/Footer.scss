@@ -5,9 +5,8 @@
   &__content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 150px;
     overflow-y: hidden;
 
     &-left {
@@ -99,23 +98,37 @@
     font-size: 15px;
   }
 }
+
+@media (max-width: 1540px){
+  .Footer{
+    &__content{
+      justify-content: space-around;
+    }
+  }
+}
 @media (max-width: 1240px) {
   .Footer {
     &__content {
       gap: 40px;
       justify-content: center;
+      padding: 0 40px;
+
+      
       &-left {
+        margin: 0 30px;
+
         &-truck {
           display: flex;
           flex-direction: column;
           align-items: center;
+          
+
           img {
-            margin-top: 40px;
+            // margin-top: 40px;
             max-width: 80%;
           }
           p {
             max-width: 300px;
-            padding-bottom: 0;
           }
         }
 
@@ -136,7 +149,7 @@
         ul {
           width: 300px;
           align-items: center;
-          gap: 15px;
+          gap: 16px;
         }
       }
       &-right {

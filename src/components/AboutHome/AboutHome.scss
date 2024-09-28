@@ -1,8 +1,11 @@
 .aboutHome {
   &__content {
     width: 100%;
+    margin: 90px auto 0;
+
+    
     &-title {
-      background: url(./images/truckBackground.svg) no-repeat center;
+      background: url(../../../public/images/truckBackground.svg) no-repeat center;
       height: 332px;
       h2 {
         color: var(--textColor);
@@ -13,7 +16,7 @@
     }
     &-whoWeAre {
       h2 {
-        margin-top: 38px;
+        margin: 38px 0;
         text-align: center;
         color: var(--mainColor);
         font-size: 40px;
@@ -30,6 +33,7 @@
         display: flex;
         align-items: center;
         gap: 43px;
+       
         p {
           width: 932px;
           text-align: center;
@@ -47,6 +51,7 @@
       margin-bottom: 100px;
       display: flex;
       justify-content: center;
+      margin-top: 50px;
       &-box {
         display: flex;
         justify-content: center;
@@ -83,13 +88,14 @@
             max-width: 95%;
             min-height: auto;
             font-size: 28px;
-            margin-left: 40px;
+            margin-left: 80px;
           }
         }
       }
     }
     &-achievements {
-      background: url("./images/truck-logistics-operations-dusk.svg") no-repeat;
+      background: url("../../../public/images/truck-logistics-operations-dusk.svg") no-repeat center;
+      overflow-y: hidden;
       width: 100%;
       height: 639px;
       border-radius: 151px 38px 149px 30px;
@@ -131,13 +137,14 @@
       }
     }
     &-service {
-      background: url(./images/vector.svg) no-repeat;
+      background: url(../../../public/images/vector.svg) no-repeat;
+      overflow-y: hidden;
       &-title {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 80%;
-        margin: 133px auto 0 auto;
+        margin: 133px auto 0 ;
         h2 {
           font-size: 55px;
           color: var(--mainColor);
@@ -148,11 +155,12 @@
       }
       &-items {
         width: 100%;
-        margin: 58px auto 0 auto;
+        margin: 58px auto 0;
         padding-bottom: 116px;
         display: flex;
         flex-direction: column;
         gap: 4rem;
+      
         &-top {
           display: flex;
           align-items: center;
@@ -164,6 +172,8 @@
             height: 368px;
             background-color: #c4d2dc;
             border-radius: 16px;
+            overflow-y: hidden;
+      
             &-title {
               display: flex;
               align-items: center;
@@ -172,6 +182,7 @@
               background-color: #7f929d;
               border-radius: 16px;
               height: 147px;
+             
               &-img {
                 width: 92px;
                 height: 92px;
@@ -183,6 +194,7 @@
               }
               h2 {
                 color: var(--textColor);
+              
               }
             }
             p {
@@ -190,7 +202,7 @@
               text-align: center;
               text-transform: capitalize;
               margin: 54px auto;
-              font-size: 20px;
+              font-size: 18px;
             }
           }
         }
@@ -200,6 +212,7 @@
           justify-content: center;
           flex-wrap: wrap;
           gap: 2rem;
+         font-size: 16px;
           &-center {
             img {
               width: 382px;
@@ -238,6 +251,7 @@
               text-align: center;
               text-transform: capitalize;
               margin: 54px auto;
+              font-size: 18px;
             }
           }
         }
@@ -266,7 +280,7 @@
         &-box {
           &-left {
             p {
-              max-width: 630px;
+             
               width: 100%;
               // font-size: 22px;
             }
@@ -284,6 +298,7 @@
         height: auto;
         padding-bottom: 84px;
         h2 {
+       font-size: 32px;
           padding: 50px 0 0 150px;
         }
       }
@@ -298,6 +313,13 @@
           justify-content: center;
           p {
             font-size: 25px;
+            width: 80%;
+        
+          }
+          img{
+            width: 100%;
+            
+
           }
         }
       }
@@ -309,6 +331,7 @@
           img {
             width: 392px;
             margin-top: 0;
+                
           }
 
           &-text {
@@ -316,16 +339,21 @@
               overflow-y: hidden;
             }
             p {
-              font-size: 18px;
-              max-width: 80%;
+              font-size: 16px;
+              max-width: 70%;
+              height: 300px;
               min-height: fit-content;
+           
+            
+
             }
+            
           }
         }
       }
       &-achievements {
         height: auto;
-        width: 95%;
+        width: 100%;
         margin: 50px auto 0 auto;
         &-box {
           width: inherit;
@@ -336,17 +364,17 @@
             flex-direction: column;
             align-items: center;
             p {
-              width: 90%;
+              width: 80%;
 
               max-width: 90%;
-              font-size: 22px;
+              font-size: 18px;
             }
           }
           &-right {
             display: flex;
             align-items: center;
             img {
-              width: 80%;
+              width: 60%;
               margin: 0 auto;
             }
           }
@@ -431,7 +459,7 @@
           p {
             margin: 0 auto;
             font-size: 20px;
-            width: 80%;
+            width: 70%;
           }
           img {
             height: 225px;
@@ -462,17 +490,19 @@
       &-achievements {
         &-box {
           width: 90%;
+          height: 480px;
           &-left {
             &-title {
               img {
                 width: 100px;
               }
               h2 {
-                font-size: 30px;
+                font-size: 22px;
+       
               }
             }
             p {
-              width: 90%;
+              width: 80%;
               font-size: 15px;
               text-align: center;
               color: var(--darkBackground);
@@ -669,7 +699,10 @@
         }
       }
       &-activity {
+        
         &-box {
+
+         
           &-text {
             h2 {
               font-size: 30px;
@@ -677,6 +710,7 @@
             p {
               font-size: 16px;
               margin-top: 10px;
+            
             }
           }
         }

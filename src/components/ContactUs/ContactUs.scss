@@ -5,16 +5,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+  
     &-left {
-      padding: 123px 0 0 150px;
+      padding: 154px 0 0 150px;
       width: 1200px;
       height: 840px;
       &-title {
-        font-size: 37px;
+        font-size: 22px;
         color: var(--textColor);
         h2 {
-          height: 173px;
+          height: 154px;
           display: inline-block;
+          overflow-y: hidden;
           span {
             color: var(--mainColor);
           }
@@ -22,7 +25,7 @@
         p {
           margin-top: 2px;
           font-size: 18px;
-          width: 644px;
+          width: 40rem;
         }
       }
       &-form {
@@ -72,10 +75,21 @@
 @media (max-width: 1240px) {
   .ContactUs {
     &__content {
+    
       &-left {
         padding: 50px 0 0 60px;
         width: 80%;
         height: 85%;
+        &-title{
+          h2{
+         font-size: 28px;
+          }
+          p{
+width: 16rem;
+
+          }
+        }
+        
         &-form {
           input[type="text"] {
             width: 100%;
@@ -102,16 +116,16 @@
         padding: 3px;
       
         &-title {
-          
+          text-align: center;
           h2 {
-            text-align: center;
             font-size: 22px;
             padding-top: 20px;
           }
           p {
-            width: 100%;
+            width: 90%;
             font-size: 18px;
             margin-top: -30px;
+
           }
         }
         &-form {
