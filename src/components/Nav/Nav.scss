@@ -147,12 +147,17 @@
   &__header {
     text-align: right;
     margin-right: 20px;
-    button {
-      color: var(--mainColor);
-      background-color: var(--darkBackground);
+    margin-top: 38px;
+    width: 100%;
+  }
+  &__close {
+    svg {
+      font-size: 30px;
+      color: var(--textColor);
       &:hover {
         opacity: 0.5;
         transition: 0.5s;
+        color: var(--mainColor);
       }
     }
   }

@@ -1,6 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import "./Nav.scss";
 import { useState, useEffect, useRef } from "react";
+import { IoMdCloseCircle } from "react-icons/io";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -73,9 +74,10 @@ export default function Nav() {
           <nav className={`BurgerMenu ${open ? "BurgerMenu__active" : ""}`}>
             <div className="BurgerMenu__header">
               <div className="BurgerMenu__close">
-                <button onClick={() => setOpen(false)} className="close-btn">
-                  X
-                </button>
+                <IoMdCloseCircle
+                  onClick={() => setOpen(false)}
+                  className="close-btn"
+                />
               </div>
             </div>
             <div className="BurgerMenu__content-links">
