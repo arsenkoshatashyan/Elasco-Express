@@ -119,13 +119,14 @@
         gap: 3rem;
         // padding-bottom: 50px;
         &-item{
-          width: 230px;
-          height: 230px;
+          width: 200px;
+          height: 200px;
           h2{
-            font-size: 18px;
+            font-size: 16px;
           }
           p{
-            font-size: 14px;
+            font-size: 12px;
+            width: 90%;
           }
 
         }

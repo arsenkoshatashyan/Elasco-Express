@@ -1,7 +1,7 @@
 .Service {
   width: 100%;
   background: url("../../../public/images/vector.svg") no-repeat;
-  margin: 100px auto;
+  margin: 100px auto 0;
   overflow-y: hidden;
   &__content {
     height: auto;
@@ -138,17 +138,18 @@
         }
       }
       &-cards {
-        gap: 20px;
+        gap: 10px;
         
        
         &-card {
-          width: 18rem;
+          width: 19rem;
           height: 25rem;
          
           > div{
             width: 220px;
             gap: 10px;
-            margin-left: 20px;
+            margin-left: 6px;
+ 
           }
            img {
             width: inherit;
@@ -160,14 +161,14 @@
             }
           }
           h3{
-            width: 80px;
+            width: 90%;
             font-size: 14px;
        
           }
           
           p {
-            width: 150px;
-         
+            width: 160px;
+  
           }
   
         }

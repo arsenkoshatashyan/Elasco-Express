@@ -134,7 +134,7 @@
 
         &-socials {
           justify-content: center;
-          width: 400px;
+          width: auto;
           gap: 30px;
           img {
             margin-bottom: 0px;
@@ -187,8 +187,12 @@
 }
 @media (max-width: 390px) {
   .Footer {
+
     &__content {
+ 
+   
       &-left {
+       justify-content: center;
         &-truck {
           
           p {
@@ -198,7 +202,9 @@
           }
         }
         &-socials {
-          width: 300px;
+          width: auto;
+          gap: 14px;
+   
         }
       }
       &-center {

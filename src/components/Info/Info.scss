@@ -1,6 +1,7 @@
 .Info {
   width: 100%;
-  
+  position: fixed;
+ z-index: 55;
 
   &__content {
     min-height: 48px;
