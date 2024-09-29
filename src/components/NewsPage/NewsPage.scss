@@ -1,5 +1,5 @@
 .newsPage {
-  margin-top: 140px;
+  margin-top: 125px;
   &__content {
     &-title {
       background: url("../../../public/images/transport-newBackground.svg");
@@ -117,8 +117,10 @@
         }
       }
       &-item {
+        margin: 20px auto;
         p {
-          font-size: 20px;
+          font-size: 18px;
+          margin: 0 auto 20px;
         }
         &-title {
           h2 {
@@ -142,6 +144,10 @@
           align-items: center;
           justify-content: center;
           width: 100%;
+          margin: 10px auto;
+          span {
+            font-size: 16px;
+          }
         }
       }
     }

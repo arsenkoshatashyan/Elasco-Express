@@ -1,7 +1,8 @@
 .NewsHome {
   margin-top: 90px auto 0;
+  overflow-y: hidden;
   &__content {
-    margin-top: 90px;
+    margin-top: 125px;
     &-title {
       background: url("../../../public/images/transport-newBackground.svg")
         no-repeat;
@@ -120,17 +121,26 @@
   .NewsHome {
     &__content {
       &-items {
+        margin-top: 0;
+        margin-bottom: 0px;
+        gap: 40px;
         &-item {
           width: 80%;
           a {
             h2 {
-              font-size: 20px;
+              margin-top: 20px;
+              font-size: 18px;
               line-height: 30px;
+              overflow: hidden;
             }
+          }
+          p {
+            margin-bottom: 20px;
           }
         }
       }
       &-pagination {
+        margin-bottom: 0;
         button {
           font-size: 20px;
           &:hover {
