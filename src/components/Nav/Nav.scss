@@ -1,5 +1,6 @@
 .Nav {
   position: fixed;
+  margin-top: 48px;
   z-index: 999;
   width: 100%;
   background-color: var(--textColor);
@@ -10,8 +11,6 @@
     padding: 0 10rem;
     height: 90px;
     &-logo {
-      // width: 11rem;
-      // height: 3.5rem;
       overflow-y: hidden;
     }
 

@@ -1,4 +1,5 @@
 .ServicesHome {
+  margin-top: 90px;
   width: 100%;
   background-color: var(--iconBackground);
   &__container {
@@ -372,7 +373,7 @@
     height: 698px;
     margin: 0 auto;
     text-align: center;
-    background: url("./images/vector.svg");
+    background: url("../../../public/images/vector.svg");
     padding: 76px;
     overflow-y: hidden;
     h2 {
