@@ -28,7 +28,6 @@
   &__content {
     width: 1418px;
     margin: -50px auto;
-
     &-block {
       margin-top: 126px;
       &-box {
@@ -36,7 +35,8 @@
         &-Left {
           width: 48rem;
           height: 376px;
-          background: url("../../../public/images/transportDark.svg") no-repeat center;
+          background: url("../../../public/images/transportDark.svg") no-repeat
+            center;
           padding: 160px 0 0 100px;
           p {
             font-size: 34px;
@@ -89,7 +89,8 @@
         &-Left {
           width: 770px;
           height: 376px;
-          background: url("../../../public/images/transport2Light.svg") no-repeat center;
+          background: url("../../../public/images/transport2Light.svg")
+            no-repeat center;
           padding: 140px 0 0 170px;
           position: relative;
           h2 {
@@ -159,7 +160,8 @@
         &-Right {
           width: 770px;
           margin-left: -120px;
-          background: url("../../../public/images/transport3Light.svg") no-repeat;
+          background: url("../../../public/images/transport3Light.svg")
+            no-repeat;
           padding: 70px 0 0 160px;
           h2 {
             display: none;
@@ -169,8 +171,6 @@
             font-size: 22px;
             color: var(--darkTextColor);
             text-align: center;
-            // line-height: 22px;
-
             line-height: auto;
             overflow-y: hidden;
           }
@@ -203,7 +203,8 @@
         &-Left {
           width: 770px;
           height: 376px;
-          background: url("../../../public/images/transport4Light.svg") no-repeat;
+          background: url("../../../public/images/transport4Light.svg")
+            no-repeat;
           padding: 70px 0 0 170px;
           position: relative;
           h2 {
@@ -253,7 +254,8 @@
   }
 
   &__choose {
-    background: url(../../../public/images/backgroundChoose.svg) no-repeat center;
+    background: url(../../../public/images/backgroundChoose.svg) no-repeat
+      center;
     display: flex;
     &-left {
       margin: 120px 160px;
@@ -1149,19 +1151,19 @@
       }
     }
     &__content {
-      margin: 20px auto;
+      margin: 0px auto;
       &-block {
         padding: 0 5px;
         &-box {
           &-Right {
             padding: 10px;
             h2 {
-              margin-bottom: 10px;
+              margin: 10px auto;
               font-size: 20px;
-              padding-top: 20px;
+              padding-top: 40px;
             }
             p {
-              font-size: 18px;
+              font-size: 16px;
               width: 90%;
               margin: 0 auto;
             }
@@ -1172,9 +1174,9 @@
           width: 100%;
           padding: 40px 5px;
           p {
-            width: 95%;
+            width: 90%;
             margin: 0 10px;
-            font-size: 14px;
+            font-size: 12px;
           }
         }
       }
@@ -1182,20 +1184,23 @@
         padding: 0 5px;
         &-box {
           &-Left {
-            padding: 10px;
+            padding: 20px 10px;
             h2 {
               margin: 10px auto;
               font-size: 20px;
+              padding-top: 40px;
             }
             p {
-              font-size: 18px;
+              font-size: 16px;
             }
           }
         }
         &-Bottom {
           p {
-            width: 95%;
-            font-size: 14px;
+            width: 90%;
+
+            margin: 0 10px; //
+            font-size: 12px;
           }
         }
       }
@@ -1206,18 +1211,19 @@
             padding: 10px;
             h2 {
               font-size: 20px;
+              padding-top: 40px;
             }
             p {
-              font-size: 18px;
+              font-size: 16px;
               margin: 0 auto;
             }
           }
         }
         &-Bottom {
           p {
-            width: 95%; //
+            width: 90%; //
             margin: 0 10px; //
-            font-size: 14px; //
+            font-size: 12px; //
           }
         }
       }
@@ -1228,7 +1234,7 @@
             padding: 10px;
             height: auto;
             h2 {
-              margin: 50px 0 0 0;
+              padding-top: 50px;
               font-size: 20px;
             }
             p {
@@ -1242,9 +1248,9 @@
           height: 120%;
           width: 100%;
           p {
-            width: 95%; //
-            margin: 0 auto; //
-            font-size: 14px; //
+            width: 90%; //
+            margin: 0 10px; //
+            font-size: 12px; //
           }
         }
       }

@@ -1,7 +1,7 @@
 .Info {
   width: 100%;
   position: fixed;
- z-index: 55;
+  z-index: 55;
 
   &__content {
     min-height: 48px;
@@ -46,8 +46,9 @@
 }
 @media (max-width: 390px) {
   .Info {
-    min-width: 390px;
+    min-width: 320px;
     &__content {
+      padding: 0 20px;
       justify-content: center;
       gap: 10px;
       a {

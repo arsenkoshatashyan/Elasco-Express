@@ -1,6 +1,7 @@
 .Service {
   width: 100%;
-  background: url("../../../public/images/vector.svg") no-repeat;
+  background: url("../../../public/images/vector.svg") no-repeat center;
+  background-size: cover;
   margin: 100px auto 0;
   overflow-y: hidden;
   &__content {
@@ -164,7 +165,6 @@
             width: 220px;
             gap: 10px;
             margin-left: 6px;
- 
           }
           img {
             width: inherit;
