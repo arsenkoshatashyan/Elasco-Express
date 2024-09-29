@@ -1,9 +1,8 @@
 .Nav {
   position: fixed;
-  margin-top: 48px;
   z-index: 999;
   width: 100%;
-  margin: 44px auto 0;
+  margin: 48px auto 0;
   background-color: var(--textColor);
   &__content {
     display: flex;
@@ -32,6 +31,7 @@
     }
     &-settings {
       display: flex;
+      align-items: center;
       gap: 4.875rem;
       button {
         width: 12.125rem;
@@ -39,20 +39,34 @@
         cursor: pointer;
         text-transform: uppercase;
       }
+      i {
+        font-size: 24px;
 
-      select {
-        background-color: transparent;
-        color: var(--darkBackground);
-        cursor: pointer;
-        font-size: 14px;
-        font-weight: 500;
-        border: 3px solid var(--darkBackground);
-        padding: 4px;
-        border-radius: 12px;
+        select {
+          position: relative;
+          right: 23px;
+          top: -3px;
+          background-color: transparent;
+          color: transparent;
+          width: 25px;
+
+          cursor: pointer;
+          height: 25px;
+          border: 0;
+          padding: 4px;
+          border-radius: 12px;
+          option {
+            color: var(--darkBackground);
+          }
+          &:focus {
+            outline: none;
+          }
+        }
       }
     }
     .burger {
       i {
+        cursor: pointer;
         color: var(--darkBackground);
         font-size: 28px;
       }
@@ -154,6 +168,7 @@
     svg {
       font-size: 30px;
       color: var(--textColor);
+      cursor: pointer;
       &:hover {
         opacity: 0.5;
         transition: 0.5s;

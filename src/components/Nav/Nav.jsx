@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import "./Nav.scss";
 import { useState, useEffect, useRef } from "react";
 import { IoMdCloseCircle } from "react-icons/io";
@@ -6,7 +6,7 @@ import { IoMdCloseCircle } from "react-icons/io";
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const mobileNavRef = useRef(null);
-
+  const { pathname } = useLocation();
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -27,6 +27,10 @@ export default function Nav() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [open]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <>
@@ -58,11 +62,13 @@ export default function Nav() {
               <Link to="/contact-us">
                 <button>Contact Us</button>
               </Link>
-              <select name="languages">
-                <option value="en">EN</option>
-                <option value="ru">RU</option>
-                <option value="am">ARM</option>
-              </select>
+              <i className="bi bi-globe">
+                <select name="languages">
+                  <option value="en">EN</option>
+                  <option value="ru">RU</option>
+                  <option value="am">ARM</option>
+                </select>
+              </i>
             </div>
             <div className="burger">
               <i onClick={() => setOpen(true)} className="bi bi-list"></i>

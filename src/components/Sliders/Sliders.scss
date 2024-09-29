@@ -20,7 +20,6 @@
       background-color: var(--darkBackground);
     }
   }
-
   div > img {
     width: 28rem;
   }
@@ -169,10 +168,11 @@
       max-width: 18rem;
       height: 27rem;
       margin: 50px auto;
-     .slick-next, .slick-prev{
-      display: none;
-     }
-   
+      .slick-next,
+      .slick-prev {
+        display: none;
+      }
+
       h2 {
         width: 90%;
         font-size: 16px;

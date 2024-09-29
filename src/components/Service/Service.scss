@@ -1,6 +1,6 @@
 .Service {
   width: 100%;
-  background: url("../../../public/images/vector.svg") no-repeat center;
+  background: url("../../../public/images/vector.svg") center;
   background-size: cover;
   margin: 100px auto 0;
   overflow-y: hidden;
@@ -30,7 +30,6 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 4.875rem;
-      padding-bottom: 100px;
 
       &-card {
         width: 27.625rem;
@@ -94,9 +93,8 @@
 }
 @media (max-width: 768px) {
   .Service {
-   
     &__content {
- margin-bottom: -100px;
+      margin-bottom: -100px;
       margin-top: -20px;
       &-title {
         h2 {
@@ -143,15 +141,12 @@
 
 @media (max-width: 390px) {
   .Service {
-
-    
     &__content {
-      
       margin-top: -80px;
-      margin-bottom: -100px;
+      margin-bottom: 20px;
       &-title {
         h2 {
-          font-size: 32px;
+          font-size: 30px;
         }
         button {
           width: 160px;
@@ -160,7 +155,7 @@
       }
       &-cards {
         gap: 20px;
-
+        padding-bottom: 30px;
         &-card {
           width: 19rem;
           height: 25rem;

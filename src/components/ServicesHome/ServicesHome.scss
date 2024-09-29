@@ -257,6 +257,7 @@
     background: url(../../../public/images/backgroundChoose.svg) no-repeat
       center;
     display: flex;
+    margin-top: 140px;
     &-left {
       margin: 120px 160px;
       h2 {
@@ -1256,6 +1257,7 @@
       }
     }
     &__choose {
+      margin-top: 40px;
       &-left {
         margin: 30px 10px 20px 10px;
 

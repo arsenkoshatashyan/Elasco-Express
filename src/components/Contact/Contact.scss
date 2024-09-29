@@ -79,6 +79,7 @@
   .Contact {
     background: none;
     background-color: var(--darkBackground);
+
     &__content {
       &-title {
         padding: 30px 0 0;
@@ -100,6 +101,7 @@
   .Contact {
     background: none;
     background-color: var(--darkBackground);
+
     &__content {
       &-title {
         padding: 20px 0 0;
@@ -115,18 +117,17 @@
         }
       }
       &-items {
-        gap: 4rem;
-        // padding-bottom: 50px;
+        gap: 2rem;
         &-item {
           width: 200px;
           height: 200px;
-          img{
+          img {
             width: 50px;
           }
           h2 {
             font-size: 16px;
           }
-          p{
+          p {
             font-size: 12px;
             width: 90%;
           }
