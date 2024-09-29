@@ -44,6 +44,7 @@
   }
 }
 @media (max-width: 1440px) {
+  
   .Card {
     padding-bottom: 50px;
     &__content {
@@ -70,6 +71,7 @@
   .Card {
     // background-image: none;
     // background-color: var(--darkBackground);
+    
    
     padding: 20px;
     &__content {
@@ -152,7 +154,7 @@
         gap: 2rem;
         padding: 20px;
        &-item{
-        width: 180px;
+        width: 200px;
         height: 160px;
   
        

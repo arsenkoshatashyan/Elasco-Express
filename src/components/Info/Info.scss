@@ -46,10 +46,11 @@
 }
 @media (max-width: 390px) {
   .Info {
-    min-width: 390px;
+    min-width: 320px;
     &__content {
       justify-content: center;
       gap: 10px;
+      padding: 0 20px;
       a {
         font-size: 10px;
       }

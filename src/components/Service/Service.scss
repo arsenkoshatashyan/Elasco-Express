@@ -1,6 +1,7 @@
 .Service {
   width: 100%;
-  background: url("../../../public/images/vector.svg") no-repeat;
+  background: url("../../../public/images/vector.svg") no-repeat center;
+  background-size: cover;
   margin: 100px auto 0;
   overflow-y: hidden;
   &__content {
@@ -93,7 +94,9 @@
 }
 @media (max-width: 768px) {
   .Service {
+   
     &__content {
+ margin-bottom: -100px;
       margin-top: -20px;
       &-title {
         h2 {
@@ -140,8 +143,12 @@
 
 @media (max-width: 390px) {
   .Service {
+
+    
     &__content {
+      
       margin-top: -80px;
+      margin-bottom: -100px;
       &-title {
         h2 {
           font-size: 32px;
