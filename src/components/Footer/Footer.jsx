@@ -16,16 +16,16 @@ export default function Footer() {
           </div>
           <div className="Footer__content-left-socials">
             <a href="">
-              <img src="./images/x.svg" alt="x" />
+              <img src="../../../public/images/x.svg" alt="x" />
             </a>
             <a href="https://www.instagram.com/elasco_express?igsh=MTNlcDgzMTg1Njl6">
-              <img src="./images/instagram.svg" alt="instagram" />
+              <img src="../../../public/images/instagram.svg" alt="instagram" />
             </a>
             <a href="https://t.me/elasco24">
-              <img src="./images/tg.svg" alt="telegram" />
+              <img src="../../../public/images/tg.svg" alt="telegram" />
             </a>
             <a href="">
-              <img src="./images/facebook.svg" alt="facebook" />
+              <img src="../../../public/images/facebook.svg" alt="facebook" />
             </a>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function Footer() {
             </p>
           </div>
           <form>
-            <input type="tel" placeholder="Phone number" required/>
+            <input type="tel" placeholder="Phone number" required />
             <br />
             <button>Call me back</button>
           </form>

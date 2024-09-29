@@ -2,7 +2,7 @@ import Contact from "../Contact/Contact";
 import "./NewsPage.scss";
 
 import { useParams } from "react-router-dom";
-const NewsPage = () => {
+export default function NewsPage() {
   const data = [
     {
       id: 0,
@@ -126,6 +126,4 @@ const NewsPage = () => {
       <Contact />
     </div>
   );
-};
-
-export default NewsPage;
+}

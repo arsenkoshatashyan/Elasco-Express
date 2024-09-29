@@ -39,7 +39,7 @@ export default function Nav() {
           <div className="Nav__content">
             <div className="Nav__content-logo">
               <Link to="/">
-                <img src="./images/logo.svg" alt="logo" />
+                <img src="../../../public/images/logo.svg" alt="logo" />
               </Link>
             </div>
             <div className="Nav__content-links">
