@@ -146,9 +146,10 @@
 
     
     &__content {
-      
+      // padding: 134px 0;
+      border: 2px solid red;
       margin-top: -80px;
-      margin-bottom: -100px;
+      // margin-bottom: -200px;
       &-title {
         h2 {
           font-size: 32px;
