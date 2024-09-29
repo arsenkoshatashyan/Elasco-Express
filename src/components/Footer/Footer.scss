@@ -185,8 +185,12 @@
 }
 @media (max-width: 390px) {
   .Footer {
+
     &__content {
+ 
+   
       &-left {
+       justify-content: center;
         &-truck {
           p {
             width: 90%;
@@ -195,7 +199,9 @@
           }
         }
         &-socials {
-          gap: 20px;
+          width: auto;
+          gap: 14px;
+   
         }
       }
       &-center {

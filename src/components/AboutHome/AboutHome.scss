@@ -592,9 +592,10 @@
         }
         &-activity {
           gap: 26px;
-          width: 80%;
+          width: 90%;
           height: auto;
           margin: 20px auto;
+    
           img {
             width: 478px;
           }
@@ -716,10 +717,21 @@
         }
       }
       &-service {
+   
         &-items {
+
+         
           &-top {
+            border: 2px solid red;
             &-item {
-              width: 95%;
+              width: 90%;
+            }
+          }
+          &-bottom{
+            border: 2px solid red;
+            &-item{
+           
+              width: 90%;
             }
           }
         }

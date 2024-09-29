@@ -76,6 +76,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Sliders.scss";
+import { Link } from "react-router-dom";
 const source = [
   {
     id: 1,
@@ -145,7 +146,10 @@ export default function Sliders() {
     <div className="Sliders">
       <div className="Sliders__content">
         <h2> Our Latest News</h2>
-        <button>View All</button>
+       
+        <Link to="/news">
+            <button>View All</button>
+          </Link>
       </div>
       <Slider {...settings}>
         {data.map((elem) => {
