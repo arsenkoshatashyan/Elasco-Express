@@ -1,3 +1,4 @@
+import Result from "../Result/Result"
 import "./ServicesHome.scss";
 import ContactUs from "../ContactUs/ContactUs";
 
@@ -229,7 +230,7 @@ export default function ServicesHome() {
           </div>
         </div>
       </div>
-      <div className="ServicesHome__result">
+      {/* <div className="ServicesHome__result">
         <div className="ServicesHome__result-one">
           <h2>40K+</h2>
           <h2>12K+</h2>
@@ -243,7 +244,8 @@ export default function ServicesHome() {
           <p>Satisfaction Rating</p>
         </div>
         <hr />
-      </div>
+      </div> */}
+      <Result/>
 
       <ContactUs />
       <div className="ServicesHome__address">
