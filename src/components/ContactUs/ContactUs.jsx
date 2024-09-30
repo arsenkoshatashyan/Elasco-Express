@@ -15,7 +15,13 @@ export default function ContactUs() {
             </p>
           </div>
           <div className="ContactUs__content-left-form">
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="90d4ff81-22a6-4ea2-8021-1173977264a8"
+              />
+
               <input required type="text" name="name" placeholder="Full name" />
               <br />
               <input required type="email" name="email" placeholder="Email" />

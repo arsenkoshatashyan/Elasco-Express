@@ -15,7 +15,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="Footer__content-left-socials">
-            <a href="">
+            <a href="https://twitter.com/elascoexpress">
               <img src="../../../public/images/x.svg" alt="x" />
             </a>
             <a href="https://www.instagram.com/elasco_express?igsh=MTNlcDgzMTg1Njl6">
@@ -24,7 +24,7 @@ export default function Footer() {
             <a href="https://t.me/elasco24">
               <img src="../../../public/images/tg.svg" alt="telegram" />
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/ElascoTransport/https://www.facebook.com/ElascoTransport/">
               <img src="../../../public/images/facebook.svg" alt="facebook" />
             </a>
           </div>
@@ -46,8 +46,18 @@ export default function Footer() {
               consult you for free
             </p>
           </div>
-          <form>
-            <input type="tel" placeholder="Phone number" required />
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="90d4ff81-22a6-4ea2-8021-1173977264a8"
+            />
+            <input
+              type="tel"
+              placeholder="Phone number"
+              name="Phone-number"
+              required
+            />
             <br />
             <button>Call me back</button>
           </form>

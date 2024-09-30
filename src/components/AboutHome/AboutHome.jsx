@@ -39,10 +39,6 @@ export default function AboutHome() {
         </div>
         <Card />
         <Result />
-
-
-
-
         <div className="aboutHome__content-activity">
           <div className="aboutHome__content-activity-box">
             <div className="aboutHome__content-activity-box-text">
@@ -83,12 +79,6 @@ export default function AboutHome() {
                 satisfaction.
               </p>
             </div>
-
-
-
-
-
-
             <div className="aboutHome__content-achievements-box-right">
               <img src="./images/Achievement.svg" alt="achievements" />
             </div>
