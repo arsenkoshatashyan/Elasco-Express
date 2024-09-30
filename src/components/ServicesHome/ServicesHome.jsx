@@ -239,7 +239,7 @@ export default function ServicesHome() {
           <div className="ServicesHome__address-blockOne">
             <img src="./images/address1.svg" alt="" />
             <h3>Contact</h3>
-            <a href="tell:+374 98 555 378">+374 98 555 378</a>
+            <a href="">+374 98 555 378</a>
           </div>
           <div className="ServicesHome__address-blockTwo">
             <img src="./images/address2.svg" alt="" />
@@ -249,7 +249,8 @@ export default function ServicesHome() {
           <div className="ServicesHome__address-blockThree">
             <img src="./images/address3.svg" alt="" />
             <h3>Mail</h3>
-            <a href="email">"mailto:elasco.exspress@mail.ru"</a>
+            
+            <a href="">elasco.exspress@mail.ru</a>
           </div>
         </div>
       </div>
