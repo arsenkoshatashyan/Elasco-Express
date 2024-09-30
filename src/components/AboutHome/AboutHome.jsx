@@ -35,7 +35,7 @@ export default function AboutHome() {
               and efficiency. Regardless of the type of transportation, we
               provide safe and timely delivery of your cargo.
             </p>
-            {/* <img src="./images/trucks.svg" alt="trucks" /> */}
+            <img src="./images/trucks.svg" alt="trucks" />
           </div>
         </div>
         <Card />
