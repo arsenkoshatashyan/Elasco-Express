@@ -2,12 +2,13 @@
   width: 100%;
   background: url("../../../public/images/vector.svg") center;
   background-size: cover;
-  margin: 100px auto 0;
+  // margin: 100px auto ;
   overflow-y: hidden;
+
   &__content {
     height: auto;
     margin: 0 6.75rem;
-    padding: 118px 0 0 0;
+    padding: 118px 0;
 
     &-title {
       width: 100%;
@@ -94,8 +95,8 @@
 @media (max-width: 768px) {
   .Service {
     &__content {
-      margin-bottom: -100px;
       margin-top: -20px;
+ 
       &-title {
         h2 {
           font-size: 40px;
@@ -105,8 +106,9 @@
         }
       }
       &-cards {
+        gap: 30px;
         &-card {
-          width: 20rem;
+          width: 23rem;
           gap: 10px;
           & > div {
             margin: 0px !important;

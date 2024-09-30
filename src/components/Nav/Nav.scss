@@ -178,6 +178,7 @@
         color: var(--mainColor);
       }
     }
+    
   }
 }
 
@@ -195,15 +196,20 @@
       &-links {
         ul {
           gap: 3rem;
-          font-size: 14px;
+          font-size: 12px;
+          display: none;
         }
       }
       &-settings {
         gap: 2rem;
+
         button {
           display: none;
         }
       }
+    }
+    .burger {
+      display: block;
     }
   }
 }
@@ -250,6 +256,7 @@
       }
       &-settings {
         width: 7rem;
+       
       }
     }
     .burger {
