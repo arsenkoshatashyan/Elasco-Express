@@ -242,7 +242,6 @@ export default function ServicesHome() {
           <p>Trusted Partners</p>
           <p>Satisfaction Rating</p>
         </div>
-        <hr />
       </div>
 
       <ContactUs />
