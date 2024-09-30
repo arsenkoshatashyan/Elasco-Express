@@ -230,23 +230,7 @@ export default function ServicesHome() {
           </div>
         </div>
       </div>
-      {/* <div className="ServicesHome__result">
-        <div className="ServicesHome__result-one">
-          <h2>40K+</h2>
-          <h2>12K+</h2>
-          <h2>50</h2>
-          <h2>98%</h2>
-        </div>
-        <div className="ServicesHome__result-two">
-          <p>Satisfied Customers</p>
-          <p>Years Experience</p>
-          <p>Trusted Partners</p>
-          <p>Satisfaction Rating</p>
-        </div>
-        <hr />
-      </div> */}
       <Result />
-
       <ContactUs />
       <div className="ServicesHome__address">
         <h2>GET IN TOUCH</h2>
@@ -265,7 +249,9 @@ export default function ServicesHome() {
           <div className="ServicesHome__address-blockThree">
             <img src="./images/address3.svg" alt="" />
             <h3>Mail</h3>
-            <a href="email">elasco.exspress@mail.ru</a>
+            <a href="mailto:www.mail.ru:elasco.exspress@mail.ru">
+              elasco.exspress@mail.ru
+            </a>
           </div>
         </div>
       </div>
