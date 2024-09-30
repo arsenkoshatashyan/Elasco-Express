@@ -3,82 +3,83 @@ import Contact from "./../Contact/Contact";
 import { useState } from "react";
 import Result from "./../Result/Result";
 import { Link } from "react-router-dom";
-export default function NewsHome() {
-  const data = [
-    {
-      id: 0,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "./images/certificate.svg",
-    },
-    {
-      id: 1,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "./images/certificate.svg",
-    },
-    {
-      id: 2,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "./images/certificate.svg",
-    },
-    {
-      id: 3,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "./images/certificate.svg",
-    },
-    {
-      id: 4,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "./images/certificate.svg",
-    },
-    {
-      id: 5,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "./images/certificate.svg",
-    },
-    {
-      id: 6,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "./images/certificate.svg",
-    },
-    {
-      id: 7,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "./images/certificate.svg",
-    },
-    {
-      id: 8,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "./images/certificate.svg",
-    },
-    {
-      id: 9,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "./images/certificate.svg",
-    },
-    {
-      id: 10,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "./images/certificate.svg",
-    },
-    {
-      id: 11,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "./images/certificate.svg",
-    },
-  ];
 
+const data = [
+  {
+    id: 0,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "./images/certificate.svg",
+  },
+  {
+    id: 1,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "./images/certificate.svg",
+  },
+  {
+    id: 2,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "./images/certificate.svg",
+  },
+  {
+    id: 3,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "./images/certificate.svg",
+  },
+  {
+    id: 4,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "./images/certificate.svg",
+  },
+  {
+    id: 5,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "./images/certificate.svg",
+  },
+  {
+    id: 6,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "./images/certificate.svg",
+  },
+  {
+    id: 7,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "./images/certificate.svg",
+  },
+  {
+    id: 8,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "./images/certificate.svg",
+  },
+  {
+    id: 9,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "./images/certificate.svg",
+  },
+  {
+    id: 10,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "./images/certificate.svg",
+  },
+  {
+    id: 11,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "./images/certificate.svg",
+  },
+];
+
+export default function NewsHome() {
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 4;
   const lastPostIndex = currentPage * postsPerPage;
@@ -110,9 +111,7 @@ export default function NewsHome() {
         <div className="NewsHome__content-items">
           {currentPosts.map((elem) => (
             <div key={elem.id} className="NewsHome__content-items-item">
-              <Link to={`/news/${elem.id}`}>
-                <h2>{elem.title}</h2>
-              </Link>
+              <h2>{elem.title}</h2>
               <img src={elem.url} alt="certificate" />
               <Link to={`/news/${elem.id}`}>
                 <p>Read more...</p>

@@ -1,94 +1,96 @@
 import Contact from "../Contact/Contact";
 import "./NewsPage.scss";
 
+
+const data = [
+  {
+    id: 0,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "/images/certificate3.svg",
+    url2: "/images/certificate2.svg",
+  },
+  {
+    id: 1,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "/images/certificate3.svg",
+    url2: "/images/certificate2.svg",
+  },
+  {
+    id: 2,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "/images/certificate3.svg",
+    url2: "/images/certificate2.svg",
+  },
+  {
+    id: 3,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "/images/certificate3.svg",
+    url2: "/images/certificate2.svg",
+  },
+  {
+    id: 4,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "/images/certificate3.svg",
+    url2: "/images/certificate2.svg",
+  },
+  {
+    id: 5,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "/images/certificate3.svg",
+    url2: "/images/certificate2.svg",
+  },
+  {
+    id: 6,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "/images/certificate3.svg",
+    url2: "/images/certificate2.svg",
+  },
+  {
+    id: 7,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "/images/certificate3.svg",
+    url2: "/images/certificate2.svg",
+  },
+  {
+    id: 8,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "/images/certificate3.svg",
+    url2: "/images/certificate2.svg",
+  },
+  {
+    id: 9,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "/images/certificate3.svg",
+    url2: "/images/certificate2.svg",
+  },
+  {
+    id: 10,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "/images/certificate3.svg",
+    url2: "/images/certificate2.svg",
+  },
+  {
+    id: 11,
+    title:
+      'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
+    url: "/images/certificate3.svg",
+    url2: "/images/certificate2.svg",
+  },
+];
 import { useParams } from "react-router-dom";
 export default function NewsPage() {
-  const data = [
-    {
-      id: 0,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "../../../public/images/certificate3.svg",
-      url2: "../../../public/images/certificate2.svg",
-    },
-    {
-      id: 1,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "../../../public/images/certificate3.svg",
-      url2: "../../../public/images/certificate2.svg",
-    },
-    {
-      id: 2,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "../../../public/images/certificate3.svg",
-      url2: "../../../public/images/certificate2.svg",
-    },
-    {
-      id: 3,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "../../../public/images/certificate3.svg",
-      url2: "../../../public/images/certificate2.svg",
-    },
-    {
-      id: 4,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "../../../public/images/certificate3.svg",
-      url2: "../../../public/images/certificate2.svg",
-    },
-    {
-      id: 5,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "../../../public/images/certificate3.svg",
-      url2: "../../../public/images/certificate2.svg",
-    },
-    {
-      id: 6,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "../../../public/images/certificate3.svg",
-      url2: "../../../public/images/certificate2.svg",
-    },
-    {
-      id: 7,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "../../../public/images/certificate3.svg",
-      url2: "../../../public/images/certificate2.svg",
-    },
-    {
-      id: 8,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "../../../public/images/certificate3.svg",
-      url2: "../../../public/images/certificate2.svg",
-    },
-    {
-      id: 9,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "../../../public/images/certificate3.svg",
-      url2: "../../../public/images/certificate2.svg",
-    },
-    {
-      id: 10,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "../../../public/images/certificate3.svg",
-      url2: "../../../public/images/certificate2.svg",
-    },
-    {
-      id: 11,
-      title:
-        'In 2024, LLC "Elasco Express" was recognized as a high-class logistics provide',
-      url: "../../../public/images/certificate3.svg",
-      url2: "../../../public/images/certificate2.svg",
-    },
-  ];
+
   const { id } = useParams();
   const newsItem = data.find((item) => item.id === parseInt(id));
   return (
@@ -102,7 +104,7 @@ export default function NewsPage() {
         </div>
         <div className="newsPage__content-item">
           <div className="newsPage__content-item-title">
-            <img src="../../../public/images/badge.svg" alt="badge" />
+            <img src="/images/badge.svg" alt="badge" />
             <h2>Our achievement</h2>
           </div>
           <p>
@@ -117,10 +119,10 @@ export default function NewsPage() {
             <img src={newsItem.url2} alt="photo" />
             <img src={newsItem.url} alt="photo" />
           </div>
-          <div className="newsPage__content-item-buttons">
+          {/* <div className="newsPage__content-item-buttons">
             <span>&lt; Previous News </span>
             <span>Next News &gt; </span>
-          </div>
+          </div> */}
         </div>
       </div>
       <Contact />
