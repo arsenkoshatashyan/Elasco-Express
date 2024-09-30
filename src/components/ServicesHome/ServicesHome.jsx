@@ -1,4 +1,4 @@
-import Result from "../Result/Result"
+import Result from "../Result/Result";
 import "./ServicesHome.scss";
 import ContactUs from "../ContactUs/ContactUs";
 
@@ -245,7 +245,7 @@ export default function ServicesHome() {
         </div>
         <hr />
       </div> */}
-      <Result/>
+      <Result />
 
       <ContactUs />
       <div className="ServicesHome__address">
