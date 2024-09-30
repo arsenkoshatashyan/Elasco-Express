@@ -5,8 +5,10 @@ import { IoClose } from "react-icons/io5";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const [activePage, setActivePage] = useState("");
   const mobileNavRef = useRef(null);
   const { pathname } = useLocation();
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -29,12 +31,13 @@ export default function Nav() {
   }, [open]);
 
   useEffect(() => {
+    setActivePage(pathname);
     window.scrollTo(0, 0);
   }, [pathname]);
 
   return (
     <>
-      {open == false ? (
+      {open === false ? (
         <nav className="Nav">
           <div className="Nav__content">
             <div className="Nav__content-logo">
@@ -45,22 +48,43 @@ export default function Nav() {
             <div className="Nav__content-links">
               <ul>
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/" className={activePage === "/" ? "active" : ""}>
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/about">About Us</Link>
+                  <Link
+                    to="/about"
+                    className={activePage === "/about" ? "active" : ""}
+                  >
+                    About Us
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/services">Services</Link>
+                  <Link
+                    to="/services"
+                    className={activePage === "/services" ? "active" : ""}
+                  >
+                    Services
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/news">News</Link>
+                  <Link
+                    to="/news"
+                    className={activePage === "/news" ? "active" : ""}
+                  >
+                    News
+                  </Link>
                 </li>
               </ul>
             </div>
             <div className="Nav__content-settings">
               <Link to="/contact-us">
-                <button>Contact Us</button>
+                <button
+                  className={activePage === "/contact-us" ? "active" : ""}
+                >
+                  Contact Us
+                </button>
               </Link>
               <i className="bi bi-globe">
                 <select name="languages">
@@ -86,19 +110,41 @@ export default function Nav() {
             <div className="BurgerMenu__content-links">
               <ul>
                 <li onClick={() => setOpen(false)}>
-                  <Link to="/">Home</Link>
+                  <Link to="/" className={activePage === "/" ? "active" : ""}>
+                    Home
+                  </Link>
                 </li>
                 <li onClick={() => setOpen(false)}>
-                  <Link to="/about">About Us</Link>
+                  <Link
+                    to="/about"
+                    className={activePage === "/about" ? "active" : ""}
+                  >
+                    About Us
+                  </Link>
                 </li>
                 <li onClick={() => setOpen(false)}>
-                  <Link to="/services">Services</Link>
+                  <Link
+                    to="/services"
+                    className={activePage === "/services" ? "active" : ""}
+                  >
+                    Services
+                  </Link>
                 </li>
                 <li onClick={() => setOpen(false)}>
-                  <Link to="/news">News</Link>
+                  <Link
+                    to="/news"
+                    className={activePage === "/news" ? "active" : ""}
+                  >
+                    News
+                  </Link>
                 </li>
                 <li onClick={() => setOpen(false)}>
-                  <Link to="/contact-us">Contact Us</Link>
+                  <Link
+                    to="/contact-us"
+                    className={activePage === "/contact-us" ? "active" : ""}
+                  >
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </div>
