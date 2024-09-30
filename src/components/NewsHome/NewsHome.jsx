@@ -3,8 +3,7 @@ import Contact from "./../Contact/Contact";
 import { useState } from "react";
 import Result from "./../Result/Result";
 import { Link } from "react-router-dom";
-
-const NewsHome = () => {
+export default function NewsHome() {
   const data = [
     {
       id: 0,
@@ -146,6 +145,4 @@ const NewsHome = () => {
       <Contact />
     </div>
   );
-};
-
-export default NewsHome;
+}

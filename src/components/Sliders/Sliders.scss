@@ -2,6 +2,7 @@
   background-color: #d9d9d98c;
   background: url("../../../public//images/vector.svg") no-repeat;
   width: 100%;
+
   &__content {
     display: flex;
     justify-content: space-between;
@@ -9,9 +10,11 @@
     width: 80%;
     height: 7.25rem;
     margin: 46px auto;
+
     h2 {
       font-size: 52px;
       color: var(--dartTextColor);
+
     }
     button {
       width: 11.875em;
@@ -20,7 +23,6 @@
       background-color: var(--darkBackground);
     }
   }
-
   div > img {
     width: 28rem;
   }
@@ -28,7 +30,6 @@
     margin: 20px auto 0;
   }
   .slick-slide > div {
-    overflow: hidden;
     max-width: 31.125rem;
     height: 32.875rem;
     font-size: 30px;
@@ -52,6 +53,8 @@
   }
   .slick-track {
     display: flex;
+    padding: 20px 0;
+
   }
   .slick-next {
     width: 100px;
@@ -79,8 +82,12 @@
     font-size: 42px;
   }
 }
+
 @media (max-width: 1590px) {
   .Sliders {
+    .slick-track {
+      padding: 50px 0;
+          }
     .slick-next {
       right: 600px;
     }
@@ -91,22 +98,22 @@
 }
 @media (max-width: 1500px) {
   .Sliders {
-    gap: 30px;
+
     h2 {
-      font-size: 26px;
-      overflow-y: hidden;
+      font-size: 24px;
     }
     button {
       width: 150px;
       font-size: 12px;
     }
+
     .slick-slide > div {
-      max-width: 25rem;
-      height: 32.875rem;
+      max-width: 24rem;
+      height: 32rem;
 
       h2 {
         width: 90%;
-        font-size: 24px;
+        font-size: 22px;
         margin: 0 auto;
       }
       img {
@@ -153,13 +160,18 @@
     .slick-current {
       margin-top: -20px;
     }
+    // .slick-track {
+    //   display: flex;
+    //   padding: 60px 0;
+  
+    // }
     .slick-next,
     .slick-prev {
       display: none;
     }
     h2 {
       font-size: 18px;
-      overflow-y: hidden;
+
     }
     button {
       width: 100px;
@@ -169,12 +181,13 @@
       max-width: 18rem;
       height: 27rem;
       margin: 50px auto;
-     .slick-next, .slick-prev{
-      display: none;
-     }
-   
+      .slick-next,
+      .slick-prev {
+        display: none;
+      }
+
       h2 {
-        width: 90%;
+        width: 95%;
         font-size: 16px;
       }
       img {

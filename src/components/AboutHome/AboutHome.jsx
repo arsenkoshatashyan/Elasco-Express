@@ -2,6 +2,7 @@
 import Card from "../Card/Card";
 import Contact from "../Contact/Contact";
 import Result from "../Result/Result";
+import { Link } from "react-router-dom";
 import "./AboutHome.scss";
 export default function AboutHome() {
   return (
@@ -34,14 +35,11 @@ export default function AboutHome() {
               and efficiency. Regardless of the type of transportation, we
               provide safe and timely delivery of your cargo.
             </p>
-            <img src="./images/trucks.svg" alt="trucks" />
+            {/* <img src="./images/trucks.svg" alt="trucks" /> */}
           </div>
         </div>
         <Card />
         <Result />
-
-
-
 
         <div className="aboutHome__content-activity">
           <div className="aboutHome__content-activity-box">
@@ -84,11 +82,6 @@ export default function AboutHome() {
               </p>
             </div>
 
-
-
-
-
-
             <div className="aboutHome__content-achievements-box-right">
               <img src="./images/Achievement.svg" alt="achievements" />
             </div>
@@ -97,7 +90,9 @@ export default function AboutHome() {
         <div className="aboutHome__content-service">
           <div className="aboutHome__content-service-title">
             <h2>Our Main Service Include</h2>
-            <button>More About Services</button>
+            <Link to="/services">
+              <button>More About Services</button>
+            </Link>
           </div>
           <div className="aboutHome__content-service-items">
             <div className="aboutHome__content-service-items-top">

@@ -2,10 +2,9 @@
   &__content {
     width: 100%;
     margin: 134px auto 0;
-
+    background: url(../../../public/images/truckBackground.svg) no-repeat center;
     &-title {
-      background: url(../../../public/images/truckBackground.svg) no-repeat
-        center;
+
       height: 332px;
       h2 {
         color: var(--textColor);
@@ -373,7 +372,14 @@
       }
       &-service {
         &-title {
-          width: 80%;
+          width: 90%;
+       
+        }
+        h2{
+          font-size: 40px;
+        }
+        button{
+          width: 200px;
         }
         &-items {
           width: 100%;
@@ -460,7 +466,6 @@
       &-activity {
         &-box {
           height: fit-content;
-          padding-bottom: 30px;
           transform: skew(0deg);
           img {
             display: none;
@@ -524,23 +529,37 @@
         &-items {
           &-top {
             &-item {
-              width: 370px;
+              width: 360px;
               p {
-                font-size: 16px;
+                font-size: 15px;
+              }
+              h2{
+                font-size: 18px;
               }
               &-title {
                 gap: 10px;
 
                 &-img {
                   margin-left: 20px;
+         
+           
                 }
+              
               }
             }
           }
           &-bottom {
             gap: 15px;
+            &-center{
+              img{
+                width: 100%;
+            
+              }
+            }
+  
             &-item {
-              width: 370px;
+              width: 360px;
+      
               &-title {
                 gap: 10px;
                 &-img {
@@ -548,12 +567,15 @@
                 }
               }
               p {
-                font-size: 16px;
+                font-size: 15px;
+              }
+              h2{
+                font-size: 18px;
               }
             }
             &-center {
               img {
-                display: none;
+                display: block;
               }
             }
           }
@@ -565,7 +587,9 @@
 @media (max-width: 390px) {
   .aboutHome {
     &__content {
+    
       &-title {
+    
         width: 100%;
         height: auto;
         padding-bottom: 50px;
@@ -595,8 +619,7 @@
           width: 90%;
           height: auto;
           margin: 20px auto;
-         
-    
+
           img {
             width: 478px;
           }
@@ -621,7 +644,6 @@
               &-title {
                 p {
                   font-size: 20px;
-                  border: 1px solid red;
                 }
               }
               p {
@@ -635,25 +657,37 @@
           }
         }
         &-service {
+          
           &-title {
             width: 100%;
+
           }
           &-items {
             width: 100%;
             gap: 60px;
+            
             &-top {
+              
               gap: 60px;
               &-item {
                 width: 514px;
                 height: auto;
                 min-height: 343.6px;
+               
                 &-title {
                   gap: 30px;
                   height: 110px;
                   &-img {
                     width: 82px;
                     height: 82px;
+                
                   }
+                  p {
+                font-size: 15px;
+              }
+              h2{
+                font-size: 18px;
+              }
                 }
                 p {
                   width: 80%;
@@ -664,14 +698,18 @@
             &-bottom {
               gap: 30px;
               &-center {
+              
                 img {
-                  display: none;
+                  display: block;
+          
+                  
                 }
               }
               &-item {
                 width: 514px;
                 height: auto;
                 min-height: 300px;
+              
 
                 &-title {
                   gap: 30px;
@@ -679,6 +717,7 @@
                   &-img {
                     width: 82px;
                     height: 82px;
+                   
                   }
                 }
                 p {
@@ -692,8 +731,8 @@
       }
       &-activity {
         &-box {
-          height: auto;
-     
+          height: max-content;
+
           &-text {
             width: 90%;
 
@@ -701,7 +740,6 @@
               font-size: 28px;
             }
             p {
-             
               font-size: 14px;
               margin-top: 10px;
             }
@@ -723,44 +761,45 @@
         }
       }
       &-service {
-   
+        margin-bottom: -100px;
         &-items {
-justify-content: center;
-gap: 60px;
+          justify-content: center;
+          align-items: center;
+          gap: 60px;
 
           &-top {
-            border: 2px solid red;
             width: 80%;
 
-        
             &-item {
-            
-              p{
+              p {
                 font-size: 16px;
               }
-              &-title{
-                h2{
-                  font-size: 20px;
+              &-title {
+                h2 {
+                  font-size: 16px;
                 }
-                
               }
-            
-      
-            
             }
           }
-          &-bottom{
+          &-bottom {
             width: 80%;
-            gap: 20px;
-            border: 2px solid red;
-            p{
-              font-size: 12px;
-            }
-          
-            &-item{
-              width: 80%;
-       
-     
+&-center{
+  img{
+    width: 100%;
+
+
+  }
+}
+            &-item {
+              p {
+                font-size: 16px;
+              }
+              &-title {
+                h2 {
+                  font-size: 16px;
+                  width: 60%;
+                }
+              }
             }
           }
         }

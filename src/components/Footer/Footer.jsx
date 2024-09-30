@@ -47,7 +47,7 @@ export default function Footer() {
             </p>
           </div>
           <form>
-            <input type="tel" placeholder="Phone number" required/>
+            <input type="tel" placeholder="Phone number" required />
             <br />
             <button>Call me back</button>
           </form>
