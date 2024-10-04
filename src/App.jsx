@@ -15,7 +15,6 @@ import ContactHome from "./components/ContactHome/ContactHome";
 import NewsHome from "./components/NewsHome/NewsHome";
 import NewsPage from "./components/NewsPage/NewsPage";
 import Sliders from "./components/Sliders/Sliders";
-import Provider from "./i18n/Provider";
 
 
 
@@ -28,7 +27,7 @@ export default function App() {
   const isHomePage = location.pathname === "/" || location.pathname === "/home";
 
   return (
-    <Provider locale={language}>
+   
 
       
       <div>
@@ -57,7 +56,7 @@ export default function App() {
       <Footer />
     </div>
 
-    </Provider>
+  
     
   );
 }

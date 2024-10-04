@@ -2,21 +2,12 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 import "./Nav.scss";
 import { useState, useEffect, useRef } from "react";
 import { IoClose } from "react-icons/io5";
-import LOCALES from "../../i18n/locale";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const [activePage, setActivePage] = useState("");
   const mobileNavRef = useRef(null);
   const { pathname } = useLocation();
-
-
-const [language, setLanguage] = useState(LOCALES.ENGLISH);
-const handleChange = (e) => {
-  setLanguage(e.target.value)
-}
-
-
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -96,10 +87,10 @@ const handleChange = (e) => {
                 </button>
               </Link>
               <i className="bi bi-globe">
-                <select name="languages" id="languages" onChange={handleChange}>
-                  <option value={LOCALES.ENGLISH} >EN</option>
-                  <option value={LOCALES.RUSSIAN}>RU</option>
-                  <option value={LOCALES.ARMENIAN}>ARM</option>
+                <select name="languages" id="languages">
+                  <option value="en" >EN</option>
+                  <option value="ru">RU</option>
+                  <option value="am">ARM</option>
                 </select>
               </i>
             </div>
