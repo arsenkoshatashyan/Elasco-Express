@@ -1,0 +1,13 @@
+{
+  "home": "Home",
+  "about_us": "About Us",
+  "services": "Services",
+  "news": "News",
+  "contact_us": "Contact Us",
+  "logistic": {
+    "fastest_secured": "FASTEST AND SECURED",
+    "solutions": "LOGISTIC SOLUTIONS",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    "services_button": "SERVICES"
+  }
+}

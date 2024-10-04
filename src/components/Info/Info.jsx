@@ -10,9 +10,7 @@ export default function Info() {
         </div>
         <div className="Info__content-email">
           <img src="./images/letter.svg" alt="mail" />
-          <a href="mailto:info@elasco.am">
-          info@elasco.am
-          </a>
+          <a href="mailto:info@elasco.am">info@elasco.am</a>
         </div>
       </div>
     </div>
