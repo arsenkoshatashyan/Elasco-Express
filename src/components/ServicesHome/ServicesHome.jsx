@@ -249,9 +249,7 @@ export default function ServicesHome() {
           <div className="ServicesHome__address-blockThree">
             <img src="./images/address3.svg" alt="" />
             <h3>Mail</h3>
-            <a href="mailto:www.mail.ru:elasco.exspress@mail.ru">
-              elasco.exspress@mail.ru
-            </a>
+            <a href="mailto:elasco.exspress@mail.ru">elasco.exspress@mail.ru</a>
           </div>
         </div>
       </div>
