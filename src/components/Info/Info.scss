@@ -6,13 +6,14 @@
   &__content {
     min-height: 48px;
     display: flex;
+    justify-content: end;
     gap: 2.5rem;
     padding: 0 176px;
-    background-color: var(--mainColor);
-    font-size: 0.8rem;
+    background-color: var(--textColor);
+    font-size: 0.9rem;
 
     a {
-      color: var(--preNavTextColor);
+      color: var(--darkBackground);
     }
 
     &-phone,
