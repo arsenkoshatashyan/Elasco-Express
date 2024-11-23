@@ -1,39 +1,43 @@
 import "./Card.scss";
+import { useTranslation } from "react-i18next";
 
 export default function Card() {
+  const { t } = useTranslation();
+
   const data = [
     {
       id: 1,
       url: "/images/card1.svg",
-      description: "Optimized Cost",
+      description: t("card.features.0"),
     },
     {
       id: 2,
       url: "/images/card2.svg",
-      description: "Personal Approach ",
+      description: t("card.features.1"),
     },
     {
       id: 3,
       url: "/images/card3.svg",
-      description: "Shipping Worldwide",
+      description: t("card.features.2"),
     },
     {
       id: 4,
       url: "/images/card4.svg",
-      description: "Safety & Rollability",
+      description: t("card.features.3"),
     },
     {
       id: 5,
       url: "/images/card5.svg",
-      description: "Delivery on Time",
+      description: t("card.features.4"),
     },
   ];
+
   return (
     <div className="Card">
       <div className="Card__content">
         <div className="Card__content-title">
-          <h2>Why Choose Us?</h2>
-          <p>We provide full range global logistics solution.</p>
+          <h2>{t("card.title")}</h2>
+          <p>{t("card.description")}</p>
         </div>
         <div className="Card__content-items">
           {data.map((elem) => (

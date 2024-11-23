@@ -4,7 +4,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 import translationEN from "./locales/en/translation.json";
 import translationRU from "./locales/ru/translation.json";
-
+import translationAM from "./locales/am/translation.json";
 const resources = {
   en: {
     translation: translationEN,
@@ -12,21 +12,24 @@ const resources = {
   ru: {
     translation: translationRU,
   },
+  am: {
+    translation: translationAM,
+  },
 };
 
 i18n
-  .use(LanguageDetector) // Определение языка (с проверкой в localStorage)
-  .use(initReactI18next) // Связь с React
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: "en", // Язык по умолчанию, если перевод не найден
-    lng: localStorage.getItem("i18nextLng") || "en", // Устанавливаем язык из localStorage или по умолчанию (английский)
+    fallbackLng: "en",
+    lng: localStorage.getItem("i18nextLng") || "en",
     detection: {
-      order: ["localStorage", "cookie", "navigator"], // Порядок определения языка
-      caches: ["localStorage"], // Сохраняем язык в localStorage
+      order: ["localStorage", "cookie", "navigator"],
+      caches: ["localStorage"],
     },
     interpolation: {
-      escapeValue: false, // React уже защищает от XSS
+      escapeValue: false,
     },
   });
 

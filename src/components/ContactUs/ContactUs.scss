@@ -19,8 +19,10 @@
           height: 154px;
           display: inline-block;
           overflow-y: hidden;
+          text-transform: uppercase;
+          color: var(--mainColor);
           span {
-            color: var(--mainColor);
+            color: var(--textColor);
           }
         }
         p {
