@@ -1,18 +1,17 @@
 import "./Footer.scss";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="Footer">
       <div className="Footer__content">
         <div className="Footer__content-left">
           <div className="Footer__content-left-truck">
             <img src="./images/truck.svg" alt="truck" />
-            <p>
-              Our comprehensive logistics services ensure timely and secure
-              delivery for your business, providing the coverage you need for
-              all your shipping needs.
-            </p>
+            <p>{t("footer.description")}</p>
           </div>
           <div className="Footer__content-left-socials">
             <a href="https://twitter.com/elascoexpress">
@@ -24,27 +23,31 @@ export default function Footer() {
             <a href="https://t.me/elasco24">
               <img src="./images/tg.svg" alt="telegram" />
             </a>
-            <a href="https://www.facebook.com/ElascoTransport/https://www.facebook.com/ElascoTransport/">
+            <a href="https://www.facebook.com/ElascoTransport/">
               <img src="./images/facebook.svg" alt="facebook" />
             </a>
           </div>
         </div>
         <div className="Footer__content-center">
-          <h2>Explore</h2>
           <ul>
-            <Link to="/">Home</Link>
-            <Link to="/about">About Us</Link>
-            <Link to="/services">Services</Link>
-            <Link to="/news">News</Link>
+            <li>
+              <Link to="/">{t("footer.home")}</Link>
+            </li>
+            <li>
+              <Link to="/about">{t("footer.about")}</Link>
+            </li>
+            <li>
+              <Link to="/services">{t("footer.services")}</Link>
+            </li>
+            <li>
+              <Link to="/news">{t("footer.news")}</Link>
+            </li>
           </ul>
         </div>
         <div className="Footer__content-right">
           <div className="Footer__content-right-title">
-            <h2>DO YOU NEED ADVICE FROM OUR SPECIALIST?</h2>
-            <p>
-              Leave your phone number in the form and we will call you back to
-              consult you for free
-            </p>
+            <h2>{t("footer.advice")}</h2>
+            <p>{t("footer.consultation")}</p>
           </div>
           <form action="https://api.web3forms.com/submit" method="POST">
             <input
@@ -54,18 +57,17 @@ export default function Footer() {
             />
             <input
               type="tel"
-              placeholder="Phone number"
+              placeholder={t("footer.inputText")}
               name="Phone-number"
               required
             />
             <br />
-            <button>Call me back</button>
+            <button>{t("footer.callBack")}</button>
           </form>
         </div>
       </div>
-
       <hr />
-      <p>Copyright © 2024 Elasco Express. All Rights Reserved </p>
+      <p>{t("footer.copyright")}</p>
     </footer>
   );
 }

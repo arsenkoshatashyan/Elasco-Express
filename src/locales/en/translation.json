@@ -1,13 +1,180 @@
 {
-  "home": "Home",
-  "about_us": "About Us",
-  "services": "Services",
-  "news": "News",
-  "contact_us": "Contact Us",
+  "nav": {
+    "home": "Home",
+    "about_us": "About Us",
+    "services": "Services",
+    "news": "News",
+    "contact_us": "Contacts"
+  },
+
   "logistic": {
-    "fastest_secured": "FASTEST AND SECURED",
+    "fastest_secured": "FAST AND RELIABLE",
     "solutions": "LOGISTIC SOLUTIONS",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    "description": "With over a decade of experience, we provide reliable, flexible and efficient solutions tailored to your business needs.",
     "services_button": "SERVICES"
+  },
+  "about": {
+    "title": "About us",
+    "description_1": "Elasco Express LLC has been successfully operating in the transport and logistics market for more than 10 years, delivering services with a reputation as a reliable partner.",
+    "description_2": "Today, the company offers its clients a comprehensive range of transport, forwarding, and logistics services, including cargo transportation by road, sea, air , as well as customs brokerage services",
+    "more_about": "More"
+  },
+  "card": {
+    "title": "Why choose Us?",
+    "description": "We offer a wide range of logistics services that are tailored to meet the needs of our clients.",
+    "features": [
+      "Optimized Cost",
+      "Personal Approach",
+      "Shipping Worldwide",
+      "Safety",
+      "Delivery on Time"
+    ]
+  },
+  "service": {
+    "title": "Our services",
+    "button": "MORE",
+    "services": [
+      {
+        "title": "Sea Freight",
+        "desc": "For oversized cargo and wholesale orders, our ocean freight services are the best option. We collaborate with leading ocean shipping companies to offer full container load (FCL) and less than container load (LCL) options, ensuring smooth cargo delivery."
+      },
+      {
+        "title": "Land Freight",
+        "desc": "Our land freight services offer flexible and safe options for the delivery of goods from different countries, in particular from Europe, CIS countries, China, Georgia, Iran to Armenia and in the opposite direction."
+      },
+      {
+        "title": "Air Freight",
+        "desc": "Thanks to various routes through the airports of Europe, Russia, China (Shenzhen, Shanghai and Guangzhou), we offer fast, flexible and effective solutions for the delivery of your urgent cargo. "
+      },
+      {
+        "title": "Transportation of Dangerous Goods",
+        "desc": "What differs Elasco Express LLC from other freight forwarding companies is our specialized expertise in transporting dangerous goods by land. We understand the critical importance of safety, compliance, and precision when it comes to handling hazardous materials."
+      },
+      {
+        "title": "Customs brokerage services in Armenia",
+        "desc": "Elasco Express LLC offers a full range of services for customs-brokerage processing of goods crossing the border of Armenia. We work both in the export and import direction, ensuring fast and accurate execution of all necessary procedures."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let’s connect",
+    "span": " with us",
+    "description": "Contact us today to experience the difference of working with a trusted logistics partner.",
+    "form": {
+      "name": "Name",
+      "email": "E-mail",
+      "phone": "Phone",
+      "interested": "Message",
+      "button": "Send"
+    }
+  },
+  "result": {
+    "satisfied_customers": "Successful оrder еxecution",
+    "years_experience": "Years Experience",
+    "trusted_partners": "Trusted Partners",
+    "satisfaction_rating": "Satisfaction Rating"
+  },
+  "sliders": {
+    "latest_news": "Our Latest News",
+    "view_all": "View All",
+    "slides": [
+      {
+        "titleKey": "1",
+        "description": "12,"
+      },
+      {
+        "titleKey": "2",
+        "description": "21,"
+      },
+      {
+        "titleKey": "3",
+        "description": "31,"
+      },
+      {
+        "titleKey": "4",
+        "description": "41,"
+      }
+    ],
+    "readMore": "Read more..."
+  },
+  "contacts": {
+    "title": "GET IN TOUCH",
+    "description": "Need Reliable Logistics Solutions? Contact Us Today!",
+    "items": [
+      {
+        "title": "Contact",
+        "description": "+374 98 555 378"
+      },
+      {
+        "title": "Address",
+        "description": "0064, Yerevan, Arno Babajanyan 26/5 str., apt.1"
+      },
+      {
+        "title": "E-mail",
+        "description": "info@elasco.am "
+      }
+    ]
+  },
+  "footer": {
+    "description": "Our comprehensive logistics services ensure timely and secure delivery  of goods",
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "news": "News",
+    "advice": "DO YOU NEED CONSULTATION FROM OUR SPECIALIST?",
+    "consultation": "Leave your phone number in the form and we will call you back to consult you for free",
+    "inputText": "Phone number",
+    "copyright": "Copyright © 2024 Elasco Express. All Rights Reserved",
+    "callBack": "Call back"
+  },
+
+  "aboutHome": {
+    "title": "About Us",
+    "whoWeAreDescription1": "Founded in 2012, Elasco Express LLC has now turned into a leading transport and logistics company that provides complex solutions for air, sea and land transportation. Having more than ten years of experience, we offer logistics services that meet the changing needs of businesses around the world. One of the reasons for the successful implementation of services is its own transport fleet, which consists of vehicles with a load capacity from 9 to 23 tons, and in volume from 50 to 120 CBM, with various types of semi-trailers: with tent, metal,with a refrigerated installation, etc. The second factor of successful activity is long-term cooperation with various foreign transport companies, which allows us to carry out two-way transportation not only from the CIS countries to Armenia, but also from Europe, China, Georgia, Iran and from other parts of the world.",
+    "whoWeAreDescription2": "Our extensive services include air, sea and land transportation, which allows us to process almost any transportation with accuracy and efficiency. Regardless of the type of transportation, we provide safe and timely delivery of your cargo.",
+    "activity": "Activity",
+    "activityDescription": "Today, we provide our clients with a full range of transport and logistics services, including transportation by road and sea, as well as air freight. The main activities of the company are the transportation of consolidated cargo, transportation by full trucks, warehouse storage, specialization in the transportation of dangerous goods and high-risk goods.",
+    "achievementsTitle": "Our achievements ",
+    "achievementsDescription": "In 2024, Elasco Express LLC was recognized as a high-class logistics provider. Our company took 1st place as a freight forwarding company and received a certificate from the largest international freight exchange platform in the Russian Federation and in the CIS region ATI.SU.This recognition reflects our commitment to quality service, efficiency and customer satisfaction."
+  },
+
+  "services": {
+    "title": "Services",
+    "seaTransportation": "Sea freight",
+    "seaTransportationDescription": "For oversized cargo and wholesale orders, our sea freight services are the best option. We cooperate with leading sea freight companies providing our clients with the opportunity of constant loading of consolidated and full cargo. With extensive experience in shipping cargo across international waters, Elasco Express LLC offers seamless and cost-effective solutions for customers looking to ship goods from key global markets including China and Europe. The company organizes both full container loads (FCL) and less than container loads (LCL), providing flexible and scalable solutions for any cargo and volume. We handle the paperwork, space reservations, customs clearance, cargo delivery and other necessary processes, ensuring efficient coordination at every stage of the shipping process.",
+    "airTransportation": "Air freight ",
+    "airTransportationDescription": "Among the various methods available, air freight stands out as a rapid and reliable option for shipping cargo across long distances. Air freight services are utilised by businesses across diverse industries, from manufacturing and retail to healthcare and technology, to meet tight deadlines, capitalise on market opportunities, and satisfy the growing customer demand for fast delivery. Using various routes of airports in Europe, Russia, China (Shenzhen, Shanghai and Guangzhou), we offer fast, flexible and efficient solutions for the delivery of your urgent cargo. These strategic hubs allow us to optimize the transportation process and increase delivery efficiency. Our air freight services are designed to transport cargo of various sizes and types. Our experienced team handles all customs procedures, ensuring proper document flow and regulatory compliance. We monitor every step of the shipping process, from departure to arrival.",
+    "landTransportation": "Land freight",
+    "landTransportationDescription": "Elasco Express LLC is your trusted partner for overland freight forwarding solutions, connecting major trade hubs across Europe, China, the CIS region and beyond. What differs Elasco Express LLC is our specialized expertise in transporting dangerous goods by land. We understand the critical importance of safety, compliance, and precision when it comes to handling hazardous materials. Our team is fully trained and certified in the safe transportation of dangerous goods, ensuring that all regulations and safety standards are meticulously adhered to. In addition to dangerous goods, company handles a wide range of cargo types, including perishable goods, oversized loads, and high-value products. With Elasco Express LLC, you benefit from a comprehensive door-to-door service, complete with custom support, cargo insurance and timely updates on the status of your shipment.",
+    "customsClearance": "Customs brokerage services in Armenia ",
+    "customsClearanceDescription": "Elasco Express LLC offers a full range of services for customs-brokerage processing of goods crossing the border of Armenia. We work both in the export and import direction, ensuring fast and accurate execution of all necessary procedures.Our services include:",
+    "getInTouch": "Contacts",
+    "contactUs": "Need Reliable Logistics Solutions? Contact Us Today!",
+    "contact": "Contact",
+    "address": "Address",
+    "addressDetail": "0064 Arno Babajanyan 26/5, apt.1",
+    "mail": "E-mail",
+    "customsServices": {
+      "documentPreparation": "• Preparation of all necessary documents for customs clearance",
+      "customsDuties": "• Calculation and assessment of customs duties and taxes",
+      "customsConsultation": "• Consultations on customs rules and procedures",
+      "representation": "• Representation of the client's interests at all stages of registration",
+      "productClassification": "• Assistance in the classification of products according to the classification of HS code",
+      "transitGoods": "• Organization and registration of transit goods"
+    }
+  },
+  "newsTitle": "News",
+  "readMore": "Read more...",
+  "certificate": "certificate",
+  "logisticsRecognition": "In 2024, LLC \"Elasco Express\" was recognized as a high-class logistics provider.",
+  "contactTitle": "Contact Us",
+  "contactDescription": "If you have any questions, feel free to reach out.",
+  "resultTitle": "Our Results",
+  "resultDescription": "We pride ourselves on delivering quality logistics services.",
+  "newsPage": {
+    "title": "News",
+    "itemTitle": "Our achievement",
+    "recognition": "In 2024, LLC \"Elasco Express\" was recognized as a high-class logistics provider, took 1st place as a freight forwarding company and received a certificate from the largest international freight exchange platform in the Russian Federation and the CIS region ATI.SU. This recognition reflects our commitment to quality service, efficiency and customer satisfaction.",
+    "readMore": "Read more..."
   }
 }

@@ -22,7 +22,6 @@ import Sliders from "./components/Sliders/Sliders";
 
 export default function App() {
   const location = useLocation();
-  
 
   const isHomePage = location.pathname === "/" || location.pathname === "/home";
 

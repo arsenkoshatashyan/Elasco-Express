@@ -23,12 +23,12 @@
         color: var(--mainColor);
       }
       button {
-        width: 298px;
+        width: 170px;
       }
     }
     &-cards {
       display: flex;
-      justify-content: center;
+      justify-content: left;
       flex-wrap: wrap;
       gap: 4.875rem;
 
@@ -42,7 +42,7 @@
           width: 22.875rem;
           font-size: 12px;
           color: var(--lightTextColor);
-          margin: 0 46px;
+          margin: 0 auto;
         }
         h3 {
           width: 250px;
@@ -52,10 +52,10 @@
         > div {
           display: flex;
           align-items: center;
-          gap: 2rem;
+          gap: 1rem;
           margin: 0 40px;
           width: 400px;
-          height: 100px;
+          height: 90px;
 
           span {
             width: 4rem;
@@ -63,8 +63,8 @@
             border-radius: 50%;
             background-color: var(--iconBackground);
 
-            margin-top: 12px;
-            margin-bottom: 12px;
+            // margin-top: 12px;
+            // margin-bottom: 12px;
 
             > img {
               margin: 14px 0 0 14px;

@@ -1,28 +1,30 @@
 import "./Result.scss";
+import { useTranslation } from "react-i18next";
 
 export default function Result() {
+  const { t } = useTranslation();
+
   return (
     <div className="Result">
       <div className="Result__content">
         <ul>
           <li>
-            40K+
-            <p>Satisfied Customers</p>
+            4000+
+            <p>{t("result.satisfied_customers")}</p>
           </li>
           <li>
-            12K+
-            <p>Years Experience</p>
+            12
+            <p>{t("result.years_experience")}</p>
           </li>
           <li>
-            50
-            <p>Trusted Partners</p>
+            100+
+            <p>{t("result.trusted_partners")}</p>
           </li>
           <li>
             98%
-            <p>Satisfaction Rating</p>
+            <p>{t("result.satisfaction_rating")}</p>
           </li>
         </ul>
-        {/* <hr /> */}
       </div>
     </div>
   );

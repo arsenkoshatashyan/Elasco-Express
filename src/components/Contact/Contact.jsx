@@ -1,33 +1,36 @@
 import "./Contact.scss";
+import { useTranslation } from "react-i18next";
 
-const data = [
-  {
-    id: 0,
-    url: "/images/support.svg",
-    title: "Contact",
-    description: "+374 98 555 378",
-  },
-  {
-    id: 1,
-    url: "/images/geo.svg",
-    title: "Address",
-    description: "0064, Yerevan, Arno Babajanyan 26/5 str., apt.1",
-  },
-  {
-    id: 2,
-    url: "/images/email.svg",
-    title: "Mail",
-    description: "elasco.exspress@mail.ru",
-  },
-];
 export default function Contact() {
-  
+  const { t } = useTranslation();
+
+  const data = [
+    {
+      id: 0,
+      url: "/images/support.svg",
+      title: t("contacts.items.0.title"),
+      description: t("contacts.items.0.description"),
+    },
+    {
+      id: 1,
+      url: "/images/geo.svg",
+      title: t("contacts.items.1.title"),
+      description: t("contacts.items.1.description"),
+    },
+    {
+      id: 2,
+      url: "/images/email.svg",
+      title: t("contacts.items.2.title"),
+      description: t("contacts.items.2.description"),
+    },
+  ];
+
   return (
     <div className="Contact">
       <div className="Contact__content">
         <div className="Contact__content-title">
-          <h2>GET IN TOUCH</h2>
-          <p>Need Reliable Logistics Solutions? Contact Us Today!</p>
+          <h2>{t("contacts.title")}</h2>
+          <p>{t("contacts.description")}</p>
         </div>
         <div className="Contact__content-items">
           {data.map((elem) => (
