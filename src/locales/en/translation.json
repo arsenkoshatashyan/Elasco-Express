@@ -154,14 +154,12 @@
     "address": "Address",
     "addressDetail": "0064 Arno Babajanyan 26/5, apt.1",
     "mail": "E-mail",
-    "customsServices": {
-      "documentPreparation": "• Preparation of all necessary documents for customs clearance",
-      "customsDuties": "• Calculation and assessment of customs duties and taxes",
-      "customsConsultation": "• Consultations on customs rules and procedures",
-      "representation": "• Representation of the client's interests at all stages of registration",
-      "productClassification": "• Assistance in the classification of products according to the classification of HS code",
-      "transitGoods": "• Organization and registration of transit goods"
-    }
+    "documentPreparation": "• Preparation of all necessary documents for customs clearance",
+    "customsDuties": "• Calculation and assessment of customs duties and taxes",
+    "customsConsultation": "• Consultations on customs rules and procedures",
+    "representation": "• Representation of the client's interests at all stages of registration",
+    "productClassification": "• Assistance in the classification of products according to the classification of HS code",
+    "transitGoods": "• Organization and registration of transit goods"
   },
   "newsTitle": "News",
   "readMore": "Read more...",

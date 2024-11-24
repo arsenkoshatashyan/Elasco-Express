@@ -20,9 +20,7 @@ export default function ServicesHome() {
         {/* Блок Морские перевозки */}
         <div className="ServicesHome__content-block">
           <div className="ServicesHome__content-block-box">
-            <div className="ServicesHome__content-block-box-Left">
-              <p>{t("services.seaTransportation")}</p>
-            </div>
+            <div className="ServicesHome__content-block-box-Left"></div>
             <div className="ServicesHome__content-block-box-Right">
               <h2>{t("services.seaTransportation")}</h2>
               <p>{t("services.seaTransportationDescription")}</p>
@@ -37,18 +35,14 @@ export default function ServicesHome() {
               <h2>{t("services.airTransportation")}</h2>
               <p>{t("services.airTransportationDescription")}</p>
             </div>
-            <div className="ServicesHome__content-blockTwo-box-Right">
-              <h2>{t("services.airTransportation")}</h2>
-            </div>
+            <div className="ServicesHome__content-blockTwo-box-Right"></div>
           </div>
         </div>
 
         {/* Блок Наземные перевозки */}
         <div className="ServicesHome__content-blockThree">
           <div className="ServicesHome__content-blockThree-box">
-            <div className="ServicesHome__content-blockThree-box-Left">
-              <p>{t("services.landTransportation")}</p>
-            </div>
+            <div className="ServicesHome__content-blockThree-box-Left"></div>
             <div className="ServicesHome__content-blockThree-box-Right">
               <h2>{t("services.landTransportation")}</h2>
               <p>{t("services.landTransportationDescription")}</p>
@@ -62,10 +56,16 @@ export default function ServicesHome() {
             <div className="ServicesHome__content-blockFour-box-Left">
               <h2>{t("services.customsClearance")}</h2>
               <p>{t("services.customsClearanceDescription")}</p>
+              <ul>
+                <li>{t("services.documentPreparation")}</li>
+                <li>{t("services.customsDuties")}</li>
+                <li>{t("services.customsConsultation")}</li>
+                <li>{t("services.representation")}</li>
+                <li>{t("services.productClassification")}</li>
+                <li>{t("services.transitGoods")}</li>
+              </ul>
             </div>
-            <div className="ServicesHome__content-blockFour-box-Right">
-              <p>{t("services.customsClearance")}</p>
-            </div>
+            <div className="ServicesHome__content-blockFour-box-Right"></div>
           </div>
         </div>
       </div>
