@@ -32,7 +32,7 @@
   },
   "service": {
     "title": "Our services",
-    "button": "MORE",
+    "button": "More",
     "services": [
       {
         "title": "Sea Freight",
@@ -98,11 +98,11 @@
     "readMore": "Read more..."
   },
   "contacts": {
-    "title": "GET IN TOUCH",
+    "title": "CONTACTS",
     "description": "Need Reliable Logistics Solutions? Contact Us Today!",
     "items": [
       {
-        "title": "Contact",
+        "title": "Tel.",
         "description": "+374 98 555 378"
       },
       {

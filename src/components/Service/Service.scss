@@ -2,12 +2,12 @@
   width: 100%;
   background: url("../../../public/images/vector.svg") center;
   background-size: cover;
-  // margin: 100px auto ;
   overflow-y: hidden;
 
   &__content {
+    width: 90%;
     height: auto;
-    margin: 0 6.75rem;
+    margin: 0 auto;
     padding: 118px 0;
 
     &-title {
@@ -19,7 +19,7 @@
       padding: 0 20px;
       margin-bottom: 74px;
       h2 {
-        font-size: 3.375rem;
+        font-size: 3rem;
         color: var(--mainColor);
       }
       button {
@@ -30,16 +30,17 @@
       display: flex;
       justify-content: left;
       flex-wrap: wrap;
-      gap: 4.875rem;
+      gap: 3rem;
 
       &-card {
-        width: 27.625rem;
-        height: 25.625rem;
+        width: 27.7rem;
+        height: 28rem;
         background-color: var(--cardsBackground);
         border-radius: 18px;
+        margin: 0 auto;
 
         p {
-          width: 22.875rem;
+          width: 23rem;
           font-size: 12px;
           color: var(--lightTextColor);
           margin: 0 auto;
@@ -56,19 +57,19 @@
           margin: 0 40px;
           width: 400px;
           height: 90px;
+          h3 {
+            width: 80%;
+            font-size: 20px;
+          }
 
           span {
-            width: 4rem;
-            height: 4rem;
+            width: 3.6rem;
+            height: 3.6rem;
             border-radius: 50%;
             background-color: var(--iconBackground);
-
-            // margin-top: 12px;
-            // margin-bottom: 12px;
-
             > img {
               margin: 14px 0 0 14px;
-              width: 32px;
+              width: 30px;
             }
           }
         }
@@ -80,13 +81,9 @@
   .Service {
     margin-top: 20px;
     &__content {
-      margin: 0 3rem;
       &-title {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 50px;
         h2 {
-          font-size: 44px;
+          font-size: 2.6rem;
         }
       }
     }
@@ -96,22 +93,35 @@
   .Service {
     &__content {
       margin-top: -20px;
- 
+      
+
       &-title {
+       
+        gap: 20px;
+    
+      justify-content: start;
         h2 {
-          font-size: 40px;
+       
+          font-size: 32px;
+
         }
         button {
-          width: 220px;
+          width: 180px;
+       
         }
       }
       &-cards {
         gap: 30px;
+
+     
         &-card {
           width: 23rem;
           gap: 10px;
+          height: 27.8rem;
+      
           & > div {
-            margin: 0px !important;
+            width: 85%;
+            margin: 0px auto;
             gap: 10px;
             padding: 0 10px;
             span {
@@ -121,19 +131,19 @@
               padding: 0;
             }
             h3 {
-              width: 50%;
-              font-size: 13px;
+              width: 80%;
+              font-size: 18px;
             }
             img {
               margin: 0 !important;
-              padding: 0 !important;
             }
           }
           img {
             width: inherit;
           }
           p {
-            width: 200px;
+            width: 80%;
+            
           }
         }
       }
@@ -144,46 +154,39 @@
 @media (max-width: 390px) {
   .Service {
     &__content {
-      margin-top: -80px;
-      margin-bottom: 20px;
+      // margin-top: -80px;
+      // margin-bottom: 20px;
       &-title {
         h2 {
           font-size: 30px;
+          
         }
         button {
-          width: 160px;
+          // width: 160px;
           font-size: 14px;
         }
       }
       &-cards {
         gap: 20px;
-        padding-bottom: 30px;
+        // padding-bottom: 30px;
         &-card {
-          width: 19rem;
-          height: 25rem;
+          width: 21rem;
+          height: 28.5rem;
           display: flex;
           flex-direction: column;
           align-items: center;
           > div {
-            width: 220px;
-            gap: 10px;
-            margin-left: 6px;
+            h3{
+              font-size: 16px;
+        
+            }
           }
           img {
             width: inherit;
           }
-          span {
-            img {
-              padding-left: 2px;
-            }
-          }
-          h3 {
-            width: 80px;
-            font-size: 14px;
-          }
-
           p {
-            width: 150px;
+            width: 82%;
+            margin-top: -10px;
           }
         }
       }
