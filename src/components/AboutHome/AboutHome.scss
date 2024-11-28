@@ -1,12 +1,14 @@
 .aboutHome {
   &__content {
     width: 100%;
+    max-width: 1730px;
     margin: 134px auto 0;
+    background-color: var(--iconBackground);
 
     &-title {
-      // background: url(../../../public/images/truckBackground.svg) no-repeat
-      //   center;
-      background: url(../../../public/images/1.jpg) no-repeat center;
+      background: url(../../../public/images/truckBackground.svg) no-repeat
+        center;
+      // background: url(../../../public/images/1.jpg) no-repeat center;
       height: 332px;
       h2 {
         color: var(--textColor);
@@ -23,26 +25,24 @@
         font-size: 40px;
       }
       p {
-        margin-top: 10px;
-        text-align: center;
-        margin: 0 auto;
+        margin: 30px auto;
         width: 100%;
-        max-width: 1292px;
-        font-size: 30px;
+        max-width: 1474px;
+        font-size: 27px;
+        text-align: justify;
+        hyphens: auto;
+        word-break: break-word;
       }
       &-box {
         display: flex;
-        align-items: center;
-        gap: 43px;
-
         p {
-          width: 932px;
-          text-align: center;
-          font-size: 30px;
-          margin-left: 64px;
+          width: 744px;
+          text-align: left;
+          font-size: 27px;
         }
         img {
           height: 425px;
+          margin-top: -80px;
         }
       }
     }
@@ -54,42 +54,36 @@
       justify-content: center;
       margin-top: 50px;
       &-box {
+        background: url("../../../public/images/abouthome_container.png")
+          no-repeat center;
         display: flex;
-        justify-content: center;
-        transform: skew(-10deg);
-        border-radius: 46.63px;
-        background-color: #ccd7df66;
-        width: 90%;
-        height: auto;
-        gap: 65.5px;
+        height: 748px;
         img {
-          transform: skew(10deg);
-          max-width: 90%;
-          width: 892px;
+          width: 692px;
           height: auto;
-          margin-right: -93px;
-          margin-top: 70px;
+          border-top-left-radius: 200px;
         }
         &-text {
-          transform: skew(10deg);
-          margin-left: 20px;
-          text-align: center;
+          text-align: justify;
+          hyphens: auto;
+          word-break: break-word;
           display: flex;
           flex-direction: column;
           align-items: center;
+
           flex: 1;
           h2 {
-            margin-top: 30px;
+            margin-top: 122px;
             font-size: 45px;
             color: var(--mainColor);
+            font-weight: 600;
           }
           p {
-            margin-top: 20px;
-            width: 80%;
+            margin-top: 64px;
+            width: 66%;
             max-width: 95%;
-            // min-height: auto;
             font-size: 28px;
-            margin-left: 80px;
+            // margin-left: 80px;
           }
         }
       }
@@ -97,163 +91,37 @@
     &-achievements {
       background: url("../../../public/images/truck-logistics-operations-dusk.svg")
         no-repeat center;
+      background-size: cover;
       overflow-y: hidden;
       width: 100%;
-      height: 639px;
-      border-radius: 151px 38px 149px 30px;
+      border-radius: 151px 38px 109px 30px;
       display: flex;
       justify-content: center;
-      align-items: center;
-      padding-top: 50px;
+      margin-top: 74px;
       &-box {
-        display: flex;
-        justify-content: space-between;
-        width: 1447px;
+        width: 1338px;
+        margin-top: 60px;
         &-left {
           &-title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             h2 {
               font-size: 40px;
               color: var(--mainColor);
-            }
-            img {
-              margin-bottom: 16px;
-              width: 125px;
-              height: 125px;
+              margin-bottom: 20px;
             }
           }
           p {
-            width: 620px;
-            font-size: 27px;
-            text-align: center;
+            font-size: 28px;
+            text-align: justify;
             color: var(--darkBackground);
           }
         }
         &-right {
+          display: flex;
+          gap: 82px;
           img {
-            width: 100%;
-          }
-        }
-      }
-    }
-    &-service {
-      background: url(../../../public/images/vector.svg) no-repeat;
-      overflow-y: hidden;
-      &-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 80%;
-        margin: 133px auto 0;
-        h2 {
-          font-size: 55px;
-          color: var(--mainColor);
-        }
-        button {
-          width: 298px;
-        }
-      }
-      &-items {
-        width: 100%;
-        margin: 58px auto 0;
-        padding-bottom: 116px;
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-
-        &-top {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-          gap: 58px;
-          &-item {
-            width: 614px;
-            height: 368px;
-            background-color: #c4d2dc;
-            border-radius: 16px;
-            overflow-y: hidden;
-
-            &-title {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              gap: 40px;
-              background-color: #7f929d;
-              border-radius: 16px;
-              height: 147px;
-
-              &-img {
-                width: 92px;
-                height: 92px;
-                background-color: var(--textColor);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 28px;
-              }
-              h2 {
-                color: var(--textColor);
-              }
-            }
-            p {
-              width: 522px;
-              text-align: center;
-              text-transform: capitalize;
-              margin: 54px auto;
-              font-size: 18px;
-            }
-          }
-        }
-        &-bottom {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-          gap: 2rem;
-          font-size: 16px;
-          &-center {
-            img {
-              width: 382px;
-              height: 221px;
-            }
-          }
-          &-item {
-            width: 614px;
-            height: auto;
-            background-color: #c4d2dc;
-            border-radius: 16px;
-
-            &-title {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              gap: 40px;
-              background-color: #7f929d;
-              border-radius: 16px;
-              height: 147px;
-              &-img {
-                width: 92px;
-                height: 92px;
-                background-color: var(--textColor);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 28px;
-              }
-              h2 {
-                color: var(--textColor);
-              }
-            }
-            p {
-              width: 522px;
-              text-align: center;
-              text-transform: capitalize;
-              margin: 54px auto;
-              font-size: 18px;
-            }
+            width: 640px;
+            border-radius: 64px;
+            margin-top: 38px;
           }
         }
       }
@@ -263,19 +131,48 @@
 @media (max-width: 1600px) {
   .aboutHome {
     &__content {
+      &-title {
+        h2 {
+          font-size: 40px;
+        }
+      }
+      &-whoWeAre {
+        h2 {
+          font-size: 32px;
+        }
+        p {
+          width: 90%;
+          font-size: 24px;
+        }
+        &-box {
+          align-items: center;
+          p {
+            font-size: 24px;
+            width: 40%;
+            text-align: left;
+          }
+          img {
+            width: 50%;
+            margin-top: 5px;
+          }
+        }
+      }
       &-activity {
         &-box {
+          height: 500px;
           img {
-            width: 492px;
-            margin-right: 0px;
-            transform: skew(1deg);
+            width: 600px;
           }
-
           &-text {
+            h2 {
+              font-size: 36px;
+              margin: 40px;
+            }
             p {
               font-size: 24px;
               width: 80%;
-              margin-bottom: 40px;
+              margin: 0;
+              text-align: left;
             }
           }
         }
@@ -283,9 +180,24 @@
       &-achievements {
         &-box {
           &-left {
+            width: 90%;
+            margin: 0 auto;
+
+            &-title {
+              h2 {
+                font-size: 36px;
+              }
+            }
             p {
-              width: 90%;
-              // font-size: 22px;
+              font-size: 24px;
+            }
+          }
+          &-right {
+            padding: 0 80px;
+
+            img {
+              width: 500px;
+              margin: 38px auto;
             }
           }
         }
@@ -298,146 +210,82 @@
   .aboutHome {
     &__content {
       &-title {
-        height: auto;
-        padding-bottom: 84px;
         h2 {
-          font-size: 32px;
-          padding: 50px 0 0 150px;
+          font-size: 36px;
         }
       }
       &-whoWeAre {
         p {
           width: 90%;
-          font-size: 25px;
+          font-size: 22px;
         }
         &-box {
-          margin: 40px auto;
-          flex-wrap: wrap;
-          justify-content: center;
           p {
-            font-size: 25px;
-            width: 80%;
+            width: 40%;
+            font-size: 22px;
           }
           img {
-            width: 100%;
+            width: 50%;
+            margin-top: 5px;
           }
         }
       }
       &-activity {
-        height: auto;
-
         &-box {
-          flex-direction: column;
-          align-items: center;
-          gap: 0px;
-
+          height: 460px;
           img {
-            width: 392px;
-            margin-top: 0;
-            transform: skew(-2deg);
-            margin-bottom: 40px;
+            width: 492px;
           }
-
           &-text {
             h2 {
+              font-size: 34px;
               overflow-y: hidden;
             }
             p {
-              font-size: 16px;
-              max-width: 70%;
-              // height: 300px;
-              // min-height: fit-content;
+              font-size: 22px;
+              max-width: 80%;
             }
           }
         }
       }
       &-achievements {
-        height: auto;
-        width: 100%;
-        margin: 50px auto 0 auto;
         &-box {
-          width: inherit;
-          justify-content: center;
-          flex-wrap: wrap;
+          width: 90%;
           &-left {
             display: flex;
             flex-direction: column;
-            align-items: center;
             p {
-              width: 80%;
-
-              max-width: 90%;
               font-size: 18px;
             }
           }
           &-right {
-            display: flex;
-            align-items: center;
+            padding: 20px;
+
             img {
-              width: 60%;
-              margin: 0 auto;
+              border-radius: 0;
             }
           }
         }
       }
-      &-service {
-        &-title {
-          width: 90%;
-        }
-        h2 {
-          font-size: 40px;
-        }
-        button {
-          width: 200px;
-        }
-        &-items {
-          width: 100%;
-          gap: 60px;
-          &-top {
-            gap: 60px;
-            &-item {
-              width: 514px;
-              height: auto;
-              min-height: 343.6px;
-              &-title {
-                gap: 30px;
-                height: 110px;
-                &-img {
-                  width: 82px;
-                  height: 82px;
-                }
-                h2 {
-                  font-size: 20px;
-                }
-              }
-              p {
-                width: 80%;
-                margin: 24px auto;
-              }
-            }
+    }
+  }
+}
+@media (max-width: 1160px) {
+  .aboutHome {
+    &__content {
+      &-activity {
+        &-box {
+          border-top-left-radius: 70px;
+          border-bottom-right-radius: 70px;
+
+          img {
+            display: none;
           }
-          &-bottom {
-            width: 100%;
-            gap: 60px;
-            &-item {
-              width: 514px;
-              height: auto;
-              min-height: 300px;
-              &-title {
-                gap: 30px;
-                height: 110px;
-                &-img {
-                  width: 82px;
-                  height: 82px;
-                }
-                h2 {
-                  font-size: 20px;
-                }
-              }
-              p {
-                width: 80%;
-                margin: 24px auto;
-              }
+
+          &-text {
+            p {
+              margin: 10px 0 20px;
+              text-align: center;
             }
           }
         }
@@ -458,12 +306,7 @@
         }
       }
       &-whoWeAre {
-        h2 {
-          margin-bottom: 40px;
-          font-size: 30px;
-        }
         p {
-          margin-top: 10px;
           font-size: 20px;
         }
         &-box {
@@ -471,28 +314,27 @@
           p {
             margin: 0 auto;
             font-size: 20px;
-            width: 70%;
+            width: 90%;
+            text-align: justify;
           }
           img {
-            height: 225px;
+            height: 250px;
           }
         }
       }
       &-activity {
         &-box {
-          // height: fit-content;
+          height: 560px;
 
           img {
-            display: none;
+            // display: none;
           }
 
           &-text {
             h2 {
-              transform: skew(0deg);
             }
             p {
-              margin: 10px 0 20px;
-              transform: skew(0deg);
+              font-size: 19px;
             }
           }
         }
@@ -500,97 +342,22 @@
       &-achievements {
         &-box {
           width: 90%;
-          height: 480px;
           &-left {
             &-title {
-              img {
-                width: 100px;
-              }
               h2 {
                 font-size: 22px;
               }
             }
             p {
-              width: 80%;
-              font-size: 15px;
-              text-align: center;
-              color: var(--darkBackground);
-              margin: 0 auto;
+              font-size: 16px;
             }
           }
           &-right {
-            img {
-              display: none;
-            }
-          }
-        }
-      }
-
-      &-service {
-        &-title {
-          margin: 80px auto 0 auto;
-          width: 80%;
-          flex-direction: column;
-          h2 {
-            font-size: 30px;
-            text-align: center;
-          }
-          button {
-            margin-top: 20px;
-            width: 200px;
-          }
-        }
-        &-items {
-          &-top {
-            &-item {
-              width: 360px;
-              p {
-                font-size: 15px;
-              }
-              h2 {
-                font-size: 18px;
-              }
-              &-title {
-                gap: 10px;
-
-                &-img {
-                  margin-left: 20px;
-                }
-              }
-            }
-          }
-          &-bottom {
-            gap: 15px;
-            &-center {
-              img {
-                width: 100%;
-              }
-            }
-
-            &-item {
-              width: 360px;
-
-              &-title {
-                gap: 10px;
-                &-img {
-                  margin-left: 20px;
-                }
-                h2 {
-                  width: 50%;
-                }
-              }
-              p {
-                font-size: 15px;
-              }
-              h2 {
-                font-size: 18px;
-              }
-            }
-            &-center {
-              img {
-                display: block;
-              }
-            }
+            flex-wrap: wrap;
+            padding: 0;
+            gap: 0;
+            width: 340px;
+            margin: 0 auto;
           }
         }
       }
@@ -615,87 +382,50 @@
           font-size: 30px;
         }
         p {
-          font-size: 18px;
+          font-size: 16px;
         }
         &-box {
           p {
-            margin: 10px auto;
-            font-size: 18px;
+            width: 90%;
+            padding: 0;
+            text-align: center;
+            font-size: 16px;
           }
           img {
-            display: none;
+            width: 50%;
           }
         }
       }
       &-activity {
         &-box {
+          height: 480px;
+
           &-text {
             width: 90%;
 
             h2 {
-              font-size: 28px;
+              font-size: 24px;
+              margin: 0;
+              padding: 20px 0;
             }
             p {
-              font-size: 14px;
-              margin-top: 10px;
-              height: auto;
+              font-size: 16px;
             }
           }
         }
       }
       &-achievements {
         &-box {
+          width: 90%;
           &-left {
-            img {
-              width: 80px;
-            }
             &-title {
               h2 {
                 font-size: 30px;
               }
             }
           }
-        }
-      }
-      &-service {
-        margin-bottom: -100px;
-        &-items {
-          justify-content: center;
-          align-items: center;
-          gap: 50px;
-
-          &-top {
-            width: 80%;
-
-            &-item {
-              p {
-                font-size: 16px;
-              }
-              &-title {
-                h2 {
-                  font-size: 16px;
-                }
-              }
-            }
-          }
-          &-bottom {
-            width: 80%;
-            &-center {
-              img {
-                width: 100%;
-              }
-            }
-            &-item {
-              p {
-                font-size: 16px;
-              }
-              &-title {
-                h2 {
-                  font-size: 16px;
-                  width: 50%;
-                }
-              }
-            }
+          &-right {
+            width: 240px;
           }
         }
       }

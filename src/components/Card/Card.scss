@@ -4,7 +4,7 @@
   &__content {
     text-align: center;
     &-title {
-      padding: 82px 0 92px 0;
+      padding: 140px 0 50px 0;
       h2 {
         color: var(--mainColor);
         font-size: 50px;
@@ -12,6 +12,8 @@
       p {
         color: var(--textColor);
         font-size: 30px;
+        width: 90%;
+        margin: 26px auto 0;
       }
     }
     &-items {
@@ -19,16 +21,16 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      gap: 74px;
+      gap: 40px;
       padding-bottom: 155px;
       &-item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 16px;
-        width: 14rem;
-        height: 14rem;
+        gap: 14px;
+        width: 15rem;
+        height: 15rem;
         background-color: #5a5a5a73;
         border-radius: 46px;
         img {
@@ -36,8 +38,9 @@
         }
         p {
           color: var(--mainColor);
-          height: 51px;
+          height: 70px;
           font-size: 20px;
+          padding: 0 10px;
         }
       }
     }
@@ -45,11 +48,29 @@
 }
 @media (max-width: 1440px) {
   .Card {
-    padding-bottom: 50px;
     &__content {
+      &-title {
+        h2 {
+          color: var(--mainColor);
+          font-size: 44px;
+        }
+        p {
+          color: var(--textColor);
+          font-size: 26px;
+          margin: 26px auto 0;
+        }
+      }
       &-items {
-        gap: 1.8rem;
-        padding-bottom: 0;
+        gap: 1rem;
+        &-item {
+          width: 14rem;
+          height: 14rem;
+          background-color: #5a5a5a73;
+          border-radius: 46px;
+          img {
+            margin-top: 35px;
+          }
+        }
       }
     }
   }
@@ -58,31 +79,53 @@
   .Card {
     &__content {
       &-title {
-        padding: 22px 0;
+        h2 {
+          color: var(--mainColor);
+          font-size: 38px;
+        }
+        p {
+          color: var(--textColor);
+          font-size: 22px;
+          width: 90%;
+        }
       }
       &-items {
         gap: 1.5rem;
+        &-item {
+          width: 13rem;
+          height: 13rem;
+
+          p {
+            color: var(--mainColor);
+            height: 70px;
+            font-size: 18px;
+            padding: 0 10px;
+          }
+        }
       }
     }
   }
 }
 @media (max-width: 768px) {
   .Card {
-    // background-image: none;
-    // background-color: var(--darkBackground);
-
+    background: none;
+    background-color: var(--darkBackground);
     padding: 20px;
     &__content {
       &-title {
+        padding: 50px;
+
         h2 {
           font-size: 2rem;
         }
         p {
           font-size: 1.2rem;
+          width: 90%;
         }
       }
       &-items {
         gap: 1rem;
+        padding-bottom: 70px;
         &-item {
           width: 180px;
           height: 180px;
@@ -100,9 +143,6 @@
 
 @media (max-width: 624px) {
   .Card {
-    background-image: none;
-    background-color: var(--darkBackground);
-
     padding: 20px;
     &__content {
       &-title {

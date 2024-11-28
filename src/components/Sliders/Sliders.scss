@@ -2,29 +2,32 @@
   background-color: #d9d9d98c;
   background: url("../../../public//images/vector.svg") no-repeat;
   width: 100%;
-
+  max-width: 1730px;
+  margin: 0 auto;
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 96%;
+
     height: 7.25rem;
     margin: 46px auto;
 
     h2 {
-      font-size: 52px;
+      font-size: 50px;
       color: var(--dartTextColor);
-
     }
     button {
-      width: 11.875em;
+      width: 11em;
       font-size: 14px;
       color: #fafafa;
       background-color: var(--darkBackground);
+      margin-right: 30px;
     }
   }
   div > img {
     width: 28rem;
+    margin-bottom: 30px;
   }
   .slick-slide {
     margin: 20px auto 0;
@@ -45,6 +48,7 @@
       width: 420px;
       font-size: 26px;
       line-height: 36px;
+      margin-bottom: 30px;
     }
     p {
       font-size: 14px;
@@ -54,7 +58,6 @@
   .slick-track {
     display: flex;
     padding: 20px 0;
-
   }
   .slick-next {
     width: 100px;
@@ -87,7 +90,7 @@
   .Sliders {
     .slick-track {
       padding: 50px 0;
-          }
+    }
     .slick-next {
       right: 600px;
     }
@@ -98,7 +101,6 @@
 }
 @media (max-width: 1500px) {
   .Sliders {
-
     h2 {
       font-size: 24px;
     }
@@ -163,7 +165,7 @@
     // .slick-track {
     //   display: flex;
     //   padding: 60px 0;
-  
+
     // }
     .slick-next,
     .slick-prev {
@@ -171,7 +173,6 @@
     }
     h2 {
       font-size: 18px;
-
     }
     button {
       width: 100px;
@@ -187,7 +188,7 @@
       }
 
       h2 {
-        width: 95%;
+        width: 90%;
         font-size: 16px;
       }
       img {

@@ -1,20 +1,29 @@
 .Contact {
-  background: url("../../../public/images/contactBackground.svg") no-repeat;
+  background: url("../../../public/images/contactBackground.svg") no-repeat
+    center;
   height: auto;
   &__content {
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1730px;
     &-title {
       padding: 82px 0 92px 0;
-      margin: 0 auto;
-      width: 43.5rem;
+
       h2 {
         color: var(--mainColor);
         font-size: 37px;
+        margin-bottom: 26px;
+        width: 90%;
+        margin: 20px auto;
       }
       p {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
         color: var(--textColor);
         font-size: 23px;
-        height: 116px;
+        text-transform: uppercase;
       }
     }
     &-items {
@@ -44,6 +53,7 @@
           font-size: 26px;
         }
         p {
+          width: 90%;
           color: var(--textColor);
           height: 51px;
           font-size: 18px;
@@ -56,9 +66,11 @@
   .Contact {
     &__content {
       &-title {
-        padding: 82px 0 0;
+        // padding: 82px 0 0;
+
         p {
-          height: 50px;
+          height: 100px;
+          padding: 0 10px;
         }
       }
       &-items {
@@ -83,7 +95,7 @@
     &__content {
       &-title {
         // padding: 30px 0 0;
-        width: 80%;
+        // width: 80%;
 
         p {
           height: 80px;
@@ -105,7 +117,7 @@
     &__content {
       &-title {
         padding: 30px 0 0;
-        width: 80%;
+        // width: 80%;
 
         p {
           height: 80px;
@@ -128,7 +140,7 @@
     &__content {
       &-title {
         padding: 20px 0 0;
-        width: 80%;
+        // width: 80%;
         h2 {
           font-size: 22px;
           margin-bottom: 20px;
@@ -136,7 +148,8 @@
         p {
           height: 80px;
           margin-bottom: 30px;
-          font-size: 19px;
+          font-size: 16px;
+          width: 90%;
         }
       }
       &-items {

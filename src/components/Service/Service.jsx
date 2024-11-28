@@ -70,14 +70,7 @@ export default function Service() {
                   </span>
                   <h3>{t(`service.services.${index}.title`)}</h3>
                 </div>
-                <p
-                  onClick={() => toggleExpand(elem.id)}
-                  style={{ cursor: "pointer" }}
-                >
-                  {isExpanded || description.length <= 144
-                    ? description
-                    : `${description.slice(0, 144)}...`}
-                </p>
+                <p>{description}</p>
               </div>
             );
           })}

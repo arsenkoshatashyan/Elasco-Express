@@ -6,9 +6,9 @@
   background-color: var(--textColor);
   &__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 0 10rem;
+    // padding: 0 6rem;
     height: 90px;
     &-logo {
       overflow-y: hidden;
@@ -20,6 +20,7 @@
         gap: 6.25rem;
         text-transform: uppercase;
         color: var(--darkBackground);
+        font-weight: 700;
         li {
           list-style: none;
           a {
@@ -96,10 +97,13 @@
     .Nav {
       &__content {
         padding: 0 3rem;
+        justify-content: space-between;
+    
         &-links {
           ul {
-            gap: 2rem;
+            // gap: 2rem;
             font-size: 12px;
+            // display: none;
           }
         }
         &-settings {
@@ -108,10 +112,14 @@
             width: 6rem;
             font-size: 10px;
           }
+          
         }
       }
+      
     }
+    
   }
+  
 }
 .active {
   color: var(--mainColor) !important;
@@ -136,6 +144,7 @@
         text-transform: uppercase;
         text-align: center;
         width: 100%;
+        
 
         li {
           display: flex;
@@ -183,11 +192,41 @@
     }
   }
 }
+@media (max-width: 970px) {
+  .Nav {
+    &__content {
+    
+
+  
+      &-links {
+        ul {
+
+          display: none;
+        }
+      }
+      &-settings {
+  
+        button {
+     
+          font-size: 10px;
+        }
+        
+      }
+    }
+    .burger {
+      display: block;
+     
+    }
+    
+  }
+  
+}
 
 @media (max-width: 768px) {
   .Nav {
     &__content {
       padding: 0 2rem;
+   
 
       &-logo {
         img {
@@ -199,7 +238,7 @@
         ul {
           gap: 3rem;
           font-size: 12px;
-          display: none;
+        
         }
       }
       &-settings {

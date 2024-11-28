@@ -8,6 +8,7 @@
     justify-content: space-around;
     align-items: center;
     overflow-y: hidden;
+   
 
     &-left {
       &-truck {
@@ -19,6 +20,8 @@
         p {
           max-width: 340px;
           font-size: 18px;
+          text-align: start !important;
+          margin-left: 20px;
         }
       }
 
@@ -26,6 +29,7 @@
         display: flex;
         gap: 40px;
         margin-top: 22px;
+        margin-left: 14px;
         img {
           width: 28px;
           height: 28px;
@@ -67,7 +71,7 @@
           font-size: 12px;
           margin-bottom: 22px;
           padding-top: 0 !important;
-          height: 20px;
+          height: 60px;
           text-align: left !important;
         }
       }
@@ -103,6 +107,7 @@
   .Footer {
     &__content {
       justify-content: space-around;
+
     }
   }
 }
@@ -111,7 +116,7 @@
     &__content {
       gap: 40px;
       justify-content: center;
-      padding: 0 40px;
+   
 
       &-left {
         margin: 0 30px;
@@ -126,6 +131,8 @@
           }
           p {
             max-width: 300px;
+            text-align: center !important;
+            
           }
         }
 
@@ -164,7 +171,9 @@
           }
           p {
             width: 220px !important;
+            height: 150px;
             margin: 0 auto;
+text-align: center !important;
           }
         }
 
@@ -186,11 +195,9 @@
   .Footer {
     &__content {
       &-left {
-        justify-content: center;
         &-truck {
           p {
             width: 90%;
-
             margin-bottom: 10px;
           }
         }
@@ -203,6 +210,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+     
         ul > a {
           font-size: 20px;
         }
@@ -226,6 +234,8 @@
           align-items: center;
           margin-bottom: 20px;
           width: 100%;
+
+   
 
           button {
             width: 160px;

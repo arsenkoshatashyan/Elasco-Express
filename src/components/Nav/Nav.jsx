@@ -2,14 +2,19 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 import "./Nav.scss";
 import { useState, useEffect, useRef } from "react";
 import { IoClose } from "react-icons/io5";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"; 
 
 export default function Nav() {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation(); 
   const [open, setOpen] = useState(false);
   const [activePage, setActivePage] = useState("");
   const mobileNavRef = useRef(null);
   const { pathname } = useLocation();
+
+
+
+
+
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -97,9 +102,10 @@ export default function Nav() {
                   onChange={(e) => changeLanguage(e.target.value)}
                   name="languages"
                 >
-                  <option value="en">ENG</option>
-                  <option value="ru">РУС</option>
-                  <option value="am">ՀԱՅ</option>
+                  <option value="en">EN</option>
+                  <option value="ru">RU</option>
+                  <option value="am">ARM</option>{" "}
+                 
                 </select>
               </i>
             </div>
