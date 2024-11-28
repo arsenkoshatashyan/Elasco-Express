@@ -1,23 +1,19 @@
 import Result from "../Result/Result";
 import "./ServicesHome.scss";
 import ContactUs from "../ContactUs/ContactUs";
-import { useTranslation } from "react-i18next"; // Импортируем useTranslation
+import { useTranslation } from "react-i18next";
 import Card from "../Card/Card";
 
 export default function ServicesHome() {
-  const { t } = useTranslation(); // Используем хук для перевода
+  const { t } = useTranslation();
 
   return (
     <div className="ServicesHome">
       <div className="ServicesHome__container">
-        <h2>{t("services.title")}</h2> {/* Заголовок с переводом */}
-        {/* <p>
-          {t("services.description")}
-        </p> */}
+        <h2>{t("services.title")}</h2>
       </div>
 
       <div className="ServicesHome__content">
-        {/* Блок Морские перевозки */}
         <div className="ServicesHome__content-block">
           <div className="ServicesHome__content-block-box">
             <div className="ServicesHome__content-block-box-Left"></div>
@@ -28,7 +24,6 @@ export default function ServicesHome() {
           </div>
         </div>
 
-        {/* Блок Авиа перевозки */}
         <div className="ServicesHome__content-blockTwo">
           <div className="ServicesHome__content-blockTwo-box">
             <div className="ServicesHome__content-blockTwo-box-Left">
@@ -38,8 +33,6 @@ export default function ServicesHome() {
             <div className="ServicesHome__content-blockTwo-box-Right"></div>
           </div>
         </div>
-
-        {/* Блок Наземные перевозки */}
         <div className="ServicesHome__content-blockThree">
           <div className="ServicesHome__content-blockThree-box">
             <div className="ServicesHome__content-blockThree-box-Left"></div>
@@ -50,7 +43,6 @@ export default function ServicesHome() {
           </div>
         </div>
 
-        {/* Блок Регистрация и таможенное оформление */}
         <div className="ServicesHome__content-blockFour">
           <div className="ServicesHome__content-blockFour-box">
             <div className="ServicesHome__content-blockFour-box-Left">
