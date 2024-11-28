@@ -11,7 +11,7 @@
       }
       p {
         color: var(--textColor);
-        font-size: 30px;
+        font-size: 30px;`
       }
     }
     &-items {
@@ -44,7 +44,6 @@
   }
 }
 @media (max-width: 1440px) {
-  
   .Card {
     padding-bottom: 50px;
     &__content {
@@ -71,12 +70,9 @@
   .Card {
     // background-image: none;
     // background-color: var(--darkBackground);
-    
-   
+
     padding: 20px;
     &__content {
-
-    
       &-title {
         h2 {
           font-size: 2rem;
@@ -87,13 +83,13 @@
       }
       &-items {
         gap: 1rem;
-        &-item{
+        &-item {
           width: 180px;
           height: 180px;
-          img{
+          img {
             width: 60px;
           }
-          p{
+          p {
             font-size: 14px;
           }
         }
@@ -106,11 +102,9 @@
   .Card {
     background-image: none;
     background-color: var(--darkBackground);
-   
+
     padding: 20px;
     &__content {
-
-    
       &-title {
         h2 {
           font-size: 2rem;
@@ -121,15 +115,14 @@
       }
       &-items {
         gap: 1rem;
-        &-item{
+        &-item {
           width: 180px;
           height: 180px;
-          img{
+          img {
             width: 50px;
           }
-          p{
+          p {
             font-size: 12px !important;
-            
           }
         }
       }
@@ -139,7 +132,6 @@
 
 @media (max-width: 390px) {
   .Card {
-    
     &__content {
       &-title {
         h2 {
@@ -153,16 +145,14 @@
       &-items {
         gap: 2rem;
         padding: 20px;
-       &-item{
-        width: 200px;
-        height: 160px;
-  
-       
-        p{
-          font-size: 18px;
+        &-item {
+          width: 200px;
+          height: 160px;
+
+          p {
+            font-size: 18px;
+          }
         }
-        
-       }
       }
     }
   }

@@ -10,19 +10,22 @@
     align-items: center;
     padding-left: 20%;
     color: var(--textColor);
-    background: url("../../../public/images/Background(1).svg") no-repeat center;
+    background: url("../../../public/Services/serviceTitle.jpg") no-repeat
+      center;
     h2 {
       font-size: 6.25rem;
-      line-height: 100%;
+      line-height: 200px;
     }
     @media (max-width: 1200px) {
       h2 {
-        font-size: 80px;
+        font-size: 45px;
+        line-height: 100px;
       }
     }
     @media (max-width: 490px) {
       h2 {
-        font-size: 60px;
+        font-size: 30px;
+        line-height: 100px;
       }
     }
     padding: 12%;
@@ -39,27 +42,26 @@
         position: relative;
         &-Left {
           width: 770px;
-          background: url("../../../public/images/transportDark.png") no-repeat
-            center;
+          background: url("../../../public/Services/transportDark.jpg")
+            no-repeat center;
           z-index: 0;
-          p {
-            font-size: 34px;
-            color: var(--textColor);
-          }
+          border-radius: 132px 0 0 32px;
         }
 
         &-Right {
           width: 770px;
-          background: url("../../../public/images/transportLight.png") no-repeat
-            center;
+          background: url("../../../public/Services/transportLight.jpg")
+            no-repeat center;
           height: 800px;
           position: absolute;
           left: 650px;
           z-index: 1;
-          padding: 87px 82px;
+          padding: 50px;
+          border-radius: 134px 25px 134px 28px;
           p {
             font-size: 22px;
             color: var(--darkTextColor);
+            text-align: justify;
           }
           h2 {
             text-align: center;
@@ -74,18 +76,16 @@
         &-box {
           &-Left {
             width: 50%;
-            p {
-              font-size: 30px;
-            }
           }
 
           &-Right {
             width: 750px;
             left: 25%;
-            padding: 5%;
+            padding: 40px;
             p {
               font-size: 22px;
               width: 90%;
+              margin-left: 10px;
             }
             h2 {
               margin-bottom: 30px;
@@ -106,19 +106,22 @@
             width: 760px;
             height: 400px;
             position: static;
+
+            border-radius: 134px 25px 0 0;
           }
           &-Right {
             position: static;
             width: 760px;
             left: 25%;
-            padding: 5%;
+            padding: 15px 20px;
+            border-radius: 0 0 25px 25px;
             p {
               font-size: 22px;
               width: 90%;
               margin: 0 auto;
             }
             h2 {
-              margin-bottom: 30px;
+              margin-bottom: 10px;
               font-size: 32px;
             }
           }
@@ -126,43 +129,22 @@
       }
       @media (max-width: 768px) {
         &-box {
-          height: 800px;
+          height: 900px;
+          width: 90%;
+          margin: 0 auto;
           &-Left {
-            width: 470px;
-            height: 200px;
+            width: 90% !important;
+            height: 300px;
           }
           &-Right {
             position: static;
-            width: 470px;
+            width: 90% !important;
             padding: 2%;
-            p {
-              font-size: 20px;
-              width: 97%;
-              margin: 0 auto;
-            }
-            h2 {
-              margin-bottom: 10px;
-              font-size: 30px;
-            }
-          }
-        }
-      }
-      @media (max-width: 768px) {
-        &-box {
-          height: 600px;
-          &-Left {
-            width: 380px;
-            height: 250px;
-          }
-          &-Right {
-            position: static;
-            width: 380px;
-            padding: 2%;
+            left: 0%;
             p {
               font-size: 16px;
               width: 97%;
               margin: 0 auto;
-              text-align: justify;
             }
             h2 {
               margin-bottom: 10px;
@@ -173,14 +155,15 @@
       }
       @media (max-width: 490px) {
         &-box {
-          height: 600px;
+          height: 800px !important;
+          width: 98% !important;
           &-Left {
-            width: 310px;
+            width: 98% !important;
             height: 250px;
           }
           &-Right {
             position: static;
-            width: 310px;
+            width: 98% !important;
             padding: 2%;
             p {
               font-size: 14px;
@@ -209,31 +192,30 @@
         position: relative;
         &-Right {
           width: 770px;
-          background: url("../../../public/images/transport2Dark.png") no-repeat
-            center;
+          background: url("../../../public/Services/transport2Dark.jpg")
+            no-repeat center;
           z-index: 0;
-          p {
-            font-size: 34px;
-            color: var(--textColor);
-          }
+          border-radius: 132px 0 0 32px;
         }
 
         &-Left {
           width: 770px;
-          background: url("../../../public/images/transport2Light.png")
+          background: url("../../../public/Services/transport2Light.jpg")
             no-repeat center;
           height: 800px;
           position: absolute;
           left: 650px;
           z-index: 1;
-          padding: 67px 82px;
+          padding: 30px 45px 0px;
+
+          border-radius: 134px 25px 134px 28px;
           p {
             font-size: 22px;
             color: var(--darkTextColor);
           }
           h2 {
             text-align: center;
-            margin-bottom: 36px;
+            margin-bottom: 25px;
             font-size: 34px;
           }
         }
@@ -244,15 +226,13 @@
         &-box {
           &-Right {
             width: 50%;
-            p {
-              font-size: 30px;
-            }
           }
 
           &-Left {
             width: 750px;
             left: 25%;
-            padding: 5%;
+            padding: 10px 15px;
+            margin-left: 8px;
             p {
               font-size: 22px;
               width: 90%;
@@ -277,19 +257,23 @@
             width: 760px;
             height: 400px;
             position: static;
+
+            border-radius: 134px 25px 0 0;
           }
           &-Left {
             position: static;
             width: 760px;
             left: 25%;
-            padding: 1% 5% 0%;
+            padding: 15px 20px;
+            border-radius: 0 0 25px 25px;
             p {
               font-size: 22px;
-              width: 90%;
+              width: 95%;
+              text-align: justify;
               margin: 0 auto;
             }
             h2 {
-              margin-bottom: 28px;
+              margin-bottom: 10px;
               font-size: 30px;
             }
           }
@@ -297,14 +281,16 @@
       }
       @media (max-width: 768px) {
         &-box {
-          height: 600px;
+          height: 1050px;
+          width: 90%;
+          margin: 0 auto;
           &-Right {
-            width: 380px;
-            height: 250px;
+            width: 90% !important;
+            height: 300px;
           }
           &-Left {
             position: static;
-            width: 380px;
+            width: 90% !important;
             padding: 2%;
             p {
               font-size: 16px;
@@ -321,14 +307,15 @@
       }
       @media (max-width: 490px) {
         &-box {
-          height: 600px;
+          height: 970px !important;
+          width: 98% !important;
           &-Right {
-            width: 310px;
+            width: 98% !important;
             height: 250px;
           }
           &-Left {
             position: static;
-            width: 310px;
+            width: 98% !important;
             padding: 2%;
             p {
               font-size: 14px;
@@ -356,31 +343,30 @@
         position: relative;
         &-Left {
           width: 770px;
-          background: url("../../../public/images/transport3Dark.png") no-repeat
-            center;
+          background: url("../../../public/Services/transport3Dark.jpg")
+            no-repeat center;
           z-index: 0;
-          p {
-            font-size: 34px;
-            color: var(--textColor);
-          }
+          border-radius: 132px 0 0 32px;
         }
 
         &-Right {
           width: 770px;
-          background: url("../../../public/images/transport3Light.png")
+          background: url("../../../public/Services/transport3Light.jpg")
             no-repeat center;
           height: 800px;
           position: absolute;
           left: 650px;
           z-index: 1;
-          padding: 67px 82px;
+          padding: 50px;
+          text-align: justify;
+          border-radius: 134px 25px 134px 28px;
           p {
             font-size: 22px;
             color: var(--darkTextColor);
           }
           h2 {
             text-align: center;
-            margin-bottom: 36px;
+            margin-bottom: 20px;
             font-size: 34px;
           }
         }
@@ -391,9 +377,6 @@
         &-box {
           &-Left {
             width: 50%;
-            p {
-              font-size: 30px;
-            }
           }
 
           &-Right {
@@ -423,19 +406,21 @@
             width: 760px;
             height: 400px;
             position: static;
+            border-radius: 134px 25px 0 0;
           }
           &-Right {
             position: static;
             width: 760px;
             left: 25%;
-            padding: 1% 5% 5%;
+            padding: 5px 15px 20px 15px;
+            border-radius: 0 0 25px 25px;
             p {
               font-size: 22px;
-              width: 90%;
+              width: 100%;
               margin: 0 auto;
             }
             h2 {
-              margin-bottom: 28px;
+              margin-bottom: 15px;
               font-size: 30px;
             }
           }
@@ -443,43 +428,21 @@
       }
       @media (max-width: 768px) {
         &-box {
-          height: 850px;
+          height: 1000px;
+          width: 90%;
+          margin: 0 auto;
           &-Left {
-            width: 470px;
-            height: 200px;
+            width: 90% !important;
+            height: 300px;
           }
           &-Right {
             position: static;
-            width: 470px;
-            padding: 2%;
-            p {
-              font-size: 20px;
-              width: 97%;
-              margin: 0 auto;
-            }
-            h2 {
-              margin-bottom: 10px;
-              font-size: 30px;
-            }
-          }
-        }
-      }
-      @media (max-width: 768px) {
-        &-box {
-          height: 600px;
-          &-Left {
-            width: 380px;
-            height: 250px;
-          }
-          &-Right {
-            position: static;
-            width: 380px;
+            width: 90% !important;
             padding: 2%;
             p {
               font-size: 16px;
               width: 97%;
               margin: 0 auto;
-              text-align: justify;
             }
             h2 {
               margin-bottom: 10px;
@@ -488,16 +451,18 @@
           }
         }
       }
+
       @media (max-width: 490px) {
         &-box {
-          height: 600px;
+          height: 900px;
+          width: 98% !important;
           &-Left {
-            width: 310px;
+            width: 98% !important;
             height: 250px;
           }
           &-Right {
             position: static;
-            width: 310px;
+            width: 98% !important;
             padding: 2%;
             p {
               font-size: 14px;
@@ -525,36 +490,35 @@
         position: relative;
         &-Right {
           width: 770px;
-          background: url("../../../public/images/transport4Dark.png") no-repeat
-            center;
+          background: url("../../../public/Services/transport4Dark.jpg")
+            no-repeat center;
           z-index: 0;
-          p {
-            font-size: 34px;
-            color: var(--textColor);
-          }
+          border-radius: 132px 0 0 32px;
         }
 
         &-Left {
           width: 770px;
-          background: url("../../../public/images/transport4Light.png")
+          text-align: justify;
+          background: url("../../../public/Services/transport4Light.jpg")
             no-repeat center;
           height: 800px;
           position: absolute;
           left: 650px;
           z-index: 1;
-          padding: 67px 82px;
+          padding: 50px;
+          border-radius: 134px 25px 134px 28px;
           p {
             font-size: 22px;
             color: var(--darkTextColor);
           }
           h2 {
-            text-align: center;
-            margin-bottom: 36px;
+            margin-bottom: 25px;
             font-size: 34px;
           }
           ul {
-            margin-left: 10px;
+            // margin-left: 10px;
             font-size: 22px;
+            color: var(--darkTextColor);
           }
         }
       }
@@ -564,9 +528,6 @@
         &-box {
           &-Right {
             width: 50%;
-            p {
-              font-size: 30px;
-            }
           }
 
           &-Left {
@@ -601,34 +562,39 @@
             width: 760px;
             height: 400px;
             position: static;
+            border-radius: 134px 25px 0 0;
           }
           &-Left {
             position: static;
             width: 760px;
             left: 25%;
-            padding: 1% 5% 5%;
+            padding: 5px 15px 20px 15px;
+            border-radius: 0 0 25px 25px;
+            margin: 0 auto;
             p {
               font-size: 22px;
               width: 90%;
-              margin: 0 auto;
             }
             h2 {
-              margin-bottom: 28px;
-              font-size: 30px;
+              margin-bottom: 15px;
+              font-size: 28px;
+              text-align: center;
             }
           }
         }
       }
       @media (max-width: 768px) {
         &-box {
-          height: 600px;
+          height: 900px;
+          width: 90%;
+          margin: 0 auto;
           &-Right {
-            width: 380px;
-            height: 250px;
+            width: 90% !important;
+            height: 300px;
           }
           &-Left {
             position: static;
-            width: 380px;
+            width: 90% !important;
             padding: 2%;
             p {
               font-size: 16px;
@@ -648,14 +614,15 @@
       }
       @media (max-width: 490px) {
         &-box {
-          height: 600px;
+          height: 950px;
+          width: 98% !important;
           &-Right {
-            width: 310px;
+            width: 98% !important;
             height: 250px;
           }
           &-Left {
             position: static;
-            width: 310px;
+            width: 98% !important;
             padding: 2%;
             p {
               font-size: 14px;
