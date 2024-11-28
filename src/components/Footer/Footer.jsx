@@ -14,6 +14,9 @@ export default function Footer() {
             <p>{t("footer.description")}</p>
           </div>
           <div className="Footer__content-left-socials">
+          <a href="https://www.facebook.com/ElascoTransport/">
+              <img src="./images/facebook.svg" alt="facebook" />
+            </a>
             <a href="https://twitter.com/elascoexpress">
               <img src="./images/x.svg" alt="x" />
             </a>
@@ -22,6 +25,9 @@ export default function Footer() {
             </a>
             <a href="https://t.me/elasco24">
               <img src="./images/tg.svg" alt="telegram" />
+            </a>
+            <a href="https://www.facebook.com/ElascoTransport/">
+              <img src="./images/facebook.svg" alt="facebook" />
             </a>
             <a href="https://www.facebook.com/ElascoTransport/">
               <img src="./images/facebook.svg" alt="facebook" />
@@ -38,6 +44,9 @@ export default function Footer() {
             </li>
             <li>
               <Link to="/services">{t("footer.services")}</Link>
+            </li>
+            <li>
+              <Link to="/contact">{t("footer.contact")}</Link>
             </li>
             <li>
               <Link to="/news">{t("footer.news")}</Link>

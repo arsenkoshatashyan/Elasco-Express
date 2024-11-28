@@ -7,27 +7,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 96%;
+
     height: 7.25rem;
     margin: 46px auto;
 
     h2 {
-      font-size: 52px;
+      font-size: 50px;
       color: var(--dartTextColor);
 
     }
     button {
-      width: 11.875em;
+      width: 11em;
       font-size: 14px;
       color: #fafafa;
       background-color: var(--darkBackground);
+      margin-right: 30px;
+
     }
   }
   div > img {
     width: 28rem;
+    margin-bottom: 30px;
   }
   .slick-slide {
     margin: 20px auto 0;
+    
   }
   .slick-slide > div {
     max-width: 31.125rem;
@@ -45,10 +50,12 @@
       width: 420px;
       font-size: 26px;
       line-height: 36px;
+      margin-bottom: 30px;
     }
     p {
       font-size: 14px;
       color: var(--dartTextColor);
+   
     }
   }
   .slick-track {
@@ -145,9 +152,13 @@
 }
 @media (max-width: 768px) {
   .Sliders {
-    .slick-next,
+
+      
+      .slick-next,
     .slick-prev {
       display: none !important;
+  
+    
     }
   }
 }
@@ -187,7 +198,7 @@
       }
 
       h2 {
-        width: 95%;
+        width: 90%;
         font-size: 16px;
       }
       img {

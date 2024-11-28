@@ -83,11 +83,11 @@
         "description": "12,"
       },
       {
-        "titleKey": "2",
+        "titleKey": "Elasco Express LLC was proud to be part of Armenia Expo 2023.",
         "description": "21,"
       },
       {
-        "titleKey": "3",
+        "titleKey": "In 2024, Elasco Express LLC was recognized as a high-class logistics provider.",
         "description": "31,"
       },
       {
@@ -120,11 +120,12 @@
     "home": "Home",
     "about": "About Us",
     "services": "Services",
+    "contact": "Contact us",
     "news": "News",
     "advice": "DO YOU NEED CONSULTATION FROM OUR SPECIALIST?",
     "consultation": "Leave your phone number in the form and we will call you back to consult you for free",
     "inputText": "Phone number",
-    "copyright": "Copyright © 2024 Elasco Express. All Rights Reserved",
+    "copyright": "Copyright © 2024 Elasco Express.  All Rights Reserved",
     "callBack": "Call back"
   },
 

@@ -8,7 +8,7 @@
     gap: 8rem;
     margin-top: 40px;
     &-image {
-      width: 950px;
+      width: 850px;
       height: 42rem;
       overflow-y: hidden;
       img {
@@ -21,6 +21,8 @@
       width: 51.25rem;
       height: 44.5rem;
       margin-top: 5rem;
+    
+    
 
       h1 {
         font-size: 3.5rem;
@@ -28,6 +30,7 @@
         color: var(--mainColor);
         margin-bottom: 5.625rem;
         text-transform: uppercase;
+  
       }
 
       h3 {
@@ -35,6 +38,8 @@
         font-size: 1.625rem;
         color: var(--darkTextColor);
         margin-bottom: 0.875rem;
+
+     
       }
 
       p {
@@ -42,6 +47,7 @@
         font-size: 1.375rem;
         color: var(--lightTextColor);
         margin-bottom: 4.625rem;
+      
       }
 
       button {
@@ -54,15 +60,29 @@
   @media (max-width: 1590px) {
     .About {
       &__content {
-        // margin-top: 40px;
-        gap: 5rem;
+        align-items: center;
+        gap: 0;
+
+        &-image {
+          width: 800px;
+          height: 42rem;
+          overflow-y: hidden;
+          img {
+            width: 540px;
+         
+      
+          }
+        }
         &-text {
+         
           h1 {
             margin-bottom: 20px;
           }
 
           h3 {
-            width: 80%;
+            width: 90%;
+            font-size: 1.5em;
+   
           }
 
           p {
@@ -81,8 +101,7 @@
       align-items: center;
       justify-content: center;
       &-image {
-        height: fit-content;
-        width: fit-content;
+       display: none;
         img {
           width: 30rem;
           height: auto;
@@ -160,12 +179,12 @@
     &__content {
       margin-top: -80px;
       &-text {
-        margin-top: 10px;
+        margin-top: 100px;
         h1 {
           font-size: 1.5rem;
         }
         h3 {
-          font-size: 1rem;
+          font-size: 1.2rem !important;
         }
         p {
           font-size: 1rem;

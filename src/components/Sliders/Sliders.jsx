@@ -8,29 +8,29 @@ import { useTranslation } from "react-i18next";
 
 const source = [
   {
-    id: 0,
-    titleKey: "titleKey",
-    description: "description",
-    image: "./images/certificate.svg",
-  },
-  {
     id: 1,
     titleKey: "titleKey",
     description: "description",
-    image: "./images/certificate.svg",
+    image: "./images/cer2.png",
   },
   {
     id: 2,
     titleKey: "titleKey",
     description: "description",
-    image: "./images/certificate.svg",
+    image: "./images/cer1.png",
   },
-  {
-    id: 3,
-    titleKey: "titleKey",
-    description: "description",
-    image: "./images/certificate.svg",
-  },
+  // {
+  //   id: 3,
+  //   titleKey: "titleKey",
+  //   description: "description",
+  //   image: "./images/certificate.svg",
+  // },
+  // {
+  //   id: 4,
+  //   titleKey: "titleKey",
+  //   description: "description",
+  //   image: "./images/certificate.svg",
+  // },
 ];
 
 export default function Sliders() {
@@ -75,7 +75,7 @@ export default function Sliders() {
               >
                 {isExpanded || title.length <= 50
                   ? title
-                  : `${title.slice(0, 65)}...`}
+                  : `${title.slice(0, 55)}...`}
               </h2>
               <img src={elem.image} alt={`Slide ${elem.id}`} />
               <p>{t("sliders.readMore")}</p>
