@@ -14,11 +14,8 @@ export default function Footer() {
             <p>{t("footer.description")}</p>
           </div>
           <div className="Footer__content-left-socials">
-          <a href="https://www.facebook.com/ElascoTransport/">
-              <img src="./images/facebook.svg" alt="facebook" />
-            </a>
-            <a href="https://twitter.com/elascoexpress">
-              <img src="./images/x.svg" alt="x" />
+            <a href="">
+              <img src="./images/viber.png" alt="x" />
             </a>
             <a href="https://www.instagram.com/elasco_express?igsh=MTNlcDgzMTg1Njl6">
               <img src="./images/instagram.svg" alt="instagram" />
@@ -29,8 +26,8 @@ export default function Footer() {
             <a href="https://www.facebook.com/ElascoTransport/">
               <img src="./images/facebook.svg" alt="facebook" />
             </a>
-            <a href="https://www.facebook.com/ElascoTransport/">
-              <img src="./images/facebook.svg" alt="facebook" />
+            <a href="">
+              <img src="./images/whatsapp.png" alt="facebook" />
             </a>
           </div>
         </div>
@@ -62,7 +59,7 @@ export default function Footer() {
             <input
               type="hidden"
               name="access_key"
-              value="90d4ff81-22a6-4ea2-8021-1173977264a8"
+              value="4b1f1ed7-b2f9-48e1-a1cb-48650a928aa1"
             />
             <input
               type="tel"

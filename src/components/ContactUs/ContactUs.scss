@@ -1,8 +1,9 @@
 .ContactUs {
   height: auto;
   background-color: var(--darkBackground);
-  // margin-top: 120px 0;
-  margin-top: 50px;
+  width: 100%;
+  max-width: 1730px;
+  margin: 50px auto 0;
   &__content {
     display: flex;
     align-items: center;
@@ -30,8 +31,6 @@
           margin-top: 2px;
           font-size: 18px;
           width: 40rem;
-
-       
         }
       }
       &-form {
@@ -88,11 +87,9 @@
         width: 80%;
         height: 85%;
         &-title {
-
           h2 {
             height: 100px;
             font-size: 28px;
-
           }
           p {
             width: 16rem;
@@ -134,7 +131,7 @@
             width: 90%;
             font-size: 18px;
             // margin-top: -30px;
-               margin: 0 auto;
+            margin: 0 auto;
           }
         }
         &-form {

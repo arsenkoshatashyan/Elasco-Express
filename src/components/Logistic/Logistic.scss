@@ -1,9 +1,9 @@
 .Logistic {
   width: 100%;
   margin: 134px auto 0;
-
+  max-width: 1730px;
   &__content {
-    background: url("../../../public/images/imgOne.png") no-repeat center ;
+    background: url("../../../public/images/imgOne.png") no-repeat center;
     background-size: cover;
     height: auto;
     padding-top: 12rem;
@@ -34,7 +34,6 @@
         color: var(--textColor);
         margin-bottom: 20px;
         font-weight: 400;
-
       }
 
       button {
@@ -103,7 +102,6 @@
     &__content {
       padding: 6rem 1rem;
       &-about {
-     
         h1 {
           font-size: 26px;
         }
@@ -113,7 +111,6 @@
         }
         p {
           font-size: 14px;
-          
         }
         button {
           padding: 1rem;

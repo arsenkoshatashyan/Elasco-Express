@@ -9,22 +9,12 @@ const data = [
   {
     id: 1,
     title: "logisticsRecognition",
-    url: "./images/certificate.svg",
+    url: "./images/certification1.jpg",
   },
   {
     id: 2,
     title: "logisticsRecognition",
-    url: "./images/certificate.svg",
-  },
-  {
-    id: 3,
-    title: "logisticsRecognition",
-    url: "./images/certificate.svg",
-  },
-  {
-    id: 4,
-    title: "logisticsRecognition",
-    url: "./images/certificate.svg",
+    url: "./images/certification2.jpg",
   },
 ];
 
@@ -70,7 +60,7 @@ export default function NewsHome() {
             </div>
           ))}
         </div>
-        <div className="NewsHome__content-pagination">
+        {/* <div className="NewsHome__content-pagination">
           <button onClick={handlePrevPage} disabled={currentPage === 1}>
             &lt;
           </button>
@@ -89,7 +79,7 @@ export default function NewsHome() {
           >
             &gt;
           </button>
-        </div>
+        </div> */}
       </div>
       <Result />
       <Contact />

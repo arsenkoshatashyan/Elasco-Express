@@ -34,7 +34,7 @@
   }
   .slick-slide > div {
     max-width: 31.125rem;
-    height: 32.875rem;
+    height: 32.9rem;
     font-size: 30px;
     color: var(--dartTextColor);
     background-color: rgb(209, 221, 235);
@@ -43,6 +43,7 @@
     border-radius: 16px;
     text-align: center;
     margin-bottom: 118px;
+    overflow-y: hidden;
 
     h2 {
       width: 420px;
@@ -53,6 +54,13 @@
     p {
       font-size: 14px;
       color: var(--dartTextColor);
+    }
+    a {
+      list-style: none;
+      color: var(--dartTextColor);
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   .slick-track {
