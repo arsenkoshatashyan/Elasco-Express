@@ -2,7 +2,7 @@
   background-color: #d9d9d98c;
   background: url("../../../public//images/vector.svg") no-repeat;
   width: 100%;
-  max-width: 1730px;
+  // max-width: 1730px;
   margin: 0 auto;
   &__content {
     display: flex;
@@ -54,6 +54,7 @@
     p {
       font-size: 14px;
       color: var(--dartTextColor);
+      text-decoration: underline;
     }
     a {
       list-style: none;

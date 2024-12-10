@@ -5,7 +5,7 @@
   overflow-y: hidden;
 
   &__content {
-    max-width: 1730px;
+    // max-width: 1730px;
     width: 90%;
     height: auto;
     margin: 0 auto;
@@ -47,7 +47,7 @@
           margin: 0 auto;
         }
         h3 {
-          width: 250px;
+          width: 280px !important;
           font-size: 22px;
         }
 

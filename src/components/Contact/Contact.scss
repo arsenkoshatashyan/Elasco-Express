@@ -2,10 +2,14 @@
   background: url("../../../public/images/contactBackground.jpeg") no-repeat
     center;
   height: auto;
+
+  background-size: cover;
+  overflow-y: hidden;
   &__content {
     text-align: center;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: -40px;
     max-width: 1730px;
     &-title {
       padding: 82px 0 92px 0;

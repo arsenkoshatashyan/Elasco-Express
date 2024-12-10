@@ -21,12 +21,12 @@ const card = [
   },
   {
     id: 4,
-    image: "./images/service4.png",
+    image: "./images/service5.png",
     url: "./images/icon4.svg",
   },
   {
     id: 5,
-    image: "./images/service5.png",
+    image: "./images/service4.png",
     url: "./images/icon6.svg",
   },
 ];

@@ -4,7 +4,7 @@
     "about_us": "About Us",
     "services": "Services",
     "news": "News",
-    "contact_us": "Contacts"
+    "contact_us": "Contact us"
   },
 
   "logistic": {
@@ -61,10 +61,10 @@
     "span": " with us",
     "description": "Contact us today to experience the difference of working with a trusted logistics partner.",
     "form": {
-      "name": "Name",
-      "email": "E-mail",
-      "phone": "Phone",
-      "interested": "Message",
+      "name": "Name*",
+      "email": "E-mail*",
+      "phone": "Phone*",
+      "interested": "Message*",
       "button": "Send"
     }
   },
@@ -145,7 +145,7 @@
     "customsClearanceDescription": "Elasco Express LLC offers a full range of services for customs-brokerage processing of goods crossing the border of Armenia. We work both in the export and import direction, ensuring fast and accurate execution of all necessary procedures.Our services include:",
     "getInTouch": "Contacts",
     "contactUs": "Need Reliable Logistics Solutions? Contact Us Today!",
-    "contact": "Contact",
+    "contact": "Tel.",
     "address": "Address",
     "addressDetail": "0064 Arno Babajanyan 26/5, apt.1",
     "mail": "E-mail",

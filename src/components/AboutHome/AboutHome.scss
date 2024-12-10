@@ -1,13 +1,14 @@
 .aboutHome {
   &__content {
     width: 100%;
-    max-width: 1730px;
+    // max-width: 1730px;
     margin: 134px auto 0;
     background-color: var(--iconBackground);
 
     &-title {
       background: url(../../../public/images/truckBackground.jpeg) no-repeat
         center;
+      background-size: cover;
       height: 332px;
       h2 {
         color: var(--textColor);
