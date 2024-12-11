@@ -1,15 +1,13 @@
 .Sliders {
-
+  background-color: #d9d9d98c;
   background: url("../../../public//images/vector.svg") no-repeat;
-  background-color: #F2EFF2;
   width: 100%;
-  // max-width: 1730px;
   margin: 0 auto;
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // width: 100%;
+    width: 81%;
 
     height: 7.25rem;
     margin: 46px auto;
@@ -26,58 +24,40 @@
       margin-right: 30px;
     }
   }
-  div{
-    width: 1220px;
-    margin: 0 auto;
-
-    // img:nth-child(1) {
-    
-    //   margin-bottom: 30px;
-    // }
-    img{
-      border-radius: 40px;
-        width: 440px;
-      height: 289px;
-      // border: 2px solid red;
-      margin-bottom: 20px;
-    }
+  div > img {
+    margin-bottom: 23px;
   }
-  
   .slick-slide {
     margin: 20px auto 0;
-    border: 2px solid rgb(179, 22, 241);
   }
+
   .slick-slide > div {
     max-width: 482px;
-    height: 508px;
-    // font-size: 30px;
-    border: 2px solid red;
+    height: 509px;
+    font-size: 30px;
     color: var(--dartTextColor);
     background-color: rgb(209, 221, 235);
     margin: 0 auto;
-    padding: 20px;
+    padding: 22px 8px 33px 21px;
     border-radius: 16px;
     text-align: center;
     margin-bottom: 118px;
     overflow-y: hidden;
-   
-
+    img {
+      min-height: 289px;
+    }
     h2 {
       width: 420px;
       font-size: 26px;
-      // line-height: 36px;
-      // margin-bottom: 30px;
-  
-      border: 2px solid red;
-       margin: 0 auto 30px;
-  
-
+      line-height: 36px;
+      margin-bottom: 32px;
     }
     p {
-      font-size: 14px;
+      font-size: 13px;
       color: var(--dartTextColor);
       text-decoration: underline;
-
+      margin: 0 auto;
+      width: fit-content;
     }
     a {
       list-style: none;
@@ -90,14 +70,11 @@
   .slick-track {
     display: flex;
     padding: 20px 0;
-    border: 2px solid blue;
-  
   }
   .slick-next {
     width: 100px;
     height: 100px;
     right: 720px;
-    
   }
   .slick-prev {
     width: 100px;

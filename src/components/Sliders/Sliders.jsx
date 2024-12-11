@@ -17,7 +17,7 @@ const source = [
     id: 2,
     titleKey: "titleKey",
     description: "description",
-    image: "./images/certification2.jpg",
+    image: "./images/certification2.png",
   },
 ];
 
@@ -57,13 +57,10 @@ export default function Sliders() {
           const isExpanded = expanded[elem.id];
           return (
             <div key={elem.id}>
-              <h2
-                onClick={() => toggleExpanded(elem.id)}
-                style={{ cursor: "pointer" }}
-              >
+              <h2>
                 {isExpanded || title.length <= 50
                   ? title
-                  : `${title.slice(0, 70)}`}
+                  : `${title.slice(0, 52)}...`}
               </h2>
               <img src={elem.image} alt={`Slide ${elem.id}`} />
               <Link to={`/news/${elem.id}`}>

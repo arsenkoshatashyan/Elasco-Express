@@ -31,14 +31,17 @@
       }
     }
     &-cards {
-      display: flex;
-      justify-content: center;
-      margin: 0 auto;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(27.7rem, 1fr));
       gap: 3rem;
-      
-   
-
+      max-width: calc(3 * (27.7rem + 3rem));
+      margin: 0 auto;
+      @media (max-width: 1586px) {
+        max-width: calc(2 * (27.7rem + 3rem));
+      }
+      @media (max-width: 1040px) {
+        max-width: calc(1 * (27.7rem));
+      }
       &-card {
         width: 27.7rem;
         height: 28rem;
@@ -85,6 +88,7 @@
     }
   }
 }
+
 @media (max-width: 1240px) {
   .Service {
     margin-top: 20px;
