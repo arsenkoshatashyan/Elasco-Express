@@ -1,86 +1,32 @@
 import Contact from "../Contact/Contact";
 import "./NewsPage.scss";
-import { useTranslation } from "react-i18next"; // Импортируем useTranslation
+import { useTranslation } from "react-i18next";
 
 const data = [
   {
-    id: 0,
-    title: "logisticsRecognition", // Предыдущие ключи заменены на уникальные
-    url: "/images/certificate3.svg",
-    url2: "/images/certificate2.svg",
-  },
-  {
     id: 1,
     title: "logisticsRecognition",
-    url: "/images/certificate3.svg",
-    url2: "/images/certificate2.svg",
+    url: "/images/certification1.jpg",
+    url2: "/images/certification1-1.jpg",
+    url3: "/images/certification1.jpg",
+    url4: "/images/certification1-2.jpg",
+    url5: "/images/certification1-3.jpg",
   },
   {
     id: 2,
     title: "logisticsRecognition",
-    url: "/images/certificate3.svg",
-    url2: "/images/certificate2.svg",
-  },
-  {
-    id: 3,
-    title: "logisticsRecognition",
-    url: "/images/certificate3.svg",
-    url2: "/images/certificate2.svg",
-  },
-  {
-    id: 4,
-    title: "logisticsRecognition",
-    url: "/images/certificate3.svg",
-    url2: "/images/certificate2.svg",
-  },
-  {
-    id: 5,
-    title: "logisticsRecognition",
-    url: "/images/certificate3.svg",
-    url2: "/images/certificate2.svg",
-  },
-  {
-    id: 6,
-    title: "logisticsRecognition",
-    url: "/images/certificate3.svg",
-    url2: "/images/certificate2.svg",
-  },
-  {
-    id: 7,
-    title: "logisticsRecognition",
-    url: "/images/certificate3.svg",
-    url2: "/images/certificate2.svg",
-  },
-  {
-    id: 8,
-    title: "logisticsRecognition",
-    url: "/images/certificate3.svg",
-    url2: "/images/certificate2.svg",
-  },
-  {
-    id: 9,
-    title: "logisticsRecognition",
-    url: "/images/certificate3.svg",
-    url2: "/images/certificate2.svg",
-  },
-  {
-    id: 10,
-    title: "logisticsRecognition",
-    url: "/images/certificate3.svg",
-    url2: "/images/certificate2.svg",
-  },
-  {
-    id: 11,
-    title: "logisticsRecognition",
-    url: "/images/certificate3.svg",
-    url2: "/images/certificate2.svg",
+    url: "/images/certification2.jpg",
+    url2: "/images/certification2-1.jpg",
+    url3: "/images/certification2-2.jpg",
+    url4: "/images/certification2-3.jpg",
+    url5: "/images/certification2.jpg",
   },
 ];
 
 import { useParams } from "react-router-dom";
 
 export default function NewsPage() {
-  const { t } = useTranslation(); // Получаем функцию t для перевода
+  const { t } = useTranslation();
   const { id } = useParams();
   const newsItem = data.find((item) => item.id === parseInt(id));
 
@@ -88,22 +34,18 @@ export default function NewsPage() {
     <div className="newsPage">
       <div className="newsPage__content">
         <div className="newsPage__content-title">
-          <div className="newsPage__content-title-box">
-            <h2>{t("newsPage.title")}</h2>{" "}
-            {/* Используем новый ключ для перевода */}
-          </div>
+          <h2>{t("newsPage.title")}</h2>
         </div>
-        <div className="newsPage__content-item">
-          <div className="newsPage__content-item-title">
-            <img src="/images/badge.svg" alt="badge" />
-            <h2>{t("newsPage.itemTitle")}</h2>{" "}
-            {/* Используем новый ключ для перевода */}
+        <div className="newsPage__content-block">
+          <div className="newsPage__content-block-title">
+            <h2>{t("newsPage.itemTitle")}</h2>
           </div>
-          <p>{t("newsPage.recognition")}</p>{" "}
-          {/* Используем новый ключ для перевода */}
-          <div className="newsPage__content-item-img">
+          <div className="newsPage__content-block-source">
+            <p>{t("newsPage.recognition")}</p>
             <img src={newsItem.url2} alt="photo" />
-            <img src={newsItem.url} alt="photo" />
+            <img src={newsItem.url3} alt="photo" />
+            <img src={newsItem.url4} alt="photo" />
+            <img src={newsItem.url5} alt="photo" />
           </div>
         </div>
       </div>

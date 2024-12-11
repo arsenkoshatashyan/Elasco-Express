@@ -1,6 +1,8 @@
 .Card {
-  background: url("../../../public/images/CardBackground.svg") no-repeat center;
+  background: url("../../../public/images/backgroundChoose.jpeg") no-repeat
+    center;
   height: auto;
+  background-size: cover;
   &__content {
     text-align: center;
     &-title {

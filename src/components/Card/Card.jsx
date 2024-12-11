@@ -17,7 +17,7 @@ export default function Card() {
     },
     {
       id: 3,
-      url: "/images/card3.svg",
+      url: "/images/card3.png",
       description: t("card.features.2"),
     },
     {

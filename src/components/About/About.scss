@@ -1,11 +1,17 @@
 .About {
   width: 100%;
+  // max-width: 1730px;
+  margin: 0 auto;
+  background: url("../../../public/images/vector.svg") no-repeat center;
   background-size: cover;
+  background-color: var(--iconBackground);
+
   &__content {
     height: auto;
     display: flex;
+    justify-content: center;
     gap: 8rem;
-    margin-top: 40px;
+    margin-top: 157px;
     &-image {
       width: 850px;
       height: 42rem;
@@ -20,8 +26,6 @@
       width: 51.25rem;
       height: 44.5rem;
       margin-top: 5rem;
-    
-    
 
       h1 {
         font-size: 3.5rem;
@@ -29,7 +33,6 @@
         color: var(--mainColor);
         margin-bottom: 5.625rem;
         text-transform: uppercase;
-  
       }
 
       h3 {
@@ -37,8 +40,6 @@
         font-size: 1.625rem;
         color: var(--darkTextColor);
         margin-bottom: 0.875rem;
-
-     
       }
 
       p {
@@ -46,7 +47,6 @@
         font-size: 1.375rem;
         color: var(--lightTextColor);
         margin-bottom: 4.625rem;
-      
       }
 
       button {
@@ -68,12 +68,9 @@
           overflow-y: hidden;
           img {
             width: 540px;
-         
-      
           }
         }
         &-text {
-         
           h1 {
             margin-bottom: 20px;
           }
@@ -81,7 +78,6 @@
           h3 {
             width: 90%;
             font-size: 1.5em;
-   
           }
 
           p {
@@ -100,7 +96,7 @@
       align-items: center;
       justify-content: center;
       &-image {
-       display: none;
+        display: none;
         img {
           width: 30rem;
           height: auto;

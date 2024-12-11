@@ -1,9 +1,9 @@
 .Logistic {
   width: 100%;
   margin: 134px auto 0;
-
+  // max-width: 1730px;
   &__content {
-    background: url("../../../public/images/imgOne.png") no-repeat center ;
+    background: url("../../../public/images/imgOne.png") no-repeat center;
     background-size: cover;
     height: auto;
     padding-top: 12rem;
@@ -24,17 +24,18 @@
       h1 {
         font-size: 52px;
         font-weight: 400;
-        color: var(--mainColor);
+        color: #D61A22;
         margin-bottom: 58px;
+
       }
 
       p {
+        width: 350px;
         height: 100px;
         font-size: 18px;
-        color: var(--textColor);
+        color: #D2D2D2;
         margin-bottom: 20px;
         font-weight: 400;
-
       }
 
       button {
@@ -44,6 +45,7 @@
         font-size: 16px;
         align-items: center;
         cursor: pointer;
+  
       }
     }
   }
@@ -103,7 +105,6 @@
     &__content {
       padding: 6rem 1rem;
       &-about {
-     
         h1 {
           font-size: 26px;
         }
@@ -113,7 +114,6 @@
         }
         p {
           font-size: 14px;
-          
         }
         button {
           padding: 1rem;

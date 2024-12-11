@@ -25,7 +25,7 @@ export default function AboutHome() {
         </div>
         <div className="aboutHome__content-activity">
           <div className="aboutHome__content-activity-box">
-          <div className="aboutHome__content-activity-box-text">
+            <div className="aboutHome__content-activity-box-text">
               <h2>{t("aboutHome.activity")}</h2>
               <p>{t("aboutHome.activityDescription")}</p>
             </div>
@@ -34,8 +34,6 @@ export default function AboutHome() {
               src="./images/abouthome_container2.jfif"
               alt="trucks"
             />
-           
-            
           </div>
         </div>
         <Card />
@@ -49,8 +47,8 @@ export default function AboutHome() {
               <p>{t("aboutHome.achievementsDescription")}</p>
             </div>
             <div className="aboutHome__content-achievements-box-right">
-              <img src="./images/achievement1.png" alt="achievements" />
-              <img src="./images/achievement2.png" alt="achievements" />
+              <img src="./images/certification2-2.jpg" alt="achievements" />
+              <img src="./images/certification2-3.jpg" alt="achievements" />
             </div>
           </div>
         </div>

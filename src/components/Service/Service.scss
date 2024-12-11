@@ -3,21 +3,25 @@
   background: url("../../../public/images/vector.svg") center;
   background-size: cover;
   overflow-y: hidden;
+  background-color: #f2eff2;
 
   &__content {
+    // max-width: 1730px;
     width: 90%;
     height: auto;
     margin: 0 auto;
     padding: 118px 0;
 
     &-title {
-      width: 100%;
+      width: 95%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       padding: 0 20px;
-      margin-bottom: 74px;
+      // margin-bottom: 74px;
+      margin: 0 auto 74px;
+
       h2 {
         font-size: 3rem;
         color: var(--mainColor);
@@ -28,16 +32,20 @@
     }
     &-cards {
       display: flex;
-      justify-content: left;
+      justify-content: center;
+      margin: 0 auto;
       flex-wrap: wrap;
       gap: 3rem;
+      
+   
 
       &-card {
         width: 27.7rem;
         height: 28rem;
         background-color: var(--cardsBackground);
         border-radius: 18px;
-        margin: 0 auto;
+        //  margin-left: 44px;
+        // margin: 0 auto;
 
         p {
           width: 23rem;
@@ -46,7 +54,7 @@
           margin: 0 auto;
         }
         h3 {
-          width: 250px;
+          width: 280px !important;
           font-size: 22px;
         }
 
@@ -93,32 +101,26 @@
   .Service {
     &__content {
       margin-top: -20px;
-      
 
       &-title {
-       
         gap: 20px;
-    
-      justify-content: start;
-        h2 {
-       
-          font-size: 32px;
 
+        justify-content: start;
+        h2 {
+          font-size: 32px;
         }
         button {
           width: 180px;
-       
         }
       }
       &-cards {
         gap: 30px;
 
-     
         &-card {
           width: 23rem;
           gap: 10px;
           height: 27.8rem;
-      
+
           & > div {
             width: 85%;
             margin: 0px auto;
@@ -143,7 +145,6 @@
           }
           p {
             width: 80%;
-            
           }
         }
       }
@@ -159,7 +160,6 @@
       &-title {
         h2 {
           font-size: 30px;
-          
         }
         button {
           // width: 160px;
@@ -176,9 +176,8 @@
           flex-direction: column;
           align-items: center;
           > div {
-            h3{
+            h3 {
               font-size: 16px;
-        
             }
           }
           img {

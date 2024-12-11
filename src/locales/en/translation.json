@@ -4,14 +4,14 @@
     "about_us": "About Us",
     "services": "Services",
     "news": "News",
-    "contact_us": "Contacts"
+    "contact_us": "Contact us"
   },
 
   "logistic": {
     "fastest_secured": "FAST AND RELIABLE",
     "solutions": "LOGISTIC SOLUTIONS",
     "description": "With over a decade of experience, we provide reliable, flexible and efficient solutions tailored to your business needs.",
-    "services_button": "SERVICES"
+    "services_button": "Services"
   },
   "about": {
     "title": "About us",
@@ -61,10 +61,10 @@
     "span": " with us",
     "description": "Contact us today to experience the difference of working with a trusted logistics partner.",
     "form": {
-      "name": "Name",
-      "email": "E-mail",
-      "phone": "Phone",
-      "interested": "Message",
+      "name": "Name*",
+      "email": "E-mail*",
+      "phone": "Phone*",
+      "interested": "Message*",
       "button": "Send"
     }
   },
@@ -79,20 +79,12 @@
     "view_all": "View All",
     "slides": [
       {
-        "titleKey": "1",
-        "description": "12,"
+        "id": 1,
+        "titleKey": "Elasco Express LLC was proud to be part of Armenia Expo 2023."
       },
       {
-        "titleKey": "Elasco Express LLC was proud to be part of Armenia Expo 2023.",
-        "description": "21,"
-      },
-      {
-        "titleKey": "In 2024, Elasco Express LLC was recognized as a high-class logistics provider.",
-        "description": "31,"
-      },
-      {
-        "titleKey": "4",
-        "description": "41,"
+        "id": 2,
+        "titleKey": "In 2024, Elasco Express LLC was recognized as a high-class logistics provider."
       }
     ],
     "readMore": "Read more..."
@@ -103,7 +95,7 @@
     "items": [
       {
         "title": "Tel.",
-        "description": "+374 98 555 378"
+        "description": "+(374) 98 555 378"
       },
       {
         "title": "Address",
@@ -151,18 +143,16 @@
     "customsClearanceDescription": "Elasco Express LLC offers a full range of services for customs-brokerage processing of goods crossing the border of Armenia. We work both in the export and import direction, ensuring fast and accurate execution of all necessary procedures.Our services include:",
     "getInTouch": "Contacts",
     "contactUs": "Need Reliable Logistics Solutions? Contact Us Today!",
-    "contact": "Contact",
+    "contact": "Tel.",
     "address": "Address",
-    "addressDetail": "0064 Arno Babajanyan 26/5, apt.1",
+    "addressDetail": "0064, Yerevan, Arno Babajanyan 26/5, apt.1",
     "mail": "E-mail",
-    "customsServices": {
-      "documentPreparation": "• Preparation of all necessary documents for customs clearance",
-      "customsDuties": "• Calculation and assessment of customs duties and taxes",
-      "customsConsultation": "• Consultations on customs rules and procedures",
-      "representation": "• Representation of the client's interests at all stages of registration",
-      "productClassification": "• Assistance in the classification of products according to the classification of HS code",
-      "transitGoods": "• Organization and registration of transit goods"
-    }
+    "documentPreparation": "• Preparation of all necessary documents for customs clearance",
+    "customsDuties": "• Calculation and assessment of customs duties and taxes",
+    "customsConsultation": "• Consultations on customs rules and procedures",
+    "representation": "• Representation of the client's interests at all stages of registration",
+    "productClassification": "• Assistance in the classification of products according to the classification of HS code",
+    "transitGoods": "• Organization and registration of transit goods"
   },
   "newsTitle": "News",
   "readMore": "Read more...",

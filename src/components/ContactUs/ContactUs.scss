@@ -1,12 +1,17 @@
 .ContactUs {
   height: auto;
   background-color: var(--darkBackground);
-  // margin-top: 120px 0;
-  margin-top: 50px;
+  width: 100%;
+  // max-width: 1730px;
+// position: static;
+// z-index: 4;
+  // margin: 50px auto 0;
   &__content {
     display: flex;
     align-items: center;
     justify-content: center;
+    // position: absolute;
+    // z-index: 444;
 
     &-left {
       padding: 154px 0 0 150px;
@@ -30,8 +35,6 @@
           margin-top: 2px;
           font-size: 18px;
           width: 40rem;
-
-       
         }
       }
       &-form {
@@ -46,6 +49,11 @@
           border: 2px solid #6c8da9ba;
           background-color: transparent;
           padding: 18px 25px;
+          &:focus{
+            border: 2px solid #6c8da9ba;
+            outline: none;
+           
+          }
         }
         input[type="email"],
         input[type="tel"] {
@@ -57,6 +65,12 @@
           border: 2px solid #6c8da9ba;
           background-color: transparent;
           padding: 18px 25px;
+           
+          &:focus{
+            border: 2px solid #6c8da9ba;
+            outline: none;
+           
+          }
         }
 
         select {
@@ -88,11 +102,9 @@
         width: 80%;
         height: 85%;
         &-title {
-
           h2 {
             height: 100px;
             font-size: 28px;
-
           }
           p {
             width: 16rem;
@@ -134,7 +146,7 @@
             width: 90%;
             font-size: 18px;
             // margin-top: -30px;
-               margin: 0 auto;
+            margin: 0 auto;
           }
         }
         &-form {

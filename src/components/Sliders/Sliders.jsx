@@ -11,26 +11,14 @@ const source = [
     id: 1,
     titleKey: "titleKey",
     description: "description",
-    image: "./images/cer2.png",
+    image: "./images/certification1.jpg",
   },
   {
     id: 2,
     titleKey: "titleKey",
     description: "description",
-    image: "./images/cer1.png",
+    image: "./images/certification2.jpg",
   },
-  // {
-  //   id: 3,
-  //   titleKey: "titleKey",
-  //   description: "description",
-  //   image: "./images/certificate.svg",
-  // },
-  // {
-  //   id: 4,
-  //   titleKey: "titleKey",
-  //   description: "description",
-  //   image: "./images/certificate.svg",
-  // },
 ];
 
 export default function Sliders() {
@@ -75,10 +63,12 @@ export default function Sliders() {
               >
                 {isExpanded || title.length <= 50
                   ? title
-                  : `${title.slice(0, 55)}...`}
+                  : `${title.slice(0, 70)}`}
               </h2>
               <img src={elem.image} alt={`Slide ${elem.id}`} />
-              <p>{t("sliders.readMore")}</p>
+              <Link to={`/news/${elem.id}`}>
+                <p>{t("readMore")}</p>
+              </Link>
             </div>
           );
         })}

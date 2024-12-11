@@ -97,7 +97,7 @@ export default function Nav() {
                   {t("nav.contact_us")}
                 </button>
               </Link>
-              <i className="bi bi-globe">
+          
                 <select
                   onChange={(e) => changeLanguage(e.target.value)}
                   name="languages"
@@ -107,7 +107,7 @@ export default function Nav() {
                   <option value="am">ARM</option>{" "}
                  
                 </select>
-              </i>
+            
             </div>
             <div className="burger">
               <i onClick={() => setOpen(true)} className="bi bi-list"></i>
