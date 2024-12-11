@@ -3,7 +3,7 @@
   z-index: 999;
   width: 100%;
   margin: 48px auto 0;
-  background-color: var(--textColor);
+  background-color: #F2EFF2;
   &__content {
     display: flex;
     justify-content: space-evenly;
@@ -40,29 +40,30 @@
         cursor: pointer;
         text-transform: uppercase;
       }
-      i {
-        font-size: 24px;
+    
 
         select {
-          position: relative;
-          right: 23px;
-          top: -3px;
-          background-color: transparent;
-          color: transparent;
-          width: 25px;
-
+          // position: relative;
+          // right: 23px;
+          // top: -3px;
+          // background-color: transparent;
+          // color: transparent;
+          // width: 50px;
+          // height: 50px;
+font-size: 16px;
           cursor: pointer;
-          height: 25px;
+          // height: 25px;
           border: 0;
-          padding: 4px;
-          border-radius: 12px;
+          // padding: 4px;
+          // border-radius: 12px;
+          background-color: #F2EFF2;
           option {
             color: var(--darkBackground);
           }
           &:focus {
             outline: none;
           }
-        }
+        
       }
     }
     .burger {

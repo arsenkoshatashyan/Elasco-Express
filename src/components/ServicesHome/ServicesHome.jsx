@@ -71,7 +71,7 @@ export default function ServicesHome() {
           <div className="ServicesHome__address-blockOne">
             <img src="./images/address1.svg" alt="" />
             <h3>{t("services.contact")}</h3>
-            <a href="">+374 98 555 378</a>
+            <a href="">+(374) 98 555 378</a>
           </div>
           <div className="ServicesHome__address-blockTwo">
             <img src="./images/address2.svg" alt="" />

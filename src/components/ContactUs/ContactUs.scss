@@ -3,11 +3,15 @@
   background-color: var(--darkBackground);
   width: 100%;
   // max-width: 1730px;
-  margin: 50px auto 0;
+// position: static;
+// z-index: 4;
+  // margin: 50px auto 0;
   &__content {
     display: flex;
     align-items: center;
     justify-content: center;
+    // position: absolute;
+    // z-index: 444;
 
     &-left {
       padding: 154px 0 0 150px;
@@ -45,6 +49,11 @@
           border: 2px solid #6c8da9ba;
           background-color: transparent;
           padding: 18px 25px;
+          &:focus{
+            border: 2px solid #6c8da9ba;
+            outline: none;
+           
+          }
         }
         input[type="email"],
         input[type="tel"] {
@@ -56,6 +65,12 @@
           border: 2px solid #6c8da9ba;
           background-color: transparent;
           padding: 18px 25px;
+           
+          &:focus{
+            border: 2px solid #6c8da9ba;
+            outline: none;
+           
+          }
         }
 
         select {

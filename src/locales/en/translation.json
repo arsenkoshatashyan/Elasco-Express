@@ -11,7 +11,7 @@
     "fastest_secured": "FAST AND RELIABLE",
     "solutions": "LOGISTIC SOLUTIONS",
     "description": "With over a decade of experience, we provide reliable, flexible and efficient solutions tailored to your business needs.",
-    "services_button": "SERVICES"
+    "services_button": "Services"
   },
   "about": {
     "title": "About us",
@@ -78,16 +78,14 @@
     "latest_news": "Our Latest News",
     "view_all": "View All",
     "slides": [
-      {},
       {
-        "titleKey": "Elasco Express LLC was proud to be part of Armenia Expo 2023.",
-        "description": "21,"
+        "id": 1,
+        "titleKey": "Elasco Express LLC was proud to be part of Armenia Expo 2023."
       },
       {
-        "titleKey": "In 2024, Elasco Express LLC was recognized as a high-class logistics provider.",
-        "description": "31,"
-      },
-      {}
+        "id": 2,
+        "titleKey": "In 2024, Elasco Express LLC was recognized as a high-class logistics provider."
+      }
     ],
     "readMore": "Read more..."
   },
@@ -97,7 +95,7 @@
     "items": [
       {
         "title": "Tel.",
-        "description": "+374 98 555 378"
+        "description": "+(374) 98 555 378"
       },
       {
         "title": "Address",
@@ -147,7 +145,7 @@
     "contactUs": "Need Reliable Logistics Solutions? Contact Us Today!",
     "contact": "Tel.",
     "address": "Address",
-    "addressDetail": "0064 Arno Babajanyan 26/5, apt.1",
+    "addressDetail": "0064, Yerevan, Arno Babajanyan 26/5, apt.1",
     "mail": "E-mail",
     "documentPreparation": "• Preparation of all necessary documents for customs clearance",
     "customsDuties": "• Calculation and assessment of customs duties and taxes",

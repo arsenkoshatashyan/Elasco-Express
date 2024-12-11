@@ -2,17 +2,28 @@
   width: 100%;
   overflow-y: hidden;
   text-align: center;
+  background: url("../../../public//images/vector.svg") no-repeat;
+  background-color: #F2EFF2;
+
+
+  
   &__content {
     width: 1170px;
     height: 242px;
     margin: 0 auto;
     background-color: var(--iconBackground);
     padding-bottom: 70px;
+    border-radius: 8px;
+
+
+
 
     ul {
       display: flex;
       justify-content: space-evenly;
       padding-top: 44px;
+
+      // top: 50px;
 
       li {
         font-size: 70px;
@@ -20,7 +31,8 @@
         list-style: none;
         p {
           font-size: 18px;
-          color: var(--darkBackground);
+          color: #152430;
+          font-weight: 700;
         }
       }
     }

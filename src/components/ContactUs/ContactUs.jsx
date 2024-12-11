@@ -56,7 +56,9 @@ export default function ContactUs() {
         <div className="ContactUs__content-right">
           <img src="./images/earth.svg" alt="Earth illustration" />
         </div>
+        
       </div>
+
     </div>
   );
 }

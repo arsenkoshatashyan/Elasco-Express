@@ -2,13 +2,16 @@
   margin-top: 90px auto 0;
   overflow-y: hidden;
   &__content {
-    margin-top: 125px;
+    margin-top: 80px;
     width: 100%;
     // max-width: 1730px;
-    margin: 0 auto;
+    background-color: #F2EFF2;
+    // margin: 0 auto;
     &-title {
       background: url("../../../public/images/transport-newBackground.jpeg")
         no-repeat center;
+        background-size: cover;
+      
       height: 491px;
       padding: 200px 0 0 300px;
       width: 100%;

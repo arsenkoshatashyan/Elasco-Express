@@ -3,13 +3,14 @@
     width: 100%;
     // max-width: 1730px;
     margin: 134px auto 0;
-    background-color: var(--iconBackground);
+    background-color: #F2EFF2;
 
     &-title {
       background: url(../../../public/images/truckBackground.jpeg) no-repeat
         center;
-      background-size: cover;
+      background-size:106%;
       height: 332px;
+
       h2 {
         color: var(--textColor);
         padding: 134px 0 0 200px;
@@ -37,8 +38,9 @@
         display: flex;
         p {
           width: 744px;
-          text-align: left;
+          text-align: justify;
           font-size: 27px;
+          margin-top: 80px;
         }
         img {
           height: 425px;
@@ -54,9 +56,10 @@
       justify-content: center;
       margin-top: 50px;
       &-box {
-        background: url("../../../public/images/abouthome_container.png")
+        background: url(../../../public/images/abouthome_container.png)
           no-repeat center;
         display: flex;
+
         height: 748px;
         img {
           width: 692px;
@@ -89,7 +92,7 @@
       }
     }
     &-achievements {
-      background: url("../../../public/images/truck-logistics-operations-dusk.svg")
+      background: url(../../../public/images/truck_logistic.png)
         no-repeat center;
       background-size: cover;
       overflow-y: hidden;
