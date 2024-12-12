@@ -62,7 +62,28 @@ export default function ServicesHome() {
         </div>
       </div>
       <Card />
-      <Result />
+      {/* <Result /> */}
+      <div className="resultThree">
+        <ul>
+          <li>
+            4000+
+            <p>{t("result.satisfied_customers")}</p>
+          </li>
+          <li>
+            12
+            <p>{t("result.years_experience")}</p>
+          </li>
+          <li>
+            100+
+            <p>{t("result.trusted_partners")}</p>
+          </li>
+          <li>
+            98%
+            <p>{t("result.satisfaction_rating")}</p>
+          </li>
+        </ul>
+        <img src="../../../images/result2.png" alt="" />
+      </div>
       <ContactUs />
       <div className="ServicesHome__address">
         <h2>{t("services.getInTouch")}</h2>

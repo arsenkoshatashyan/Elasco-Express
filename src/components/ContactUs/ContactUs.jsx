@@ -7,6 +7,7 @@ export default function ContactUs() {
   return (
     <div className="ContactUs">
       <div className="ContactUs__content">
+        
         <div className="ContactUs__content-left">
           <div className="ContactUs__content-left-title">
             <h2>
@@ -56,9 +57,28 @@ export default function ContactUs() {
         <div className="ContactUs__content-right">
           <img src="./images/earth.svg" alt="Earth illustration" />
         </div>
-        
       </div>
-
+      <div className="result">
+        <ul>
+          <li>
+            4000+
+            <p>{t("result.satisfied_customers")}</p>
+          </li>
+          <li>
+            12
+            <p>{t("result.years_experience")}</p>
+          </li>
+          <li>
+            100+
+            <p>{t("result.trusted_partners")}</p>
+          </li>
+          <li>
+            98%
+            <p>{t("result.satisfaction_rating")}</p>
+          </li>
+        </ul>
+        <img src="../../../images/result.png" alt="" />
+      </div>
     </div>
   );
 }

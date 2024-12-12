@@ -1,14 +1,14 @@
 .Logistic {
   width: 100%;
   margin: 134px auto 0;
-  // max-width: 1730px;
   &__content {
     background: url("../../../public/images/imgOne.png") no-repeat center;
     background-size: cover;
-    height: auto;
+    height: 766px;
     padding-top: 12rem;
     padding-left: 9.875rem;
     padding-right: 9.875rem;
+    overflow-y: hidden;
 
     &-about {
       width: 39rem;
@@ -101,7 +101,9 @@
 
   @media (max-width: 390px) {
     &__content {
-      padding: 6rem 1rem;
+      background-image: url(../../../public/images/imgOne2.png);
+      padding: 0;
+      height: auto;
       &-about {
         h1 {
           font-size: 26px;
@@ -112,6 +114,7 @@
         }
         p {
           font-size: 14px;
+          width: 90%;
         }
         button {
           padding: 1rem;

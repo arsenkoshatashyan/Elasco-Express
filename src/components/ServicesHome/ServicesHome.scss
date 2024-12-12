@@ -1,11 +1,55 @@
 .ServicesHome {
   width: 100%;
-  // max-width: 1730px;
   background-color: #edeaea;
   margin: 80px auto 0;
+  .result {
+    display: none;
+  }
+  .resultThree {
+    max-width: 1170px;
+    height: 242px;
+    margin: 0 auto;
+    background-color: var(--iconBackground);
+    padding: 20px 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -60px;
+    position: relative;
+    margin-top: 40px;
+
+    img {
+      position: absolute;
+      bottom: 0;
+      height: 14px;
+      width: 100%;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    ul {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 44px;
+      li {
+        font-size: 70px;
+        color: var(--mainColor);
+        list-style: none;
+        text-align: center;
+        p {
+          font-size: 18px;
+          color: #152430;
+          font-weight: 700;
+        }
+      }
+    }
+  }
   &__container {
     width: 100%;
-    min-height: 500px;
+    height: 500px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -13,7 +57,7 @@
     color: var(--textColor);
     background: url("../../../public/Services/serviceTitle.jpg") no-repeat
       center;
-    background-size: 106%;
+    background-size: cover;
     h2 {
       font-size: 6.25rem;
       line-height: 200px;
@@ -73,6 +117,7 @@
           }
         }
       }
+
       @media (max-width: 1420px) {
         margin-top: 100px;
         margin-bottom: 150px;
@@ -1015,6 +1060,9 @@
 }
 @media (max-width: 390px) {
   .ServicesHome {
+    &__container {
+      height: auto;
+    }
     &__choose {
       margin-top: 40px;
       &-left {

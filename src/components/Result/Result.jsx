@@ -24,7 +24,9 @@ export default function Result() {
             98%
             <p>{t("result.satisfaction_rating")}</p>
           </li>
+         
         </ul>
+        <img src="../../../images/result2.png" alt="result" />
       </div>
     </div>
   );

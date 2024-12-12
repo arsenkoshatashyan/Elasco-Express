@@ -37,7 +37,27 @@ export default function AboutHome() {
           </div>
         </div>
         <Card />
-        <Result />
+        <div className="result">
+        <ul>
+          <li>
+            4000+
+            <p>{t("result.satisfied_customers")}</p>
+          </li>
+          <li>
+            12
+            <p>{t("result.years_experience")}</p>
+          </li>
+          <li>
+            100+
+            <p>{t("result.trusted_partners")}</p>
+          </li>
+          <li>
+            98%
+            <p>{t("result.satisfaction_rating")}</p>
+          </li>
+        </ul>
+        <img src="../../../images/result.png" alt="" />
+      </div>
         <div className="aboutHome__content-achievements">
           <div className="aboutHome__content-achievements-box">
             <div className="aboutHome__content-achievements-box-left">

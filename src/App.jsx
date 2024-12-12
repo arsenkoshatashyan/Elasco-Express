@@ -39,7 +39,7 @@ export default function App() {
           <Card />
           <Service />
           <ContactUs />
-          <Result />
+          {/* <Result /> */}
           <Sliders />
           <Contact />
         </>
