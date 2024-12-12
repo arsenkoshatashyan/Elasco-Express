@@ -4,9 +4,12 @@
     width: 100%;
     max-width: 1730px;
     margin: 0 auto;
+    background-color: #f2eff2;
+
     &-title {
       background: url("../../../public/images/transport-newBackground.jpeg")
         no-repeat center;
+      
       height: 390px;
       padding: 169px 0 0 200px;
       h2 {

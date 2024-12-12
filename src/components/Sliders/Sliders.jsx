@@ -60,7 +60,7 @@ export default function Sliders() {
               <h2>
                 {isExpanded || title.length <= 50
                   ? title
-                  : `${title.slice(0, 52)}...`}
+                  : `${title.slice(0, 110)}`}
               </h2>
               <img src={elem.image} alt={`Slide ${elem.id}`} />
               <Link to={`/news/${elem.id}`}>
