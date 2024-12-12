@@ -5,15 +5,13 @@
     margin-top: 80px;
     width: 100%;
     // max-width: 1730px;
-    background-color: #F2EFF2;
+    background-color: #eee9e9;
     // margin: 0 auto;
     &-title {
       background: url("../../../public/images/transport-newBackground.jpeg")
-      
         no-repeat center;
-        background-size: cover;
-   
-      
+      background-size: cover;
+
       height: 491px;
       padding: 200px 0 0 300px;
       width: 100%;
@@ -43,8 +41,9 @@
         box-shadow: 0px 3.52px 35.19px 0px rgba(0, 0, 0, 0.25);
 
         h2 {
-          font-size: 40px;
+          font-size: 30px;
           width: 602px;
+          height: 120px;
           text-align: center;
           margin: 54px auto 58px auto;
           color: var(--darkBackground);

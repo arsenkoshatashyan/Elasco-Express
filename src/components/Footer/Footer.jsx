@@ -26,7 +26,7 @@ export default function Footer() {
             <a href="https://www.facebook.com/ElascoTransport?mibextid=ZbWKwL">
               <img src="./images/facebook.svg" alt="facebook" />
             </a>
-          
+
             <a href="tel:+37498555378 ">
               <img src="./images/whatsapp.png" alt="wp" />
             </a>
@@ -44,7 +44,7 @@ export default function Footer() {
               <Link to="/services">{t("footer.services")}</Link>
             </li>
             <li>
-              <Link to="/contact">{t("footer.contact")}</Link>
+              <Link to="/contact-us">{t("footer.contact")}</Link>
             </li>
             <li>
               <Link to="/news">{t("footer.news")}</Link>

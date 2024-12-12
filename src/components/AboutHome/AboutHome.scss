@@ -3,12 +3,12 @@
     width: 100%;
     // max-width: 1730px;
     margin: 134px auto 0;
-    background-color: #F2EFF2;
+    background-color: #eee9e9;
 
     &-title {
       background: url(../../../public/images/truckBackground.jpeg) no-repeat
         center;
-      background-size:106%;
+      background-size: 106%;
       height: 332px;
 
       h2 {
@@ -92,8 +92,8 @@
       }
     }
     &-achievements {
-      background: url(../../../public/images/truck_logistic.png)
-        no-repeat center;
+      background: url(../../../public/images/truck_logistic.png) no-repeat
+        center;
       background-size: cover;
       overflow-y: hidden;
       width: 100%;

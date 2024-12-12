@@ -1,11 +1,12 @@
 import Contact from "../Contact/Contact";
 import "./NewsPage.scss";
 import { useTranslation } from "react-i18next";
+import { useParams } from "react-router-dom";
 
 const data = [
   {
     id: 1,
-    title: "logisticsRecognition",
+    titleKey: "newsPage.news1Title",
     url: "/images/certification1.jpg",
     url2: "/images/certification1-1.jpg",
     url3: "/images/certification1.jpg",
@@ -14,16 +15,14 @@ const data = [
   },
   {
     id: 2,
-    title: "logisticsRecognition",
+    titleKey: "newsPage.news2Title",
     url: "/images/certification2.jpg",
     url2: "/images/certification2-1.jpg",
     url3: "/images/certification2-2.jpg",
     url4: "/images/certification2-3.jpg",
-    url5: "/images/certification2.jpg",
+    url5: "/images/certification2-4.jpg",
   },
 ];
-
-import { useParams } from "react-router-dom";
 
 export default function NewsPage() {
   const { t } = useTranslation();
@@ -41,7 +40,7 @@ export default function NewsPage() {
             <h2>{t("newsPage.itemTitle")}</h2>
           </div>
           <div className="newsPage__content-block-source">
-            <p>{t("newsPage.recognition")}</p>
+            <p>{t(newsItem.titleKey)}</p>
             <img src={newsItem.url2} alt="photo" />
             <img src={newsItem.url3} alt="photo" />
             <img src={newsItem.url4} alt="photo" />

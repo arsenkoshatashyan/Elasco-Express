@@ -159,6 +159,14 @@
   "newsTitle": "News",
   "readMore": "Read more...",
   "certificate": "certificate",
+  "news": [
+    {
+      "titleKey": "Elasco Express LLC was proud to be part of Armenia Expo 2023."
+    },
+    {
+      "titleKey": "In 2024, Elasco Express LLC was recognized as a high-class logistics provider."
+    }
+  ],
   "logisticsRecognition": "In 2024, LLC \"Elasco Express\" was recognized as a high-class logistics provider.",
   "contactTitle": "Contact Us",
   "contactDescription": "If you have any questions, feel free to reach out.",
@@ -167,7 +175,8 @@
   "newsPage": {
     "title": "News",
     "itemTitle": "Our achievement",
-    "recognition": "In 2024, LLC \"Elasco Express\" was recognized as a high-class logistics provider, took 1st place as a freight forwarding company and received a certificate from the largest international freight exchange platform in the Russian Federation and the CIS region ATI.SU. This recognition reflects our commitment to quality service, efficiency and customer satisfaction.",
+    "news1Title": "Elasco Express LLC was proud to be part of Armenia Expo 2023․ During Armenia Expo 2023 we had a fantastic opportunity to connect with industry leaders, showcase our freight forwarding services, and meet wonderful people who share our passion for logistics and community growth.",
+    "news2Title": "In 2024, Elasco Express LLC was recognized as a high-class logistics provider. Our company took 1st place as a freight forwarding company and received a certificate from the largest international freight exchange platform in the Russian Federation and in the CIS region ATI.SU.This recognition reflects our commitment to quality service, efficiency and customer satisfaction.",
     "readMore": "Read more..."
   }
 }
