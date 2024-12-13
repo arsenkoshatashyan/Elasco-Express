@@ -1,5 +1,5 @@
 .Sliders {
-  background: url("../../../public//images/vector.svg") no-repeat;
+  background: url("../../../public//images/vector.svg");
   background-color: #f2eff2;
   width: 100%;
   margin: 0 auto;
@@ -8,7 +8,6 @@
     justify-content: space-between;
     align-items: center;
     width: 81%;
-
     height: 7.25rem;
     margin: 46px auto;
 
@@ -96,9 +95,6 @@
 
   .slick-next::before,
   .slick-prev::before {
-    // width: 50px;
-    // height: 50px;
-    // border-radius: 50%;
     color: #a4bace;
     font-size: 42px;
   }
@@ -128,7 +124,7 @@
     }
 
     .slick-slide > div {
-      max-width: 24rem;
+      // max-width: 24rem;
       height: 32rem;
 
       h2 {
@@ -155,11 +151,40 @@
 }
 @media (max-width: 1135px) {
   .Sliders {
+    .slick-slide > div {
+      width: 26rem;
+      h2 {
+        width: 90%;
+        font-size: 20px;
+        margin: 0 auto;
+      }
+      img {
+        margin: 20px auto;
+        width: 22rem;
+        margin: 10px auto;
+      }
+    }
     .slick-next {
       right: 300px;
     }
     .slick-prev {
       left: 300px;
+    }
+  }
+}
+@media (max-width: 880px) {
+  .Sliders {
+    .slick-slide > div {
+      width: 23rem;
+      h2 {
+        font-size: 18px;
+        margin: 0 auto;
+      }
+      img {
+        // margin: 20px auto;
+        width: 20rem;
+        margin: 10px auto;
+      }
     }
   }
 }
@@ -169,8 +194,22 @@
     .slick-prev {
       display: none !important;
     }
+    .slick-slide > div {
+      width: 26rem;
+      h2 {
+        font-size: 22px;
+        margin: 0 auto;
+      }
+      img {
+        // margin: 20px auto;
+        width: 380px;
+        margin: 10px auto;
+
+      }
+    }
   }
 }
+
 @media (max-width: 430px) {
   .Sliders {
     gap: 20px;
@@ -190,28 +229,26 @@
       display: none;
     }
     h2 {
-      font-size: 18px;
+      font-size: 16px;
     }
     button {
-      width: 100px;
-      font-size: 12px;
+      width: 90px;
+      font-size: 10px;
     }
     .slick-slide > div {
       max-width: 18rem;
-      height: 27rem;
+      // height: 28rem;
       margin: 50px auto;
-      .slick-next,
-      .slick-prev {
-        display: none;
-      }
 
       h2 {
-        width: 90%;
-        font-size: 16px;
+        width: 100%;
+        font-size: 15px;
       }
       img {
-        margin: 20px auto;
-        width: 16rem;
+        margin: 10px auto;
+        width: 14rem;
+        height: 150px;
+
         overflow-y: hidden;
       }
     }
