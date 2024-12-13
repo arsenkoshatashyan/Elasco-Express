@@ -4,14 +4,11 @@
   background-size: cover;
   overflow-y: hidden;
   background-color: #f2eff2;
-
   &__content {
-    // max-width: 1730px;
     width: 90%;
     height: auto;
     margin: 0 auto;
     padding: 118px 0;
-
     &-title {
       width: 95%;
       display: flex;
@@ -20,7 +17,6 @@
       align-items: center;
       padding: 0 20px;
       margin: 0 auto 74px;
-
       h2 {
         font-size: 3rem;
         color: var(--mainColor);
@@ -39,7 +35,8 @@
         max-width: calc(2 * (27.7rem + 3rem));
       }
       @media (max-width: 1040px) {
-        max-width: calc(1 * (27.7rem));
+        display: flex;
+        flex-direction: column;
       }
       &-card {
         width: 27.7rem;
@@ -58,7 +55,6 @@
           width: 280px !important;
           font-size: 22px;
         }
-
         > div {
           display: flex;
           align-items: center;
@@ -99,6 +95,17 @@
     }
   }
 }
+@media (max-width: 1040px) {
+  .Service {
+    &__content {
+      &-cards {
+        &-card {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 768px) {
   .Service {
     &__content {
@@ -117,11 +124,10 @@
       }
       &-cards {
         gap: 30px;
-
+        height: auto;
         &-card {
-          width: 23rem;
           gap: 10px;
-          height: 27.8rem;
+          height: 100%;
 
           & > div {
             width: 85%;
@@ -147,6 +153,7 @@
           }
           p {
             width: 80%;
+            margin-bottom: 30px;
           }
         }
       }
@@ -157,29 +164,31 @@
 @media (max-width: 390px) {
   .Service {
     &__content {
-      // margin-top: -80px;
-      // margin-bottom: 20px;
       &-title {
         h2 {
           font-size: 30px;
         }
         button {
-          // width: 160px;
           font-size: 14px;
         }
       }
       &-cards {
         gap: 20px;
-        // padding-bottom: 30px;
         &-card {
-          width: 21rem;
-          height: 28.5rem;
           display: flex;
           flex-direction: column;
           align-items: center;
           > div {
             h3 {
               font-size: 16px;
+            }
+            span {
+              min-width: 40px !important;
+              height: 40px !important;
+              > img {
+                width: 25px;
+                height: 25px;
+              }
             }
           }
           img {

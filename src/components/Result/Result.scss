@@ -3,10 +3,7 @@
   overflow-y: hidden;
   text-align: center;
   background: url("../../../public//images/vector.svg") no-repeat;
-  background-color: #F2EFF2;
-
-
-  
+  background-color: #f2eff2;
   &__content {
     width: 1170px;
     height: 242px;
@@ -15,24 +12,14 @@
     padding-bottom: 70px;
     border-radius: 8px;
     position: relative;
-    img{
+    img {
       position: absolute;
-      // right: -2px;
-      // left: 0;
       bottom: 0;
-
     }
-
-
-
-
     ul {
       display: flex;
       justify-content: space-evenly;
       padding-top: 44px;
-
-      // top: 50px;
-
       li {
         font-size: 70px;
         color: var(--mainColor);
@@ -67,13 +54,11 @@
       width: 90%;
       height: auto;
       margin: 10px auto;
-
       ul {
         display: flex;
         padding: 44px 10px 0;
         justify-content: center;
         gap: 20px;
-
         li {
           font-size: 20px;
           P {
@@ -90,12 +75,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     &__content {
       width: 100%;
       height: 180px;
       margin: 0 auto;
-
       ul {
         display: flex;
         padding: 44px 10px 0;
