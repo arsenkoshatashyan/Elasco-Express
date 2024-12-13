@@ -145,7 +145,7 @@
           width: 100%;
           gap: 30px;
           img {
-            margin-bottom: 0px;
+            // margin-bottom: 0px;
           }
         }
       }
@@ -153,6 +153,7 @@
         h2 {
           width: 300px;
           text-align: center;
+
         }
         ul {
           width: 300px;
@@ -170,14 +171,15 @@
           align-items: center;
           h2 {
             width: 335px;
-            text-align: center;
+            text-align: left;
             font-size: 20px;
+
           }
           p {
-            width: 220px !important;
+            width: 335px !important;
             height: 150px;
             margin: 0 auto;
-            text-align: center !important;
+            text-align: left !important;
           }
         }
 
@@ -208,6 +210,7 @@
         &-socials {
           width: auto;
           gap: 14px;
+          align-items: center;
         }
       }
       &-center {
@@ -222,14 +225,17 @@
       &-right {
         h2 {
           font-size: 16px;
-          width: 100%;
+          width: 90%;
+ 
+          text-align: center;
         }
         p {
           margin-bottom: 20px;
           font-size: 18px;
-          width: 100%;
+          width:90% !important;
           height: max-content;
-          text-align: center;
+          text-align: center !important;
+   
         }
         form {
           display: flex;

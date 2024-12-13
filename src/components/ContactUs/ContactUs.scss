@@ -1,6 +1,6 @@
 .ContactUs {
   height: auto;
-  background: url("../../../public//images/vector.svg") no-repeat;
+  background: url("../../../public//images/vector.svg");
   background-color: #f2eff2;
   width: 100%;
   // border: 2px solid red;
@@ -155,6 +155,7 @@
   align-items: center;
   margin-top: -60px;
   position: relative;
+  
 
   img {
     position: absolute;
@@ -192,7 +193,88 @@
 //   padding-bottom: 40px; /* Увеличиваем отступ снизу для места под .result */
 // }
 
+@media (max-width: 1240px) {
+  .result{
+    ul {
+      width: 90%;
+      padding-top: 44px;
+      li {
+        font-size: 50px;
+    
+        
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .result{
+    margin-top: 20px;
+  width: 100%;
 
+
+    ul {
+      width: 100%;
+      padding-top: 44px;
+      gap: 10px;
+      li {
+        font-size: 40px;
+    
+        p{
+          font-size: 16px;
+        }
+      }
+      
+    }
+  }
+}
+@media (max-width: 620px) {
+  .result{
+    margin-top: 20px;
+  width: 100%;
+
+
+    ul {
+      width: 100%;
+      padding-top: 44px;
+      gap: 10px;
+      li {
+        font-size: 32px;
+    
+        p{
+          font-size: 14px;
+        }
+      }
+      
+    }
+  }
+}
+@media (max-width: 550px) {
+  .result{
+    // margin-top: 20px;
+  width: 100%;
+  height: 160px;
+  top: -20px;
+  border-radius: 0;
+
+
+
+    ul {
+      width: 100%;
+      // padding-top: 44px;
+      gap: 20px;
+      li {
+        font-size: 24px;
+       
+    
+        p{
+          font-size: 6px;
+    
+        }
+      }
+      
+    }
+  }
+}
 
 
 
