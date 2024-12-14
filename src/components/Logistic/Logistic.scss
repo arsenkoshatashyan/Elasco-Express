@@ -71,6 +71,7 @@
 
   @media (max-width: 768px) {
     &__content {
+      // background-image: url(../../../public/images/imgOne2.png);
       width: 100%;
       padding: 1rem 1rem;
       &-about {
@@ -101,7 +102,7 @@
 
   @media (max-width: 390px) {
     &__content {
-      background-image: url(../../../public/images/imgOne2.png);
+      
       padding: 0;
       height: auto;
       &-about {
