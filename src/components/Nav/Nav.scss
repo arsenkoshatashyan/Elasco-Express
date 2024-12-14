@@ -3,7 +3,7 @@
   z-index: 999;
   width: 100%;
   margin: 48px auto 0;
-  background-color: #F2EFF2;
+  background-color: #f2eff2;
   &__content {
     display: flex;
     justify-content: space-evenly;
@@ -12,7 +12,6 @@
     &-logo {
       overflow-y: hidden;
     }
-
     &-links {
       ul {
         display: flex;
@@ -40,30 +39,17 @@
         cursor: pointer;
         text-transform: uppercase;
       }
-    
-
-        select {
-          // position: relative;
-          // right: 23px;
-          // top: -3px;
-          // background-color: transparent;
-          // color: transparent;
-          // width: 50px;
-          // height: 50px;
-font-size: 16px;
-          cursor: pointer;
-          // height: 25px;
-          border: 0;
-          // padding: 4px;
-          // border-radius: 12px;
-          background-color: #F2EFF2;
-          option {
-            color: var(--darkBackground);
-          }
-          &:focus {
-            outline: none;
-          }
-        
+      select {
+        font-size: 16px;
+        cursor: pointer;
+        border: 0;
+        background-color: #f2eff2;
+        option {
+          color: var(--darkBackground);
+        }
+        &:focus {
+          outline: none;
+        }
       }
     }
     .burger {
@@ -75,7 +61,6 @@ font-size: 16px;
       display: none;
     }
   }
-
   @media (max-width: 1450px) {
     .Nav {
       &__content {
@@ -93,13 +78,11 @@ font-size: 16px;
       }
     }
   }
-
   @media (max-width: 1240px) {
     .Nav {
       &__content {
         padding: 0 3rem;
         justify-content: space-between;
-
         &-links {
           ul {
             font-size: 12px;
@@ -118,19 +101,17 @@ font-size: 16px;
 }
 .active {
   color: var(--mainColor) !important;
-
   font-weight: bold;
   opacity: 1;
 }
 .BurgerMenu {
   position: fixed;
-  width: 30%;
-  left: 70%;
+  width: 50%;
+  left: 50%;
   height: auto;
   background-color: var(--darkBackground);
   z-index: 10;
   padding: 10px 0;
-
   &__content {
     width: 100%;
     &-links {
@@ -139,7 +120,6 @@ font-size: 16px;
         text-transform: uppercase;
         text-align: center;
         width: 100%;
-
         li {
           display: flex;
           justify-content: center;
@@ -152,7 +132,6 @@ font-size: 16px;
           .active {
             color: var(--mainColor);
           }
-
           a {
             text-decoration: none;
             color: var(--textColor);
@@ -257,7 +236,6 @@ font-size: 16px;
     }
   }
 }
-
 @media (max-width: 390px) {
   .Nav {
     &__content {

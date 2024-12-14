@@ -257,30 +257,6 @@
     }
   }
 }
-// @media (max-width: 1160px) {
-//   .aboutHome {
-//     &__content {
-//       &-activity {
-//         &-box {
-//           border-top-left-radius: 70px;
-//           border-bottom-right-radius: 70px;
-
-//           img {
-//             display: none;
-//           }
-
-//           &-text {
-//             p {
-//               margin: 10px 0 20px;
-//               text-align: center;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
 @media (max-width: 768px) {
   .aboutHome {
     &__content {
@@ -391,21 +367,6 @@
           }
         }
       }
-      // &-achievements {
-      //   &-box {
-      //     width: 90%;
-      //     &-left {
-      //       &-title {
-      //         h2 {
-      //           font-size: 30px;
-      //         }
-      //       }
-      //     }
-      //     &-right {
-      //       width: 240px;
-      //     }
-      //   }
-      // }
     }
   }
 }

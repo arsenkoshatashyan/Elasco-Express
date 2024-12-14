@@ -2,7 +2,6 @@
   width: 100%;
   position: fixed;
   z-index: 55;
-
   &__content {
     min-height: 48px;
     display: flex;
@@ -11,11 +10,9 @@
     padding: 0 176px;
     background-color: #d61a22;
     font-size: 0.9rem;
-
     a {
       color: var(--textColor);
     }
-
     &-phone,
     &-email {
       display: flex;
@@ -25,7 +22,6 @@
     }
   }
 }
-
 @media (max-width: 1024px) {
   .Info {
     &__content {

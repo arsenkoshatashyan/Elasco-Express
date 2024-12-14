@@ -3,7 +3,6 @@
 .Footer {
   background-color: var(--darkBackground);
   width: 100%;
-  // max-width: 1730px;
   margin: 0 auto;
   &__content {
     display: flex;
@@ -33,8 +32,6 @@
         margin-top: 22px;
         margin-left: 14px;
         img {
-          // width: 30px;
-          // height: 28px;
           margin-bottom: 40px;
         }
       }
@@ -87,10 +84,9 @@
         border: 2px solid #6c8da9ba;
         background-color: transparent;
         padding: 18px 25px;
-        &:focus{
+        &:focus {
           border: 2px solid #6c8da9ba;
           outline: none;
-         
         }
       }
       button {
@@ -144,16 +140,12 @@
           justify-content: center;
           width: 100%;
           gap: 30px;
-          img {
-            // margin-bottom: 0px;
-          }
         }
       }
       &-center {
         h2 {
           width: 300px;
           text-align: center;
-
         }
         ul {
           width: 300px;
@@ -173,7 +165,6 @@
             width: 335px;
             text-align: left;
             font-size: 20px;
-
           }
           p {
             width: 335px !important;
@@ -226,16 +217,15 @@
         h2 {
           font-size: 16px;
           width: 90%;
- 
+
           text-align: center;
         }
         p {
           margin-bottom: 20px;
           font-size: 18px;
-          width:90% !important;
+          width: 90% !important;
           height: max-content;
           text-align: center !important;
-   
         }
         form {
           display: flex;

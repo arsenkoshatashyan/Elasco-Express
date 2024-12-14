@@ -61,7 +61,6 @@ export default function ServicesHome() {
         </div>
       </div>
       <Card />
-      {/* <Result /> */}
       <div className="resultThree">
         <ul>
           <li>

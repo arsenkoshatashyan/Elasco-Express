@@ -3,14 +3,12 @@ import "./Nav.scss";
 import { useState, useEffect, useRef } from "react";
 import { IoClose } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
-
 export default function Nav() {
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   const [activePage, setActivePage] = useState("");
   const mobileNavRef = useRef(null);
   const { pathname } = useLocation();
-
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -92,16 +90,15 @@ export default function Nav() {
                   {t("nav.contact_us")}
                 </button>
               </Link>
-          
-                <select
-                  onChange={(e) => changeLanguage(e.target.value)}
-                  name="languages"
-                >
-                  <option value="en">EN</option>
-                  <option value="ru">RU</option>
-                  <option value="am">ARM</option>
-                </select>
-            
+
+              <select
+                onChange={(e) => changeLanguage(e.target.value)}
+                name="languages"
+              >
+                <option value="en">EN</option>
+                <option value="ru">RU</option>
+                <option value="am">ARM</option>
+              </select>
             </div>
             <div className="burger">
               <i onClick={() => setOpen(true)} className="bi bi-list"></i>

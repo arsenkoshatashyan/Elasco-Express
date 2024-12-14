@@ -1,11 +1,9 @@
 .About {
   width: 100%;
-  // max-width: 1730px;
   margin: 0 auto;
   background: url("../../../public/images/vector.svg") no-repeat center;
   background-size: cover;
   background-color: var(--iconBackground);
-
   &__content {
     height: auto;
     display: flex;

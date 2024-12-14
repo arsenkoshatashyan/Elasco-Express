@@ -1,7 +1,5 @@
 import Card from "../Card/Card";
 import Contact from "../Contact/Contact";
-import Result from "../Result/Result";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./AboutHome.scss";
 import Service from "../Service/Service";
@@ -37,26 +35,26 @@ export default function AboutHome() {
         </div>
         <Card />
         <div className="result">
-        <ul>
-          <li>
-            4000+
-            <p>{t("result.satisfied_customers")}</p>
-          </li>
-          <li>
-            12
-            <p>{t("result.years_experience")}</p>
-          </li>
-          <li>
-            100+
-            <p>{t("result.trusted_partners")}</p>
-          </li>
-          <li>
-            98%
-            <p>{t("result.satisfaction_rating")}</p>
-          </li>
-        </ul>
-        <img src="../../../images/result.png" alt="" />
-      </div>
+          <ul>
+            <li>
+              4000+
+              <p>{t("result.satisfied_customers")}</p>
+            </li>
+            <li>
+              12
+              <p>{t("result.years_experience")}</p>
+            </li>
+            <li>
+              100+
+              <p>{t("result.trusted_partners")}</p>
+            </li>
+            <li>
+              98%
+              <p>{t("result.satisfaction_rating")}</p>
+            </li>
+          </ul>
+          <img src="../../../images/result.png" alt="" />
+        </div>
         <div className="aboutHome__content-achievements">
           <div className="aboutHome__content-achievements-box">
             <div className="aboutHome__content-achievements-box-left">
