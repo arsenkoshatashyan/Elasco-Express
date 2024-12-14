@@ -109,9 +109,9 @@
   position: fixed;
   width: 50%;
   left: 50%;
-  height: auto;
+  height: 100vh;
   background-color: var(--darkBackground);
-  z-index: 10;
+  z-index: 100;
   padding: 10px 0;
   &__content {
     width: 100%;
