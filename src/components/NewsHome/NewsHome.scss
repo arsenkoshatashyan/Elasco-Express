@@ -98,7 +98,7 @@
 }
 .resultTwo {
   max-width: 1170px;
-  height: 242px;
+  height: auto;
   margin: 0 auto;
   background-color: var(--iconBackground);
   padding: 20px 15px;
@@ -242,7 +242,7 @@
     &__content {
       &-title {
         height: auto;
-        padding: 100px 40px;
+        padding: 100px 50px;
         h2 {
           font-size: 35px;
         }

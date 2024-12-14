@@ -2,16 +2,36 @@ import "./ServicesHome.scss";
 import ContactUs from "../ContactUs/ContactUs";
 import { useTranslation } from "react-i18next";
 import Card from "../Card/Card";
+import ContactHomeScroll from "./../ContactHomeScroll/ContactHomeScroll";
 
 export default function ServicesHome() {
   const { t } = useTranslation();
+  const data = [
+    {
+      id: 0,
+      url: "/images/support.svg",
+      title: t("contacts.items.0.title"),
+      description: t("contacts.items.0.description"),
+    },
+    {
+      id: 1,
+      url: "/images/geo.svg",
+      title: t("contacts.items.1.title"),
+      description: t("contacts.items.1.description"),
+    },
+    {
+      id: 2,
+      url: "/images/email.svg",
+      title: t("contacts.items.2.title"),
+      description: t("contacts.items.2.description"),
+    },
+  ];
 
   return (
     <div className="ServicesHome">
       <div className="ServicesHome__container">
         <h2>{t("services.title")}</h2>
       </div>
-
       <div className="ServicesHome__content">
         <div className="ServicesHome__content-block">
           <div className="ServicesHome__content-block-box">
@@ -82,6 +102,7 @@ export default function ServicesHome() {
         </ul>
         <img src="../../../images/result2.png" alt="" />
       </div>
+      <ContactHomeScroll />
       <ContactUs />
       <div className="ServicesHome__address">
         <h2>{t("services.getInTouch")}</h2>
