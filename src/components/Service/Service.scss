@@ -4,6 +4,9 @@
   background-size: cover;
   overflow-y: hidden;
   background-color: #f2eff2;
+  @media (max-width: 768px) {
+    background: none;
+  }
   &__content {
     width: 90%;
     height: auto;

@@ -1,5 +1,8 @@
 .About {
   background: url("../../../public/images/vector.svg");
+  @media (max-width: 768px) {
+    background: none;
+  }
   background-color: var(--iconBackground);
   &__content {
     display: flex;
@@ -60,14 +63,13 @@
           }
           h3 {
             font-size: 24px;
-       
           }
-    
+
           p {
             font-size: 20px;
             margin: 14px 0 54px;
           }
-    
+
           button {
             width: 220px;
             font-size: 17px;
@@ -98,7 +100,7 @@
             font-size: 18px;
             margin: 14px 0 54px;
           }
-    
+
           button {
             width: 216px;
             font-size: 16px;
@@ -130,7 +132,7 @@
             font-size: 18px;
             margin: 14px 0 44px;
           }
-    
+
           button {
             width: 216px;
             font-size: 16px;
@@ -162,7 +164,7 @@
             font-size: 16px;
             margin: 14px 0 34px;
           }
-    
+
           button {
             width: 212px;
             font-size: 16px;
@@ -194,7 +196,7 @@
             font-size: 16px;
             margin: 14px 0 24px;
           }
-    
+
           button {
             width: 208px;
             font-size: 15px;
@@ -216,7 +218,6 @@
           h1 {
             font-size: 38px;
             margin: 20px 0 20px;
-           
           }
           h3 {
             font-size: 18px;
@@ -227,7 +228,7 @@
             margin: 14px 0 24px;
             width: 70%;
           }
-    
+
           button {
             width: 208px;
             font-size: 15px;
@@ -240,26 +241,23 @@
     .About {
       &__content {
         margin: 70px auto;
-        
         &-text {
           width: 80%;
           padding: 0 10px 0 0;
           h1 {
             font-size: 36px;
             margin: 20px 0 20px;
-           
           }
           h3 {
             font-size: 17px;
             width: 90%;
           }
           p {
-  
             font-size: 15px;
             margin: 14px 0 24px;
             width: 90%;
           }
-    
+
           button {
             width: 208px;
             font-size: 15px;
@@ -285,9 +283,9 @@
           p {
             font-size: 14px;
           }
-        button {
+          button {
             width: 160px;
-            
+
             font-size: 14px;
           }
         }
@@ -298,26 +296,21 @@
     .About {
       &__content {
         margin: 40px auto;
-        
+
         &-text {
-          
- 
           h1 {
             font-size: 24px;
             margin: 20px 0 20px;
-           
           }
           h3 {
             font-size: 14px;
             width: 100%;
-
           }
           p {
-  
             font-size: 12px;
             width: 100%;
           }
-    
+
           button {
             width: 140px;
             height: 32px;
@@ -327,5 +320,4 @@
       }
     }
   }
-
 }
