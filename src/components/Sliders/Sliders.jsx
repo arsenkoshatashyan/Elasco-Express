@@ -70,6 +70,9 @@ export default function Sliders() {
           );
         })}
       </Slider>
+      <Link to="/news">
+        <button className="button-all">{t("sliders.view_all")}</button>
+      </Link>
     </div>
   );
 }

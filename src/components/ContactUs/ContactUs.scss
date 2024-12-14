@@ -1,5 +1,4 @@
 .ContactUs {
-  // height: auto;
   background: url("../../../public//images/vector.svg") no-repeat;
   background-color: #f2eff2;
   width: 100%;
@@ -9,12 +8,12 @@
     align-items: center;
     justify-content: center;
     background-color: var(--darkBackground);
-    
+
     &-left {
       padding: 154px 0 0 150px;
       width: 1200px;
       height: 840px;
-      
+
       &-title {
         font-size: 22px;
         color: var(--textColor);
@@ -129,7 +128,7 @@
     max-width: 80%;
     height: auto;
     margin-top: -25px;
-    
+
     ul {
       width: 80%;
       padding-top: 10px;
@@ -207,16 +206,16 @@
         &-form {
           input[type="text"] {
             width: 100%;
+            background-color: var(--darkBackground);
           }
           input[type="email"] {
             width: 100%;
+            background-color: var(--darkBackground);
           }
           input[type="tel"] {
             width: 100%;
             margin-top: 25px;
-          }
-          button {
-            // width: 100%;
+            background-color: var(--darkBackground);
           }
         }
       }
@@ -227,8 +226,9 @@
   .ContactUs {
     &__content {
       &-left {
+        position: relative;
+        z-index: 20;
         padding: 3px;
-
         &-title {
           h2 {
             font-size: 22px;
@@ -248,7 +248,43 @@
         }
       }
       &-right {
-        display: none;
+        position: absolute;
+        left: 60%;
+        z-index: 0;
+        max-width: 40%;
+        // display: none;
+      }
+    }
+  }
+}
+@media (max-width: 490px) {
+  .ContactUs {
+    &__content {
+      &-left {
+        &-title {
+          h2 {
+            width: 100%;
+          }
+        }
+
+        &-form {
+          input[type="email"],
+          input[type="tel"],
+          input[type="text"] {
+            height: 45px;
+          }
+          button {
+            margin-bottom: 50px;
+            height: 35px;
+            width: 140px;
+          }
+        }
+      }
+      &-right {
+        position: absolute;
+        left: 50%;
+        z-index: 0;
+        max-width: 50%;
       }
     }
   }

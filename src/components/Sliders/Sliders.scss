@@ -3,6 +3,7 @@
   background-color: #f2eff2;
   width: 100%;
   margin: 0 auto;
+  overflow-y: hidden;
   &__content {
     display: flex;
     justify-content: space-between;
@@ -67,6 +68,14 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+  .button-all {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      margin: -100px auto 50px;
+      background-color: var(--darkBackground);
     }
   }
   .slick-track {
@@ -184,10 +193,21 @@
   }
 }
 @media (max-width: 768px) {
+  .slick-track {
+    padding-top: 0 !important;
+  }
   .Sliders {
     &__content {
       flex-wrap: wrap;
       gap: 10px;
+      margin: 20px auto 0;
+      h2 {
+        text-align: center;
+        margin: 0 auto;
+      }
+      button {
+        display: none;
+      }
     }
     .slick-next,
     .slick-prev {
