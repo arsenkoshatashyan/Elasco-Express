@@ -1,32 +1,26 @@
 .Contact {
   background: url("../../../public/images/contactBackground.jpeg") no-repeat
     center;
-  height: auto;
-
   background-size: cover;
   overflow-y: hidden;
   &__content {
     text-align: center;
-    width: 100%;
-    margin: 0 auto;
     margin-bottom: -40px;
     max-width: 1730px;
     &-title {
       padding: 82px 0 92px 0;
-
       h2 {
         color: var(--mainColor);
         font-size: 37px;
         margin-bottom: 26px;
         width: 90%;
-        margin: 20px auto;
+        margin: 0 auto 20px;
       }
       p {
         width: 80%;
-        text-align: center;
+        font-size: 23px;
         margin: 0 auto;
         color: var(--textColor);
-        font-size: 23px;
         text-transform: uppercase;
       }
     }
@@ -41,13 +35,13 @@
       &-item {
         width: 293px;
         height: 306px;
-        background-color: #5a5a5a73;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 16px;
         border-radius: 46px;
+        background-color: #5a5a5a73;
         img {
           width: 78px;
           height: 78px;
@@ -58,9 +52,9 @@
         }
         p {
           width: 90%;
-          color: var(--textColor);
           height: 51px;
           font-size: 18px;
+          color: var(--textColor);
         }
       }
     }
@@ -70,21 +64,62 @@
   .Contact {
     &__content {
       &-title {
-        // padding: 82px 0 0;
-
+        h2 {
+          font-size: 36px;
+        }
         p {
-          height: 100px;
-          padding: 0 10px;
+          font-size: 22px;
         }
       }
       &-items {
-        gap: 20px;
+        gap: 54px;
+        padding-bottom: 140px;
         &-item {
-          width: 18.313rem;
-          height: 19.125rem;
+          width: 283px;
+          height: 296px;
+
           img {
-            width: 78px;
-            height: 78px;
+            width: 74px;
+            height: 74px;
+          }
+          h2 {
+            font-size: 25px;
+          }
+          p {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .Contact {
+    &__content {
+      &-title {
+        h2 {
+          font-size: 35px;
+        }
+        p {
+          font-size: 21px;
+        }
+      }
+      &-items {
+        gap: 44px;
+        padding-bottom: 120px;
+        &-item {
+          width: 273px;
+          height: 286px;
+
+          img {
+            width: 70px;
+            height: 70px;
+          }
+          h2 {
+            font-size: 24px;
+          }
+          p {
+            font-size: 16px;
           }
         }
       }
@@ -93,83 +128,177 @@
 }
 @media (max-width: 925px) {
   .Contact {
-    background: none;
-    background-color: var(--darkBackground);
-
     &__content {
       &-title {
-        // padding: 30px 0 0;
-        // width: 80%;
+        padding: 72px 0 82px 0;
 
+        h2 {
+          font-size: 34px;
+        }
         p {
-          height: 80px;
-          margin-bottom: 30px;
+          font-size: 20px;
         }
       }
       &-items {
-        gap: 30px;
-        padding-bottom: 50px;
+        gap: 24px;
+        height: 360px;
+        padding-bottom: 100px;
+        &-item {
+          width: 233px;
+          height: 246px;
+
+          img {
+            width: 60px;
+            height: 60px;
+          }
+          h2 {
+            font-size: 22px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
       }
     }
   }
 }
 @media (max-width: 768px) {
   .Contact {
-    background: none;
-    background-color: var(--darkBackground);
-
     &__content {
       &-title {
-        padding: 30px 0 0;
-        // width: 80%;
-
+        padding: 52px 0 62px 0;
+        h2 {
+          font-size: 33px;
+        }
         p {
-          height: 80px;
-          margin-bottom: 30px;
-          font-size: 20px;
+          font-size: 19px;
+        }
+      }
+      &-items {
+        gap: 14px;
+        height: 300px;
+        padding-bottom: 100px;
+        &-item {
+          width: 203px;
+          height: 216px;
+
+          img {
+            width: 52px;
+            height: 52px;
+          }
+          h2 {
+            font-size: 21px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 650px) {
+  .Contact {
+    &__content {
+      &-title {
+        padding: 32px 0 32px 0;
+        h2 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 16px;
         }
       }
       &-items {
         gap: 10px;
-        padding-bottom: 50px;
+        height: 300px;
+        padding-bottom: 80px;
+        &-item {
+          gap: 10px;
+          width: 153px;
+          height: 166px;
+          img {
+            width: 40px;
+            height: 40px;
+            margin-top: 20px;
+          }
+          h2 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 490px) {
+  .Contact {
+    &__content {
+      &-title {
+        padding: 22px 0 22px 0;
+        h2 {
+          font-size: 28px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      &-items {
+        gap: 8px;
+        height: 300px;
+        &-item {
+          gap: 8px;
+          width: 123px;
+          height: 136px;
+          border-radius: 28px;
+          img {
+            width: 38px;
+            height: 38px;
+            margin-top: 20px;
+          }
+          h2 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 8px;
+          }
+        }
       }
     }
   }
 }
 @media (max-width: 390px) {
   .Contact {
-    background: none;
-    background-color: var(--darkBackground);
-
     &__content {
       &-title {
-        padding: 20px 0 0;
-        // width: 80%;
         h2 {
-          font-size: 22px;
-          margin-bottom: 20px;
+          font-size: 24px;
         }
         p {
-          height: 80px;
-          margin-bottom: 30px;
-          font-size: 15px;
-          width: 90%;
+          font-size: 12px;
         }
       }
       &-items {
-        gap: 2rem;
+        gap: 6px;
+        height: 200px;
+        padding-bottom: 40px;
         &-item {
-          width: 200px;
-          height: 200px;
+          width: 93px;
+          height: 106px;
+          gap: 6px;
+
           img {
-            width: 50px;
+            width: 36px;
+            height: 36px;
+            margin-top: 20px;
           }
           h2 {
-            font-size: 16px;
+            font-size: 12px;
           }
           p {
-            font-size: 12px;
-            width: 90%;
+            font-size: 7px;
           }
         }
       }

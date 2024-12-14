@@ -1,8 +1,5 @@
 .aboutHome {
-  // width: 100%;
   &__content {
-    // width: 100%;
-    // max-width: 1730px;
     margin: 134px auto 0;
     background-color: #eee9e9;
 
@@ -94,7 +91,7 @@
       display: flex;
       justify-content: center;
       margin-top: 74px;
-      
+
       &-box {
         width: 1338px;
         margin-top: 60px;
@@ -192,6 +189,7 @@
             img {
               width: 500px;
               margin: 38px auto;
+  
             }
           }
         }
