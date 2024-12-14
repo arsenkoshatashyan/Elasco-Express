@@ -1,7 +1,6 @@
 import "./NewsHome.scss";
 import Contact from "./../Contact/Contact";
 import { useState } from "react";
-import Result from "./../Result/Result";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -71,7 +70,6 @@ export default function NewsHome() {
           })}
         </div>
       </div>
-      {/* <Result /> */}
       <div className="resultTwo">
         <ul>
           <li>
@@ -93,49 +91,8 @@ export default function NewsHome() {
         </ul>
         <img src="../../../images/result2.png" alt="" />
       </div>
-      
+
       <Contact />
     </div>
   );
 }
-//--------------------------------------//
-//  <div className="NewsHome">
-//    <div className="NewsHome__content">
-//      <div className="NewsHome__content-title">
-//        <h2>{t("newsTitle")}</h2>
-//      </div>
-//      <div className="NewsHome__content-items">
-//        {currentPosts.map((elem) => (
-//          <div key={elem.id} className="NewsHome__content-items-item">
-//            <h2>{t(elem.title)}</h2>
-//            <img src={elem.url} alt={t("certificate")} />
-//            <Link to={`/news/${elem.id}`}>
-//              <p>{t("readMore")}</p>
-//            </Link>
-//          </div>
-//        ))}
-//      </div>
-//      {/* <div className="NewsHome__content-pagination">
-//           <button onClick={handlePrevPage} disabled={currentPage === 1}>
-//             &lt;
-//           </button>
-//           {Array.from({ length: totalPages }, (_, index) => (
-//             <ul
-//               key={index}
-//               onClick={() => handlePageChange(index + 1)}
-//               className={currentPage === index + 1 ? "active" : ""}
-//             >
-//               <li>{index + 1}</li>
-//             </ul>
-//           ))}
-//           <button
-//             onClick={handleNextPage}
-//             disabled={currentPage === totalPages}
-//           >
-//             &gt;
-//           </button>
-//         </div> */}
-//    </div>
-//    <Result />
-//    <Contact />
-//  </div>;

@@ -14,20 +14,20 @@ export default function Footer() {
             <p>{t("footer.description")}</p>
           </div>
           <div className="Footer__content-left-socials">
-            <a href="tel:+37498555378 ">
+            <a href="https://msng.link/o/?37498555378=vi">
               <img src="./images/viber.png" alt="viber" />
             </a>
             <a href="https://www.instagram.com/elasco.am/profilecard/?igsh=MXZrbDVpemwwaGtlaw==">
               <img src="./images/instagram.svg" alt="instagram" />
             </a>
-            <a href="tel:+37498555378 ">
+            <a href="tel:+37498555378">
               <img src="./images/tg.svg" alt="telegram" />
             </a>
             <a href="https://www.facebook.com/ElascoTransport?mibextid=ZbWKwL">
               <img src="./images/facebook.svg" alt="facebook" />
             </a>
 
-            <a href="tel:+37498555378 ">
+            <a href="https://wa.me/37498555378">
               <img src="./images/whatsapp.png" alt="wp" />
             </a>
           </div>

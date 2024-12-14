@@ -1,4 +1,3 @@
-import Result from "../Result/Result";
 import "./ServicesHome.scss";
 import ContactUs from "../ContactUs/ContactUs";
 import { useTranslation } from "react-i18next";
@@ -9,13 +8,12 @@ export default function ServicesHome() {
 
   return (
     <div className="ServicesHome">
-      
-
-      <div className="ServicesHome__content">
-      <div className="ServicesHome__content-title">
+      <div className="ServicesHome__container">
         <h2>{t("services.title")}</h2>
       </div>
-        {/* <div className="ServicesHome__content-block">
+
+      <div className="ServicesHome__content">
+        <div className="ServicesHome__content-block">
           <div className="ServicesHome__content-block-box">
             <div className="ServicesHome__content-block-box-Left"></div>
             <div className="ServicesHome__content-block-box-Right">
@@ -23,9 +21,9 @@ export default function ServicesHome() {
               <p>{t("services.seaTransportationDescription")}</p>
             </div>
           </div>
-        </div> */}
+        </div>
 
-        {/* <div className="ServicesHome__content-blockTwo">
+        <div className="ServicesHome__content-blockTwo">
           <div className="ServicesHome__content-blockTwo-box">
             <div className="ServicesHome__content-blockTwo-box-Left">
               <h2>{t("services.airTransportation")}</h2>
@@ -33,8 +31,8 @@ export default function ServicesHome() {
             </div>
             <div className="ServicesHome__content-blockTwo-box-Right"></div>
           </div>
-        </div> */}
-        {/* <div className="ServicesHome__content-blockThree">
+        </div>
+        <div className="ServicesHome__content-blockThree">
           <div className="ServicesHome__content-blockThree-box">
             <div className="ServicesHome__content-blockThree-box-Left"></div>
             <div className="ServicesHome__content-blockThree-box-Right">
@@ -42,9 +40,9 @@ export default function ServicesHome() {
               <p>{t("services.landTransportationDescription")}</p>
             </div>
           </div>
-        </div> */}
+        </div>
 
-        {/* <div className="ServicesHome__content-blockFour">
+        <div className="ServicesHome__content-blockFour">
           <div className="ServicesHome__content-blockFour-box">
             <div className="ServicesHome__content-blockFour-box-Left">
               <h2>{t("services.customsClearance")}</h2>
@@ -60,10 +58,10 @@ export default function ServicesHome() {
             </div>
             <div className="ServicesHome__content-blockFour-box-Right"></div>
           </div>
-        </div> */}
+        </div>
       </div>
-      {/* <Card /> */}
-      {/* <div className="resultThree">
+      <Card />
+      <div className="resultThree">
         <ul>
           <li>
             4000+
@@ -83,9 +81,9 @@ export default function ServicesHome() {
           </li>
         </ul>
         <img src="../../../images/result2.png" alt="" />
-      </div> */}
-      {/* <ContactUs /> */}
-      {/* <div className="ServicesHome__address">
+      </div>
+      <ContactUs />
+      <div className="ServicesHome__address">
         <h2>{t("services.getInTouch")}</h2>
         <p>{t("services.contactUs")}</p>
         <div className="ServicesHome__address-block">
@@ -105,7 +103,7 @@ export default function ServicesHome() {
             <a href="mailto:info@elasco.am">info@elasco.am</a>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

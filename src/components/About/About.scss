@@ -1,193 +1,331 @@
 .About {
-  width: 100%;
-  // max-width: 1730px;
-  margin: 0 auto;
-  background: url("../../../public/images/vector.svg") no-repeat center;
-  background-size: cover;
+  background: url("../../../public/images/vector.svg");
   background-color: var(--iconBackground);
-
   &__content {
-    height: auto;
     display: flex;
-    justify-content: center;
-    gap: 8rem;
-    margin-top: 157px;
+    gap: 40px;
+    max-width: 1730px;
+    margin: 157px auto;
     &-image {
-      width: 850px;
-      height: 42rem;
+      width: 824px;
       overflow-y: hidden;
       img {
         border-top-right-radius: 130px;
         border-bottom-right-radius: 58px;
+        width: 740px;
+        height: 590px;
       }
     }
-
     &-text {
-      width: 51.25rem;
-      height: 44.5rem;
-      margin-top: 5rem;
-
+      width: 800px;
+      padding: 0 40px 0 0;
       h1 {
-        font-size: 3.5rem;
-        font-weight: 400;
+        font-size: 56px;
+        font-weight: 700;
         color: var(--mainColor);
-        margin-bottom: 5.625rem;
+        margin: 40px 0;
         text-transform: uppercase;
       }
-
       h3 {
-        width: 44.375rem;
-        font-size: 1.625rem;
+        font-size: 26px;
         color: var(--darkTextColor);
-        margin-bottom: 0.875rem;
       }
 
       p {
-        width: 43.125rem;
-        font-size: 1.375rem;
+        font-size: 22px;
         color: var(--lightTextColor);
-        margin-bottom: 4.625rem;
+        margin: 14px 0 74px;
       }
 
       button {
-        width: 14rem;
-        cursor: pointer;
+        width: 224px;
       }
     }
   }
 
-  @media (max-width: 1590px) {
+  @media (max-width: 1600px) {
     .About {
       &__content {
-        align-items: center;
-        gap: 0;
-
         &-image {
-          width: 800px;
-          height: 42rem;
-          overflow-y: hidden;
+          width: 784px;
           img {
-            width: 540px;
+            width: 680px;
+            height: 550px;
           }
         }
         &-text {
           h1 {
-            margin-bottom: 20px;
+            font-size: 52px;
+            margin: 40px 0;
           }
-
           h3 {
-            width: 90%;
-            font-size: 1.5em;
+            font-size: 24px;
+       
           }
-
+    
           p {
-            width: 80%;
-            margin-bottom: 30px;
+            font-size: 20px;
+            margin: 14px 0 54px;
+          }
+    
+          button {
+            width: 220px;
+            font-size: 17px;
           }
         }
       }
     }
   }
-  @media (max-width: 1240px) {
-    &__content {
-      gap: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      &-image {
-        display: none;
-        img {
-          width: 30rem;
-          height: auto;
+  @media (max-width: 1430px) {
+    .About {
+      &__content {
+        &-image {
+          width: 744px;
+          img {
+            width: 600px;
+            height: 500px;
+          }
         }
-      }
-
-      &-text {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h1 {
-          font-size: 3rem;
-          text-align: center;
-        }
-
-        h3 {
-          font-size: 1.5rem;
-          text-align: center;
-        }
-
-        p {
-          font-size: 1.25rem;
-          text-align: center;
-        }
-
-        button {
-          width: 13rem;
-          margin: 0 auto;
+        &-text {
+          h1 {
+            font-size: 48px;
+          }
+          h3 {
+            font-size: 22px;
+          }
+          p {
+            width: 600px;
+            font-size: 18px;
+            margin: 14px 0 54px;
+          }
+    
+          button {
+            width: 216px;
+            font-size: 16px;
+          }
         }
       }
     }
   }
-
-  @media (max-width: 768px) {
-    &__content {
-      margin-top: -120px;
-      &-image {
-        img {
+  @media (max-width: 1310px) {
+    .About {
+      &__content {
+        &-image {
+          width: 704px;
+          img {
+            width: 520px;
+            height: 450px;
+          }
+        }
+        &-text {
+          h1 {
+            font-size: 44px;
+            margin: 40px 0 30px;
+          }
+          h3 {
+            font-size: 20px;
+          }
+          p {
+            width: 600px;
+            font-size: 18px;
+            margin: 14px 0 44px;
+          }
+    
+          button {
+            width: 216px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1180px) {
+    .About {
+      &__content {
+        &-image {
+          width: 604px;
+          img {
+            width: 440px;
+            height: 420px;
+          }
+        }
+        &-text {
+          h1 {
+            font-size: 40px;
+            margin: 40px 0 25px;
+          }
+          h3 {
+            font-size: 18px;
+          }
+          p {
+            width: 600px;
+            font-size: 16px;
+            margin: 14px 0 34px;
+          }
+    
+          button {
+            width: 212px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1100px) {
+    .About {
+      &__content {
+        &-image {
+          width: 504px;
+          img {
+            width: 360px;
+            height: 340px;
+          }
+        }
+        &-text {
+          h1 {
+            font-size: 38px;
+            margin: 20px 0 20px;
+          }
+          h3 {
+            font-size: 18px;
+          }
+          p {
+            width: 600px;
+            font-size: 16px;
+            margin: 14px 0 24px;
+          }
+    
+          button {
+            width: 208px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1030px) {
+    .About {
+      &__content {
+        margin: 127px auto;
+        &-image {
           display: none;
         }
-      }
-      &-text {
-        width: 100%;
-        height: fit-content;
-        h1 {
-          font-size: 2.25rem;
-          margin-bottom: 10px;
-          max-width: 100%;
-        }
-
-        h3 {
-          font-size: 1.25rem;
-          max-width: 100%;
-          width: 100%;
-        }
-
-        p {
-          font-size: 1.125rem;
-          max-width: 100%;
-          width: 100%;
-          margin-bottom: 30px;
-        }
-
-        button {
-          width: 10rem;
-          margin-bottom: 50px;
-          margin-top: 20px;
+        &-text {
+          width: 80%;
+          margin: 0 auto;
+          h1 {
+            font-size: 38px;
+            margin: 20px 0 20px;
+           
+          }
+          h3 {
+            font-size: 18px;
+            width: 70%;
+          }
+          p {
+            font-size: 16px;
+            margin: 14px 0 24px;
+            width: 70%;
+          }
+    
+          button {
+            width: 208px;
+            font-size: 15px;
+          }
         }
       }
     }
   }
-
+  @media (max-width: 768px) {
+    .About {
+      &__content {
+        margin: 70px auto;
+        
+        &-text {
+          width: 80%;
+          padding: 0 10px 0 0;
+          h1 {
+            font-size: 36px;
+            margin: 20px 0 20px;
+           
+          }
+          h3 {
+            font-size: 17px;
+            width: 90%;
+          }
+          p {
+  
+            font-size: 15px;
+            margin: 14px 0 24px;
+            width: 90%;
+          }
+    
+          button {
+            width: 208px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .About {
+      &__content {
+        margin: 50px auto;
+        &-text {
+          width: 90%;
+          padding: 0 10px 0 10px;
+          h1 {
+            font-size: 30px;
+            margin: 20px 0 20px;
+          }
+          h3 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 14px;
+          }
+        button {
+            width: 160px;
+            
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
   @media (max-width: 390px) {
-    &__content {
-      margin-top: -80px;
-      &-text {
-        margin-top: 100px;
-        h1 {
-          font-size: 1.5rem;
-        }
-        h3 {
-          font-size: 1.2rem !important;
-        }
-        p {
-          font-size: 1rem;
-        }
-        button {
-          font-size: 12px;
+    .About {
+      &__content {
+        margin: 40px auto;
+        
+        &-text {
+          
+ 
+          h1 {
+            font-size: 24px;
+            margin: 20px 0 20px;
+           
+          }
+          h3 {
+            font-size: 14px;
+            width: 100%;
+
+          }
+          p {
+  
+            font-size: 12px;
+            width: 100%;
+          }
+    
+          button {
+            width: 140px;
+            height: 32px;
+            font-size: 13px;
+          }
         }
       }
     }
   }
+
 }
