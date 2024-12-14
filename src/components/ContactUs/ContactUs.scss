@@ -140,6 +140,7 @@
   }
   @media (max-width: 768px) {
     max-width: 90%;
+    border-radius: 0;
     ul {
       width: 95%;
       padding-top: 0px;
@@ -159,7 +160,7 @@
     min-height: 80px;
     ul {
       width: 100%;
-      padding-top: 0px;
+      padding-top: 20px;
       padding-bottom: 0px;
       justify-content: center;
       gap: 10px;

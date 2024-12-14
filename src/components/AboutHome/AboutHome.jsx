@@ -17,7 +17,6 @@ export default function AboutHome() {
         </div>
         <div className="aboutHome__content-whoWeAre">
           <p>{t("aboutHome.whoWeAreDescription1")}</p>
-
           <div className="aboutHome__content-whoWeAre-box">
             <img src="./images/abouthome_trucks.png" alt="trucks" />
             <p>{t("aboutHome.whoWeAreDescription2")}</p>

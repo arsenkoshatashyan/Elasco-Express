@@ -116,6 +116,8 @@
     background: url("../../../public/Services/serviceTitle.jpg") no-repeat
       center;
     background-size: cover;
+
+    overflow-y: hidden;
     h2 {
       font-size: 6.25rem;
       line-height: 200px;
@@ -263,11 +265,13 @@
       }
       @media (max-width: 490px) {
         &-box {
-          height: 800px !important;
+          height: 750px !important;
           width: 98% !important;
           &-Left {
             width: 98% !important;
             height: 250px;
+            background: url("../../../public/Services/service1.png") no-repeat
+              center;
           }
           &-Right {
             position: static;
@@ -415,11 +419,13 @@
       }
       @media (max-width: 490px) {
         &-box {
-          height: 970px !important;
+          height: 920px !important;
           width: 98% !important;
           &-Right {
             width: 98% !important;
             height: 250px;
+            background: url("../../../public/Services/service3.png") no-repeat
+              center;
           }
           &-Left {
             position: static;
@@ -562,11 +568,13 @@
 
       @media (max-width: 490px) {
         &-box {
-          height: 900px;
+          height: 830px;
           width: 98% !important;
           &-Left {
             width: 98% !important;
             height: 250px;
+            background: url("../../../public/Services/service2.png") no-repeat
+              center;
           }
           &-Right {
             position: static;
@@ -626,7 +634,6 @@
             text-align: center;
           }
           ul {
-            // margin-left: 10px;
             font-size: 22px;
             color: var(--darkTextColor);
           }
@@ -724,11 +731,13 @@
       }
       @media (max-width: 490px) {
         &-box {
-          height: 950px;
+          height: 880px;
           width: 98% !important;
           &-Right {
             width: 98% !important;
             height: 250px;
+            background: url("../../../public/Services/service4.png") no-repeat
+              center;
           }
           &-Left {
             position: static;

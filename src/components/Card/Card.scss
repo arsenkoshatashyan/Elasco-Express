@@ -110,8 +110,6 @@
 }
 @media (max-width: 768px) {
   .Card {
-    background: none;
-    background-color: var(--darkBackground);
     padding: 20px;
 
     &__content {
@@ -146,7 +144,7 @@
 
 @media (max-width: 624px) {
   .Card {
-    padding: 20px;
+    padding: 10px;
     &__content {
       &-title {
         h2 {
@@ -159,8 +157,8 @@
       &-items {
         gap: 1rem;
         &-item {
-          width: 180px;
-          height: 180px;
+          width: 150px;
+          height: 150px;
           img {
             width: 50px;
           }
@@ -177,6 +175,7 @@
   .Card {
     &__content {
       &-title {
+        padding: 0;
         h2 {
           font-size: 2rem;
           padding: 10px;
@@ -186,12 +185,12 @@
         }
       }
       &-items {
-        gap: 2rem;
-        padding: 20px;
+        gap: 0.5rem;
+        padding: 20px 0 0 0;
         &-item {
-          width: 200px;
-          height: 160px;
-
+          width: 140px;
+          height: 140px;
+          border-radius: 35px;
           p {
             font-size: 18px;
           }
