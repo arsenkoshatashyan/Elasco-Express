@@ -188,6 +188,22 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .Footer {
+    &__content {
+      &-right {
+        form {
+          button {
+            font-size: 14px;
+            height: 40px;
+            width: 180px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 390px) {
   .Footer {
     &__content {
@@ -236,7 +252,9 @@
           width: 100%;
 
           button {
-            width: 160px;
+            width: 140px;
+            font-size: 13px;
+            height: 32px;
             margin-top: -20px;
           }
         }

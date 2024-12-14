@@ -27,10 +27,10 @@
         }
       }
       @media (max-width: 460px) {
-        padding: 100px 50px;
+        padding: 100px 30px;
         height: auto;
         h2 {
-          font-size: 40px;
+          font-size: 35px;
         }
       }
     }
@@ -131,6 +131,7 @@
         &-title {
           h2 {
             font-size: 35px;
+            margin: 0 auto 10px;
           }
         }
         &-source {

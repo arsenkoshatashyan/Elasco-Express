@@ -6,6 +6,7 @@
   background-color: #f2eff2;
   @media (max-width: 768px) {
     background: none;
+    background-color: #f2eff2;
   }
   &__content {
     width: 90%;
@@ -120,7 +121,9 @@
           font-size: 32px;
         }
         button {
-          width: 140px;
+          font-size: 14px;
+          height: 40px;
+          width: 180px;
         }
       }
       &-cards {
@@ -170,7 +173,8 @@
           font-size: 28px;
         }
         button {
-          font-size: 14px;
+          font-size: 13px;
+          height: 32px;
         }
       }
       &-cards {

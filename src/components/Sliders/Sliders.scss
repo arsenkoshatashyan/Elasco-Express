@@ -6,6 +6,7 @@
   overflow-y: hidden;
   @media (max-width: 768px) {
     background: none;
+    background-color: #f2eff2;
   }
   &__content {
     display: flex;
@@ -199,6 +200,11 @@
   .slick-track {
     padding-top: 0 !important;
   }
+  .button-all {
+    font-size: 14px;
+    height: 40px;
+    width: 180px;
+  }
   .Sliders {
     &__content {
       flex-wrap: wrap;
@@ -231,6 +237,11 @@
 }
 
 @media (max-width: 430px) {
+  .button-all {
+    font-size: 13px;
+    height: 32px;
+    width: 140px;
+  }
   .Sliders {
     gap: 20px;
     &__content {

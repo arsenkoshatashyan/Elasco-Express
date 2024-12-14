@@ -28,7 +28,6 @@
           }
         }
         p {
-          // margin-top: 2px;
           font-size: 18px;
           width: 40rem;
         }
@@ -245,6 +244,11 @@
           input[type="tel"] {
             margin-top: 25px;
           }
+          button {
+            font-size: 14px;
+            height: 40px;
+            width: 180px;
+          }
         }
       }
       &-right {
@@ -275,8 +279,9 @@
           }
           button {
             margin-bottom: 50px;
-            height: 35px;
+            height: 32px;
             width: 140px;
+            font-size: 13px;
           }
         }
       }

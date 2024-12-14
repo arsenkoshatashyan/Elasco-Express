@@ -2,6 +2,7 @@
   background: url("../../../public/images/vector.svg");
   @media (max-width: 768px) {
     background: none;
+    background-color: var(--iconBackground);
   }
   background-color: var(--iconBackground);
   &__content {
@@ -259,8 +260,9 @@
           }
 
           button {
-            width: 208px;
-            font-size: 15px;
+            font-size: 14px;
+            height: 40px;
+            width: 180px;
           }
         }
       }
@@ -285,7 +287,7 @@
           }
           button {
             width: 160px;
-
+            height: 36px;
             font-size: 14px;
           }
         }
