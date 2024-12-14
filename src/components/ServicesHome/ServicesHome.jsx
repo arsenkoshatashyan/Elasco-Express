@@ -1,4 +1,3 @@
-import Result from "../Result/Result";
 import "./ServicesHome.scss";
 import ContactUs from "../ContactUs/ContactUs";
 import { useTranslation } from "react-i18next";
@@ -6,13 +5,11 @@ import Card from "../Card/Card";
 
 export default function ServicesHome() {
   const { t } = useTranslation();
-
   return (
     <div className="ServicesHome">
       <div className="ServicesHome__container">
         <h2>{t("services.title")}</h2>
       </div>
-
       <div className="ServicesHome__content">
         <div className="ServicesHome__content-block">
           <div className="ServicesHome__content-block-box">
