@@ -35,16 +35,28 @@ export default function NewsPage() {
         <div className="newsPage__content-title">
           <h2>{t("newsPage.title")}</h2>
         </div>
-        <div className="newsPage__content-block">
-          <div className="newsPage__content-block-title">
-            <h2>{t("newsPage.itemTitle")}</h2>
+        <div className="newsPage__content-photos">
+          {/* <!-- Большое изображение (img1) занимает 2 строки --> */}
+          <div className="newsPage__content-photos-item newsPage__content-photos-item--img1">
+            <img src={newsItem.url2} alt="Image 1" />
           </div>
-          <div className="newsPage__content-block-source">
+          {/* <!-- Изображение img2 на второй строке слева --> */}
+          <div className="newsPage__content-photos-item newsPage__content-photos-item--img2">
+            <img src={newsItem.url3} alt="Image 2" />
+          </div>
+          {/* <!-- Изображение img3 на третьей строке слева --> */}
+          <div className="newsPage__content-photos-item newsPage__content-photos-item--img3">
+            <img src={newsItem.url4} alt="Image 3" />
+          </div>
+          {/* <!-- Изображение img4 на третьей строке справа --> */}
+          <div className="newsPage__content-photos-item newsPage__content-photos-item--img4">
+            <img src={newsItem.url5} alt="Image 4" />
+          </div>
+          {/* <!-- Изображение img5 на первой строке слева (заменяет текст) --> */}
+          <div className="newsPage__content-photos-item newsPage__content-photos-item--img5">
+            {/* <!-- <img src="certification1.jpg" alt="Image 5" /> --> */}
+            <h2>{t("newsPage.itemTitle")}</h2>
             <p>{t(newsItem.titleKey)}</p>
-            <img src={newsItem.url2} alt="photo" />
-            <img src={newsItem.url3} alt="photo" />
-            <img src={newsItem.url4} alt="photo" />
-            <img src={newsItem.url5} alt="photo" />
           </div>
         </div>
       </div>

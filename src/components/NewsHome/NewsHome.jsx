@@ -52,7 +52,7 @@ export default function NewsHome() {
         </div>
         <div className="NewsHome__content-items">
           {source.map((elem) => {
-            const title = t(`sliders.slides.${elem.id}.titleKey`) || "Untitled";
+            const title = t(`news.${elem.id}.titleKey`) || "Untitled";
             const isExpanded = expanded[elem.id];
             return (
               <div key={elem.id} className="NewsHome__content-items-item">

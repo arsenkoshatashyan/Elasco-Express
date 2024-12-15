@@ -160,12 +160,16 @@
   "readMore": "Read more...",
   "certificate": "certificate",
   "news": [
+    {},
     {
+      "id": 1,
       "titleKey": "Elasco Express LLC was proud to be part of Armenia Expo 2023."
     },
     {
+      "id": 2,
       "titleKey": "In 2024, Elasco Express LLC was recognized as a high-class logistics provider."
-    }
+    },
+    {}
   ],
   "logisticsRecognition": "In 2024, LLC \"Elasco Express\" was recognized as a high-class logistics provider.",
   "contactTitle": "Contact Us",
