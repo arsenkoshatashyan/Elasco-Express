@@ -1,43 +1,31 @@
 .newsPage {
-  margin-top: 140px;
   &__content {
-    width: 100%;
-    margin: 0 auto;
+    margin: 134px auto 0;
     background-color: #f2eff2;
     &-title {
       background: url("../../../public/images/transport-newBackground.jpeg")
         no-repeat center;
       background-size: cover;
       height: 500px;
-      padding: 169px 0 0 200px;
       h2 {
-        font-size: 90px;
         color: var(--textColor);
-      }
-      @media (max-width: 1200px) {
-        padding: 169px 0 0 150px;
-        h2 {
-          font-size: 70px;
-        }
-      }
-      @media (max-width: 768px) {
-        padding: 130px 0 0 100px;
-        h2 {
-          font-size: 50px;
-        }
-      }
-      @media (max-width: 460px) {
-        padding: 100px 30px;
-        height: auto;
-        h2 {
-          font-size: 35px;
-        }
+        padding: 200px 0 0 200px;
+        text-align: start;
+        font-size: 70px;
+        text-transform: uppercase;
       }
     }
     &-block {
-      width: 89%;
-      margin: 82px auto;
+      // width: 89%;
+      // margin: 82px auto;
+      // border: 2px solid red;
+      // display: grid;
+      // grid-template-columns: repeat(auto-fit, minmax(27.7rem, 1fr));
+      // gap: 3rem;
+      // max-width: calc(5 * (27.7rem + 3rem));
+      // margin: 0 auto;
       &-title {
+        
         h2 {
           display: flex;
           align-items: center;
@@ -62,12 +50,12 @@
           font-size: 33px;
         }
         img:nth-child(2) {
-          width: 809px;
-          height: 908px;
+          width: 640px;
+          height: 401px;
           border-radius: 67px;
           img {
-            width: 809px;
-            height: 908px;
+           width: 640px;
+          height: 401px;
           }
         }
         img:nth-child(3) {
@@ -137,6 +125,134 @@
         &-source {
           p {
             font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .newsPage {
+    &__content {
+      &-title {
+        height: 450px;
+        h2 {
+          font-size: 60px;
+          padding: 180px 0 0 180px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1240px) {
+  .newsPage {
+    &__content {
+      &-title {
+        height: 400px;
+        h2 {
+          font-size: 50px;
+          padding: 160px 0 0 160px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .newsPage {
+    &__content {
+      &-title {
+        height: 350px;
+        h2 {
+          font-size: 40px;
+          padding: 140px 0 0 90px;
+        }
+      }
+      &-items {
+        &-item {
+          width: 80%;
+          h2 {
+            font-size: 22px;
+            width: 90%;
+            margin: 54px auto 20px auto;
+          }
+          p {
+            font-size: 16px;
+            min-height: fit-content !important;
+          }
+
+          img {
+            width: 80%;
+            height: 60%;
+            max-height: fit-content;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 490px) {
+  .newsPage {
+    &__content {
+      &-title {
+        padding: 22px 0 22px 0;
+        h2 {
+          font-size: 28px;
+          
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      &-items {
+        &-item {
+          width: 80%;
+          h2 {
+            font-size: 22px;
+            width: 90%;
+            margin: 54px auto 20px auto;
+          }
+          p {
+            font-size: 16px;
+            min-height: fit-content !important;
+          }
+
+          img {
+            width: 80%;
+            height: 60%;
+            max-height: fit-content;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 390px) {
+  .newsPage {
+    &__content {
+      &-title {
+        height: 250px;
+        h2 {
+          padding: 100px 0 0 40px;
+        }
+      }
+      &-items {
+        margin-top: 0;
+        margin-bottom: 0px;
+        gap: 40px;
+        &-item {
+          width: 80%;
+          a {
+            h2 {
+              margin-top: 20px;
+              font-size: 18px;
+              line-height: 30px;
+              overflow: hidden;
+            }
+          }
+          p {
+            margin-bottom: 20px;
           }
         }
       }

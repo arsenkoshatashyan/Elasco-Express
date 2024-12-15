@@ -41,7 +41,7 @@ export default function NewsPage() {
           </div>
           <div className="newsPage__content-block-source">
             <p>{t(newsItem.titleKey)}</p>
-            <img src={newsItem.url2} alt="photo" />
+            {/* <img src={newsItem.url2} alt="photo" /> */}
             <img src={newsItem.url3} alt="photo" />
             <img src={newsItem.url4} alt="photo" />
             <img src={newsItem.url5} alt="photo" />
