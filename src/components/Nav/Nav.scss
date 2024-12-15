@@ -21,9 +21,11 @@
         font-weight: 700;
         li {
           list-style: none;
+        
           a {
             color: var(--darkBackground);
             text-decoration: none;
+            // font-size: 16px;
           }
         }
       }
@@ -38,6 +40,7 @@
         background-color: var(--darkBackground);
         cursor: pointer;
         text-transform: uppercase;
+        font-size: 16px;
       }
       select {
         font-size: 16px;

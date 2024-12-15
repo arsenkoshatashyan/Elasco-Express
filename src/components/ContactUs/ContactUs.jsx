@@ -77,7 +77,7 @@ export default function ContactUs() {
             <p>{t("result.satisfaction_rating")}</p>
           </li>
         </ul>
-        <img src="../../../images/result.png" alt="" />
+        {/* <img src="../../../images/result.png" alt="" /> */}
       </div>
     </div>
   );

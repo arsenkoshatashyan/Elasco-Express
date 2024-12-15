@@ -58,7 +58,7 @@ export default function Service() {
 
             return (
               <div className="Service__content-cards-card" key={elem.id}>
-                <img src={elem.image} alt="" />
+                <img className="Service__content-cards-card-img" src={elem.image} alt=""  />
                 <div>
                   <span>
                     <img src={elem.url} alt="" />
