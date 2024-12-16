@@ -22,6 +22,7 @@
         font-size: 18px;
         color: #d2d2d2;
         margin-bottom: 40px;
+        font-weight: bold;
       }
 
       button {
@@ -58,6 +59,7 @@
   @media (max-width: 768px) {
     &__content {
       background-image: url("../../../public/images/imgOne2.png");
+     
       height: 460px;
       padding: 102px 0 0 68px;
       &-about {

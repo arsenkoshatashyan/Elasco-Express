@@ -1,7 +1,6 @@
 .Card {
   background: url("../../../public/images/backgroundChoose.jpeg") no-repeat
     center;
-  height: auto;
   background-size: cover;
   &__content {
     text-align: center;
@@ -26,17 +25,13 @@
       gap: 40px;
       padding-bottom: 155px;
       &-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 14px;
-        width: 15rem;
-        height: 15rem;
-        background-color: #5a5a5a73;
+        width: 240px;
+        height: 240px;
+        background-color: rgba(90, 90, 90, 0.45);
+        backdrop-filter: blur(4px);
         border-radius: 46px;
         img {
-          margin-top: 35px;
+          margin: 35px 0 5px;
         }
         p {
           color: var(--mainColor);
@@ -52,25 +47,27 @@
   .Card {
     &__content {
       &-title {
+        padding: 120px 0 50px 0;
         h2 {
-          color: var(--mainColor);
-          font-size: 44px;
+          font-size: 46px;
         }
         p {
-          color: var(--textColor);
-          font-size: 26px;
-          margin: 26px auto 0;
+          font-size: 28px;
         }
       }
       &-items {
-        gap: 1rem;
+        gap: 34px;
+        padding-bottom: 135px;
         &-item {
-          width: 14rem;
-          height: 14rem;
-          background-color: #5a5a5a73;
-          border-radius: 46px;
+          width: 210px;
+          height: 210px;
+          border-radius: 44px;
           img {
-            margin-top: 35px;
+            width: 86px;
+            margin-top: 30px;
+          }
+          p {
+            font-size: 18px;
           }
         }
       }
@@ -81,27 +78,28 @@
   .Card {
     &__content {
       &-title {
+        padding: 100px 0 50px 0;
         h2 {
-          color: var(--mainColor);
-          font-size: 38px;
+          font-size: 42px;
         }
         p {
-          color: var(--textColor);
-          font-size: 22px;
-          width: 90%;
+          font-size: 26px;
         }
       }
       &-items {
-        gap: 1.5rem;
-        &-item {
-          width: 13rem;
-          height: 13rem;
+        gap: 28px;
+        padding: 0 10px 135px;
 
+        &-item {
+          width: 200px;
+          height: 200px;
+          border-radius: 42px;
+          img {
+            width: 76px;
+            margin-top: 30px;
+          }
           p {
-            color: var(--mainColor);
-            height: 70px;
-            font-size: 18px;
-            padding: 0 10px;
+            font-size: 17px;
           }
         }
       }
@@ -110,91 +108,107 @@
 }
 @media (max-width: 768px) {
   .Card {
-    padding: 20px;
-
     &__content {
       &-title {
-        padding: 50px;
-
+        padding: 80px 0 50px 0;
         h2 {
-          font-size: 2rem;
+          font-size: 38px;
         }
         p {
-          font-size: 1.2rem;
-          width: 100%;
-          margin: 26px auto 0;
+          font-size: 24px;
         }
       }
       &-items {
-        gap: 1rem;
-        padding-bottom: 70px;
+        gap: 22px;
+        padding: 0 10px 95px;
+
         &-item {
-          width: 180px;
-          height: 180px;
+          width: 170px;
+          height: 170px;
+          border-radius: 40px;
           img {
-            width: 60px;
+            width: 56px;
           }
           p {
-            font-size: 14px;
+            font-size: 15px;
           }
         }
       }
     }
   }
 }
-
-@media (max-width: 624px) {
+@media (max-width: 580px) {
   .Card {
-    padding: 10px;
     &__content {
       &-title {
+        padding: 60px 0 50px 0;
         h2 {
-          font-size: 2rem;
+          font-size: 36px;
         }
         p {
-          font-size: 1.2rem;
+          font-size: 22px;
         }
       }
       &-items {
-        gap: 1rem;
+        gap: 13px;
+        padding: 0 10px 75px;
+
         &-item {
           width: 150px;
           height: 150px;
+          border-radius: 34px;
           img {
-            width: 50px;
+            width: 36px;
           }
           p {
-            font-size: 12px !important;
+            font-size: 12px;
           }
         }
       }
     }
   }
 }
+@media (max-width: 500px) {
+  .Card {
+    &__content {
+      &-title {
+        padding: 60px 0 50px 0;
+        h2 {
+          font-size: 34px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+      &-items {
+        gap: 12px;
+        padding: 0 10px 55px;
 
+        &-item {
+          width: 140px;
+          height: 140px;
+          border-radius: 32px;
+          img {
+            width: 30px;
+          }
+          p {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 390px) {
   .Card {
     &__content {
       &-title {
-        padding: 0;
+        padding: 50px 0 50px 0;
         h2 {
-          font-size: 2rem;
-          padding: 10px;
+          font-size: 32px;
         }
         p {
-          font-size: 1rem;
-        }
-      }
-      &-items {
-        gap: 0.5rem;
-        padding: 20px 0 0 0;
-        &-item {
-          width: 140px;
-          height: 140px;
-          border-radius: 35px;
-          p {
-            font-size: 18px;
-          }
+          font-size: 18px;
         }
       }
     }
