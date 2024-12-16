@@ -91,7 +91,7 @@
     display: flex;
     text-align: center;
     padding: 20px 0;
-    gap: 40px;
+    gap: 70px;
     li {
       font-size: 68px;
       color: var(--mainColor);
@@ -120,6 +120,7 @@
   @media (max-width: 1240px) {
     ul {
       width: 90%;
+      gap: 40px;
       li {
         font-size: 50px;
         p {
