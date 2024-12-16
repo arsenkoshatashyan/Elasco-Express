@@ -6,27 +6,27 @@ import { useTranslation } from "react-i18next";
 const card = [
   {
     id: 1,
-    image: "./images/service1.png",
+    image: "./images/serviceOne.jpg",
     url: "./images/icon1.svg",
   },
   {
     id: 2,
-    image: "./images/service2.png",
+    image: "./images/serviceTwo.jpg",
     url: "./images/icon2.svg",
   },
   {
     id: 3,
-    image: "./images/service3.png",
+    image: "./images/serviceThree.png",
     url: "./images/icon3.svg",
   },
   {
     id: 4,
-    image: "./images/service5.png",
+    image: "./images/serviceFour.jpg",
     url: "./images/icon4.svg",
   },
   {
     id: 5,
-    image: "./images/service4.png",
+    image: "./images/serviceFive.jpg",
     url: "./images/icon6.svg",
   },
 ];

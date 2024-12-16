@@ -3,13 +3,13 @@
   position: fixed;
   z-index: 565;
   &__content {
-    min-height: 48px;
     display: flex;
     justify-content: end;
     gap: 2.5rem;
-    padding: 0 176px;
-    background-color: #d61a22;
+    min-height: 48px;
     font-size: 0.9rem;
+    background-color: #d61a22;
+    padding: 0 176px;
     a {
       color: var(--textColor);
     }
@@ -18,7 +18,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 0.25rem;
+      gap: 10px;
     }
   }
 }
@@ -33,10 +33,10 @@
 @media (max-width: 768px) {
   .Info {
     &__content {
-      gap: 2rem;
+      justify-content: space-around;
       padding: 0 50px;
       a {
-        font-size: 10px;
+        font-size: 12px;
       }
     }
   }
@@ -46,12 +46,7 @@
     min-width: 320px;
     &__content {
       padding: 0 20px;
-      justify-content: center;
       gap: 10px;
-      padding: 0 20px;
-      a {
-        font-size: 10px;
-      }
     }
   }
 }

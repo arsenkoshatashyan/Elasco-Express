@@ -3,28 +3,30 @@
   background: url("../../../public/images/vector.svg") center;
   background-size: cover;
   overflow-y: hidden;
-   background-color: var(--iconBackground);
+  background-color: var(--iconBackground);
   @media (max-width: 768px) {
     background: none;
-   background-color: var(--iconBackground);
+    background-color: var(--iconBackground);
   }
   &__content {
     width: 90%;
+    // width: 100%;
     height: auto;
     margin: 0 auto;
     padding: 118px 0;
-   
+
     &-title {
       width: 95%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;
+      align-items: end;
       padding: 0 20px;
       margin: 0 auto 74px;
-      
+
       h2 {
-        font-size: 3rem;
+        font-size: 48px;
+        font-weight: bold;
         color: var(--mainColor);
       }
       button {
@@ -34,10 +36,10 @@
     &-cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(27.7rem, 1fr));
-      gap: 3rem;
+      gap: 48px;
       max-width: calc(5 * (27.7rem + 3rem));
       margin: 0 auto;
-      
+
       @media (max-width: 1586px) {
         max-width: calc(2 * (27.7rem + 3rem));
       }
@@ -47,26 +49,29 @@
       }
       &-card {
         width: 444px;
-        height: 460px;
+        // height: 460px;
         background-color: var(--cardsBackground);
         border-radius: 18px;
         margin: 0 auto;
 
-        &-img{
-width: 444px;
+        &-img {
+          width: 444px;
           height: 230px;
-    
+          border-top-left-radius: 77px;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 77px;
+          border-bottom-left-radius: 13px;
         }
 
         p {
           width: 90%;
           font-size: 12px;
           color: var(--lightTextColor);
-          margin: 0 auto;
-             hyphens: auto;
-        word-break: break-word;
+          margin: 0 auto 20px;
+          hyphens: auto;
+          word-break: break-word;
         }
-        
+
         > div {
           display: flex;
           align-items: center;
@@ -76,8 +81,9 @@ width: 444px;
           height: 90px;
           h3 {
             width: 80%;
-            font-size: 19px;
-
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--darkTextColor);
           }
 
           span {
@@ -86,8 +92,10 @@ width: 444px;
             border-radius: 50%;
             background-color: var(--iconBackground);
             > img {
-              margin: 14px 0 0 12px;
+           
+              margin: 14px 0 0 15px;
               width: 30px;
+           
             }
           }
         }
@@ -98,9 +106,10 @@ width: 444px;
 
 @media (max-width: 1240px) {
   .Service {
-    // margin-top: 20px;
     &__content {
       &-title {
+        padding: 0;
+        gap: 20px;
         h2 {
           font-size: 2.6rem;
         }
@@ -123,94 +132,107 @@ width: 444px;
   .Service {
     &__content {
       &-title {
+        padding: 0;
         gap: 20px;
-
-        justify-content: start;
         h2 {
-          font-size: 32px;
+          font-size: 28px;
         }
         button {
           font-size: 14px;
           height: 40px;
-          width: 180px;
+          width: 150px;
         }
       }
-      &-cards {
-        gap: 30px;
-        height: auto;
-        &-card {
-          gap: 10px;
-          height: 100%;
-
-          & > div {
-            width: 85%;
-            margin: 0px auto;
-            gap: 10px;
-            padding: 0 10px;
-            span {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              padding: 0;
+      
+    }
+  }
+}
+@media (max-width: 550px) {
+  .Service {
+    &__content {
+      width: 100%;
+      &-title {
+        width: 90%;
+            h2 {
+              font-size: 28px;
             }
+            button {
+              font-size: 13px;
+              height: 32px;
+            }
+          } 
+      &-cards {
+        &-card {
+          width: 420px;
+          height: auto;
+          &-img {
+            width: 420px;
+          }
+          p {
+            padding-bottom: 20px;
+          }
+  
+          > div {
             h3 {
               width: 80%;
               font-size: 18px;
             }
-            img {
-              margin: 0 !important;
-            }
-          }
-          img {
-            width: inherit;
-          }
-          p {
-            width: 80%;
-            margin-bottom: 30px;
           }
         }
       }
     }
   }
 }
+@media (max-width: 465px) {
+  .Service {
+    &__content {
+          
+      &-cards {
+        &-card {
+          width: 400px;
+          height: auto;
+          &-img {
+            width: 400px;
+            border-bottom-right-radius: 90px;
 
+          }
+          p {
+            padding-bottom: 40px;
+          }
+          > div {
+            h3 {
+              width: 80%;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 390px) {
   .Service {
     &__content {
-      &-title {
-        h2 {
-          font-size: 28px;
-        }
-        button {
-          font-size: 13px;
-          height: 32px;
-        }
-      }
       &-cards {
-        gap: 20px;
         &-card {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+          &-img {
+            width: 340px;
+          }
+          p {
+            padding-bottom: 30px;
+          }
           > div {
             h3 {
               font-size: 16px;
             }
             span {
-              min-width: 40px !important;
-              height: 40px !important;
+              width: 50px;
+              height: 50px;
               > img {
-                width: 25px;
-                height: 25px;
+                margin: 14px 0 0 12px;
+                width: 26px;
               }
             }
-          }
-          img {
-            width: inherit;
-          }
-          p {
-            width: 82%;
-            margin-top: -10px;
           }
         }
       }

@@ -55,7 +55,7 @@ export default function ContactUs() {
           </div>
         </div>
         <div className="ContactUs__content-right">
-          <img src="./images/earth.svg" alt="Earth illustration" />
+          <img src="./images/globus.png" alt="globus" />
         </div>
       </div>
       <div className="result">
@@ -77,7 +77,6 @@ export default function ContactUs() {
             <p>{t("result.satisfaction_rating")}</p>
           </li>
         </ul>
-        {/* <img src="../../../images/result.png" alt="" /> */}
       </div>
     </div>
   );
