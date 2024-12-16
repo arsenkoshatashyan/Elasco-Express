@@ -8,7 +8,7 @@
   &__content {
     display: flex;
     gap: 40px;
-    // max-width: 1730px;
+    max-width: 1730px;
     margin: 157px auto;
     &-image {
       width: 824px;
@@ -16,6 +16,8 @@
       img {
         border-top-right-radius: 130px;
         border-bottom-right-radius: 58px;
+        border-top-left-radius: 130px;
+        border-bottom-left-radius: 58px;
         width: 740px;
         height: 590px;
       }
