@@ -25,7 +25,6 @@
           a {
             color: var(--darkBackground);
             text-decoration: none;
-            // font-size: 16px;
           }
         }
       }
@@ -283,28 +282,14 @@
         }
       }
       &-settings {
-        width: 90px !important;
-      }
-    }
-  }
-}
-@media (max-width: 390px) {
-  .Nav {
-    &__content {
-      padding: 0 0.8rem !important;
-      align-items: center;
-
-      &-logo {
-        img {
-          width: 3rem;
-          margin: 1em 0;
-        }
+        width: 90px;
       }
     }
   }
   .BurgerMenu {
-    top: 18%;
-    height: 85vh;
+    top: 16%;
+    height: 100vh;
+    overflow-y: hidden;
     &__content {
       &-bottom {
         &-socials {
@@ -325,6 +310,26 @@
               padding: 0;
             }
           }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 390px) {
+  .Nav {
+    &__content {
+      padding: 0 10px 0 10px !important;
+      align-items: center;
+
+      &-logo {
+        img {
+          width: 3rem;
+        }
+      }
+      &-settings {
+        max-width: fit-content;
+        select {
+          font-size: 12px;
         }
       }
     }

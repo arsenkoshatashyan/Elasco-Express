@@ -353,9 +353,9 @@ export default function Nav() {
                 </a>
               </div>
             </div>
-            <div className="copyrighting">
+            {/* <div className="copyrighting">
               <p className="">{t("footer.copyright")}</p>
-            </div>
+            </div> */}
           </nav>
         </div>
       )}
