@@ -10,7 +10,6 @@
   }
   &__content {
     width: 90%;
-    // width: 100%;
     height: auto;
     margin: 0 auto;
     padding: 118px 0;
@@ -31,6 +30,7 @@
       }
       button {
         width: 170px;
+        font-weight: bold;
       }
     }
     &-cards {
@@ -49,7 +49,6 @@
       }
       &-card {
         width: 444px;
-        // height: 460px;
         background-color: var(--cardsBackground);
         border-radius: 18px;
         margin: 0 auto;
