@@ -2,7 +2,9 @@
   background: url("../../../public/images/vector.svg");
   @media (max-width: 768px) {
     background: none;
-    background-color: var(--iconBackground);
+    // background-color: var(--iconBackground);
+    background-color: rgba(238, 233, 233, 1);
+
   }
   background-color: var(--iconBackground);
   &__content {

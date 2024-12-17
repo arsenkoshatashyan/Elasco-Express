@@ -1,8 +1,9 @@
 .NewsHome {
-  background: rgba(238, 233, 233, 1);
+  background-color: rgba(238, 233, 233, 1);
   &__content {
     margin: 134px auto 0;
-    background: rgba(238, 233, 233, 1);
+    background-color: rgba(238, 233, 233, 1);
+    
 
     &-title {
       background: url("../../../public/images/transport-newBackground.jpeg")

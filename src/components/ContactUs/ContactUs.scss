@@ -1,6 +1,8 @@
 .ContactUs {
   background: url("../../../public//images/vector.svg");
-  background-color: #f2eff2;
+  background-color: rgba(217, 217, 217, 0.55);
+
+
   
   &__content {
     display: flex;
@@ -87,7 +89,11 @@
 .result {
   max-width: 1270px;
   margin: 0 auto;
-  background-color: var(--iconBackground);
+  // background-color: var(--iconBackground);
+  background: linear-gradient(175.9deg, #EEE9E9 50.76%, #F3DBDC 158.93%);
+  box-shadow: 0px 6.58px 14.27px 0px rgba(0, 0, 0, 0.1);
+
+
   padding: 20px 0;
   border-radius: 8px;
   display: flex;

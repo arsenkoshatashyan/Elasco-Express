@@ -3,7 +3,9 @@
   background: url("../../../public/images/vector.svg") center;
   background-size: cover;
   overflow-y: hidden;
-  background-color: var(--iconBackground);
+  // background-color: var(--iconBackground);
+  background-color: rgba(217, 217, 217, 0.55);
+
   @media (max-width: 768px) {
     background: none;
     background-color: var(--iconBackground);

@@ -1,6 +1,11 @@
 .Sliders {
+  // background: rgba(217, 217, 217, 0.55);
+
   background: url("../../../public//images/vector.svg");
-  background-color: #f2eff2;
+  // background-color: #f2eff2;
+  background-color: rgba(217, 217, 217, 0.55);
+
+  
   width: 100%;
   margin: 0 auto;
   overflow-y: hidden;
@@ -30,17 +35,30 @@
       margin-right: 30px;
     }
   }
+  div{
+    // border: 2px solid rgb(40, 153, 197);
+    // padding: 0 40px;
+  }
   div > img {
     margin-bottom: 23px;
   }
-  .slick-slide {
-    margin: 24px auto 0;
-  }
 
+  .slick-slide {
+    // margin: 24px auto 0;
+    // border: 2px solid rgb(19, 231, 12);
+    // padding: 40px;
+    
+  }
+  // .slick-slide{
+  //   border: 2px solid rgb(41, 6, 238);
+  //   height: auto;
+  // }
   .slick-slide > div {
+    // border: 2px solid red;
     max-width: 522px;
-    height: 509px;
-    font-size: 30px;
+    height: auto;
+    // height: 520px;
+    // font-size: 30px;
     color: var(--dartTextColor);
     background-color: rgb(209, 221, 235);
     margin: 0 auto;
@@ -50,27 +68,35 @@
     margin-bottom: 118px;
     overflow-y: hidden;
     img {
-      min-height: 289px;
+      // height: auto;
+      // min-height: 289px;
       border-radius: 39px;
-      margin-left: 30px;
+      // margin-left: 30px;
+      margin: 0 auto 20px;
     }
     h2 {
-      width: 480px;
-      min-height: 120px;
+      // width: 480px;
+      height: 140px;
       font-size: 24px;
-      line-height: 36px;
-      margin: 0 auto 16px;
-      font-weight: bold;
+      // line-height: 36px;
+      // margin: 0 auto 16px;
+      font-weight: 500;
+
+      margin-bottom: 10px;
+      
     }
     p {
-      font-size: 13px;
+      font-size: 12px;
+      font-weight: bold;
       color: var(--dartTextColor);
       text-decoration: underline;
       margin: 0 auto;
-      width: fit-content;
+
+      // width: fit-content;
+      // border: 2px solid red;
     }
     a {
-      list-style: none;
+      // list-style: none;
       color: var(--dartTextColor);
       &:hover {
         text-decoration: underline;
@@ -78,7 +104,7 @@
     }
   }
   .button-all {
-    display: none;
+    display: none; // posmotrer vse 
     @media (max-width: 768px) {
       display: block;
       margin: -100px auto 50px;
@@ -140,7 +166,7 @@
     }
 
     .slick-slide > div {
-      height: 32rem;
+      // height: 32rem;
 
       h2 {
         width: 90%;
@@ -148,8 +174,8 @@
         margin: 0 auto;
       }
       img {
-        margin: 20px auto;
-        width: 22rem;
+        // margin: 20px auto;
+        // width: 22rem;
       }
     }
   }
@@ -172,12 +198,17 @@
         width: 90%;
         font-size: 20px;
         margin: 0 auto;
-        min-height: 141px;
+        // min-height: 141px;
+        height: 140px;
+        // border: 2px solid red;
       }
       img {
-        margin: 20px auto;
-        width: 22rem;
-        margin: 10px auto;
+        // margin: 20px auto;
+        // width: 22rem;
+        // margin: 10px auto;
+        // margin-bottom: 20px;
+        // width: 90%;
+        // height: auto;
       }
     }
     .slick-next {
@@ -197,8 +228,8 @@
         margin: 0 auto;
       }
       img {
-        width: 20rem;
-        margin: 10px auto;
+        width: 90%;
+        // margin: 10px auto;
       }
     }
   }
@@ -215,7 +246,7 @@
   .Sliders {
     &__content {
       flex-wrap: wrap;
-      gap: 10px;
+      // gap: 10px;
       margin: 20px auto 0;
       h2 {
         text-align: center;
@@ -230,14 +261,22 @@
       display: none !important;
     }
     .slick-slide > div {
-      width: 26rem;
+      // width: 30rem;
+      width: 90%;
       h2 {
+        width: 100%;
         font-size: 22px;
-        margin: 0 auto;
+        // margin: 0 auto;
+        // height: 80px !important;
+        // border: 2px solid rgb(19, 9, 148);
+        // padding: 0 0 20px 0;
+        margin-bottom: 20px;
+        height: auto;
       }
       img {
-        width: 380px;
-        margin: 10px auto;
+        // width: 380px;
+        width: 90%;
+        // margin: 10px auto;
       }
     }
   }
@@ -271,19 +310,22 @@
     }
     .slick-slide > div {
       max-width: 90%;
-      height: auto;
+      // height: auto;
       margin: 50px auto;
 
       h2 {
-        width: 100%;
-        height: 100px;
-        font-size: 15px;
+        // width: 100%;
+        // height: 100px;
+        font-size: 18px;
+        // border: 2px solid red;
+        // height: 60px !important;
+
       }
       img {
-        margin: 10px auto;
+        // margin: 10px auto;
         width: 100%;
-        min-height: auto;
-        overflow-y: hidden;
+        // min-height: auto;
+        // overflow-y: hidden;
       }
     }
   }
