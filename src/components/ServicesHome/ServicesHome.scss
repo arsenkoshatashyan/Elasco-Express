@@ -111,6 +111,7 @@
     height: 500px;
     h2 {
       color: var(--textColor);
+      font-weight: bold;
       padding: 180px 0 0 200px;
       text-align: start;
       font-size: 70px;
@@ -1188,7 +1189,7 @@
         height: 450px;
         h2 {
           font-size: 60px;
-          padding: 180px 0 0 180px;
+          padding: 180px 0 0 140px;
         }
       }
     }
@@ -1200,7 +1201,7 @@
         height: 400px;
         h2 {
           font-size: 50px;
-          padding: 160px 0 0 160px;
+          padding: 160px 0 0 100px;
         }
     }
   }

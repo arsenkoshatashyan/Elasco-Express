@@ -1,24 +1,24 @@
-.ContactUs {
+.ContactHome {
   background: url("../../../public//images/vector.svg");
   background-color: #f2eff2;
-  
+  // h5{
+  //   font-size: 58px;
+  //   padding-top: 60px;
+  //   text-align: center;
+  //   color: var(--textColor);
+  //   background-color: var(--darkBackground);
+  //   margin-top: 144px;
+  // }
   &__content {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--darkBackground);
+    margin: 150px auto;
     &-left {
       padding: 154px 0 0 150px;
       width: 1200px;
-      height: 1100px;
-      h5{
-        font-size: 56px;
-        color: var(--textColor);
-        font-weight: bold;
-        text-align: center;
-        margin-left: 450px;
-        padding: 40px 0 100px;
-      }
+      height: 820px;
       &-title {
         font-size: 22px;
         color: var(--textColor);
@@ -84,7 +84,7 @@
     }
   }
 }
-.result {
+.resultContact {
   max-width: 1270px;
   margin: 0 auto;
   background-color: var(--iconBackground);
@@ -94,9 +94,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -60px;
+  margin-top: -210px;
   position: relative;
-  border-bottom: 8px solid var(--darkBackground);
+  border-bottom: 8px solid var(--mainColor);
   ul {
     display: flex;
     text-align: center;
@@ -154,7 +154,7 @@
   @media (max-width: 590px) {
     max-width: 100%;
     border-radius: 0;
-    margin: 0;
+    margin: -150px 0 0 0 ;
     ul {
       gap: 35px;
       li {
@@ -166,6 +166,7 @@
     }
   }
   @media (max-width: 520px) {
+    // margin: -150px 0 0 0;
     ul {
       gap: 30px;
       flex-wrap: wrap;
@@ -187,7 +188,8 @@
 }
 
 @media (max-width: 1240px) {
-  .ContactUs {
+  .ContactHome {
+   
     &__content {
       &-left {
         height: 780px;
@@ -213,7 +215,7 @@
   }
 }
 @media (max-width: 768px) {
-  .ContactUs {
+  .ContactHome {
     &__content {
       &-left {
         padding: 80px 20px 0 60px;
@@ -247,7 +249,7 @@
   }
 }
 @media (max-width: 590px) {
-  .ContactUs {
+  .ContactHome {
     &__content {
       &-left {
         height: 720px;
@@ -256,10 +258,10 @@
   }
 }
 @media (max-width: 570px) {
-  .ContactUs {
+  .ContactHome {
     &__content {
       &-left {
-        height: 800px;
+        height: 740px;
       }
     }
   }

@@ -2,6 +2,9 @@
   &__content {
     margin: 134px auto 0;
     background-color: #eee9e9;
+    .AboutHomeContactUs{
+      display: none;
+    }
     &-title {
       background: url(../../../public/images/truckBackground.jpeg) no-repeat
         center center;
@@ -13,6 +16,7 @@
         text-align: start;
         font-size: 70px;
         text-transform: uppercase;
+        font-weight: bold;
       }
     }
     &-whoWeAre {
@@ -48,6 +52,7 @@
       max-width: 1730px;
       display: flex;
       margin: 100px auto 100px;
+      border: 2px solid red;
       &-box {
         background: url(../../../public/images/abouthome_container.png)
           no-repeat center;
@@ -83,22 +88,19 @@
       background: url(../../../public/images/truck_logistic.png) no-repeat
         center;
       background-size: cover;
-      overflow-y: hidden;
-      width: 100%;
       border-radius: 151px 38px 109px 30px;
       display: flex;
       justify-content: center;
       margin-top: 74px;
-
       &-box {
-        width: 1338px;
-        margin-top: 60px;
+        padding: 60px 100px 0px 200px;
         &-left {
           &-title {
             h2 {
               font-size: 40px;
               color: var(--mainColor);
               margin-bottom: 20px;
+              font-weight: bold;
             }
           }
           p {
@@ -109,7 +111,8 @@
         }
         &-right {
           display: flex;
-          gap: 82px;
+          justify-content: center;
+          gap: 100px;
           img {
             width: 640px;
             border-radius: 64px !important;
@@ -118,6 +121,7 @@
         }
       }
     }
+    
   }
 }
 @media (max-width: 1440px) {
@@ -127,7 +131,7 @@
         height: 450px;
         h2 {
           font-size: 60px;
-          padding: 180px 0 0 180px;
+          padding: 180px 0 0 140px;
         }
       }
       &-whoWeAre {
@@ -168,26 +172,28 @@
       }
       &-achievements {
         &-box {
+          padding: 60px 80px 0px 180px;
           &-left {
-            width: 90%;
-            margin: 0 auto;
+            // width: 90%;
+            // margin: 0 auto;
 
             &-title {
               h2 {
-                font-size: 36px;
+                font-size: 38px;
               }
             }
             p {
-              font-size: 24px;
+              font-size: 26px;
             }
           }
           &-right {
-            padding: 0 80px;
+            // padding: 0 80px;
+            gap: 80px;
+            // border: 2px solid red;
 
             img {
-              width: 500px;
-              margin: 38px auto;
-  
+              // width: 600px;
+              // margin: 38px auto;
             }
           }
         }
@@ -203,7 +209,7 @@
         height: 400px;
         h2 {
           font-size: 50px;
-          padding: 160px 0 0 160px;
+          padding: 160px 0 0 100px;
         }
       }
       &-whoWeAre {
@@ -238,20 +244,21 @@
       }
       &-achievements {
         &-box {
-          width: 90%;
+          padding: 60px 60px 0px 140px;
           &-left {
             display: flex;
             flex-direction: column;
+            &-title {
+              h2 {
+                font-size: 36px;
+              }
+            }
             p {
-              font-size: 18px;
+              font-size: 24px;
             }
           }
           &-right {
-            padding: 20px;
-
-            img {
-              border-radius: 0;
-            }
+            gap: 60px;
           }
         }
       }
@@ -265,7 +272,7 @@
         height: 350px;
         h2 {
           font-size: 40px;
-          padding: 140px 0 0 140px;
+          padding: 140px 0 0 80px;
         }
       }
       &-whoWeAre {
@@ -292,7 +299,7 @@
       }
       &-activity {
         &-box {
-          border-radius: 0;
+          // border-radius: 0;
           height: 700px;
           &-text {
             h2 {
@@ -305,24 +312,26 @@
         }
       }
       &-achievements {
+        border-radius: 0;
+        // margin-top: 0;
         &-box {
-          width: 90%;
+       
+          padding: 40px 60px 0px 60px;
           &-left {
+               
             &-title {
               h2 {
-                font-size: 22px;
+                font-size: 34px;
+                text-align: center;
               }
             }
             p {
-              font-size: 16px;
+              font-size: 22px;
             }
           }
           &-right {
             flex-wrap: wrap;
-            padding: 0;
             gap: 0;
-            width: 340px;
-            margin: 0 auto;
           }
         }
       }
@@ -337,7 +346,7 @@
         height: 300px;
         h2 {
           font-size: 30px;
-          padding: 140px 0 0 100px;
+          padding: 140px 0 0 60px;
         }
       }
       &-whoWeAre {
@@ -352,6 +361,8 @@
           }
           img {
             height: 300px;
+            border-radius: 0;
+            border: 2px solid red;
           }
         }
       }
@@ -368,6 +379,22 @@
           }
         }
       }
+      &-achievements {
+       
+        &-box {
+          padding: 40px 40px 0px 40px;
+          &-left {
+            &-title {
+              h2 {
+                font-size: 28px;
+              }
+            }
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -377,7 +404,7 @@
       &-title {
         height: 250px;
         h2 {
-          padding: 100px 0 0 80px;
+          padding: 100px 0 0 40px;
         }
       }
       &-whoWeAre {
@@ -410,16 +437,16 @@
       }
       &-achievements {
         &-box {
-          width: 90%;
+          padding: 40px 30px 0px 30px;
           &-left {
             &-title {
               h2 {
                 font-size: 30px;
               }
             }
-          }
-          &-right {
-            width: 240px;
+            p {
+              font-size: 18px;
+            }
           }
         }
       }

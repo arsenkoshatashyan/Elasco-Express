@@ -57,6 +57,7 @@
     ]
   },
   "contact": {
+    "about": "Contact Us",
     "title": "Let’s connect",
     "span": " with us",
     "description": "Contact us today to experience the difference of working with a trusted logistics partner.",
@@ -93,7 +94,7 @@
   },
   "contacts": {
     "title": "CONTACTS",
-    "description": "Need Reliable Logistics Solutions? Contact Us Today!",
+    "description": "Need reliable logistics solutions? Contact us today!",
     "items": [
       {
         "title": "Tel.",

@@ -70,7 +70,7 @@ export default function NewsHome() {
           })}
         </div>
       </div>
-      <div className="resultTwo">
+      <div className="resultNews">
         <ul>
           <li>
             4000+
@@ -89,9 +89,7 @@ export default function NewsHome() {
             <p>{t("result.satisfaction_rating")}</p>
           </li>
         </ul>
-        <img src="../../../images/result2.png" alt="" />
       </div>
-
       <Contact />
     </div>
   );
