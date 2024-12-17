@@ -28,12 +28,9 @@ export default function ContactHome() {
 
   return (
     <div className="ContactHome">
-          {/* <h5> {t("contact.about")}</h5> */}
+      {/* <h5> {t("contact.about")}</h5> */}
       <div className="ContactHome__content">
-
-        
         <div className="ContactHome__content-left">
-    
           <div className="ContactHome__content-left-title">
             <h2>
               {t("contact.title")} <span>{t("contact.span")}</span> <br />
@@ -103,8 +100,7 @@ export default function ContactHome() {
           </li>
         </ul>
       </div>
-      <ContactUsTwo/>
-      <Card/>
+      <ContactUsTwo />
     </div>
   );
 }

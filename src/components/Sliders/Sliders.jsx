@@ -23,10 +23,12 @@ const source = [
 
 export default function Sliders() {
   const { t } = useTranslation();
-  const [expanded, setExpanded] = useState({});
+  const [expanded, setExpanded] = useState({}); //----------------------usestate ksarqes
 
   const toggleExpanded = (id) => {
+    //--------------------------------ysika nuyn dzev kanchesky
     setExpanded((prev) => ({
+      ...prev,
       [id]: !prev[id],
     }));
   };
@@ -57,7 +59,10 @@ export default function Sliders() {
           const isExpanded = expanded[elem.id];
           return (
             <div key={elem.id}>
-              <h2>
+              <h2
+              // onClick={() => toggleExpanded(elem.id)}
+              // style={{ cursor: "pointer" }} verin vra or map es frrace yspes era-----------------------------------
+              >
                 {isExpanded || title.length <= 50
                   ? title
                   : `${title.slice(0, 110)}`}

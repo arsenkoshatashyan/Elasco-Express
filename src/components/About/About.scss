@@ -4,7 +4,6 @@
     background: none;
     // background-color: var(--iconBackground);
     background-color: rgba(238, 233, 233, 1);
-
   }
   background-color: var(--iconBackground);
   &__content {
@@ -64,7 +63,7 @@
       }
     }
   }
-  @media (max-width: 1730px) {
+  @media (max-width: 1731px) {
     .About {
       &__content {
         &-image {

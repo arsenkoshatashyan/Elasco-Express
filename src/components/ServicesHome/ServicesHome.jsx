@@ -1,31 +1,21 @@
+import { useState } from "react";
 import "./ServicesHome.scss";
 import ContactUs from "../ContactUs/ContactUs";
 import { useTranslation } from "react-i18next";
 import Card from "../Card/Card";
-import ContactHomeScroll from "./../ContactHomeScroll/ContactHomeScroll";
+import ContactHomeScroll from "../ContactHomeScroll/ContactHomeScroll";
 
 export default function ServicesHome() {
+  const [expanded, setExpanded] = useState({}); // usestate ksarqes
   const { t } = useTranslation();
-  const data = [
-    {
-      id: 0,
-      url: "/images/support.svg",
-      title: t("contacts.items.0.title"),
-      description: t("contacts.items.0.description"),
-    },
-    {
-      id: 1,
-      url: "/images/geo.svg",
-      title: t("contacts.items.1.title"),
-      description: t("contacts.items.1.description"),
-    },
-    {
-      id: 2,
-      url: "/images/email.svg",
-      title: t("contacts.items.2.title"),
-      description: t("contacts.items.2.description"),
-    },
-  ];
+
+  const toggleExpanded = (id) => {
+    ////////// ysika anpayman nuyn dzev kanchesky
+    setExpanded((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
 
   return (
     <div className="ServicesHome">
@@ -33,40 +23,85 @@ export default function ServicesHome() {
         <h2>{t("services.title")}</h2>
       </div>
       <div className="ServicesHome__content">
+        {/* Блок морских перевозок */}
         <div className="ServicesHome__content-block">
           <div className="ServicesHome__content-block-box">
             <div className="ServicesHome__content-block-box-Left"></div>
             <div className="ServicesHome__content-block-box-Right">
               <h2>{t("services.seaTransportation")}</h2>
-              <p>{t("services.seaTransportationDescription")}</p>
+              <p
+                onClick={() => toggleExpanded(0)} //verin vra or prosty text e map che frracac ysspes + verna qoment ka ydonca ashe
+                style={{ cursor: "pointer" }}
+              >
+                {expanded[0]
+                  ? t("services.seaTransportationDescription")
+                  : `${t("services.seaTransportationDescription").slice(
+                      0,
+                      100
+                    )}...`}
+              </p>
             </div>
           </div>
         </div>
 
+        {/* Блок воздушных перевозок */}
         <div className="ServicesHome__content-blockTwo">
           <div className="ServicesHome__content-blockTwo-box">
             <div className="ServicesHome__content-blockTwo-box-Left">
               <h2>{t("services.airTransportation")}</h2>
-              <p>{t("services.airTransportationDescription")}</p>
+              <p
+                onClick={() => toggleExpanded(1)}
+                style={{ cursor: "pointer" }}
+              >
+                {expanded[1]
+                  ? t("services.airTransportationDescription")
+                  : `${t("services.airTransportationDescription").slice(
+                      0,
+                      100
+                    )}...`}
+              </p>
             </div>
             <div className="ServicesHome__content-blockTwo-box-Right"></div>
           </div>
         </div>
+
+        {/* Блок наземных перевозок */}
         <div className="ServicesHome__content-blockThree">
           <div className="ServicesHome__content-blockThree-box">
             <div className="ServicesHome__content-blockThree-box-Left"></div>
             <div className="ServicesHome__content-blockThree-box-Right">
               <h2>{t("services.landTransportation")}</h2>
-              <p>{t("services.landTransportationDescription")}</p>
+              <p
+                onClick={() => toggleExpanded(2)}
+                style={{ cursor: "pointer" }}
+              >
+                {expanded[2]
+                  ? t("services.landTransportationDescription")
+                  : `${t("services.landTransportationDescription").slice(
+                      0,
+                      100
+                    )}...`}
+              </p>
             </div>
           </div>
         </div>
 
+        {/* Блок таможенного оформления */}
         <div className="ServicesHome__content-blockFour">
           <div className="ServicesHome__content-blockFour-box">
             <div className="ServicesHome__content-blockFour-box-Left">
               <h2>{t("services.customsClearance")}</h2>
-              <p>{t("services.customsClearanceDescription")}</p>
+              <p
+                onClick={() => toggleExpanded(3)}
+                style={{ cursor: "pointer" }}
+              >
+                {expanded[3]
+                  ? t("services.customsClearanceDescription")
+                  : `${t("services.customsClearanceDescription").slice(
+                      0,
+                      100
+                    )}...`}
+              </p>
               <ul>
                 <li>{t("services.documentPreparation")}</li>
                 <li>{t("services.customsDuties")}</li>
@@ -80,6 +115,7 @@ export default function ServicesHome() {
           </div>
         </div>
       </div>
+
       <Card />
       <div className="resultThree">
         <ul>
@@ -111,7 +147,7 @@ export default function ServicesHome() {
           <div className="ServicesHome__address-blockOne">
             <img src="./images/address1.svg" alt="" />
             <h3>{t("services.contact")}</h3>
-            <a href="">+(374) 98 555 378</a>
+            <a href="tel:+37498555378">+(374) 98 555 378</a>
           </div>
           <div className="ServicesHome__address-blockTwo">
             <img src="./images/address2.svg" alt="" />
