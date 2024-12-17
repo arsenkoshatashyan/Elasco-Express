@@ -210,7 +210,8 @@ export default function Nav() {
           </div>
           <div className="Nav__content-logo">
             <Link to="/">
-              <img src="./images/logo.svg" alt="logo" />
+              <img src="./images/logo.png" alt="logo" />
+              <img src="./images/logoTitle.svg" alt="logo" />
             </Link>
           </div>
           <div className="Nav__content-links">
