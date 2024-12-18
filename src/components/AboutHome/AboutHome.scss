@@ -2,8 +2,66 @@
   &__content {
     margin: 134px auto 0;
     background-color: #eee9e9;
-    .AboutHomeContactUs{
-      display: none;
+    .resultAbout {
+      max-width: 1270px;
+      margin: 0 auto;
+      background: linear-gradient(175.9deg, #EEE9E9 50.76%, #F3DBDC 158.93%);
+      box-shadow: 0px 6.58px 14.27px 0px rgba(0, 0, 0, 0.1);
+      padding: 20px 0;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: -60px;
+      position: relative;
+      border-bottom: 8px solid var(--darkBackground);
+      ul {
+        display: flex;
+        text-align: center;
+        padding: 20px 0;
+        gap: 70px;
+        li {
+          font-size: 68px;
+          color: var(--mainColor);
+          text-align: center;
+          font-weight: bold;
+          margin: 0 auto;
+          p {
+            font-size: 18px;
+            color: #152430;
+            font-weight: 700;
+          }
+        }
+      }
+      @media (max-width: 1440px) {
+        max-width: 90%;
+        ul {
+          padding: 0px 0;
+          li {
+            font-size: 60px;
+            p {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+      @media (max-width: 1240px) {
+        ul {
+          width: 90%;
+          gap: 40px;
+          li {
+            font-size: 50px;
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      @media (max-width: 768px) {
+        max-width: 90%;
+        display: none;
+      }
     }
     &-title {
       background: url(../../../public/images/truckBackground.jpeg) no-repeat
@@ -20,7 +78,11 @@
       }
     }
     &-whoWeAre {
+      max-width: 1730px;
+      margin: 0 auto;
       p {
+        color: var(--darkBackground);
+        font-weight: 500;
         margin: 58px auto 0;
         width: 90%;
         max-width: 1730px;
@@ -29,6 +91,9 @@
         text-align: justify;
         hyphens: auto;
         word-break: break-word;
+      }
+      > p:nth-child(2){
+        display: none;
       }
       &-box {
         width: 95%;
@@ -40,11 +105,12 @@
           width: 744px;
           text-align: justify;
           font-size: 27px;
-          line-height: 45px;
+          line-height: 44px;
+          color: var(--darkBackground);
+          font-weight: 500;
         }
         img {
-          width: 837px;
-          height: 475px;
+          width: 836px;
         }
       }
     }
@@ -52,14 +118,16 @@
       max-width: 1730px;
       display: flex;
       margin: 100px auto 100px;
-      border: 2px solid red;
       &-box {
         background: url(../../../public/images/abouthome_container.png)
           no-repeat center;
         display: flex;
-        height: 758px;
+        height: auto;
+        padding: 50px 0;
+        border-top-left-radius: 200px;
         img {
-          width: 800px;
+          width: 45%;
+          height: auto;
           border-top-left-radius: 200px;
         }
         &-text {
@@ -71,15 +139,17 @@
           hyphens: auto;
           word-break: break-word;
           h2 {
-            margin: 100px 0 60px;
+            margin: 60px 0 40px;
             font-size: 45px;
             color: var(--mainColor);
             font-weight: 600;
           }
           p {
-            width: 90%;
+            width: 80%;
             line-height: 40px;
-            font-size: 27px;
+            font-size: 26px;
+            font-weight: 500;
+           
           }
         }
       }
@@ -100,13 +170,16 @@
               font-size: 40px;
               color: var(--mainColor);
               margin-bottom: 20px;
-              font-weight: bold;
+              font-weight: 600;
             }
           }
           p {
             font-size: 28px;
             text-align: justify;
             color: var(--darkBackground);
+            font-weight: 500;
+           
+            
           }
         }
         &-right {
@@ -121,7 +194,6 @@
         }
       }
     }
-    
   }
 }
 @media (max-width: 1440px) {
@@ -146,20 +218,14 @@
             font-size: 26px;
           }
           img {
-            height: 425px;
+            width: 100%;
+            height: auto;
           }
         }
       }
       &-activity {
         &-box {
-          border-top-left-radius: 200px;
-          border-bottom-right-radius: 200px;
-          height: 800px;
-          img {
-            width: 660px;
-            height: 740px;
-            margin-top: 30px;
-          }
+          height: auto;
           &-text {
             h2 {
               font-size: 40px;
@@ -174,9 +240,6 @@
         &-box {
           padding: 60px 80px 0px 180px;
           &-left {
-            // width: 90%;
-            // margin: 0 auto;
-
             &-title {
               h2 {
                 font-size: 38px;
@@ -187,13 +250,8 @@
             }
           }
           &-right {
-            // padding: 0 80px;
             gap: 80px;
-            // border: 2px solid red;
-
             img {
-              // width: 600px;
-              // margin: 38px auto;
             }
           }
         }
@@ -218,26 +276,39 @@
           font-size: 24px;
           line-height: 40px;
         }
+        // > p:nth-child(2){
+        //   display: block;
+        // }
+        
         &-box {
-          gap: 20px;
+          flex-direction: column;
+          width: 95%;
+          margin: 0 auto;
+          gap: 0;
           p {
             font-size: 24px;
-          }
-          img {
-            height: 375px;
+            // display: none;
+            margin: 0 auto;
+            width: 95%;
           }
         }
       }
       &-activity {
+        margin: 100px auto 0;
         &-box {
-          height: 660px;
+          height: auto;
+          border-radius: 0;
           img {
             display: none;
           }
           &-text {
             h2 {
-              margin: 60px 0 40px;
-              overflow-y: hidden;
+              font-size: 42px;
+              margin: 40px 0 40px;
+            }
+            p {
+              margin-bottom: 40px;
+              font-size: 22px;
             }
           }
         }
@@ -282,43 +353,33 @@
           line-height: 38px;
         }
         &-box {
-          flex-direction: column;
-          width: 90%;
-          margin: 0 auto;
-          gap: 0;
           p {
             font-size: 22px;
             margin: 0;
             width: 95%;
           }
-          img {
-            width: 100%;
-            height: 325px;
-          }
         }
       }
       &-activity {
         &-box {
-          // border-radius: 0;
-          height: 700px;
           &-text {
             h2 {
+              font-size: 38px;
             }
             p {
-              font-size: 22px;
-              line-height: 38px;
+              font-size: 20px;
+              line-height: 30px;
             }
           }
         }
       }
       &-achievements {
         border-radius: 0;
-        // margin-top: 0;
+        margin-top: 0;
+        margin-bottom: 60px;
         &-box {
-       
           padding: 40px 60px 0px 60px;
           &-left {
-               
             &-title {
               h2 {
                 font-size: 34px;
@@ -359,34 +420,27 @@
           p {
             font-size: 20px;
           }
-          img {
-            height: 300px;
-            border-radius: 0;
-            border: 2px solid red;
-          }
         }
       }
       &-activity {
         &-box {
           &-text {
             h2 {
-              font-size: 24px;
-              margin: 40px 0 20px;
+              font-size: 34px;
             }
             p {
-              font-size: 20px;
+              font-size: 18px;
             }
           }
         }
       }
       &-achievements {
-       
         &-box {
           padding: 40px 40px 0px 40px;
           &-left {
             &-title {
               h2 {
-                font-size: 28px;
+                font-size: 32px;
               }
             }
             p {
@@ -409,7 +463,6 @@
       }
       &-whoWeAre {
         p {
-          margin: 36px auto 0;
           font-size: 18px;
           line-height: 34px;
         }
@@ -417,20 +470,16 @@
           p {
             font-size: 18px;
           }
-          img {
-            height: 275px;
-          }
         }
       }
       &-activity {
         &-box {
           &-text {
             h2 {
-              font-size: 24px;
-              margin: 20px 0 10px;
+              font-size: 30px;
             }
             p {
-              font-size: 18px;
+              font-size: 16px;
             }
           }
         }
@@ -441,11 +490,11 @@
           &-left {
             &-title {
               h2 {
-                font-size: 30px;
+                font-size: 28px;
               }
             }
             p {
-              font-size: 18px;
+              font-size: 16px;
             }
           }
         }
