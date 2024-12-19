@@ -1,14 +1,7 @@
 .ContactHome {
   background: url("../../../public//images/vector.svg");
   background-color: #f2eff2;
-  // h5{
-  //   font-size: 58px;
-  //   padding-top: 60px;
-  //   text-align: center;
-  //   color: var(--textColor);
-  //   background-color: var(--darkBackground);
-  //   margin-top: 144px;
-  // }
+
   &__content {
     display: flex;
     align-items: center;
@@ -214,8 +207,14 @@
     }
   }
 }
+
+
+
 @media (max-width: 768px) {
   .ContactHome {
+    .NewsCard{
+      display: none;
+    }
     &__content {
       &-left {
         padding: 80px 20px 0 60px;
@@ -266,3 +265,5 @@
     }
   }
 }
+
+
