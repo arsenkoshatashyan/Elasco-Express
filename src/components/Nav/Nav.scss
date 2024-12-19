@@ -11,17 +11,17 @@
     height: 90px;
     &-logo {
       display: flex;
-        align-items: center;
-        gap: 10px;
-        justify-content: center;
-      img:nth-child(1){
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      padding: 8px 0 0 0;
+      img:nth-child(1) {
         width: 70px;
         padding: 0px 6px;
       }
-      img:nth-child(2){
+      img:nth-child(2) {
         width: 120px;
-       padding: 8px 0;
-     
+        padding: 8px 0;
       }
     }
     &-links {
@@ -78,10 +78,6 @@
     .Nav {
       &__content {
         &-logo {
-          img {
-            // width: 9rem;
-            // margin: 1em 0;
-          }
         }
         &-links {
           ul {
@@ -94,8 +90,9 @@
   @media (max-width: 1240px) {
     .Nav {
       &__content {
-        padding: 0 3rem;
+        padding: 0 20px;
         justify-content: space-between;
+
         &-links {
           ul {
             font-size: 12px;
@@ -115,114 +112,78 @@
 .active {
   color: var(--mainColor) !important;
   font-weight: bold;
-  opacity: 1;
 }
 .BurgerMenu {
+  margin: 138px 0 0 0;
   position: fixed;
+  padding: 0 0 20px 0;
   width: 100vw;
-  height: 80vh;
-  top: 21%;
+  height: 100vh;
   background-color: var(--darkBackground);
   z-index: 100;
-  padding: 0;
-  .copyrighting {
-    padding: 10px 0 15px !important;
-    border-top: 1px solid white;
-    p {
-      font-size: 10px;
-      color: #f2eff2;
-      text-align: center;
-    }
-  }
 
   &__content {
-    width: 100%;
     &-links {
-      width: 90%;
-      margin: 0 auto;
+      width: 100%;
       ul {
-        margin: 40px 0 30px 0;
+        padding: 20px 0;
         text-transform: uppercase;
         text-align: center;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
         li {
-          list-style: none;
-          width: 100%;
-          height: 27px;
-          background-color: var(--darkBackground);
           cursor: pointer;
-          .active {
-            color: var(--mainColor);
-          }
+          margin: 18px 0;
           a {
-            text-decoration: none;
+            font-size: 18px;
             color: var(--textColor);
-            font-size: 20px;
-            padding: 0 20px;
-            &:hover {
-              color: var(--mainColor);
-            }
           }
         }
       }
     }
     &-bottom {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      width: 100%;
+      padding: 0 20px;
       &-socials {
         display: flex;
-        gap: 40px;
-        margin-top: 22px;
-        margin-left: 14px;
-        img {
-          margin-bottom: 40px;
-        }
-      }
-      &-car {
-        width: 60%;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        padding: 20px 0 0 0;
       }
       &-text {
+        max-width: 500px;
         text-align: center;
-        max-width: 75%;
+        margin: 20px auto;
         h2 {
-          margin: 5px 0 7px;
           color: white;
-          font-size: 13px;
-          min-width: 250px;
+          font-size: 14px;
+          margin-bottom: 10px;
         }
         p {
-          margin-bottom: 20px;
           color: #d2d2d2;
-          font-size: 8px;
+          font-size: 12px;
         }
       }
       form {
-        min-width: 206px;
+        max-width: 400px;
+        margin: 0 auto;
         input {
           width: 100%;
-          height: 41px;
+          height: 40px;
           padding: 5px;
-          border: 0.69px #e4e4e7 solid;
+          border: 0.69px solid #e4e4e7;
           background-color: transparent;
           border-radius: 2.75px;
           color: #e4e4e7;
           margin-bottom: 16px;
           &:focus {
-            outline: none !important  ;
+            outline: none !important;
             border: 0.69px #e4e4e7 solid;
           }
         }
         button {
           width: 100%;
           height: 34px;
-          font-weight: bold;
-          font-size: 10px;
+          font-size: 12px;
         }
       }
     }
@@ -237,14 +198,6 @@
           display: none;
         }
       }
-      &-settings {
-        border-radius: 2px solid red;
-        button {
-          // width: 140px;
-          font-size: 10px;
-          border-radius: 2px solid red;
-        }
-      }
     }
     .burger {
       display: block;
@@ -255,38 +208,22 @@
 @media (max-width: 768px) {
   .Nav {
     &__content {
-      padding: 0 10px 0 20px !important;
-      // padding: 0 1rem;
-      // justify-content: space-between;
-      // border: 2px solid red;
-      // width: 100%;
-     
       &-logo {
-
-        img:nth-child(1){
+        img:nth-child(1) {
           width: 54px;
-          // padding: 0px 6px;
-       
         }
-        img:nth-child(2){
+        img:nth-child(2) {
           width: 80px;
-        //  padding: 8px 0;
-       
         }
       }
       &-links {
         display: none;
       }
       &-settings {
-        width: fit-content !important;
         button {
           display: none;
         }
       }
-    }
-    .burger {
-      display: block;
-      // min-width: 90px;
     }
   }
 }
@@ -294,72 +231,12 @@
 @media (max-width: 450px) {
   .Nav {
     &__content {
-      // padding: 0 5px;
-      
-      .burger {
-        // display: block;
-      }
       &-logo {
-        img:nth-child(1){
+        img:nth-child(1) {
           width: 50px;
-          // padding: 0px 6px;
-       
         }
-        img:nth-child(2){
+        img:nth-child(2) {
           width: 70px;
-        //  padding: 8px 0;
-       
-        }
-      }
-      &-settings {
-        width: 90px;
-      }
-    }
-  }
-  .BurgerMenu {
-    top: 16%;
-    height: 100vh;
-    overflow-y: hidden;
-    &__content {
-      &-bottom {
-        &-socials {
-          width: auto;
-          gap: 14px;
-          align-items: center;
-          img {
-            width: 31px;
-            height: 31px;
-          }
-        }
-      }
-      &-links {
-        ul {
-          li {
-            a {
-              font-size: 18px;
-              padding: 0;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 390px) {
-  .Nav {
-    &__content {
-      // padding: 0 10px 0 15px !important;
-      align-items: center;
-
-      &-logo {
-        img {
-          // width: 3rem;
-        }
-      }
-      &-settings {
-        max-width: fit-content;
-        select {
-          font-size: 12px;
         }
       }
     }

@@ -122,7 +122,7 @@ export default function AboutHome() {
             </div>
             <img
               className="aboutHome__content-activity-box-img"
-              src="./images/abouthome_container2.jfif"
+              src="./images/aboutHome.jpg"
               alt="trucks"
             />
           </div>
