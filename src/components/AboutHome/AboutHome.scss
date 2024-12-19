@@ -86,7 +86,7 @@
         margin: 58px auto 0;
         width: 90%;
         max-width: 1730px;
-        font-size: 27px;
+        font-size: 26px;
         line-height: 44px;
         text-align: justify;
         hyphens: auto;
@@ -104,7 +104,7 @@
         p {
           width: 744px;
           text-align: justify;
-          font-size: 27px;
+          font-size: 26px;
           line-height: 44px;
           color: var(--darkBackground);
           font-weight: 500;
@@ -128,7 +128,7 @@
         img {
           width: 45%;
           height: auto;
-          border-top-left-radius: 200px;
+          border-top-left-radius: 300px;
         }
         &-text {
           display: flex;
@@ -146,9 +146,11 @@
           }
           p {
             width: 80%;
-            line-height: 40px;
+            line-height: 44px;
             font-size: 26px;
             font-weight: 500;
+            color: var(--darkBackground);
+ 
            
           }
         }
@@ -209,13 +211,14 @@
       &-whoWeAre {
         p {
           margin: 54px auto 0;
-          font-size: 26px;
+          font-size: 24px;
           line-height: 42px;
         }
         &-box {
           gap: 40px;
           p {
-            font-size: 26px;
+            font-size: 24px;
+            line-height: 42px;
           }
           img {
             width: 100%;
@@ -232,6 +235,7 @@
             }
             p {
               font-size: 24px;
+              line-height: 42px;
             }
           }
         }
@@ -349,12 +353,12 @@
       &-whoWeAre {
         p {
           margin: 44px auto 0;
-          font-size: 22px;
+          font-size: 20px;
           line-height: 38px;
         }
         &-box {
           p {
-            font-size: 22px;
+            font-size: 20px;
             margin: 0;
             width: 95%;
           }
@@ -368,7 +372,7 @@
             }
             p {
               font-size: 20px;
-              line-height: 30px;
+              line-height: 38px;
             }
           }
         }
@@ -411,25 +415,29 @@
         }
       }
       &-whoWeAre {
+     
         p {
           margin: 40px auto 0;
-          font-size: 20px;
+          font-size: 18px;
           line-height: 36px;
         }
         &-box {
           p {
-            font-size: 20px;
+            font-size: 18px;
+            line-height: 36px;
           }
         }
       }
       &-activity {
         &-box {
+     
           &-text {
             h2 {
               font-size: 34px;
             }
             p {
               font-size: 18px;
+              line-height: 36px;
             }
           }
         }
@@ -463,12 +471,12 @@
       }
       &-whoWeAre {
         p {
-          font-size: 18px;
+          font-size: 16px;
           line-height: 34px;
         }
         &-box {
           p {
-            font-size: 18px;
+            font-size: 16px;
           }
         }
       }
@@ -480,6 +488,7 @@
             }
             p {
               font-size: 16px;
+              line-height: 34px;
             }
           }
         }
