@@ -193,7 +193,7 @@
           width: 400px;
           height: auto;
           &-img {
-            width: 400px;
+            width: 100%;
             border-bottom-right-radius: 90px;
 
           }
@@ -217,7 +217,6 @@
       &-cards {
         &-card {
           &-img {
-            width: 340px;
           }
           p {
             padding-bottom: 30px;
