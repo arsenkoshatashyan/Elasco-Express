@@ -5,7 +5,6 @@
 // import Service from "../Service/Service";
 // import ContactUs from "../ContactUs/ContactUs";
 
-
 // export default function AboutHome() {
 //   const { t } = useTranslation();
 
@@ -79,7 +78,6 @@
 //   );
 // }
 
-
 // import React, { useState, useEffect } from "react";
 // import Card from "../Card/Card";
 // import Contact from "../Contact/Contact";
@@ -88,14 +86,8 @@
 // import Service from "../Service/Service";
 // import ContactUs from "../ContactUs/ContactUs";
 
-
 // export default function AboutHome() {
 //   const { t } = useTranslation();
-
-
-
-
-
 
 //   const [isVisible, setIsVisible] = useState(window.innerWidth < 768);
 
@@ -177,8 +169,7 @@
 //   );
 // }
 
-
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Card from "../Card/Card";
 import Contact from "../Contact/Contact";
 import { useTranslation } from "react-i18next";
@@ -219,20 +210,27 @@ export default function AboutHome() {
             {t("aboutHome.whoWeAreDescription1")}
           </p>
           {isVisible && (
-            <span onClick={toggleReadMore} className="aboutHome__content-whoWeAre-btn">
+            <span
+              onClick={toggleReadMore}
+              className="aboutHome__content-whoWeAre-btn"
+            >
               {isExpanded ? t("More...") : t("More...")}
             </span>
           )}
           <div className="aboutHome__content-whoWeAre-box">
             <img src="./images/abouthome_trucks.png" alt="trucks" />
-            <p className={isExpandedTwo ? "expandedTwo" : "collapsedTwo"}>{t("aboutHome.whoWeAreDescription2")}</p>
+            <p className={isExpandedTwo ? "expandedTwo" : "collapsedTwo"}>
+              {t("aboutHome.whoWeAreDescription2")}
+            </p>
             {isVisible && (
-            <span onClick={toggleReadMoreTwo} className="aboutHome__content-whoWeAre-btn">
-              {isExpandedTwo ? t("More...") : t("More...")}
-            </span>
-          )}
+              <span
+                onClick={toggleReadMoreTwo}
+                className="aboutHome__content-whoWeAre-btn"
+              >
+                {isExpandedTwo ? t("More...") : t("More...")}
+              </span>
+            )}
           </div>
-          
         </div>
         <div className="aboutHome__content-activity">
           <div className="aboutHome__content-activity-box">

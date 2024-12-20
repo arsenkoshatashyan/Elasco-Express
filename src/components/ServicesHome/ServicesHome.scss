@@ -83,10 +83,17 @@
     width: 82%;
     max-width: fit-content;
     margin: 154px auto 0;
+    @media (max-width: 540px) {
+      width: 100%;
 
+      margin: 60px auto 0;
+    }
     &-block {
       margin-bottom: 154px;
       display: flex;
+      &-btn {
+        display: none;
+      }
       .block-one-img {
         width: 770px;
         height: 800px;
@@ -151,6 +158,12 @@
           font-weight: 400;
           color: #152430;
           text-align: justify;
+          hyphens: auto;
+          word-break: break-word;
+          transition: max-height 0.5s ease-in-out;
+          &.expanded {
+            max-height: 1500px !important;
+          }
         }
         ul {
           li {
@@ -244,21 +257,36 @@
       @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
+        padding: 0;
+        &-btn {
+          display: block;
+          font-size: 22px;
+          color: var(--mainColor);
+          text-decoration: underline;
+          text-align: center;
+          padding-top: 14px;
+          margin-bottom: 10px;
+        }
         &-left {
           border-radius: 0;
           z-index: 5;
         }
         &-right {
           border-radius: 59px 11px 59px 12px;
-          border: 1px solid red;
           max-width: 435px !important;
           margin: -140px auto 0 !important;
           padding-top: 140px !important;
           z-index: 0;
           p {
-            width: 100%;
+            max-height: 215px; // Ограниченная высота для "collapsed"
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            &.expanded {
+              max-height: none; // Полное отображение для "expanded"
+            }
           }
           h2 {
+            margin-top: 10px;
             font-size: 22px !important;
           }
         }
@@ -268,7 +296,6 @@
           background-image: url("./Services/transportSmall.png");
         }
         .block-one-img2 {
-          // width: 90%;
           height: auto;
           background-image: url("./Services/transportLight.jpg");
           padding: 60px 60px 0;
@@ -279,8 +306,7 @@
           background-image: url("./Services/transportSmall2.png");
         }
         .block-two-img2 {
-          width: 770px;
-          height: 800px;
+          height: auto;
           background-image: url("./Services/transport2Light.jpg");
           padding: 30px 60px 0;
         }
@@ -290,8 +316,7 @@
           background-image: url("./Services/transportSmall3.png");
         }
         .block-three-img2 {
-          width: 770px;
-          height: 800px;
+          height: auto;
           background-image: url("./Services/transport3Light.jpg");
           padding: 60px 60px 0;
         }
@@ -301,10 +326,20 @@
           background-image: url("./Services/transportSmall4.png");
         }
         .block-four-img2 {
-          width: 770px;
-          height: 800px;
+          height: auto;
           background-image: url("./Services/transport4Light.jpg");
           padding: 60px 60px 0;
+        }
+      }
+      @media (max-width: 540px) {
+        &-right {
+          width: 100% !important;
+
+          padding-left: 35px !important;
+          padding-right: 35px !important;
+        }
+        &-left {
+          max-width: 288px;
         }
       }
     }
