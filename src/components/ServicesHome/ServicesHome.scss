@@ -85,7 +85,6 @@
     margin: 154px auto 0;
 
     &-block {
-      border: 1px solid red;
       margin-bottom: 154px;
       display: flex;
       .block-one-img {
@@ -240,6 +239,72 @@
           p {
             font-size: 14px;
           }
+        }
+      }
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        &-left {
+          border-radius: 0;
+          z-index: 5;
+        }
+        &-right {
+          border-radius: 59px 11px 59px 12px;
+          border: 1px solid red;
+          max-width: 435px !important;
+          margin: -140px auto 0 !important;
+          padding-top: 140px !important;
+          z-index: 0;
+          p {
+            width: 100%;
+          }
+          h2 {
+            font-size: 22px !important;
+          }
+        }
+        .block-one-img {
+          width: 335px;
+          height: 179px;
+          background-image: url("./Services/transportSmall.png");
+        }
+        .block-one-img2 {
+          // width: 90%;
+          height: auto;
+          background-image: url("./Services/transportLight.jpg");
+          padding: 60px 60px 0;
+        }
+        .block-two-img {
+          width: 335px;
+          height: 173px;
+          background-image: url("./Services/transportSmall2.png");
+        }
+        .block-two-img2 {
+          width: 770px;
+          height: 800px;
+          background-image: url("./Services/transport2Light.jpg");
+          padding: 30px 60px 0;
+        }
+        .block-three-img {
+          width: 335px;
+          height: 182px;
+          background-image: url("./Services/transportSmall3.png");
+        }
+        .block-three-img2 {
+          width: 770px;
+          height: 800px;
+          background-image: url("./Services/transport3Light.jpg");
+          padding: 60px 60px 0;
+        }
+        .block-four-img {
+          width: 335px;
+          height: 174px;
+          background-image: url("./Services/transportSmall4.png");
+        }
+        .block-four-img2 {
+          width: 770px;
+          height: 800px;
+          background-image: url("./Services/transport4Light.jpg");
+          padding: 60px 60px 0;
         }
       }
     }
