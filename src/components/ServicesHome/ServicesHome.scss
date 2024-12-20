@@ -97,45 +97,45 @@
       .block-one-img {
         width: 770px;
         height: 800px;
-        background-image: url("./Services/transportDark.jpg");
+        background-image: url("../../../public/Services/transportDark.jpg");
       }
       .block-one-img2 {
         width: 770px;
         height: 800px;
-        background-image: url("./Services/transportLight.jpg");
+        background-image: url("../../../public/Services/transportLight.jpg");
         padding: 60px 60px 0;
       }
       .block-two-img {
         width: 770px;
         height: 800px;
-        background-image: url("./Services/transport2Dark.jpg");
+        background-image: url("../../../public/Services/transport2Dark.jpg");
       }
       .block-two-img2 {
         width: 770px;
         height: 800px;
-        background-image: url("./Services/transport2Light.jpg");
+        background-image: url("../../../public/Services/transport2Light.jpg");
         padding: 30px 60px 0;
       }
       .block-three-img {
         width: 770px;
         height: 800px;
-        background-image: url("./Services/transport3Dark.jpg");
+        background-image: url("../../../public/Services/transport3Dark.jpg");
       }
       .block-three-img2 {
         width: 770px;
         height: 800px;
-        background-image: url("./Services/transport3Light.jpg");
+        background-image: url("../../../public/Services/transport3Light.jpg");
         padding: 60px 60px 0;
       }
       .block-four-img {
         width: 770px;
         height: 800px;
-        background-image: url("./Services/transport4Dark.jpg");
+        background-image: url("../../../public/Services/transport4Dark.jpg");
       }
       .block-four-img2 {
         width: 770px;
         height: 800px;
-        background-image: url("./Services/transport4Light.jpg");
+        background-image: url("../../../public/Services/transport4Light.jpg");
         padding: 60px 60px 0;
       }
       &-left {
@@ -260,7 +260,7 @@
         padding: 0;
         &-btn {
           display: block;
-          font-size: 22px;
+          font-size: 20px;
           color: var(--mainColor);
           text-decoration: underline;
           text-align: center;
@@ -293,42 +293,29 @@
         .block-one-img {
           width: 335px;
           height: 179px;
-          background-image: url("./Services/transportSmall.png");
+          background-image: url("../../../public/Services/transportSmall.png");
         }
-        .block-one-img2 {
+        .block-one-img2,
+        .block-two-img2,
+        .block-three-img2,
+        .block-four-img2 {
           height: auto;
-          background-image: url("./Services/transportLight.jpg");
-          padding: 60px 60px 0;
         }
         .block-two-img {
           width: 335px;
           height: 173px;
-          background-image: url("./Services/transportSmall2.png");
-        }
-        .block-two-img2 {
-          height: auto;
-          background-image: url("./Services/transport2Light.jpg");
-          padding: 30px 60px 0;
+          background-image: url("../../../public/Services/transportSmall2.png");
+        }height: auto;
         }
         .block-three-img {
           width: 335px;
           height: 182px;
-          background-image: url("./Services/transportSmall3.png");
-        }
-        .block-three-img2 {
-          height: auto;
-          background-image: url("./Services/transport3Light.jpg");
-          padding: 60px 60px 0;
+          background-image: url("../../../public/Services/transportSmall3.png");
         }
         .block-four-img {
           width: 335px;
           height: 174px;
-          background-image: url("./Services/transportSmall4.png");
-        }
-        .block-four-img2 {
-          height: auto;
-          background-image: url("./Services/transport4Light.jpg");
-          padding: 60px 60px 0;
+          background-image: url("../../../public/Services/transportSmall4.png");
         }
       }
       @media (max-width: 540px) {
