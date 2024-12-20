@@ -214,7 +214,7 @@ export default function AboutHome() {
               onClick={toggleReadMore}
               className="aboutHome__content-whoWeAre-btn"
             >
-              {isExpanded ? t("More...") : t("More...")}
+              {isExpanded ? t("about.less_about") : t("about.more_about")}
             </span>
           )}
           <div className="aboutHome__content-whoWeAre-box">
@@ -227,7 +227,7 @@ export default function AboutHome() {
                 onClick={toggleReadMoreTwo}
                 className="aboutHome__content-whoWeAre-btn"
               >
-                {isExpandedTwo ? t("More...") : t("More...")}
+                {isExpandedTwo ? t("about.less_about") : t("about.more_about")}
               </span>
             )}
           </div>
