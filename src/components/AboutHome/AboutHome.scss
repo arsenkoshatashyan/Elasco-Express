@@ -5,7 +5,7 @@
     .resultAbout {
       max-width: 1270px;
       margin: 0 auto;
-      background: linear-gradient(175.9deg, #EEE9E9 50.76%, #F3DBDC 158.93%);
+      background: linear-gradient(175.9deg, #eee9e9 50.76%, #f3dbdc 158.93%);
       box-shadow: 0px 6.58px 14.27px 0px rgba(0, 0, 0, 0.1);
       padding: 20px 0;
       border-radius: 8px;
@@ -61,9 +61,7 @@
       @media (max-width: 768px) {
         max-width: 90%;
         display: none;
-       padding-bottom: 40px;
-  
-       
+        padding-bottom: 40px;
       }
     }
     &-title {
@@ -101,7 +99,7 @@
           max-height: 1500px !important;
         }
       }
-    
+
       &-btn {
         display: none;
       }
@@ -131,20 +129,19 @@
       max-width: 1730px;
       display: flex;
       height: 100%;
-      margin: 100px auto 100px;
+      margin: 0 auto 100px;
       &-box {
         background: url(../../../public/images/abouthome_container.png)
           no-repeat center;
         display: flex;
         height: auto;
-        padding: 100px 0 140px;
+        padding: 100px 0 100px;
         border-top-left-radius: 200px;
-     
+
         img {
           width: 44%;
           height: auto;
-          // padding-top: 40px;
-       
+
           border-top-left-radius: 300px;
         }
         &-text {
@@ -168,8 +165,6 @@
             font-weight: 500;
             padding: 0 20px 0 30px;
             color: var(--darkBackground);
- 
-           
           }
         }
       }
@@ -199,8 +194,6 @@
             color: var(--darkBackground);
             font-weight: 500;
             line-height: 44px;
-           
-            
           }
         }
         &-right {
@@ -228,7 +221,6 @@
         }
       }
       &-whoWeAre {
-     
         p {
           margin: 54px auto 0;
           font-size: 22px;
@@ -267,12 +259,10 @@
             padding-bottom: 40px;
             h2 {
               font-size: 40px;
-              
             }
             p {
               font-size: 22px;
               line-height: 42px;
-            
             }
           }
         }
@@ -333,7 +323,6 @@
       &-activity {
         margin: 40px auto 0;
         &-box {
-         
           height: auto;
           border-radius: 0;
           img {
@@ -398,7 +387,7 @@
           padding-top: 14px;
         }
         p {
-         max-height: 160px !important;
+          max-height: 160px !important;
           margin: 20px auto 0;
           font-size: 20px;
           line-height: 38px;
@@ -414,7 +403,6 @@
         }
       }
       &-activity {
-        
         &-box {
           &-text {
             h2 {
@@ -426,7 +414,6 @@
               font-size: 20px;
               width: 100%;
               // line-height: 38px;
-              
             }
           }
         }
@@ -447,7 +434,6 @@
             p {
               font-size: 20px;
               width: 100%;
-       
             }
           }
           &-right {
@@ -470,7 +456,6 @@
         }
       }
       &-whoWeAre {
-     
         p {
           max-height: 140px !important;
           margin: 20px auto 0;
@@ -486,7 +471,6 @@
       }
       &-activity {
         &-box {
-     
           &-text {
             h2 {
               font-size: 28px;
@@ -494,8 +478,6 @@
             p {
               font-size: 18px;
               line-height: 34px;
-        
-            
             }
           }
         }
@@ -552,7 +534,6 @@
               margin: 0;
               font-size: 16px;
               line-height: 30px;
-             
             }
           }
         }
@@ -574,16 +555,7 @@
       }
     }
   }
-
 }
-
-
-
-
-
-
-
-
 
 // .aboutHome {
 //   &__content {
@@ -785,16 +757,15 @@
 //     // }
 //   }
 
-  // @media (max-width: 768px) {
-  //   .aboutHome__content {
-  //     &-whoWeAre {
-  //       .read-more-btn {
-  //         display: block;
-  //       }
-  //     }
-  //   }
-  // }
-
+// @media (max-width: 768px) {
+//   .aboutHome__content {
+//     &-whoWeAre {
+//       .read-more-btn {
+//         display: block;
+//       }
+//     }
+//   }
+// }
 
 // @media (max-width: 1440px) {
 //   .aboutHome {
@@ -893,7 +864,7 @@
 //         // > p:nth-child(2){
 //         //   display: block;
 //         // }
-        
+
 //         &-box {
 //           flex-direction: column;
 //           width: 95%;
@@ -1029,7 +1000,7 @@
 //         }
 //       }
 //       &-whoWeAre {
-     
+
 //         p {
 //           margin: 40px auto 0;
 //           font-size: 18px;
@@ -1044,7 +1015,7 @@
 //       }
 //       &-activity {
 //         &-box {
-     
+
 //           &-text {
 //             h2 {
 //               font-size: 34px;

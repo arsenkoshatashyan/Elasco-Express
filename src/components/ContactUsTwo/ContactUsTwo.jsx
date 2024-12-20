@@ -7,19 +7,19 @@ export default function ContactUsTwo() {
   const data = [
     {
       id: 0,
-      url: "/images/support.svg",
+      url: "/images/address1.png",
       title: t("contacts.items.0.title"),
       description: t("contacts.items.0.description"),
     },
     {
       id: 1,
-      url: "/images/geo.svg",
+      url: "/images/address2.png",
       title: t("contacts.items.1.title"),
       description: t("contacts.items.1.description"),
     },
     {
       id: 2,
-      url: "/images/email.svg",
+      url: "/images/address3.png",
       title: t("contacts.items.2.title"),
       description: t("contacts.items.2.description"),
     },

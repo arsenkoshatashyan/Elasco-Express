@@ -20,7 +20,7 @@ export default function Footer() {
             <a href="https://www.instagram.com/elasco.am/profilecard/?igsh=MXZrbDVpemwwaGtlaw==">
               <img src="./images/instagram.svg" alt="instagram" />
             </a>
-            <a href="tel:+37498555378">
+            <a href="http://t.me/elascoexpress">
               <img src="./images/tg.svg" alt="telegram" />
             </a>
             <a href="https://www.facebook.com/ElascoTransport?mibextid=ZbWKwL">
@@ -78,7 +78,7 @@ export default function Footer() {
             <a href="https://www.instagram.com/elasco.am/profilecard/?igsh=MXZrbDVpemwwaGtlaw==">
               <img src="./images/instagram.svg" alt="instagram" />
             </a>
-            <a href="tel:+37498555378">
+            <a href="http://t.me/elascoexpress">
               <img src="./images/tg.svg" alt="telegram" />
             </a>
             <a href="https://www.facebook.com/ElascoTransport?mibextid=ZbWKwL">

@@ -97,7 +97,7 @@
       .block-one-img {
         width: 770px;
         height: 800px;
-        background-image: url("../../../public/Services/transportDark.jpg");
+        background: url("../../../public/Services/transportDark.jpg") no-repeat;
       }
       .block-one-img2 {
         width: 770px;
@@ -108,7 +108,7 @@
       .block-two-img {
         width: 770px;
         height: 800px;
-        background-image: url("../../../public/Services/transport2Dark.jpg");
+        background: url("../../../public/Services/transport2Dark.jpg") no-repeat;
       }
       .block-two-img2 {
         width: 770px;
@@ -119,7 +119,7 @@
       .block-three-img {
         width: 770px;
         height: 800px;
-        background-image: url("../../../public/Services/transport3Dark.jpg");
+        background: url("../../../public/Services/transport3Dark.jpg") no-repeat;
       }
       .block-three-img2 {
         width: 770px;
@@ -130,7 +130,7 @@
       .block-four-img {
         width: 770px;
         height: 800px;
-        background-image: url("../../../public/Services/transport4Dark.jpg");
+        background: url("../../../public/Services/transport4Dark.jpg") no-repeat;
       }
       .block-four-img2 {
         width: 770px;
@@ -182,11 +182,11 @@
             font-size: 32px;
           }
           p {
-            font-size: 19px;
+            font-size: 17px;
           }
           ul {
             li {
-              font-size: 19px;
+              font-size: 17px;
             }
           }
         }
@@ -208,11 +208,11 @@
             font-size: 30px;
           }
           p {
-            font-size: 16px;
+            font-size: 15px;
           }
           ul {
             li {
-              font-size: 16px;
+              font-size: 15px;
             }
           }
         }
@@ -305,8 +305,9 @@
           width: 335px;
           height: 173px;
           background-image: url("../../../public/Services/transportSmall2.png");
-        }height: auto;
         }
+        height: auto;
+
         .block-three-img {
           width: 335px;
           height: 182px;
@@ -325,8 +326,13 @@
           padding-left: 35px !important;
           padding-right: 35px !important;
         }
-        &-left {
-          max-width: 288px;
+        .block-one-img,
+        .block-two-img,
+        .block-three-img,
+        .block-four-img {
+          width: 100%;
+          min-width: 320px !important;
+          max-width: 334.98px;
         }
       }
     }

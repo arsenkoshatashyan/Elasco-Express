@@ -8,13 +8,8 @@ export default function ServicesHome() {
   const [isVisible, setIsVisible] = useState(window.innerWidth < 769);
 
   // Используем отдельные состояния для каждого блока
-  const [isExpanded, setIsExpanded] = useState([false, false, false, false]);
-  const [isListVisible, setIsListVisible] = useState([
-    false,
-    false,
-    false,
-    false,
-  ]); // Новое состояние для списка
+  const [isExpanded, setIsExpanded] = useState([false, false, false]);
+  const [isListVisible, setIsListVisible] = useState([false, false, false]); // Новое состояние для списка
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -31,7 +26,6 @@ export default function ServicesHome() {
       const newState = [...prevState];
       newState[index] = !newState[index];
 
-      // Показать/скрыть список в зависимости от состояния
       const newListVisibility = [...isListVisible];
       newListVisibility[index] = !newListVisibility[index];
       setIsListVisible(newListVisibility);
@@ -131,10 +125,6 @@ export default function ServicesHome() {
             <h2>{t("services.customsClearance")}</h2>
             <p className={isExpanded[3] ? "expanded" : "collapsed"}>
               {t("services.customsClearanceDescription")}
-            </p>
-
-            {/* Скрытие/отображение списка в зависимости от состояния */}
-            {isListVisible[3] && (
               <ul>
                 <li>{t("services.documentPreparation")}</li>
                 <li>{t("services.customsDuties")}</li>
@@ -143,7 +133,7 @@ export default function ServicesHome() {
                 <li>{t("services.productClassification")}</li>
                 <li>{t("services.transitGoods")}</li>
               </ul>
-            )}
+            </p>
             {isVisible && (
               <span
                 onClick={() => toggleReadMore(3)}

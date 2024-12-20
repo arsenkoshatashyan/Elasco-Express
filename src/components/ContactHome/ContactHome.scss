@@ -29,7 +29,6 @@
         p {
           font-size: 18px;
           width: 40rem;
-     
         }
       }
       &-form {
@@ -147,7 +146,7 @@
   @media (max-width: 590px) {
     max-width: 100%;
     border-radius: 0;
-    margin: -150px 0 0 0 ;
+    margin: -150px 0 0 0;
     ul {
       gap: 35px;
       li {
@@ -182,7 +181,6 @@
 
 @media (max-width: 1240px) {
   .ContactHome {
-   
     &__content {
       &-left {
         height: 780px;
@@ -208,11 +206,9 @@
   }
 }
 
-
-
 @media (max-width: 768px) {
   .ContactHome {
-    .NewsCard{
+    .NewsCard {
       display: none;
     }
     &__content {
@@ -266,4 +262,118 @@
   }
 }
 
+//---------
+.Card2 {
+  background: url("../../../public/images/backgroundChoose.jpeg") no-repeat
+    center;
+  background-size: cover;
+  &__content {
+    text-align: center;
+    &-title {
+      padding: 140px 0 50px 0;
+      h2 {
+        color: var(--mainColor);
+        font-size: 50px;
+        font-weight: bold;
+      }
+      p {
+        color: var(--textColor);
+        font-size: 30px;
+        width: 90%;
+        margin: 26px auto 0;
+      }
+    }
+    &-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding-bottom: 155px;
+      &-item {
+        width: 240px;
+        height: 240px;
+        background-color: rgba(90, 90, 90, 0.45);
+        backdrop-filter: blur(4px);
+        border-radius: 46px;
+        img {
+          margin: 35px 0 5px;
+        }
+        p {
+          color: var(--mainColor);
+          height: 70px;
+          font-size: 20px;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .Card2 {
+    &__content {
+      &-title {
+        padding: 120px 0 50px 0;
+        h2 {
+          font-size: 46px;
+        }
+        p {
+          font-size: 28px;
+        }
+      }
+      &-items {
+        gap: 34px;
+        padding-bottom: 135px;
+        &-item {
+          width: 210px;
+          height: 210px;
+          border-radius: 44px;
+          img {
+            width: 86px;
+            margin-top: 30px;
+          }
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1240px) {
+  .Card2 {
+    &__content {
+      &-title {
+        padding: 100px 0 50px 0;
+        h2 {
+          font-size: 42px;
+        }
+        p {
+          font-size: 26px;
+        }
+      }
+      &-items {
+        gap: 28px;
+        padding: 0 10px 135px;
 
+        &-item {
+          width: 200px;
+          height: 200px;
+          border-radius: 42px;
+          img {
+            width: 76px;
+            margin-top: 30px;
+          }
+          p {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .Card2 {
+    display: none;
+  }
+}

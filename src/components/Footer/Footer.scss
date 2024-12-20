@@ -106,14 +106,11 @@
     font-size: 15px;
   }
 }
-@media(max-width: 1300px){
+@media (max-width: 1300px) {
   .Footer {
     background-color: var(--darkBackground);
     margin: 0 auto;
     &__content {
-      // display: flex;
-      // justify-content: space-around;
-      // align-items: center;
       &-left {
         margin-top: 50px;
         &-truck {
@@ -130,13 +127,13 @@
             margin: 40px 0;
           }
         }
-  
+
         &-socials {
           display: flex;
           justify-content: start;
           align-items: center;
           gap: 30px;
-  
+
           margin-left: 20px;
           img {
             margin-bottom: 40px;
@@ -173,7 +170,7 @@
             color: var(--iconBackground);
           }
         }
-  
+
         input {
           width: 380px;
           height: 60px;
@@ -200,7 +197,7 @@
     }
     .copy {
       color: var(--cardsBackground);
-  
+
       text-align: center;
       padding: 33px 0 44px 0;
       font-size: 15px;
@@ -216,7 +213,6 @@
       gap: 40px;
 
       &-left {
-
         width: 80%;
         &-truck {
           width: 60%;
@@ -224,7 +220,6 @@
           margin: 0 auto;
 
           p {
-            // width: 90%;
             margin: 20px 0;
             text-align: start !important;
             font-size: 14px;
@@ -243,7 +238,6 @@
 
           width: 40%;
           li {
-
             text-align: start;
           }
         }
@@ -257,7 +251,6 @@
           justify-content: center;
           gap: 25px;
           margin: 40px auto;
-
         }
         &-title {
           width: 60%;
@@ -302,230 +295,324 @@
 @media (max-width: 768px) {
   .Footer {
     &__content {
-      flex-wrap: wrap;
-      gap: 40px;
-
       &-left {
-        &-truck {
-          width: 90%;
-          margin: 0 auto;
-          p {
-            width: 90%;
-            margin: 20px 0;
-            text-align: start !important;
-            font-size: 14px;
-          }
-        }
-        &-socials {
-          display: none;
-        }
-      }
-      &-center {
+        margin-top: 0;
         width: 100%;
-        ul {
-          margin: 0 auto;
-          li {
-            width: 50%;
-            text-align: start;
-          }
-        }
-      }
-      &-right {
-        &-socials {
+        &-truck {
+          width: 100%;
           display: flex;
+          flex-direction: column;
           align-items: center;
-          justify-content: center;
-          gap: 25px;
-          margin: 40px 0;
-        }
-        &-title {
-          h2 {
-            width: 60% !important;
-            font-size: 18px;
+          img {
+            max-width: 320px;
+            width: 100%;
           }
           p {
-            width: 60% !important;
-            height: auto;
+            text-align: center !important;
+            width: 100% !important;
+            max-width: 90%;
           }
         }
-        form {
-          width: 60%;
-          input {
-            width: 100%;
+      }
+      &-center {
+        ul {
+          li {
+            text-align: center;
           }
-          button {
-            width: 100%;
-            height: 40px;
-            font-size: 14px;
+        }
+      }
+      &-right {
+        width: 100% !important;
+        &-title {
+          width: 100%;
+          h2 {
+            text-align: center;
+            width: 90% !important;
+            min-width: 300px;
+            margin: 0 auto;
+          }
+          p {
+            text-align: center !important;
+            margin: 10px auto;
+            width: 90% !important;
+            min-width: 300px;
           }
         }
       }
     }
-    hr {
-      display: none;
-    }
-    .copy {
-      width: 100%;
-      padding: 20px;
-      color: var(--darkBackground);
-      background-color: var(--textColor);
-      text-align: center;
-      font-size: 12px;
-    }
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 440px) {
   .Footer {
     &__content {
-      flex-wrap: wrap;
-      gap: 40px;
+      &-left {
+        width: 90%;
+        margin-top: 20px;
+        &-truck {
+          p {
+            font-size: 9px;
+            margin-top: 0 !important;
+          }
+        }
+      }
 
-      &-left {
-        &-truck {
+      &-center {
+        width: 100% !important;
+        ul {
           width: 90%;
-          margin: 0 auto;
-          p {
-            width: 90%;
-            margin: 20px 0;
-            text-align: start !important;
-            font-size: 14px;
-          }
-        }
-        &-socials {
-          display: none;
-        }
-      }
-      &-center {
-        width: 100%;
-        ul {
-          margin: 0 auto;
-          li {
-            width: 50%;
-            text-align: start;
-          }
         }
       }
       &-right {
-        &-socials {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 25px;
-          margin: 40px 0;
-        }
+        margin-top: 0;
+        width: 100% !important;
         &-title {
+          width: 100%;
           h2 {
-            width: 60% !important;
-            font-size: 18px;
+            text-align: center;
+            width: 80% !important;
+            min-width: 300px;
+            margin: 0 auto;
+            font-size: 15px;
           }
           p {
-            width: 60% !important;
-            height: auto;
-          }
-        }
-        form {
-          width: 60%;
-          input {
-            width: 100%;
-          }
-          button {
-            width: 100%;
-            height: 40px;
-            font-size: 14px;
-          }
-        }
-      }
-    }
-    hr {
-      display: none;
-    }
-    .copy {
-      width: 100%;
-      padding: 20px;
-      color: var(--darkBackground);
-      background-color: var(--textColor);
-      text-align: center;
-      font-size: 12px;
-    }
-  }
-}
-@media (max-width: 490px) {
-  .Footer {
-    &__content {
-      &-left {
-        &-truck {
-          p {
-            font-size: 12px;
-          }
-        }
-      }
-      &-center {
-        width: 100%;
-        ul {
-          li {
-            width: 60%;
-          }
-        }
-      }
-      &-right {
-        &-title {
-          h2 {
-            width: 70% !important;
-            font-size: 18px;
-          }
-          p {
-            width: 70% !important;
-          }
-        }
-        form {
-          width: 70%;
-          input {
-            width: 100%;
+            text-align: center !important;
+            margin: 10px auto !important;
+            width: 80% !important;
+            min-width: 290px;
+            font-size: 9px;
           }
         }
       }
     }
   }
 }
-@media (max-width: 390px) {
-  .Footer {
-    &__content {
-      &-left {
-        &-truck {
-          p {
-            text-align: start !important;
-            font-size: 10px;
-          }
-        }
-      }
-      &-center {
-        width: 100%;
-        ul {
-          li {
-            width: 50%;
-          }
-        }
-      }
-      &-right {
-        &-title {
-          h2 {
-            width: 70% !important;
-            font-size: 16px;
-          }
-          p {
-            width: 70% !important;
-          }
-        }
-        form {
-          width: 70%;
-          input {
-            width: 100%;
-          }
-          button {
-            font-size: 14px;
-          }
-        }
-      }
-    }
-  }
-}
+// @media (max-width: 768px) {
+//   .Footer {
+//     &__content {
+//       flex-wrap: wrap;
+//       gap: 40px;
+
+//       &-left {
+//         &-truck {
+//           width: 90%;
+//           margin: 0 auto;
+//           p {
+//             width: 90%;
+//             margin: 20px 0;
+//             text-align: start !important;
+//             font-size: 14px;
+//           }
+//         }
+//         &-socials {
+//           display: none;
+//         }
+//       }
+//       &-center {
+//         width: 100%;
+//         ul {
+//           margin: 0 auto;
+//           li {
+//             width: 50%;
+//             text-align: start;
+//           }
+//         }
+//       }
+//       &-right {
+//         &-socials {
+//           display: flex;
+//           align-items: center;
+//           justify-content: center;
+//           gap: 25px;
+//           margin: 40px 0;
+//         }
+//         &-title {
+//           h2 {
+//             width: 60% !important;
+//             font-size: 18px;
+//           }
+//           p {
+//             width: 60% !important;
+//             height: auto;
+//           }
+//         }
+//         form {
+//           width: 60%;
+//           input {
+//             width: 100%;
+//           }
+//           button {
+//             width: 100%;
+//             height: 40px;
+//             font-size: 14px;
+//           }
+//         }
+//       }
+//     }
+//     hr {
+//       display: none;
+//     }
+//     .copy {
+//       width: 100%;
+//       padding: 20px;
+//       color: var(--darkBackground);
+//       background-color: var(--textColor);
+//       text-align: center;
+//       font-size: 12px;
+//     }
+//   }
+// }
+// @media (max-width: 670px) {
+//   .Footer {
+//     &__content {
+//       flex-wrap: wrap;
+//       gap: 40px;
+
+//       &-left {
+//         &-truck {
+//           width: 90%;
+//           margin: 0 auto;
+//           p {
+//             width: 90%;
+//             margin: 20px 0;
+//             text-align: start !important;
+//             font-size: 14px;
+//           }
+//         }
+//         &-socials {
+//           display: none;
+//         }
+//       }
+//       &-center {
+//         width: 100%;
+//         ul {
+//           margin: 0 auto;
+//           li {
+//             width: 50%;
+//             text-align: start;
+//           }
+//         }
+//       }
+//       &-right {
+//         &-socials {
+//           display: flex;
+//           align-items: center;
+//           justify-content: center;
+//           gap: 25px;
+//           margin: 40px 0;
+//         }
+//         &-title {
+//           h2 {
+//             width: 60% !important;
+//             font-size: 18px;
+//           }
+//           p {
+//             width: 60% !important;
+//             height: auto;
+//           }
+//         }
+//         form {
+//           width: 60%;
+//           input {
+//             width: 100%;
+//           }
+//           button {
+//             width: 100%;
+//             height: 40px;
+//             font-size: 14px;
+//           }
+//         }
+//       }
+//     }
+//     hr {
+//       display: none;
+//     }
+//     .copy {
+//       width: 100%;
+//       padding: 20px;
+//       color: var(--darkBackground);
+//       background-color: var(--textColor);
+//       text-align: center;
+//       font-size: 12px;
+//     }
+//   }
+// }
+// @media (max-width: 490px) {
+//   .Footer {
+//     &__content {
+//       &-left {
+//         &-truck {
+//           p {
+//             font-size: 12px;
+//           }
+//         }
+//       }
+//       &-center {
+//         width: 100%;
+//         ul {
+//           li {
+//             width: 60%;
+//           }
+//         }
+//       }
+//       &-right {
+//         &-title {
+//           h2 {
+//             width: 70% !important;
+//             font-size: 18px;
+//           }
+//           p {
+//             width: 70% !important;
+//           }
+//         }
+//         form {
+//           width: 70%;
+//           input {
+//             width: 100%;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (max-width: 390px) {
+//   .Footer {
+//     &__content {
+//       &-left {
+//         &-truck {
+//           p {
+//             text-align: start !important;
+//             font-size: 10px;
+//           }
+//         }
+//       }
+//       &-center {
+//         width: 100%;
+//         ul {
+//           li {
+//             width: 50%;
+//           }
+//         }
+//       }
+//       &-right {
+//         &-title {
+//           h2 {
+//             width: 70% !important;
+//             font-size: 16px;
+//           }
+//           p {
+//             width: 70% !important;
+//           }
+//         }
+//         form {
+//           width: 70%;
+//           input {
+//             width: 100%;
+//           }
+//           button {
+//             font-size: 14px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
